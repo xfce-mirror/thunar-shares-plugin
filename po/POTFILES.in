@@ -1,0 +1,16 @@
+# List of source files containing translatable strings.
+[encoding: UTF-8]
+libshares/libshares-paths.c
+libshares/libshares-util.c
+libshares/libshares-xml.c
+libshares/shares.c
+thunar-plugin/thunar-shares-plugin.c
+thunar-plugin/tsp-admin.c
+thunar-plugin/tsp-admin-editor.c
+thunar-plugin/tsp-page.c
+thunar-plugin/tsp-page-provider.c
+thunar-plugin/tsp-prefs-provider.c
+[type: gettext/glade]data/admin-dialog-editor.xml
+[type: gettext/glade]data/admin-dialog.xml
+[type: gettext/glade]data/dialogs.xml
+[type: gettext/glade]data/thunar-page.xml

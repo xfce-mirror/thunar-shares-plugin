@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--*- mode: xml -*-->
+
+<interface>  
+  <object class="GtkMessageDialog" id="permissions_dialog">
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">Thunar Shares Question</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">GTK_WIN_POS_CENTER</property>
+    <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
+    <property name="urgency_hint">True</property>
+    <property name="deletable">False</property>
+    <property name="message_type">GTK_MESSAGE_QUESTION</property>
+    <property name="buttons">GTK_BUTTONS_OK_CANCEL</property>
+    <property name="text" translatable="yes">Thunar needs to add some permissions to your folder in order to share it. Do you agree?</property>
+  </object>
+  
+  <object class="GtkMessageDialog" id="error_dialog">
+    <property name="border_width">5</property>
+    <property name="secondary_use_markup">True</property>
+    <property name="use_markup">True</property>
+    <property name="title" translatable="yes">Thunar Shares Error</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">GTK_WIN_POS_CENTER</property>
+    <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
+    <property name="urgency_hint">True</property>
+    <property name="deletable">False</property>
+    <property name="message_type">GTK_MESSAGE_ERROR</property>
+    <property name="buttons">GTK_BUTTONS_CLOSE</property>
+    <property name="text" translatable="yes">Cannot modify the share:</property>
+  </object>
+
+</interface>

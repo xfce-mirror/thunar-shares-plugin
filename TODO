@@ -1,0 +1,12 @@
+TODO for thunar-shares-plugin
+=======================================================================
+
+  * No verbose logging by default (from: libshares/shares.c)!
+
+  * Add emblems to shared folders (Thunar doesn't allow to add/remove
+    emblembs from plugins yet).
+
+  * Maybe some help button at shares-admin dialog.
+
+  * We need to review the permissions hierarchy check:
+    (libshares/libshares-util.c: tsp_check_perms)

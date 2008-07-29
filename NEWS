@@ -1,0 +1,28 @@
+NEW in 0.2.0:
+=============
+- New build system (Using XFCE dev tools).
+- Minor tweaks.
+- Project renamed to: thunar-shares-plugin.
+- Moved to XFce Goodies website:
+  http://goodies.xfce.org/projects/thunar-plugins/thunar-shares-plugin
+- More translations.
+
+NEW in 0.1.6:
+=============
+- libshares API changes to help the packaging task.
+- Internationalization Fixes
+- Added some translations.
+
+NEW in 0.1.3:
+=============
+- Shares admin preferences. (list shares to edit, add, and remove)
+- Share editor.
+- Themeable share icon.
+- Better code distribution.
+- Use a gzip tarball instead bz2.
+- Bugfixes
+
+NEW in 0.1.0:
+=============
+- All, First release. Have fun :)
+

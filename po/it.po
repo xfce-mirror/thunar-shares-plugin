@@ -1,0 +1,182 @@
+# Italian translation for thunar-shares
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the thunar-shares package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: thunar-shares\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
+"PO-Revision-Date: 2008-05-01 18:00+0000\n"
+"Last-Translator: Ermanno Strazzeri <hartman77@gmail.com>\n"
+"Language-Team: Italian <it@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-07-17 13:36+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../libshares/libshares-util.c:111
+#, fuzzy
+msgid "Please, write a name."
+msgstr "Assegna un nome alla condivisione."
+
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
+msgid "Cannot modify the share:"
+msgstr ""
+
+#: ../libshares/libshares-util.c:232
+msgid "Error when changing folder permissions."
+msgstr ""
+
+#: ../libshares/shares.c:146
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s ha restituito il segnale %d"
+
+#: ../libshares/shares.c:155
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s non riuscito per un motivo sconosciuto"
+
+#: ../libshares/shares.c:175
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "\"net usershare\" ha restituito l'errore %d: %s"
+
+#: ../libshares/shares.c:177
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "\"net usershare\" ha restituito l'errore %d"
+
+#: ../libshares/shares.c:208
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "l'output di \"net usershare\" non è codificato in UTF-8"
+
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#, c-format
+msgid "Failed"
+msgstr "Non riuscito"
+
+#: ../libshares/shares.c:571
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "\"testparm\" di Samba ha restituito il segnale %d"
+
+#: ../libshares/shares.c:577
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "\"testparm\" di Samba non riuscito per un motivo sconosciuto"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "\"testparm\" di Samba ha restituito l'errore %d: %s"
+
+#: ../libshares/shares.c:594
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "\"testparm\" di Samba ha restituito l'errore %d"
+
+#: ../libshares/shares.c:701
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr ""
+"Impossibile rimuovere la condivisione per il percorso %s: tale percorso non "
+"è condiviso"
+
+#: ../libshares/shares.c:747
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"Impossibile cambiare il percorso di una condivisione esistente; rimuovere la "
+"vecchia condivisione e poi aggiungerne una nuova"
+
+#: ../thunar-plugin/tsp-admin-editor.c:174
+msgid "Thunar - Add a share"
+msgstr ""
+
+#: ../thunar-plugin/tsp-admin-editor.c:196
+msgid "Thunar - Edit share"
+msgstr ""
+
+#: ../thunar-plugin/tsp-page.c:229
+msgid "Share"
+msgstr ""
+
+#: ../thunar-plugin/tsp-prefs-provider.c:99
+msgid "Manage shared folders..."
+msgstr ""
+
+#: ../thunar-plugin/tsp-prefs-provider.c:100
+msgid "Add, edit and remove shared folders"
+msgstr ""
+
+#: ../data/admin-dialog-editor.xml.h:1
+msgid "<b>Comments:</b>"
+msgstr ""
+
+#: ../data/admin-dialog-editor.xml.h:2
+msgid "<b>Folder:</b>"
+msgstr ""
+
+#: ../data/admin-dialog-editor.xml.h:3
+msgid "<b>Share name:</b>"
+msgstr ""
+
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr ""
+
+#: ../data/admin-dialog-editor.xml.h:5
+msgid "Allow other users to write in this folder"
+msgstr ""
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr ""
+
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+msgid "Thunar Shares Error"
+msgstr ""
+
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+msgid "Thunar Shares Question"
+msgstr ""
+
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr ""
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr ""
+
+#: ../data/thunar-page.xml.h:5
+msgid "Comments:"
+msgstr ""
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share Name:"
+msgstr ""
+
+#: ../data/thunar-page.xml.h:7
+msgid "Share this folder"
+msgstr ""
+
+#~ msgid "Insufficient permissions to share the folder."
+#~ msgstr "Permessi insufficienti per condividere la cartella"
+
+#~ msgid "<span color=\"red\"><b>Error:</b> %s</span>"
+#~ msgstr "<span color=\"red\"><b>Errore:</b> %s</span>"

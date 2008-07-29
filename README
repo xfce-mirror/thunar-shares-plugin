@@ -1,0 +1,88 @@
+What is it?
+===========
+
+thunar-shares-plugin allows you to quickly share a folder using Samba
+from Thunar (the XFCE file manager) without requiring root access.
+
+
+Required packages
+=================
+
+thunar-shares-plugin depends on the following packages:
+
+ - thunarx - 0.8.0 or above
+ - thunar-vfs - 0.8.0 or above
+ - gtk+-2.0 - 2.12.0 or above
+ - glib-2.0 - 2.10.0 or above
+
+
+Installation
+============
+
+(For information about how to setup Samba correctly see bellow)
+
+If you downloaded a source tarball from the download page, you can run:
+
+  ./configure --prefix=$(pkg-config --variable prefix thunarx-1)
+
+in order to configure the plugin.
+
+If you fetched the source from SVN, you have to use this command: 
+
+  ./autogen.sh --prefix=$(pkg-config --variable prefix thunarx-1)
+
+After that you should be able to build and install the plugin, using
+the following commands (remember you have to be root for that!):
+
+  make && make install
+
+For more detailed information, visit the thunar-shares-plugin website
+at http://goodies.xfce.org/projects/thunar-plugins/thunar-shares-plugin.
+
+
+Samba Setup
+===========
+
+If your are using (X)ubuntu 8.04 or above you don't need to do 
+all the setup: just add your user to the group 'sambashare' and re-login
+after install the plugin.
+
+For non (X)ubuntu users the Samba setup is:
+
+ 1) Create a group (must be done as root): 
+
+    export USERSHARES_DIR="/var/lib/samba/usershares"
+    export USERSHARES_GROUP="sambashare"
+    mkdir -p ${USERSHARES_DIR}
+    groupadd ${USERSHARES_GROUP}
+    chown root:${USERSHARES_GROUP} ${USERSHARES_DIR}
+    chmod 01770 ${USERSHARES_DIR}
+
+ 2) Use the following /etc/samba/smb.conf:
+
+    [global]
+    workgroup = WORKGROUP
+    security = share
+    usershare path = /var/lib/samba/usershares
+    usershare max shares = 100
+    usershare allow guests = yes
+    usershare owner only = yes
+
+ 3) Add the samba group to your user (replace your_username by your login): 
+
+    usermod -a -G ${USERSHARES_GROUP} your_username
+
+ 4) Restart Samba daemons
+
+    Ex: /etc/init.d/samba restart
+
+ 5) Logout and login your user (your_username)
+
+
+How to report bugs?
+===================
+
+Bugs should be reported to the Xfce bug tracking system
+(http://bugzilla.xfce.org, product Thunar Plugins, component
+thunar-shares-plugin). You will need to create an
+account for yourself.

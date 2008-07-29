@@ -1,0 +1,175 @@
+# LANGUAGE translation of Thunar Shares.
+# Copyright (C) 2008 THE Thunar Shares'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Thunar Shares package.
+# daniel <>, 2008.
+# , fuzzy
+# daniel <>, 2008.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunar Shares 0.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
+"PO-Revision-Date: 2008-07-22 12:47-0300\n"
+"Last-Translator:  <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libshares/libshares-util.c:111
+msgid "Please, write a name."
+msgstr "Porfavor, escriba un nombre para la compartición."
+
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
+msgid "Cannot modify the share:"
+msgstr "No se puede modificar la compartición:"
+
+#: ../libshares/libshares-util.c:232
+msgid "Error when changing folder permissions."
+msgstr "Error al cambiar los permisos de la carpeta"
+
+#: ../libshares/shares.c:146
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr ""
+
+#: ../libshares/shares.c:155
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr ""
+
+#: ../libshares/shares.c:175
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr ""
+
+#: ../libshares/shares.c:177
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr ""
+
+#: ../libshares/shares.c:208
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr ""
+
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#, c-format
+msgid "Failed"
+msgstr ""
+
+#: ../libshares/shares.c:571
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr ""
+
+#: ../libshares/shares.c:577
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr ""
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr ""
+
+#: ../libshares/shares.c:594
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr ""
+
+#: ../libshares/shares.c:701
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr ""
+
+#: ../libshares/shares.c:747
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+
+#: ../thunar-plugin/tsp-admin-editor.c:174
+msgid "Thunar - Add a share"
+msgstr "Thunar - Agregar compartición"
+
+#: ../thunar-plugin/tsp-admin-editor.c:196
+msgid "Thunar - Edit share"
+msgstr "Thunar - Editar compartición"
+
+#: ../thunar-plugin/tsp-page.c:229
+msgid "Share"
+msgstr "Compartir"
+
+#: ../thunar-plugin/tsp-prefs-provider.c:99
+msgid "Manage shared folders..."
+msgstr "Administrar carpetas compartidas..."
+
+#: ../thunar-plugin/tsp-prefs-provider.c:100
+msgid "Add, edit and remove shared folders"
+msgstr "Agregar, editar y borrar carpetas compartidas"
+
+#: ../data/admin-dialog-editor.xml.h:1
+msgid "<b>Comments:</b>"
+msgstr "<b>Comentarios:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:2
+msgid "<b>Folder:</b>"
+msgstr "<b>Carpeta:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:3
+msgid "<b>Share name:</b>"
+msgstr "<b>Nombre:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr "Permitir acceso a visitantes"
+
+#: ../data/admin-dialog-editor.xml.h:5
+msgid "Allow other users to write in this folder"
+msgstr "Permitir escritura a todos los usuarios"
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr "Thunar - Administrar carpetas compartidas"
+
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+msgid "Thunar Shares Error"
+msgstr "Thunar Shares - Error"
+
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+msgid "Thunar Shares Question"
+msgstr "Thunar Shares - Pregunta"
+
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr "Son necesarios algunos permisos para compartir la carpeta. ¿Está de acuerdo en que thunar los cambie?"
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Compartición de carpetas</b>"
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr "Permitir escritura a todos los usuarios"
+
+#: ../data/thunar-page.xml.h:5
+msgid "Comments:"
+msgstr "Comentarios:"
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share Name:"
+msgstr "Nombre:"
+
+#: ../data/thunar-page.xml.h:7
+msgid "Share this folder"
+msgstr "Compartir esta carpeta"
+
+#~ msgid "Insufficient permissions to share the folder."
+#~ msgstr "Permisos de carpeta no cumplidos para compartir"

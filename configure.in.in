@@ -1,0 +1,77 @@
+dnl
+dnl Copyright (c) 2008
+dnl         Daniel Morales <daniel@daniel.com.uy>
+dnl
+
+dnl -------------------------------------------------------
+dnl Version
+dnl -------------------------------------------------------
+m4_define([tsp_version_major], [0])
+m4_define([tsp_version_minor], [2])
+m4_define([tsp_version_micro], [0])
+m4_define([tsp_version_build], [r@REVISION@])
+m4_define([tsp_version_tag], [svn])
+m4_define([tsp_version], [tsp_version_major().tsp_version_minor().tsp_version_micro()ifelse(tsp_version_tag(),[],[], [-ifelse(tsp_version_tag(), [svn], [tsp_version_tag()-tsp_version_build()], [tsp_version_tag()])])])
+
+dnl -------------------------------------------------------
+dnl Debugging support for SVN
+dnl -------------------------------------------------------
+m4_define([tsp_debug_default], [ifelse(tsp_version_tag(), [svn], [full], [minimum])])
+
+dnl -------------------------------------------------------
+dnl Init autoconf
+dnl -------------------------------------------------------
+AC_COPYRIGHT([Copyright (c) 2008 Daniel Morales <daniel@daniel.com.uy>.])
+AC_INIT([thunar-shares-plugin], [tsp_version], [thunar-dev@xfce.org])
+AC_CONFIG_SRCDIR([thunar-plugin/thunar-shares-plugin.c])
+AC_PREREQ(2.59)
+AC_CANONICAL_TARGET()
+
+dnl -------------------------------------------------------
+dnl Init automake
+dnl -------------------------------------------------------
+AM_INIT_AUTOMAKE([1.9])
+AM_CONFIG_HEADER([config.h])
+AM_MAINTAINER_MODE
+
+AC_ISC_POSIX
+AC_HEADER_STDC
+
+dnl -------------------------------------------------------
+dnl Programs
+dnl -------------------------------------------------------
+AC_PROG_CC
+AC_PROG_LD
+AC_PROG_INSTALL
+AC_PROG_LIBTOOL
+AC_PROG_INTLTOOL([0.31])
+
+dnl -------------------------------------------------------
+dnl Packages checks
+dnl -------------------------------------------------------
+XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.12.0])
+XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.10.0])
+XDT_CHECK_PACKAGE([THUNARX], [thunarx-1], [0.8.0])
+XDT_CHECK_PACKAGE([THUNARVFS], [thunar-vfs-1], [0.8.0])
+
+dnl -------------------------------------------------------
+dnl Languages
+dnl -------------------------------------------------------
+XDT_I18N([@LINGUAS@])
+
+dnl -------------------------------------------------------
+dnl Debugging support
+dnl -------------------------------------------------------
+XDT_FEATURE_DEBUG
+
+AC_OUTPUT([
+	Makefile
+	data/Makefile
+	po/Makefile.in
+	libshares/Makefile
+	thunar-plugin/Makefile
+])
+
+echo
+echo "Prefix:        $prefix"
+echo

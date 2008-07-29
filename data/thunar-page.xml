@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<!--*- mode: xml -*-->
+
+<interface>
+  <object class="GtkVBox" id="vbox1">
+    <property name="visible">True</property>
+    <property name="border_width">5</property>
+     <child>
+	 <object class="GtkHBox" id="hbox1">
+       <property name="visible">True</property>
+       <child>
+         <object class="GtkImage" id="image1">
+           <property name="visible">True</property>
+           <property name="xalign">0</property>
+           <property name="xpad">13</property>
+           <property name="icon_name">gnome-fs-share</property>
+           <property name="icon_size">6</property>
+         </object>
+         <packing>
+           <property name="expand">False</property>
+           <property name="fill">False</property>
+         </packing>
+       </child>
+       <child>
+         <object class="GtkLabel" id="label1">
+           <property name="visible">True</property>
+           <property name="xalign">0</property>
+           <property name="label" translatable="yes">&lt;b&gt;Folder Sharing&lt;/b&gt;</property>
+           <property name="use_markup">True</property>
+         </object>
+         <packing>
+           <property name="position">1</property>
+         </packing>
+       </child>
+     </object>
+     <packing>
+       <property name="expand">False</property>
+       <property name="padding">5</property>
+     </packing>
+   </child>
+   <child>
+     <object class="GtkHSeparator" id="hseparator1">
+       <property name="visible">True</property>
+     </object>
+     <packing>
+       <property name="expand">False</property>
+       <property name="position">1</property>
+       <property name="padding">3</property>
+     </packing>
+   </child>
+   <child>
+     <object class="GtkCheckButton" id="cb_share_folder">
+       <property name="visible">True</property>
+       <property name="can_focus">True</property>
+       <property name="label" translatable="yes">Share this folder</property>
+       <property name="draw_indicator">True</property>
+     </object>
+     <packing>
+       <property name="expand">False</property>
+       <property name="fill">False</property>
+       <property name="padding">5</property>
+       <property name="position">2</property>
+     </packing>
+   </child>
+   <child>
+     <object class="GtkHBox" id="hbox2">
+       <property name="visible">True</property>
+       <child>
+         <object class="GtkLabel" id="label_name">
+           <property name="visible">True</property>
+           <property name="xalign">0</property>
+           <property name="xpad">7</property>
+           <property name="label" translatable="yes">Share Name:</property>
+         </object>
+         <packing>
+           <property name="expand">False</property>
+           <property name="fill">False</property>
+         </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_share_name">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">12</property>
+          </object>
+          <packing>
+            <property name="padding">0</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="padding">5</property>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkCheckButton" id="cb_share_write">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="label" translatable="yes">Allow others users to write in this folder</property>
+        <property name="draw_indicator">True</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="padding">5</property>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkCheckButton" id="cb_share_guest">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="label" translatable="yes">Allow Guest access</property>
+        <property name="draw_indicator">True</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="padding">5</property>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkHBox" id="hbox5">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="label_comments">
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="xpad">7</property>
+            <property name="label" translatable="yes">Comments:</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_share_comments">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="padding">0</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="padding">5</property>
+        <property name="position">6</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkHButtonBox" id="hbox3">
+        <property name="visible">True</property>
+        <property name="layout_style">GTK_BUTTONBOX_END</property>
+        <property name="spacing">5</property>
+        <child>
+          <object class="GtkButton" id="button_apply">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="label">gtk-apply</property>
+            <property name="use_stock">True</property>    
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="padding">7</property>
+        <property name="position">7</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label_status">
+        <property name="visible">True</property>
+        <property name="visible">True</property>
+        <property name="xalign">0</property>
+        <property name="xpad">7</property>
+        <property name="label"></property>
+        <property name="use_markup">True</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">False</property>
+        <property name="padding">5</property>
+        <property name="position">8</property>
+      </packing>
+    </child>
+  </object>
+</interface>
