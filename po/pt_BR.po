@@ -1,0 +1,177 @@
+# Portuguese translations for Thunar-Shares-Plugin package.
+# Copyright (C) 2008 THE Thunar-Shares-Plugin'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Thunar-Shares-Plugin package.
+# Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunar-Shares-PLugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-31 04:48-0400\n"
+"PO-Revision-Date: 2008-07-30 23:05-0300\n"
+"Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
+"Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../libshares/libshares-util.c:111
+msgid "Please, write a name."
+msgstr "Por favor, escreva um nome."
+
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+msgid "Cannot modify the share:"
+msgstr "Não foi possível modificar o compartilhamento:"
+
+#: ../libshares/libshares-util.c:232
+msgid "Error when changing folder permissions."
+msgstr "Erro durante a alteração das permissões da pasta."
+
+#: ../libshares/shares.c:146
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s retornou com o sinal %d"
+
+#: ../libshares/shares.c:155
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s falhou por uma razão desconhecida"
+
+#: ../libshares/shares.c:175
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "O \"compartilhamento de rede do usuário\" retornou o erro %d: %s"
+
+#: ../libshares/shares.c:177
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "O \"compartilhamento de rede do usuário\" retornou o erro %d"
+
+#: ../libshares/shares.c:208
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr ""
+"A saída do \"compartilhamento de rede do usuário\" não está codificado"
+" em UTF-8"
+
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#, c-format
+msgid "Failed"
+msgstr "Falhou"
+
+#: ../libshares/shares.c:571
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "O comando testparm do Samba retornou com o sinal %d"
+
+#: ../libshares/shares.c:577
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "O comando testparm do Samba falhou por uma razão desconhecida"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "O comando testparm do Samba retornou o erro %d: %s"
+
+#: ../libshares/shares.c:594
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "O comando testparm do Samba retornou o erro %d"
+
+#: ../libshares/shares.c:701
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr ""
+"Não foi possível remover o compartilhamento para o caminho %s: este caminho "
+"não está compartilhado"
+
+#: ../libshares/shares.c:747
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"Não é possível mudar o caminho de um compartilhamento existente; por "
+"favor, remova o compartilhamento antigo primeiro e adicione um novo"
+
+#: ../thunar-plugin/tsp-admin-editor.c:172
+msgid "Thunar - Add a share"
+msgstr "Thunar - Adicionar um comartilhamento"
+
+#: ../thunar-plugin/tsp-admin-editor.c:194
+msgid "Thunar - Edit share"
+msgstr "Thunar - Editar compartilhamento"
+
+#: ../thunar-plugin/tsp-page.c:228
+msgid "Share"
+msgstr "Compartilhar"
+
+#: ../thunar-plugin/tsp-prefs-provider.c:95
+msgid "Manage shared folders..."
+msgstr "Gerenciar pasta compartilhadas..."
+
+#: ../thunar-plugin/tsp-prefs-provider.c:96
+msgid "Add, edit and remove shared folders"
+msgstr "Adicionar, editar ou remover pastas compartilhadas"
+
+#: ../data/admin-dialog-editor.xml.h:1
+msgid "<b>Comments:</b>"
+msgstr "<b>Comentários:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:2
+msgid "<b>Folder:</b>"
+msgstr "<b>Pasta:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:3
+msgid "<b>Share name:</b>"
+msgstr "<b>Nome do compartilhamento:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr "Permitir acesso remoto"
+
+#: ../data/admin-dialog-editor.xml.h:5
+msgid "Allow other users to write in this folder"
+msgstr "Permitir que outros usuários gravem nesta pasta"
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr "Thunar - Gerenciar pastas compartilhadas"
+
+#: ../data/dialogs.xml.h:2
+msgid "Thunar Shares Error"
+msgstr "Erro de compartilhamentos do Thunar"
+
+#: ../data/dialogs.xml.h:3
+msgid "Thunar Shares Question"
+msgstr "Questões sobre compartilhamentos do Thunar"
+
+#: ../data/dialogs.xml.h:4
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+"O Thunar precisa adicionar algumas permissões a sua pasta para assim "
+"compartilhá-la. Você concorda?"
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Compartilhando pasta</b>"
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr "Permitir que outros usuários gravem nesta pasta"
+
+#: ../data/thunar-page.xml.h:4
+msgid "Comments:"
+msgstr "Comentários:"
+
+#: ../data/thunar-page.xml.h:5
+msgid "Share Name:"
+msgstr "Nome do compartilhamento:"
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share this folder"
+msgstr "Compartilhe esta pasta"
