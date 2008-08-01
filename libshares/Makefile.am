@@ -20,8 +20,7 @@ libshares_la_CFLAGS =					\
 	$(GTK_CFLAGS)					\
 	$(GLIB_CFLAGS)					\
 	$(THUNARX_CFLAGS)				\
-	$(THUNARVFS_CFLAGS)				\
-	$(WARN_CFLAGS)
+	$(THUNARVFS_CFLAGS)
 
 libshares_la_LDFLAGS =					\
 	$(GTK_LIBS)					\

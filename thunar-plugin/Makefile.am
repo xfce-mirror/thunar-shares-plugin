@@ -23,8 +23,7 @@ thunar_shares_plugin_la_CFLAGS =				\
 	$(GTK_CFLAGS)						\
 	$(GLIB_CFLAGS)						\
 	$(THUNARX_CFLAGS)					\
-	$(THUNARVFS_CFLAGS)					\
-	$(WARN_CFLAGS)
+	$(THUNARVFS_CFLAGS)
 
 thunar_shares_plugin_la_LDFLAGS =				\
 	-avoid-version						\

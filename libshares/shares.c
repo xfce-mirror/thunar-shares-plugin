@@ -100,6 +100,7 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 	stdout_contents = NULL;
 	stderr_contents = NULL;
 
+#ifdef G_ENABLE_DEBUG
 	{
 		char **p;
 
@@ -110,6 +111,7 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 
 		g_message ("end of spawn args; SPAWNING\n");
 	}
+#endif
 
 	real_error = NULL;
 	retval = g_spawn_sync (NULL,			/* cwd */
@@ -123,7 +125,9 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 			       &exit_status,
 			       &real_error);
 
+#ifdef G_ENABLE_DEBUG
 	g_message ("returned from spawn: %s: %s", retval ? "SUCCESS" : "FAIL", retval ? "" : real_error->message);
+#endif
 
 	if (!retval) {
 		g_propagate_error (error, real_error);
@@ -131,15 +135,18 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 	}
 
 	if (!WIFEXITED (exit_status)) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("WIFEXITED(%d) was false!", exit_status);
+#endif
 		retval = FALSE;
 
 		if (WIFSIGNALED (exit_status)) {
 			int signal_num;
 
 			signal_num = WTERMSIG (exit_status);
+#ifdef G_ENABLE_DEBUG
 			g_message ("Child got signal %d", signal_num);
-
+#endif
 			g_set_error (error,
 				     SHARES_ERROR,
 				     SHARES_ERROR_FAILED,
@@ -161,8 +168,9 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 	}
 
 	exit_code = WEXITSTATUS (exit_status);
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("exit code %d", exit_code);
+#endif
 	if (exit_code != 0) {
 		char *str;
 		char *message;
@@ -191,8 +199,9 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 	}
 
 	if (ret_key_file) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("caller wants GKeyFile");
-
+#endif
 		*ret_key_file = NULL;
 
 		/* FIXME: jeallison@novell.com says the output of "net usershare" is nearly always
@@ -201,7 +210,9 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 		 */
 
 		if (!g_utf8_validate (stdout_contents, -1, NULL)) {
+#ifdef G_ENABLE_DEBUG
 			g_message ("stdout of net usershare was not in valid UTF-8");
+#endif
 			g_set_error (error,
 				     G_SPAWN_ERROR,
 				     G_SPAWN_ERROR_FAILED,
@@ -214,7 +225,9 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 
 		real_error = NULL;
 		if (!g_key_file_load_from_data (key_file, stdout_contents, -1, 0, &real_error)) {
+#ifdef G_ENABLE_DEBUG
 			g_message ("Error when parsing key file {\n%s\n}: %s", stdout_contents, real_error->message);
+#endif
 			g_propagate_error (error, real_error);
 			g_key_file_free (key_file);
 			retval = FALSE;
@@ -225,16 +238,16 @@ net_usershare_run (int argc, char **argv, GKeyFile **ret_key_file, GError **erro
 		*ret_key_file = key_file;
 	} else
 		retval = TRUE;
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("success from calling net usershare and parsing its output");
-
+#endif
  out:
 	g_free (real_argv);
 	g_free (stdout_contents);
 	g_free (stderr_contents);
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("------------------------------------------");
-
+#endif
 	return retval;
 }
 
@@ -363,7 +376,9 @@ add_key_group_to_hashes (GKeyFile *key_file, const char *group)
 
 	path = get_string_from_key_file (key_file, group, KEY_PATH);
 	if (!path) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("group '%s' doesn't have a '%s' key!  Ignoring group.", group, KEY_PATH);
+#endif
 		return;
 	}
 
@@ -384,14 +399,18 @@ add_key_group_to_hashes (GKeyFile *key_file, const char *group)
 		else if (strcmp (acl, "Everyone:F") == 0)
 			is_writable = TRUE;
 		else {
+#ifdef G_ENABLE_DEBUG
 			g_message ("unknown format for key '%s/%s' as it contains '%s'.  Assuming that the share is read-only",
 				   group, KEY_ACL, acl);
+#endif
 			is_writable = FALSE;
 		}
 
 		g_free (acl);
 	} else {
+#ifdef G_ENABLE_DEBUG
 		g_message ("group '%s' doesn't have a '%s' key!  Assuming that the share is read-only.", group, KEY_ACL);
+#endif
 		is_writable = FALSE;
 	}
 
@@ -402,14 +421,18 @@ add_key_group_to_hashes (GKeyFile *key_file, const char *group)
 		else if (strcmp (guest_ok_str, "y") == 0)
 			guest_ok = TRUE;
 		else {
+#ifdef G_ENABLE_DEBUG
 			g_message ("unknown format for key '%s/%s' as it contains '%s'.  Assuming that the share is not guest accessible.",
 				   group, KEY_GUEST_OK, guest_ok_str);
+#endif
 			guest_ok = FALSE;
 		}
 
 		g_free (guest_ok_str);
 	} else {
+#ifdef G_ENABLE_DEBUG
 		g_message ("group '%s' doesn't have a '%s' key!  Assuming that the share is not guest accessible.", group, KEY_GUEST_OK);
+#endif
 		guest_ok = FALSE;
 	}
 
@@ -468,7 +491,9 @@ refresh_shares (GError **error)
 
 	real_error = NULL;
 	if (!net_usershare_run (G_N_ELEMENTS (argv), argv, &key_file, &real_error)) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("Called \"net usershare info\" but it failed: %s", real_error->message);
+#endif
 		g_propagate_error (error, real_error);
 		return FALSE;
 	}
@@ -493,7 +518,9 @@ refresh_if_needed (GError **error)
 
 		new_timestamp = time (NULL);
 		if (new_timestamp - refresh_timestamp > TIMESTAMP_THRESHOLD) {
+#ifdef G_ENABLE_DEBUG
 			g_message ("REFRESHING SHARES");
+#endif
 			retval = refresh_shares (error);
 		} else
 			retval = TRUE;
@@ -626,15 +653,17 @@ add_share (ShareInfo *info, GError **error)
 	GError *real_error;
 	gboolean supports_success;
 	gboolean supports_guest_ok;
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("add_share() start");
-
+#endif
 	if (throw_error_on_add) {
 		g_set_error (error,
 			     SHARES_ERROR,
 			     SHARES_ERROR_FAILED,
 			     _("Failed"));
+#ifdef G_ENABLE_DEBUG
 		g_message ("add_share() end FAIL");
+#endif
 		return FALSE;
 	}
 
@@ -657,7 +686,9 @@ add_share (ShareInfo *info, GError **error)
 
 	real_error = NULL;
 	if (!net_usershare_run (argc, argv, &key_file, &real_error)) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("Called \"net usershare add\" but it failed: %s", real_error->message);
+#endif
 		g_propagate_error (error, real_error);
 		return FALSE;
 	}
@@ -666,9 +697,9 @@ add_share (ShareInfo *info, GError **error)
 
 	copy = copy_share_info (info);
 	add_share_info_to_hashes (copy);
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("add_share() end SUCCESS");
-
+#endif
 	return TRUE;
 }
 
@@ -678,15 +709,17 @@ remove_share (const char *path, GError **error)
 	ShareInfo *old_info;
 	char *argv[2];
 	GError *real_error;
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("remove_share() start");
-
+#endif
 	if (throw_error_on_remove) {
 		g_set_error (error,
 			     SHARES_ERROR,
 			     SHARES_ERROR_FAILED,
 			     "Failed");
+#ifdef G_ENABLE_DEBUG
 		g_message ("remove_share() end FAIL");
+#endif
 		return FALSE;
 	}
 
@@ -701,8 +734,9 @@ remove_share (const char *path, GError **error)
 			     _("Cannot remove the share for path %s: that path is not shared"),
 			     display_name);
 		g_free (display_name);
-
+#ifdef G_ENABLE_DEBUG
 		g_message ("remove_share() end FAIL: path %s was not in our hashes", path);
+#endif
 		return FALSE;
 	}
 
@@ -711,17 +745,21 @@ remove_share (const char *path, GError **error)
 
 	real_error = NULL;
 	if (!net_usershare_run (G_N_ELEMENTS (argv), argv, NULL, &real_error)) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("Called \"net usershare delete\" but it failed: %s", real_error->message);
+#endif
 		g_propagate_error (error, real_error);
+#ifdef G_ENABLE_DEBUG
 		g_message ("remove_share() end FAIL");
+#endif
 		return FALSE;
 	}
 
 	remove_share_info_from_hashes (old_info);
 	shares_free_share_info (old_info);
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("remove_share() end SUCCESS");
-
+#endif
 	return TRUE;
 }
 
@@ -729,12 +767,14 @@ static gboolean
 modify_share (const char *old_path, ShareInfo *info, GError **error)
 {
 	ShareInfo *old_info;
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("modify_share() start");
-
+#endif
 	old_info = lookup_share_by_path (old_path);
 	if (old_info == NULL) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("modify_share() end; calling add_share() instead");
+#endif
 		return add_share (info, error);
 	}
 
@@ -745,7 +785,9 @@ modify_share (const char *old_path, ShareInfo *info, GError **error)
 			     SHARES_ERROR,
 			     SHARES_ERROR_FAILED,
 			     _("Cannot change the path of an existing share; please remove the old share first and add a new one"));
+#ifdef G_ENABLE_DEBUG
 		g_message ("modify_share() end FAIL: tried to change the path in a share!");
+#endif
 		return FALSE;
 	}
 
@@ -754,7 +796,9 @@ modify_share (const char *old_path, ShareInfo *info, GError **error)
 			     SHARES_ERROR,
 			     SHARES_ERROR_FAILED,
 			     "Failed");
+#ifdef G_ENABLE_DEBUG
 		g_message ("modify_share() end FAIL");
+#endif
 		return FALSE;
 	}
 
@@ -765,11 +809,14 @@ modify_share (const char *old_path, ShareInfo *info, GError **error)
 	 */
 
 	if (!remove_share (old_path, error)) {
+#ifdef G_ENABLE_DEBUG
 		g_message ("modify_share() end FAIL: error when removing old share");
+#endif
 		return FALSE;
 	}
-
+#ifdef G_ENABLE_DEBUG
 	g_message ("modify_share() end: will call add_share() with the new share info");
+#endif
 	return add_share (info, error);
 }
 
