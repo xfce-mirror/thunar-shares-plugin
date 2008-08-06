@@ -43,7 +43,8 @@ ShareInfo *tsp_shares_share (const gchar     *file_local,
                              const gchar     *name,
                              const gchar     *comments,
                              gboolean         is_writable,
-                             gboolean         guests_ok);
+                             gboolean         guests_ok,
+                             const gchar     *old_name);
 
 G_END_DECLS
 

@@ -394,14 +394,15 @@ tsp_page_apply_clicked (GtkButton *button,
 		guests_ok = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (tsp_page->cb_share_guest));
 
 		share_info = tsp_shares_share (local_file, name, comments,
-		 							   is_writable, guests_ok);
-		if (share_info)
+		 							   is_writable, guests_ok,
+		 							   tsp_page->share_name);
+		if (share_info != NULL)
 		{
 			tsp_update_default (tsp_page, share_info);
 			shares_free_share_info (share_info);
 		}
 	} else {
-		/* Un-share file */
+		/* Un-share the folder */
 		if (tsp_shares_unshare (local_file)){
 			tsp_update_default (tsp_page, NULL);
 		}

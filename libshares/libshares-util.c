@@ -100,9 +100,11 @@ tsp_shares_share (const gchar  *file_local,
                   const gchar  *name,
                   const gchar  *comments,
                   gboolean      is_writable,
-                  gboolean      guests_ok)
+                  gboolean      guests_ok,
+                  const gchar  *old_name)
 {
 	ShareInfo *share_info = NULL;
+	gboolean   exists;
 	gboolean   ret;
 	GError    *err = NULL;
 
@@ -112,7 +114,37 @@ tsp_shares_share (const gchar  *file_local,
 		return NULL;
 	}
 
-	/* TODO: check if the share name is already used(?) */
+	/* Check length */
+	if (g_utf8_strlen (name, -1) > 12)
+	{
+		//-- Fixme this should be just a warning.
+		tsp_show_error (NULL, _("Share name is too long."));
+		return NULL;
+	}
+
+	/* Do the name check only if this is a new share, or if
+	   the user is changing the share name */
+	if ((old_name == NULL) || (g_utf8_collate (name, old_name) != 0))
+	{
+		/* Check if the share name is already used */
+		if (!shares_get_share_name_exists (name, &exists, &err))
+		{
+			gchar *str;
+
+			str = g_strdup_printf (_("Error while getting share information: %s"), err->message);
+			tsp_show_error (NULL, str);
+			g_free (str);
+			g_error_free (err);
+
+			return NULL;
+		}
+
+		if (exists)
+		{
+			tsp_show_error (NULL, _("Another share has the same name"));
+			 return NULL;
+		}
+	}
 
 	if (tsp_check_perms (file_local, is_writable))
 	{

@@ -1,3 +1,12 @@
+2008-08-06	Daniel Morales <daniel@daniel.com.uy>
+
+	* data/thunar-page.xml:
+	* libshares/libshares-util.[ch]:
+	* thunar-plugin/tsp-admin-editor.c:
+	* thunar-plugin/tsp-page.c: Add share name checks. (Length and look
+	for already used names before change details)
+	* TODO: Added 0.20 milestone points to do before next release.
+
 2008-08-05	Daniel Morales <daniel@daniel.com.uy>
 
 	* libshares/share.[ch]: 

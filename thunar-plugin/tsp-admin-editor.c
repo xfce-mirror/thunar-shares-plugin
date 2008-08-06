@@ -48,6 +48,9 @@ typedef struct {
 	GtkWidget  *share_label1;
 	GtkWidget  *share_hbox1;
 
+	/* Current share name */
+	gchar      *old_name;
+
 	gpointer    admin;
 } TspAdminEdit;
 
@@ -84,7 +87,7 @@ editor_response_cb (GtkWidget    *widget,
 		guests_ok = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (editor->share_guest));
 
 		share_info = tsp_shares_share (local_file, name, comments,
-		 							   is_writable, guests_ok);
+		 							   is_writable, guests_ok, editor->old_name);
 		if (share_info)
 		{
 			shares_free_share_info (share_info);
@@ -105,6 +108,9 @@ static void
 editor_destroy_cb (GtkWidget    *widget,
                    TspAdminEdit *editor)
 {
+	if (editor->old_name != NULL)
+		g_free (editor->old_name);
+
 	g_free (editor);
 }
 
@@ -168,10 +174,12 @@ editor_set_values (const gchar  *path,
 	if (G_STR_EMPTY (path)){
 		const gchar *home_dir;
 
-		gtk_window_set_title (GTK_WINDOW (editor->dialog),
-											_("Thunar - Add a share"));
+		gtk_window_set_title (GTK_WINDOW (editor->dialog), _("Thunar - Add a share"));
 
 		home_dir = g_get_home_dir ();
+
+		if (editor->old_name != NULL)
+			g_free (editor->old_name);
 
 		/* Show folders chooser */
 		gtk_widget_show (editor->share_hbox1);
@@ -190,11 +198,11 @@ editor_set_values (const gchar  *path,
 					GTK_ENTRY (editor->share_comments), "");
 
 	} else {
-		gtk_window_set_title (GTK_WINDOW (editor->dialog),
-											_("Thunar - Edit share"));
 		/* Load values */
 		ShareInfo *share_info;
 		gboolean   result;
+
+		gtk_window_set_title (GTK_WINDOW (editor->dialog), _("Thunar - Edit share"));
 
 		/* Hide folders chooser */
 		gtk_widget_hide (editor->share_hbox1);
@@ -203,6 +211,8 @@ editor_set_values (const gchar  *path,
 		result = shares_get_share_info_for_path (path, &share_info, NULL);
 		if (share_info)
 		{
+			editor->old_name = g_strdup (share_info->share_name);
+
 			gtk_file_chooser_set_current_folder (
 					GTK_FILE_CHOOSER (editor->share_folder), path);
 			gtk_toggle_button_set_active (

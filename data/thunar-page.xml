@@ -81,7 +81,6 @@
           <object class="GtkEntry" id="entry_share_name">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="max_length">12</property>
           </object>
           <packing>
             <property name="padding">0</property>
