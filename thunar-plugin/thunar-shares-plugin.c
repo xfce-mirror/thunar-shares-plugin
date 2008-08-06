@@ -23,6 +23,7 @@
 #endif
 
 #include <glib/gi18n.h>
+#include <libshares/shares.h>
 
 #include "tsp-page-provider.h"
 #include "tsp-prefs-provider.h"
@@ -69,6 +70,9 @@ thunar_extension_shutdown (void)
 #ifdef G_ENABLE_DEBUG
 	g_message ("Shutting down thunar-archive-plugin extension");
 #endif
+
+	/* Free all shares */
+	free_all_shares ();
 }
 
 G_MODULE_EXPORT void

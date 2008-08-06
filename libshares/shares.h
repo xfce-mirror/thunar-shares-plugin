@@ -39,6 +39,8 @@ typedef enum {
 	SHARES_ERROR_NONEXISTENT
 } SharesError;
 
+void free_all_shares (void);
+
 GQuark shares_error_quark (void);
 
 void shares_free_share_info (ShareInfo *info);

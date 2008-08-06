@@ -1,3 +1,9 @@
+2008-08-05	Daniel Morales <daniel@daniel.com.uy>
+
+	* libshares/share.[ch]: 
+	* thunar-plugin/thunar-shares-plugin.c: Free shares tables when
+	shutting down the plugin.
+
 2008-08-01	Daniel Morales <daniel@daniel.com.uy>
 
 	* libshares/share.c: Avoid verbose logging by default. Now using

@@ -319,14 +319,6 @@ remove_from_share_name_hash_cb (gpointer key,
 	return TRUE;
 }
 
-static void
-free_all_shares (void)
-{
-	ensure_hashes ();
-	g_hash_table_foreach_remove (path_share_info_hash, remove_from_path_hash_cb, NULL);
-	g_hash_table_foreach_remove (share_name_share_info_hash, remove_from_share_name_hash_cb, NULL);
-}
-
 static char *
 get_string_from_key_file (GKeyFile *key_file, const char *group, const char *key)
 {
@@ -1072,6 +1064,14 @@ shares_free_share_info_list (GSList *list)
 	}
 
 	g_slist_free (list);
+}
+
+void
+free_all_shares (void)
+{
+	ensure_hashes ();
+	g_hash_table_foreach_remove (path_share_info_hash, remove_from_path_hash_cb, NULL);
+	g_hash_table_foreach_remove (share_name_share_info_hash, remove_from_share_name_hash_cb, NULL);
 }
 
 void
