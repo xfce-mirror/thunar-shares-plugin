@@ -1,3 +1,8 @@
+2008-08-07	Daniel Morales <daniel@daniel.com.uy>
+
+	* thunar-plugin/tsp-page.c: Keep the share-page sync if we have 2
+	or more dialogs displaying the same folder.
+
 2008-08-06	Daniel Morales <daniel@daniel.com.uy>
 
 	* data/thunar-page.xml:

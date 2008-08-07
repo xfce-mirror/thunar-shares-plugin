@@ -244,6 +244,10 @@ tsp_page_set_file (TspPage         *tsp_page,
 	g_return_if_fail (TSP_IS_PAGE (tsp_page));
 	g_return_if_fail (file == NULL || THUNARX_IS_FILE_INFO (file));
 
+	if (tsp_page->file == file){
+		return;
+	}
+
 	if (tsp_page->file != NULL)
 	{
 		g_signal_handlers_disconnect_by_func (tsp_page->file, tsp_page_file_changed, tsp_page);
@@ -254,7 +258,7 @@ tsp_page_set_file (TspPage         *tsp_page,
 
 	if (file != NULL)
 	{
-		g_object_ref (file);
+		g_object_ref (tsp_page->file);
 		tsp_page_file_changed (file, tsp_page);
 		g_signal_connect (file, "changed", G_CALLBACK (tsp_page_file_changed), tsp_page);
 	}
@@ -400,13 +404,20 @@ tsp_page_apply_clicked (GtkButton *button,
 		{
 			tsp_update_default (tsp_page, share_info);
 			shares_free_share_info (share_info);
+
+			/* Notify other pages of the changes made */
+			thunarx_file_info_changed (tsp_page->file);
 		}
 	} else {
 		/* Un-share the folder */
 		if (tsp_shares_unshare (local_file)){
 			tsp_update_default (tsp_page, NULL);
+
+			/* Notify other pages of the changes made */
+			thunarx_file_info_changed (tsp_page->file);
 		}
 	}
+
 	g_free (local_file);
 }
 
@@ -415,6 +426,7 @@ static void
 tsp_page_sensibility  (TspPage  *tsp_page,
                        gboolean  sens)
 {
+	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (tsp_page->cb_share_folder), sens);
 	gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->entry_share_name), sens);
 	gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->cb_share_write), sens);
 	gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->entry_share_comments), sens);

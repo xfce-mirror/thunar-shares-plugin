@@ -9,13 +9,8 @@ TODO for thunar-shares-plugin
   * We need to review the permissions hierarchy check:
     (libshares/libshares-util.c: tsp_check_perms)
 
-MILESONE 0.20
+MILESTONE 0.20
 =======================================================================
-
-  * If we open two or more properties dialogs of the same folder and
-    we change the share options there, those changes aren't reflected
-    in the other dialogs. Also when changing details from shares-admin
-    dialog.
 
   * Add error checks when we call shares_get_share_info_for_path().
 
