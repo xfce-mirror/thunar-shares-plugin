@@ -14,9 +14,8 @@ thunar_shares_plugin_la_SOURCES =				\
 	thunar-shares-plugin.c					\
 	tsp-page.c		tsp-page.h			\
 	tsp-admin.c		tsp-admin.h			\
-	tsp-admin-editor.c	tsp-admin-editor.h		\
-	tsp-page-provider.c	tsp-page-provider.h		\
-	tsp-prefs-provider.c	tsp-prefs-provider.h
+	tsp-provider.c		tsp-provider.h			\
+	tsp-admin-editor.c	tsp-admin-editor.h
 
 thunar_shares_plugin_la_CFLAGS =				\
 	$(PLATFORM_CFLAGS)					\

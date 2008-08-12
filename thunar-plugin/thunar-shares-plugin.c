@@ -25,11 +25,10 @@
 #include <glib/gi18n.h>
 #include <libshares/shares.h>
 
-#include "tsp-page-provider.h"
-#include "tsp-prefs-provider.h"
+#include "tsp-provider.h"
 #include "tsp-page.h"
 
-static GType type_list[2];
+static GType type_list[1];
 
 G_MODULE_EXPORT void
 thunar_extension_initialize (ThunarxProviderPlugin *plugin)
@@ -57,11 +56,9 @@ thunar_extension_initialize (ThunarxProviderPlugin *plugin)
 	/* register the types provided by this plugin */
 	tsp_page_register_type (plugin);
 	tsp_provider_register_type (plugin);
-	tsp_preferences_register_type (plugin);
 
 	/* setup the plugin provider type list */
 	type_list[0] = TSP_TYPE_PROVIDER;
-	type_list[1] = TSP_TYPE_PREFERENCES;
 }
 
 G_MODULE_EXPORT void

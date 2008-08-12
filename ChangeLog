@@ -1,3 +1,12 @@
+2008-08-12	Daniel Morales <daniel@daniel.com.uy>
+
+	* thunar-plugin/tsp-provider.[ch]: New files
+	* thunar-plugin/tsp-prefs-provider.[ch]:
+	* thunar-plugin/tsp-page-provider.[ch]: Removed files
+	* thunar-plugin/Makefile.am: Let's just use only one Provider that
+	implements PageProviderIface and PreferencesProviderIface. (both are
+	now on tsp-provider)
+
 2008-08-07	Daniel Morales <daniel@daniel.com.uy>
 
 	* thunar-plugin/tsp-page.c: Keep the share-page sync if we have 2
