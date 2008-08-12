@@ -1,5 +1,13 @@
 2008-08-12	Daniel Morales <daniel@daniel.com.uy>
 
+	* po/POTFILES.in: Updated files
+	* data/thunar-page.xml: Removed file
+	* data/Makefile.am: Removed XML file
+	* thunar-plugin/tsp-page.c: Drop GtkBuilder code. The UI isn't
+	complicated to code it.
+
+2008-08-12	Daniel Morales <daniel@daniel.com.uy>
+
 	* thunar-plugin/tsp-provider.[ch]: New files
 	* thunar-plugin/tsp-prefs-provider.[ch]:
 	* thunar-plugin/tsp-page-provider.[ch]: Removed files

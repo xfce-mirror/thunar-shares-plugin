@@ -1,10 +1,9 @@
 
 xmldir = $(datadir)/thunar-shares
 
-xml_DATA =  thunar-page.xml		\
-	    admin-dialog.xml		\
-	    admin-dialog-editor.xml	\
-	    dialogs.xml
+xml_DATA = admin-dialog.xml		\
+	   admin-dialog-editor.xml	\
+	   dialogs.xml
 
 EXTRA_DIST = $(xml_DATA)
 
