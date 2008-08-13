@@ -1,3 +1,11 @@
+2008-08-13	Daniel Morales <daniel@daniel.com.uy>
+
+	* data/admin-dialog-editor.xml: Removed file
+	* data/Makefile.am: Removed XML file
+	* thunar-plugin/tsp-admin-editor.[ch]:
+	* thunar-plugin/thunar-shares-plugin.c: Drop GtkBuilder code and
+	writes a GObject to handle the shares-editor.
+
 2008-08-12	Daniel Morales <daniel@daniel.com.uy>
 
 	* po/POTFILES.in: Updated files

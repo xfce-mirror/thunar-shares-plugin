@@ -94,7 +94,11 @@ static void
 admin_add_cb (GtkButton *button,
               TspAdmin  *admin)
 {
-	tsp_admin_editor_dialog_show (GTK_WINDOW (admin->dialog), NULL, admin);
+	GtkWidget *dialog;
+	
+	dialog = tsp_admin_editor_new (GTK_WINDOW (admin->dialog), admin);
+
+	gtk_widget_show (dialog);
 }
 
 /* Editing a shared folder */
@@ -103,17 +107,19 @@ admin_edit_cb (GtkButton *button,
                TspAdmin  *admin)
 {
 	GtkTreeSelection *selection;
+	GtkWidget        *dialog;
 	GtkTreeModel     *model;
 	GtkTreeIter       iter;
 	gchar            *path;
-
+	
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (admin->share_list));
 	if (gtk_tree_selection_get_selected (selection, &model, &iter))
 	{
 		gtk_tree_model_get (model, &iter, TSP_ADMIN_COL_PATH, &path, -1);
 
-		/* Run the editor dialog */
-		tsp_admin_editor_dialog_show (GTK_WINDOW (admin->dialog), path, admin);
+		dialog = tsp_admin_editor_new_with_path (GTK_WINDOW (admin->dialog), admin, path);
+
+		gtk_widget_show (dialog);
 
 		g_free (path);
 	}

@@ -26,12 +26,9 @@
 #include <thunar-vfs/thunar-vfs.h>
 
 #include <libshares/shares.h>
-#include <libshares/libshares-xml.h>
 #include <libshares/libshares-util.h>
 
 #include "tsp-page.h"
-
-#define XML_FILE "thunar-page.xml"
 
 /* Property identifiers */
 enum

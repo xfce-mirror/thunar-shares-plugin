@@ -22,14 +22,27 @@
 #ifndef __TSP_ADMIN_EDITOR_H__
 #define __TSP_ADMIN_EDITOR_H__
 
-#include <gtk/gtkwindow.h>
+#include <thunarx/thunarx.h>
 
 G_BEGIN_DECLS;
 
-void tsp_admin_editor_dialog_show (GtkWindow   *parent,
-                                   const gchar *path,
-                                   gpointer     admin);
+typedef struct _TspAdminEditorClass       TspAdminEditorClass;
+typedef struct _TspAdminEditor            TspAdminEditor;
+
+#define TSP_ADMIN_TYPE_EDITOR             (tsp_admin_editor_get_type ())
+#define TSP_ADMIN_EDITOR(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), TSP_ADMIN_TYPE_EDITOR, TspAdminEditor))
+#define TSP_ADMIN_EDITOR_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), TSP_ADMIN_TYPE_EDITOR, TspAdminEditorClass))
+#define TSP_ADMIN_IS_EDITOR(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), TSP_ADMIN_TYPE_EDITOR))
+#define TSP_ADMIN_IS_EDITOR_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), TSP_ADMIN_TYPE_EDITOR))
+#define TSP_ADMIN_EDITOR_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), TSP_ADMIN_TYPE_EDITOR, TspAdminEditorClass))
+
+GType   tsp_admin_editor_get_type         (void) G_GNUC_CONST G_GNUC_INTERNAL;
+void    tsp_admin_editor_register_type    (ThunarxProviderPlugin *plugin) G_GNUC_INTERNAL;
+
+GtkWidget *tsp_admin_editor_new           (GtkWindow *parent, gpointer data);
+
+GtkWidget *tsp_admin_editor_new_with_path (GtkWindow  *parent, gpointer data, const char *path);
 
 G_END_DECLS;
 
-#endif /* __TSP_ADMIN_EDITOR_H__ */
+#endif /* !__TSP_ADMIN_EDITOR_H__ */
