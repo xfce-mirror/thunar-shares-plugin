@@ -64,8 +64,6 @@ struct _TspAdminEditor
 
   /* Current share name */
   gchar      *old_name;
-
-  gpointer    admin;
 };
 
 THUNARX_DEFINE_TYPE (TspAdminEditor, tsp_admin_editor, GTK_TYPE_DIALOG);
@@ -208,10 +206,16 @@ tsp_admin_editor_save_changes (TspAdminEditor *editor)
 
   if (share_info)
   {
+    GtkWindow *manager;
+
     shares_free_share_info (share_info);
 
     /* Reload share list */
-    tsp_admin_load_shares (editor->admin);
+    //tsp_admin_manager_reload_shares (editor->manager);
+    manager = gtk_window_get_transient_for (GTK_WINDOW (editor));
+    
+    if (manager != NULL && TSP_ADMIN_IS_MANAGER (manager))
+      tsp_admin_manager_reload_shares (TSP_ADMIN_MANAGER (manager));
 
     return TRUE;
   }
@@ -253,28 +257,23 @@ tsp_admin_editor_set_path (TspAdminEditor *editor,
 }
 
 GtkWidget *
-tsp_admin_editor_new (GtkWindow *parent,
-                      gpointer   data)
+tsp_admin_editor_new (TspAdminManager *manager)
 {
   GtkWidget *dialog;
 
   dialog = g_object_new (TSP_ADMIN_TYPE_EDITOR, NULL);
 
-  if (parent != NULL)
-    gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (parent));
-
-  if (data != NULL)
-    TSP_ADMIN_EDITOR(dialog)->admin = data;
+  if (manager != NULL)
+    gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (manager));
 
   return dialog;
 }
 
 GtkWidget *
-tsp_admin_editor_new_with_path (GtkWindow  *parent,
-                                gpointer    data,
-                                const char *path)
+tsp_admin_editor_new_with_path (TspAdminManager *manager,
+                                const char      *path)
 {
-  GtkWidget *dialog = tsp_admin_editor_new (parent, data);
+  GtkWidget *dialog = tsp_admin_editor_new (manager);
 
   if (path != NULL)
     tsp_admin_editor_set_path (TSP_ADMIN_EDITOR (dialog), path);

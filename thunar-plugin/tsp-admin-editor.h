@@ -23,6 +23,7 @@
 #define __TSP_ADMIN_EDITOR_H__
 
 #include <thunarx/thunarx.h>
+#include "tsp-admin.h"
 
 G_BEGIN_DECLS;
 
@@ -39,9 +40,9 @@ typedef struct _TspAdminEditor            TspAdminEditor;
 GType   tsp_admin_editor_get_type         (void) G_GNUC_CONST G_GNUC_INTERNAL;
 void    tsp_admin_editor_register_type    (ThunarxProviderPlugin *plugin) G_GNUC_INTERNAL;
 
-GtkWidget *tsp_admin_editor_new           (GtkWindow *parent, gpointer data);
+GtkWidget *tsp_admin_editor_new           (TspAdminManager *manager);
 
-GtkWidget *tsp_admin_editor_new_with_path (GtkWindow  *parent, gpointer data, const char *path);
+GtkWidget *tsp_admin_editor_new_with_path (TspAdminManager *manager, const char *path);
 
 G_END_DECLS;
 

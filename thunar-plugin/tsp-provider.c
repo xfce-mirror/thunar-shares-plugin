@@ -137,5 +137,9 @@ tsp_provider_get_actions (ThunarxPreferencesProvider *provider,
 static void
 tsp_provider_prefs_activated (GtkWindow *window)
 {
-	tsp_admin_dialog_show (window);
+	GtkWidget *dialog;
+	
+	dialog = tsp_admin_manager_new (window);
+	
+	gtk_widget_show (dialog);
 }

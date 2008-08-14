@@ -22,13 +22,28 @@
 #ifndef __TSP_ADMIN_H__
 #define __TSP_ADMIN_H__
 
-#include <gtk/gtkwindow.h>
+#include <thunarx/thunarx.h>
 
 G_BEGIN_DECLS;
 
-void tsp_admin_dialog_show (GtkWindow *parent);
-void tsp_admin_load_shares (gpointer   data);
+typedef struct _TspAdminManagerClass       TspAdminManagerClass;
+typedef struct _TspAdminManager            TspAdminManager;
+
+#define TSP_ADMIN_TYPE_MANAGER             (tsp_admin_manager_get_type ())
+#define TSP_ADMIN_MANAGER(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), TSP_ADMIN_TYPE_MANAGER, TspAdminManager))
+#define TSP_ADMIN_MANAGER_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), TSP_ADMIN_TYPE_MANAGER, TspAdminManagerClass))
+#define TSP_ADMIN_IS_MANAGER(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), TSP_ADMIN_TYPE_MANAGER))
+#define TSP_ADMIN_IS_MANAGER_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), TSP_ADMIN_TYPE_MANAGER))
+#define TSP_ADMIN_MANAGER_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), TSP_ADMIN_TYPE_MANAGER, TspAdminManagerClass))
+
+GType   tsp_admin_manager_get_type         (void) G_GNUC_CONST G_GNUC_INTERNAL;
+void    tsp_admin_manager_register_type    (ThunarxProviderPlugin *plugin) G_GNUC_INTERNAL;
+
+GtkWidget *tsp_admin_manager_new           (GtkWindow *parent);
+
+void    tsp_admin_manager_reload_shares    (TspAdminManager *manager);
+
 
 G_END_DECLS;
 
-#endif /* __TSP_ADMIN_H__ */
+#endif /* !__TSP_ADMIN_H__ */

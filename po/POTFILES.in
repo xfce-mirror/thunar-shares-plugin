@@ -9,6 +9,4 @@ thunar-plugin/tsp-admin.c
 thunar-plugin/tsp-admin-editor.c
 thunar-plugin/tsp-page.c
 thunar-plugin/tsp-provider.c
-[type: gettext/glade]data/admin-dialog-editor.xml
-[type: gettext/glade]data/admin-dialog.xml
 [type: gettext/glade]data/dialogs.xml

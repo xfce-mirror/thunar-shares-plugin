@@ -27,6 +27,7 @@
 
 #include "tsp-admin-editor.h"
 #include "tsp-provider.h"
+#include "tsp-admin.h"
 #include "tsp-page.h"
 
 static GType type_list[1];
@@ -57,6 +58,7 @@ thunar_extension_initialize (ThunarxProviderPlugin *plugin)
 	/* register the types provided by this plugin */
 	tsp_page_register_type (plugin);
 	tsp_admin_editor_register_type (plugin);
+	tsp_admin_manager_register_type (plugin);
 	tsp_provider_register_type (plugin);
 
 	/* setup the plugin provider type list */
