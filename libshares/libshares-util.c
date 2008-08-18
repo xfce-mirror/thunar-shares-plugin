@@ -29,7 +29,6 @@
 #include <thunarx/thunarx.h>
 
 #include "libshares-util.h"
-#include "libshares-xml.h"
 #include "shares.h"
 
 static gboolean tsp_ask_perms   (gboolean     need_r,
