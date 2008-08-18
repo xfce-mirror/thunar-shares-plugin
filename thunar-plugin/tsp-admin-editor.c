@@ -211,7 +211,6 @@ tsp_admin_editor_save_changes (TspAdminEditor *editor)
     shares_free_share_info (share_info);
 
     /* Reload share list */
-    //tsp_admin_manager_reload_shares (editor->manager);
     manager = gtk_window_get_transient_for (GTK_WINDOW (editor));
     
     if (manager != NULL && TSP_ADMIN_IS_MANAGER (manager))

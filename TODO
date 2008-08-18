@@ -15,6 +15,3 @@ MILESTONE 0.20
   * Add error checks when we call shares_get_share_info_for_path().
 
   * 12 chars share-name check should warn the user, isn't a error.
-
-  * Rewrite the admin and editor dialog to a Gobject like code. And drop
-  the GtkBuilder XML dependence.

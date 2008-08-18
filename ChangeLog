@@ -1,3 +1,11 @@
+2008-08-18	Daniel Morales <daniel@daniel.com.uy>
+
+	* data/*:
+	* libshares/libshares-xml.[ch]:
+	* libshares/libshares-paths.[ch]: Removed unnecessary files.
+	* libshares/libshares-util.[ch]: Drop all GtkBuilder dependences,
+	and some code stylish changes :)
+
 2008-08-14	Daniel Morales <daniel@daniel.com.uy>
 
 	* data/Makefile.am:

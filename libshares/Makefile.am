@@ -11,9 +11,7 @@ noinst_LTLIBRARIES = libshares.la
 
 libshares_la_SOURCES =					\
 	shares.c		shares.h		\
-	libshares-xml.c		libshares-xml.h		\
-	libshares-util.c	libshares-util.h	\
-	libshares-paths.c	libshares-paths.h
+	libshares-util.c	libshares-util.h
 
 libshares_la_CFLAGS =					\
 	$(PLATFORM_CFLAGS)				\

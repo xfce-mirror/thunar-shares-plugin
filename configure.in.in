@@ -122,7 +122,6 @@ AC_SUBST(PLATFORM_LDFLAGS)
 
 AC_OUTPUT([
 	Makefile
-	data/Makefile
 	po/Makefile.in
 	libshares/Makefile
 	thunar-plugin/Makefile

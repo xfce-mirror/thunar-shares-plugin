@@ -1,5 +1,5 @@
 
-SUBDIRS = data libshares thunar-plugin po
+SUBDIRS = libshares thunar-plugin po
 
 INTLTOOL =				\
 	intltool-extract.in		\

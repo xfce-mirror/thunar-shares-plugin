@@ -37,6 +37,8 @@ gboolean tsp_str_equal      (const char      *txt1,
 void     tsp_show_error     (const char      *text,
                              const char      *secondary);
 
+gboolean tsp_ask_user       (const char      *text);
+
 gboolean tsp_shares_unshare (const gchar     *path);
 
 ShareInfo *tsp_shares_share (const gchar     *file_local,
