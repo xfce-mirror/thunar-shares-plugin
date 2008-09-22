@@ -69,7 +69,7 @@ G_MODULE_EXPORT void
 thunar_extension_shutdown (void)
 {
 #ifdef G_ENABLE_DEBUG
-	g_message ("Shutting down thunar-archive-plugin extension");
+	g_message ("Shutting down thunar-shares-plugin extension");
 #endif
 
 	/* Free all shares */

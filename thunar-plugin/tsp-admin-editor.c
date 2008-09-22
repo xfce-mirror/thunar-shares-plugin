@@ -228,6 +228,7 @@ tsp_admin_editor_set_path (TspAdminEditor *editor,
 {
   ShareInfo *share_info;
   gboolean   result;
+  GError    *error = NULL;
 
   /* Dialog changes */
   gtk_widget_hide (editor->share_folder);
@@ -235,21 +236,24 @@ tsp_admin_editor_set_path (TspAdminEditor *editor,
   gtk_window_set_title (GTK_WINDOW (editor), _("Thunar - Edit share"));
 
   /* Load share info */
-  result = shares_get_share_info_for_path (path, &share_info, NULL);
+  result = shares_get_share_info_for_path (path, &share_info, &error);
+
+  /* Check error */
+  if (!result)
+  {
+    tsp_show_error (_("There was an error while listing shares"), error->message);
+    g_error_free (error);
+  }
+
   if (share_info)
   {
     editor->old_name = g_strdup (share_info->share_name);
 
-    gtk_file_chooser_set_current_folder (
-                   GTK_FILE_CHOOSER (editor->share_folder), path);
-    gtk_toggle_button_set_active (
-                   GTK_TOGGLE_BUTTON (editor->share_write), share_info->is_writable);
-    gtk_toggle_button_set_active (
-                   GTK_TOGGLE_BUTTON (editor->share_guest), share_info->guest_ok);
-    gtk_entry_set_text (
-                   GTK_ENTRY (editor->share_name), share_info->share_name);
-    gtk_entry_set_text (
-                   GTK_ENTRY (editor->share_comments), share_info->comment);
+    gtk_file_chooser_set_current_folder (GTK_FILE_CHOOSER (editor->share_folder), path);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (editor->share_write), share_info->is_writable);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (editor->share_guest), share_info->guest_ok);
+    gtk_entry_set_text (GTK_ENTRY (editor->share_name), share_info->share_name);
+    gtk_entry_set_text (GTK_ENTRY (editor->share_comments), share_info->comment);
 
     shares_free_share_info (share_info);
   }

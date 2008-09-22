@@ -63,8 +63,8 @@ dnl -------------------------------------------------------
 dnl Debugging support
 dnl -------------------------------------------------------
 AC_ARG_ENABLE([debug],
-AC_HELP_STRING([--enable-debug=@<:@no/minimum/yes/full@:>@], [Turn on debugging @<:@default=tap_debug_default@:>@]),
-  [], [enable_debug=tap_debug_default])
+AC_HELP_STRING([--enable-debug=@<:@no/minimum/yes/full@:>@], [Turn on debugging @<:@default=tsp_debug_default@:>@]),
+  [], [enable_debug=tsp_debug_default])
 AC_MSG_CHECKING([whether to enable debugging support])
 if test x"$enable_debug" = x"full" -o x"$enable_debug" = x"yes"; then
   dnl Check whether the compiler accepts the -fno-strict-aliasing

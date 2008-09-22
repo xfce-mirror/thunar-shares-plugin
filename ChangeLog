@@ -1,5 +1,17 @@
 2008-08-18	Daniel Morales <daniel@daniel.com.uy>
 
+	* configure.in.in: Correct debug checks. We don't want full by
+	default.
+	* thunar-plugin/tsp-provider.c: Only show the Share tab on file
+	properties  when the file schema is "file://".
+	* thunar-plugin/tsp-page.c:
+	* thunar-plugin/tsp-admin.c:
+	* thunar-plugin/tsp-admin-editor.c:
+	* libshares/libshares-util.c: Add errors checks.
+	* Better code-tab on edited files.
+
+2008-08-18	Daniel Morales <daniel@daniel.com.uy>
+
 	* data/*:
 	* libshares/libshares-xml.[ch]:
 	* libshares/libshares-paths.[ch]: Removed unnecessary files.

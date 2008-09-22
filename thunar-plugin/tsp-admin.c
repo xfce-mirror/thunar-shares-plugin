@@ -314,9 +314,18 @@ tsp_admin_manager_foreach (gpointer  data,
 void
 tsp_admin_manager_reload_shares (TspAdminManager *manager)
 {
-  GSList *info_list = NULL;
+  gboolean result;
+  GSList  *info_list = NULL;
+  GError  *error = NULL;
 
-  shares_get_share_info_list (&info_list, NULL);
+  result = shares_get_share_info_list (&info_list, &error);
+
+  /* Check error */
+  if (!result)
+  {
+    tsp_show_error (_("There was an error while listing shares"), error->message);
+    g_error_free (error);
+  }
 
   if (info_list)
   {

@@ -3,6 +3,7 @@ TODO for thunar-shares-plugin
 
   * Add emblems to shared folders (Thunar doesn't allow to add/remove
     emblembs from plugins yet).
+    - Maybe we can use tdb: ${HOME}/.cache/Thunar/metafile.tdb
 
   * Maybe some help button at shares-admin dialog.
 
@@ -11,7 +12,5 @@ TODO for thunar-shares-plugin
 
 MILESTONE 0.20
 =======================================================================
-
-  * Add error checks when we call shares_get_share_info_for_path().
 
   * 12 chars share-name check should warn the user, isn't a error.

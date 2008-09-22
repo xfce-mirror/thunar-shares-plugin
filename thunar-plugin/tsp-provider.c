@@ -46,12 +46,12 @@ static void   tsp_provider_prefs_activated     (GtkWindow                       
 
 struct _TspProviderClass
 {
-	GObjectClass  __parent__;
+  GObjectClass  __parent__;
 };
 
 struct _TspProvider
 {
-	GObject       __parent__;
+  GObject       __parent__;
 };
 
 THUNARX_DEFINE_TYPE_WITH_CODE (TspProvider,
@@ -65,81 +65,91 @@ THUNARX_DEFINE_TYPE_WITH_CODE (TspProvider,
 static void
 tsp_provider_class_init (TspProviderClass *klass)
 {
-	GObjectClass *gobject_class;
+  GObjectClass *gobject_class;
 
-	gobject_class = G_OBJECT_CLASS (klass);
-	gobject_class->finalize = tsp_provider_finalize;
+  gobject_class = G_OBJECT_CLASS (klass);
+  gobject_class->finalize = tsp_provider_finalize;
 }
 
 static void
 tsp_provider_init (TspProvider *tsp_provider)
 {
-	/* Bleh..! */
+  /* Bleh..! */
 }
 
 static void
 tsp_provider_finalize (GObject *object)
 {
-	/*TspProvider *tsp_provider = TSP_PROVIDER (object);*/
- 
-	(*G_OBJECT_CLASS (tsp_provider_parent_class)->finalize) (object);
+  /*TspProvider *tsp_provider = TSP_PROVIDER (object);*/
+
+  (*G_OBJECT_CLASS (tsp_provider_parent_class)->finalize) (object);
 }
 
 static void
 tsp_provider_page_provider_init (ThunarxPropertyPageProviderIface *iface)
 {
-	iface->get_pages = tsp_provider_get_pages;
+  iface->get_pages = tsp_provider_get_pages;
 }
 
 static void
 tsp_provider_prefs_provider_init (ThunarxPreferencesProviderIface *iface)
 {
-	 iface->get_actions = tsp_provider_get_actions;
+  iface->get_actions = tsp_provider_get_actions;
 }
 
 static GList*
 tsp_provider_get_pages (ThunarxPropertyPageProvider *property_page_provider,
                         GList                       *files)
 {
-	if (g_list_length (files) != 1){
-		return NULL;
-	} else if (!thunarx_file_info_is_directory (THUNARX_FILE_INFO (files->data))){
-		return NULL;
-	}
+  gchar *file_info;
+  GList *pages = NULL;
 
-	return g_list_append (NULL, (gpointer)tsp_page_new (files->data));
+  if (g_list_length (files) != 1){
+    return NULL;
+  } else if (!thunarx_file_info_is_directory (THUNARX_FILE_INFO (files->data))){
+    return NULL;
+  }
+
+  file_info = thunarx_file_info_get_uri_scheme (THUNARX_FILE_INFO (files->data));
+
+  if (g_str_equal ("file", file_info))
+  {
+    pages = g_list_append (NULL, (gpointer)tsp_page_new (files->data));
+  }
+
+  g_free (file_info);
+
+  return pages;
 }
 
 static GList*
 tsp_provider_get_actions (ThunarxPreferencesProvider *provider,
                           GtkWidget               *window)
 {
-	GtkAction *action;
-	GClosure  *closure;
+  GtkAction *action;
+  GClosure  *closure;
 
-	action = gtk_action_new ("Tsp::thunar-shares-admin",
-                            _("Manage shared folders..."),
-                            _("Add, edit and remove shared folders"),
-                            NULL);
+  action = gtk_action_new ("Tsp::thunar-shares-admin",
+                           _("Manage shared folders..."),
+                           _("Add, edit and remove shared folders"),
+                           NULL);
 
-	g_object_set (G_OBJECT (action),
-                  "icon-name", "gnome-fs-share",
-                  NULL);
+  g_object_set (G_OBJECT (action), "icon-name", "gnome-fs-share", NULL);
 
-	closure = g_cclosure_new_object_swap (
-                G_CALLBACK (tsp_provider_prefs_activated), G_OBJECT (window));
+  closure = g_cclosure_new_object_swap (
+              G_CALLBACK (tsp_provider_prefs_activated), G_OBJECT (window));
 
-	g_signal_connect_closure (G_OBJECT (action), "activate", closure, TRUE);
+  g_signal_connect_closure (G_OBJECT (action), "activate", closure, TRUE);
 
-	return g_list_prepend (NULL, action);
+  return g_list_prepend (NULL, action);
 }
 
 static void
 tsp_provider_prefs_activated (GtkWindow *window)
 {
-	GtkWidget *dialog;
-	
-	dialog = tsp_admin_manager_new (window);
-	
-	gtk_widget_show (dialog);
+  GtkWidget *dialog;
+
+  dialog = tsp_admin_manager_new (window);
+
+  gtk_widget_show (dialog);
 }

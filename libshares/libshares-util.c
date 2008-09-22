@@ -73,17 +73,27 @@ tsp_shares_unshare (const gchar *path)
 {
   gboolean ret = FALSE;
   gboolean is_shared;
-  GError  *err = NULL;
+  gboolean result;
+  GError  *error = NULL;
 
   /* Check if this path is shared */
-  shares_get_path_is_shared (path, &is_shared, NULL);
+  result = shares_get_path_is_shared (path, &is_shared, &error);
+
+  /* Check error */
+  if (!result)
+  {
+    tsp_show_error (NULL, error->message);
+    g_error_free (error);
+    error = NULL;
+  }
+
   if (is_shared)
   {
     /* Un-share it */
-    ret = shares_modify_share (path, NULL, &err);
+    ret = shares_modify_share (path, NULL, &error);
     if (!ret){
-      tsp_show_error (NULL, err->message);
-      g_error_free (err);
+      tsp_show_error (NULL, error->message);
+      g_error_free (error);
     } else {
       ret = TRUE;
     }
