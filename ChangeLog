@@ -7,7 +7,8 @@
 	* thunar-plugin/tsp-page.c:
 	* thunar-plugin/tsp-admin.c:
 	* thunar-plugin/tsp-admin-editor.c:
-	* libshares/libshares-util.c: Add errors checks.
+	* libshares/libshares-util.c: Add errors checks, and check if guest_ok
+	param is enabled in Samba config.
 	* Better code-tab on edited files.
 
 2008-08-18	Daniel Morales <daniel@daniel.com.uy>

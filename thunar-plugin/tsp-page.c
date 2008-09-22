@@ -129,6 +129,7 @@ tsp_page_init (TspPage *page)
   GtkWidget *vbox1;
   GtkWidget *hbox1;
   GtkWidget *widget;
+  gboolean   guest_ok = FALSE;
 
   /* Main container */
   vbox1 = gtk_vbox_new (FALSE, 0);
@@ -215,6 +216,12 @@ tsp_page_init (TspPage *page)
   gtk_container_add (GTK_CONTAINER (page), vbox1);
   gtk_container_set_border_width (GTK_CONTAINER (page), 5);
   gtk_widget_show_all (vbox1);
+
+  /* Check if guest access is supported */
+  shares_supports_guest_ok (&guest_ok, NULL);
+  if (!guest_ok){
+    gtk_widget_hide (page->cb_share_guest);
+  }
 }
 
 static void

@@ -87,6 +87,7 @@ tsp_admin_editor_init (TspAdminEditor *editor)
   GtkWidget *vbox;
   GtkWidget *table;
   GtkWidget *widget;
+  gboolean   guest_ok = FALSE;
 
   vbox = GTK_WIDGET (GTK_DIALOG (editor)->vbox);
 
@@ -144,6 +145,12 @@ tsp_admin_editor_init (TspAdminEditor *editor)
 
   /* Show all */
   gtk_widget_show_all (table);
+
+  /* Check if guest access is supported */
+  shares_supports_guest_ok (&guest_ok, NULL);
+  if (!guest_ok){
+    gtk_widget_hide (editor->share_guest);
+  }
 }
 
 static void
