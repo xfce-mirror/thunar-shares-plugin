@@ -39,6 +39,8 @@ void     tsp_show_error     (const char      *text,
 
 gboolean tsp_ask_user       (const char      *text);
 
+gboolean tsp_is_shareable   (ThunarxFileInfo *info);
+
 gboolean tsp_shares_unshare (const gchar     *path);
 
 ShareInfo *tsp_shares_share (const gchar     *file_local,

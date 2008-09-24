@@ -1,4 +1,10 @@
-2008-08-18	Daniel Morales <daniel@daniel.com.uy>
+2008-09-22	Daniel Morales <daniel@daniel.com.uy>
+
+	* libshares/libshares-util.[ch]:
+	* thunar-plugin/tsp-provider.c: Add 'Unshare' menu provider to
+	the shared folders.
+
+2008-09-22	Daniel Morales <daniel@daniel.com.uy>
 
 	* configure.in.in: Correct debug checks. We don't want full by
 	default.

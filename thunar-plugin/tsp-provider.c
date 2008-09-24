@@ -25,24 +25,35 @@
 #include <thunarx/thunarx.h>
 #include <thunar-vfs/thunar-vfs.h>
 
+#include <libshares/shares.h>
+#include <libshares/libshares-util.h>
+
 #include "tsp-provider.h"
 #include "tsp-page.h"
 #include "tsp-admin.h"
 
-static void   tsp_provider_class_init          (TspProviderClass                 *klass);
-static void   tsp_provider_init                (TspProvider                      *tsp_provider);
-static void   tsp_provider_finalize            (GObject                          *object);
+static void     tsp_provider_class_init          (TspProviderClass                 *klass);
+static void     tsp_provider_init                (TspProvider                      *tsp_provider);
+static void     tsp_provider_finalize            (GObject                          *object);
 
-static void   tsp_provider_page_provider_init  (ThunarxPropertyPageProviderIface *iface);
-static void   tsp_provider_prefs_provider_init (ThunarxPreferencesProviderIface  *iface);
+static void     tsp_provider_page_provider_init  (ThunarxPropertyPageProviderIface *iface);
+static void     tsp_provider_prefs_provider_init (ThunarxPreferencesProviderIface  *iface);
+static void     tsp_provider_menu_provider_init  (ThunarxMenuProviderIface         *iface);
 
-static GList *tsp_provider_get_pages           (ThunarxPropertyPageProvider      *provider,
-                                                GList                            *files);
+static GList   *tsp_provider_get_pages           (ThunarxPropertyPageProvider      *provider,
+                                                  GList                            *files);
 
-static GList *tsp_provider_get_actions         (ThunarxPreferencesProvider       *provider,
-                                                GtkWidget                        *window);
+static GList   *tsp_provider_get_actions         (ThunarxPreferencesProvider       *provider,
+                                                  GtkWidget                        *window);
 
-static void   tsp_provider_prefs_activated     (GtkWindow                        *window);
+static GList   *tsp_provider_get_file_actions    (ThunarxMenuProvider              *provider,
+                                                  GtkWidget                        *window,
+                                                  GList                            *files);
+
+static void     tsp_provider_unshare_activated   (GtkAction                        *action,
+                                                  GtkWindow                        *window);
+
+static void     tsp_provider_prefs_activated     (GtkWindow                        *window);
 
 struct _TspProviderClass
 {
@@ -54,18 +65,25 @@ struct _TspProvider
   GObject       __parent__;
 };
 
+static GQuark tsp_action_folders_quark;
+
 THUNARX_DEFINE_TYPE_WITH_CODE (TspProvider,
                                tsp_provider,
                                G_TYPE_OBJECT,
                                THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_PROPERTY_PAGE_PROVIDER,
                                                             tsp_provider_page_provider_init)
                                THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_PREFERENCES_PROVIDER,
-                                                            tsp_provider_prefs_provider_init));
+                                                            tsp_provider_prefs_provider_init)
+                               THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_MENU_PROVIDER,
+                                                            tsp_provider_menu_provider_init));
 
 static void
 tsp_provider_class_init (TspProviderClass *klass)
 {
   GObjectClass *gobject_class;
+
+  /* Quark for folders and actions */
+  tsp_action_folders_quark = g_quark_from_string ("tsp-action-folders");
 
   gobject_class = G_OBJECT_CLASS (klass);
   gobject_class->finalize = tsp_provider_finalize;
@@ -97,29 +115,23 @@ tsp_provider_prefs_provider_init (ThunarxPreferencesProviderIface *iface)
   iface->get_actions = tsp_provider_get_actions;
 }
 
+static void
+tsp_provider_menu_provider_init (ThunarxMenuProviderIface *iface)
+{
+  iface->get_file_actions = tsp_provider_get_file_actions;
+}
+
 static GList*
 tsp_provider_get_pages (ThunarxPropertyPageProvider *property_page_provider,
                         GList                       *files)
 {
-  gchar *file_info;
-  GList *pages = NULL;
-
   if (g_list_length (files) != 1){
     return NULL;
-  } else if (!thunarx_file_info_is_directory (THUNARX_FILE_INFO (files->data))){
+  } else if (!tsp_is_shareable (THUNARX_FILE_INFO (files->data))){
     return NULL;
   }
 
-  file_info = thunarx_file_info_get_uri_scheme (THUNARX_FILE_INFO (files->data));
-
-  if (g_str_equal ("file", file_info))
-  {
-    pages = g_list_append (NULL, (gpointer)tsp_page_new (files->data));
-  }
-
-  g_free (file_info);
-
-  return pages;
+  return g_list_append (NULL, (gpointer)tsp_page_new (files->data));
 }
 
 static GList*
@@ -142,6 +154,68 @@ tsp_provider_get_actions (ThunarxPreferencesProvider *provider,
   g_signal_connect_closure (G_OBJECT (action), "activate", closure, TRUE);
 
   return g_list_prepend (NULL, action);
+}
+
+static GList*
+tsp_provider_get_file_actions (ThunarxMenuProvider *provider,
+                               GtkWidget           *window,
+                               GList               *files)
+{
+  GtkAction *action;
+  gboolean   is_shared;
+  GClosure  *closure;
+  gchar     *folder_path;
+
+  if (g_list_length (files) != 1){
+    return NULL;
+  } else if (!tsp_is_shareable (THUNARX_FILE_INFO (files->data))){
+    return NULL;
+  }
+
+  folder_path = tsp_get_local_file (THUNARX_FILE_INFO (files->data));
+
+  if (G_LIKELY (folder_path == NULL)){
+    return NULL;
+  }
+
+  shares_get_path_is_shared (folder_path, &is_shared, NULL);
+
+  if (!is_shared)
+  {
+    g_free (folder_path);
+    return NULL;
+  }
+
+  action = gtk_action_new ("Tsp::thunar-shares-unshare",
+                           _("Unshare..."),
+                           _("Unshare the folder"),
+                           NULL);
+
+  g_object_set (G_OBJECT (action), "icon-name", "gnome-fs-share", NULL);
+  
+  g_object_set_qdata_full (G_OBJECT (action), tsp_action_folders_quark,
+                           g_strdup (folder_path), (GDestroyNotify) g_free);
+
+  closure = g_cclosure_new_object (G_CALLBACK (tsp_provider_unshare_activated), G_OBJECT (window));
+  g_signal_connect_closure (G_OBJECT (action), "activate", closure, TRUE);
+
+  g_free (folder_path);
+
+  return g_list_prepend (NULL, action);
+}
+
+static void
+tsp_provider_unshare_activated (GtkAction  *action,
+                                GtkWindow  *window)
+{
+  gchar *folder;
+
+  folder = g_object_get_qdata (G_OBJECT (action), tsp_action_folders_quark);
+
+  if (folder == NULL)
+    return;
+
+  tsp_shares_unshare (folder);
 }
 
 static void

@@ -227,6 +227,25 @@ tsp_ask_user (const char *text)
   return result;
 }
 
+gboolean
+tsp_is_shareable (ThunarxFileInfo *info)
+{
+  gboolean retval;
+  gchar   *scheme;
+
+  if (!thunarx_file_info_is_directory (info)){
+    return FALSE;
+  }
+
+  scheme = thunarx_file_info_get_uri_scheme (info);
+
+  retval = g_str_equal ("file", scheme);
+
+  g_free (scheme);
+
+  return retval;
+}
+
 /* Asks to the user if we can change the permissions of the folder */
 static gboolean
 tsp_ask_perms (gboolean  need_r,
