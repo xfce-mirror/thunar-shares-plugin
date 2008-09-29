@@ -202,12 +202,12 @@ tsp_admin_editor_save_changes (TspAdminEditor *editor)
   is_writable = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (editor->share_write));
   guests_ok = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (editor->share_guest));
 
-  share_info = tsp_shares_share (local_file,
-                                 name,
-                                 comments,
-                                 is_writable,
-                                 guests_ok,
-                                 editor->old_name);
+  share_info = libshares_shares_share (local_file,
+                                       name,
+                                       comments,
+                                       is_writable,
+                                       guests_ok,
+                                       editor->old_name);
 
   g_free (local_file);
 
@@ -248,7 +248,7 @@ tsp_admin_editor_set_path (TspAdminEditor *editor,
   /* Check error */
   if (!result)
   {
-    tsp_show_error (_("There was an error while listing shares"), error->message);
+    libshares_show_error (_("There was an error while listing shares"), error->message);
     g_error_free (error);
   }
 

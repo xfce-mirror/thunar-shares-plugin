@@ -262,7 +262,7 @@ tsp_admin_manager_remove_cb (GtkButton       *button,
     gtk_tree_model_get (model, &iter, TSP_MANAGER_COL_PATH, &path, -1);
 
     /* Remove from shares */
-    if (tsp_shares_unshare (path)){
+    if (libshares_shares_unshare (path)){
       gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
     }
 
@@ -323,7 +323,7 @@ tsp_admin_manager_reload_shares (TspAdminManager *manager)
   /* Check error */
   if (!result)
   {
-    tsp_show_error (_("There was an error while listing shares"), error->message);
+    libshares_show_error (_("There was an error while listing shares"), error->message);
     g_error_free (error);
   }
 

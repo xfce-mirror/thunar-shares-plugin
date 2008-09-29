@@ -127,7 +127,7 @@ tsp_provider_get_pages (ThunarxPropertyPageProvider *property_page_provider,
 {
   if (g_list_length (files) != 1){
     return NULL;
-  } else if (!tsp_is_shareable (THUNARX_FILE_INFO (files->data))){
+  } else if (!libshares_is_shareable (THUNARX_FILE_INFO (files->data))){
     return NULL;
   }
 
@@ -168,11 +168,11 @@ tsp_provider_get_file_actions (ThunarxMenuProvider *provider,
 
   if (g_list_length (files) != 1){
     return NULL;
-  } else if (!tsp_is_shareable (THUNARX_FILE_INFO (files->data))){
+  } else if (!libshares_is_shareable (THUNARX_FILE_INFO (files->data))){
     return NULL;
   }
 
-  folder_path = tsp_get_local_file (THUNARX_FILE_INFO (files->data));
+  folder_path = libshares_get_local_file (THUNARX_FILE_INFO (files->data));
 
   if (G_LIKELY (folder_path == NULL)){
     return NULL;
@@ -215,7 +215,7 @@ tsp_provider_unshare_activated (GtkAction  *action,
   if (folder == NULL)
     return;
 
-  tsp_shares_unshare (folder);
+  libshares_shares_unshare (folder);
 }
 
 static void

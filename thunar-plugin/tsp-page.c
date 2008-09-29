@@ -387,7 +387,7 @@ tsp_page_file_changed (ThunarVfsMonitor       *monitor,
   /* Check error */
   if (!result)
   {
-    tsp_show_error (_("There was an error while getting the sharing information"), error->message);
+    libshares_show_error (_("There was an error while getting the sharing information"), error->message);
     g_error_free (error);
   }
 
@@ -489,7 +489,7 @@ tsp_page_apply_clicked (GtkButton *button,
   gchar   *local_file;
 
   share = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (tsp_page->cb_share_folder));
-  local_file = tsp_get_local_file (tsp_page->file);
+  local_file = libshares_get_local_file (tsp_page->file);
 
   if (share)
   {
@@ -505,9 +505,9 @@ tsp_page_apply_clicked (GtkButton *button,
     is_writable = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (tsp_page->cb_share_write));
     guests_ok = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (tsp_page->cb_share_guest));
 
-    share_info = tsp_shares_share (local_file, name, comments,
-                                   is_writable, guests_ok,
-                                   tsp_page->share_name);
+    share_info = libshares_shares_share (local_file, name, comments,
+                                         is_writable, guests_ok,
+                                         tsp_page->share_name);
     if (share_info != NULL)
     {
       tsp_update_default (tsp_page, share_info);
@@ -515,7 +515,7 @@ tsp_page_apply_clicked (GtkButton *button,
     }
   } else {
     /* Un-share the folder */
-    if (tsp_shares_unshare (local_file))
+    if (libshares_shares_unshare (local_file))
     {
       tsp_update_default (tsp_page, NULL);
     }
@@ -561,8 +561,8 @@ gboolean tsp_check_changes (TspPage *page)
     result = FALSE;
   } else if ((page->can_write != write) ||
             (page->can_guests != guests) ||
-            (!tsp_str_equal (page->share_comment, comment)) ||
-            (!tsp_str_equal (page->share_name, name))){
+            (!libshares_str_equal (page->share_comment, comment)) ||
+            (!libshares_str_equal (page->share_name, name))){
     result = TRUE;
   }
 

@@ -29,28 +29,28 @@ G_BEGIN_DECLS
 
 #define G_STR_EMPTY(x) ((x) == NULL || (x)[0] == '\0')
 
-gchar   *tsp_get_local_file (ThunarxFileInfo *file);
+gchar     *libshares_get_local_file (ThunarxFileInfo *file);
 
-gboolean tsp_str_equal      (const char      *txt1,
-                             const char      *txt2);
+gboolean   libshares_str_equal      (const char      *txt1,
+                                     const char      *txt2);
 
-void     tsp_show_error     (const char      *text,
-                             const char      *secondary);
+void       libshares_show_error     (const char      *text,
+                                     const char      *secondary);
 
-gboolean tsp_ask_user       (const char      *text);
+gboolean   libshares_ask_user       (const char      *text);
 
-void     tsp_monitor_feed   (const gchar *uri);
+void       libshares_monitor_feed   (const gchar *uri);
 
-gboolean tsp_is_shareable   (ThunarxFileInfo *info);
+gboolean   libshares_is_shareable   (ThunarxFileInfo *info);
 
-gboolean tsp_shares_unshare (const gchar     *path);
+gboolean   libshares_shares_unshare (const gchar     *path);
 
-ShareInfo *tsp_shares_share (const gchar     *file_local,
-                             const gchar     *name,
-                             const gchar     *comments,
-                             gboolean         is_writable,
-                             gboolean         guests_ok,
-                             const gchar     *old_name);
+ShareInfo *libshares_shares_share   (const gchar     *file_local,
+                                     const gchar     *name,
+                                     const gchar     *comments,
+                                     gboolean         is_writable,
+                                     gboolean         guests_ok,
+                                     const gchar     *old_name);
 
 G_END_DECLS
 

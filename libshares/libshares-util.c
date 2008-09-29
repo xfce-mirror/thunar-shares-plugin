@@ -38,9 +38,17 @@ static gboolean tsp_ask_perms   (gboolean     need_r,
 static gboolean tsp_check_perms (const gchar *path,
                                  gboolean     is_writable);
 
-/* Gets a local file from the thunar-x file info*/
+/**
+ * libshares_get_local_file:
+ * @filex: Thunarx File Info
+ *
+ * Gets a local file from the thunar-x file info.
+ *
+ * Return value: A newly allocated string containing the absolute
+ * path. The returned string should be freed when no longer needed. 
+ **/
 gchar*
-tsp_get_local_file (ThunarxFileInfo *filex)
+libshares_get_local_file (ThunarxFileInfo *filex)
 {
   gchar *file, *file_local;
 
@@ -51,10 +59,18 @@ tsp_get_local_file (ThunarxFileInfo *filex)
   return file_local;
 }
 
-/* Safe string comparison */
+/**
+ * libshares_str_equal:
+ * @txt1: String #1 to compare.
+ * @txt2: String #2 to compare.
+ *
+ * Compares two strings. Is NULL-safe.
+ *
+ * Return value: #TRUE if both strings are equal.
+ **/
 gboolean
-tsp_str_equal (const char *txt1,
-               const char *txt2)
+libshares_str_equal (const char *txt1,
+                     const char *txt2)
 {
   if (G_STR_EMPTY (txt1) || G_STR_EMPTY (txt2))
   {
@@ -67,9 +83,16 @@ tsp_str_equal (const char *txt1,
   return g_str_equal (txt1, txt2);
 }
 
-/* Un-share a folder */
+/**
+ * libshares_shares_unshare:
+ * @path: Absolute path of the folder.
+ *
+ * UnShare a folder.
+ *
+ * Return value: #TRUE if the folder was unshared correctly.
+ **/
 gboolean
-tsp_shares_unshare (const gchar *path)
+libshares_shares_unshare (const gchar *path)
 {
   gboolean ret = FALSE;
   gboolean is_shared;
@@ -82,7 +105,7 @@ tsp_shares_unshare (const gchar *path)
   /* Check error */
   if (!result)
   {
-    tsp_show_error (NULL, error->message);
+    libshares_show_error (NULL, error->message);
     g_error_free (error);
     error = NULL;
   }
@@ -92,7 +115,7 @@ tsp_shares_unshare (const gchar *path)
     /* Un-share it */
     ret = shares_modify_share (path, NULL, &error);
     if (!ret){
-      tsp_show_error (NULL, error->message);
+      libshares_show_error (NULL, error->message);
       g_error_free (error);
     } else {
       ret = TRUE;
@@ -102,20 +125,33 @@ tsp_shares_unshare (const gchar *path)
   /* Notify changes */
   if (ret)
   {
-    tsp_monitor_feed (path);
+    libshares_monitor_feed (path);
   }
 
   return ret;
 }
 
-/* Share a folder */
+/**
+ * libshares_shares_share:
+ * @file_local: Absolute path of the folder.
+ * @name: A name for the Share. Must be unique and < 12 chars long.
+ * @comments: Folder comment (optional)
+ * @is_writable: Allow write access.
+ * @guests_ok: Allow guest access.
+ * @old_name: Optional. Set this when editing info of a share.
+ *
+ * Shares a folder.
+ *
+ * Return value: A new ShareInfo struct if the folder was shared
+ * correctly, or NULL if error. Free this with shares_free_share_info ().
+ **/
 ShareInfo *
-tsp_shares_share (const gchar  *file_local,
-                  const gchar  *name,
-                  const gchar  *comments,
-                  gboolean      is_writable,
-                  gboolean      guests_ok,
-                  const gchar  *old_name)
+libshares_shares_share (const gchar  *file_local,
+                        const gchar  *name,
+                        const gchar  *comments,
+                        gboolean      is_writable,
+                        gboolean      guests_ok,
+                        const gchar  *old_name)
 {
   ShareInfo *share_info = NULL;
   gboolean   exists;
@@ -124,7 +160,7 @@ tsp_shares_share (const gchar  *file_local,
 
   /* Check share name */
   if (G_STR_EMPTY (name)){
-    tsp_show_error (NULL, _("Please, write a name."));
+    libshares_show_error (NULL, _("Please, write a name."));
     return NULL;
   }
 
@@ -132,7 +168,7 @@ tsp_shares_share (const gchar  *file_local,
   if (g_utf8_strlen (name, -1) > 12)
   {
     //-- Fixme this should be just a warning.
-    tsp_show_error (NULL, _("Share name is too long."));
+    libshares_show_error (NULL, _("Share name is too long."));
     return NULL;
   }
 
@@ -146,7 +182,7 @@ tsp_shares_share (const gchar  *file_local,
       gchar *str;
 
       str = g_strdup_printf (_("Error while getting share information: %s"), err->message);
-      tsp_show_error (NULL, str);
+      libshares_show_error (NULL, str);
       g_free (str);
       g_error_free (err);
 
@@ -155,7 +191,7 @@ tsp_shares_share (const gchar  *file_local,
 
     if (exists)
     {
-      tsp_show_error (NULL, _("Another share has the same name"));
+      libshares_show_error (NULL, _("Another share has the same name"));
       return NULL;
     }
   }
@@ -179,7 +215,7 @@ tsp_shares_share (const gchar  *file_local,
     ret = shares_modify_share (file_local, share_info, &err);
     if (!ret)
     {
-      tsp_show_error (NULL, err->message);
+      libshares_show_error (NULL, err->message);
       g_error_free (err);
       shares_free_share_info (share_info);
       share_info = NULL;
@@ -189,16 +225,23 @@ tsp_shares_share (const gchar  *file_local,
   /* Notify changes */
   if (share_info)
   {
-    tsp_monitor_feed (file_local);
+    libshares_monitor_feed (file_local);
   }
 
   return share_info;
 }
 
-/* Displays an error message :(*/
+/**
+ * libshares_show_error:
+ * @text: Main text (the bold one).
+ * @secondary: Secondary text. (error details)
+ *
+ * Displays an error dialog message :(.
+ *
+ **/
 void
-tsp_show_error (const char *text,
-                const char *secondary)
+libshares_show_error (const char *text,
+                      const char *secondary)
 {
   GtkWidget  *dialog;
 
@@ -220,9 +263,16 @@ tsp_show_error (const char *text,
   gtk_widget_destroy (dialog);
 }
 
-/* Asks 'text' to the user */
+/**
+ * libshares_ask_user:
+ * @text: Question :)
+ *
+ * Asks 'text' to the user.
+ *
+ * Return value: #TRUE if the users marks OK.
+ **/
 gboolean
-tsp_ask_user (const char *text)
+libshares_ask_user (const char *text)
 {
   GtkWidget *dialog;
   gboolean result;
@@ -240,8 +290,16 @@ tsp_ask_user (const char *text)
   return result;
 }
 
+/**
+ * libshares_is_shareable:
+ * @info: FileInfo
+ *
+ * Checks if the fileinfo is shareable. (Folder, and local files checks).
+ *
+ * Return value: #TRUE is shareable.
+ **/
 gboolean
-tsp_is_shareable (ThunarxFileInfo *info)
+libshares_is_shareable (ThunarxFileInfo *info)
 {
   gboolean retval;
   gchar   *scheme;
@@ -259,9 +317,14 @@ tsp_is_shareable (ThunarxFileInfo *info)
   return retval;
 }
 
-/* Notify the file system about shareing changes */
+/**
+ * libshares_monitor_feed:
+ * @uri: Absolute path or URI of the file.
+ *
+ * Notify the file system about shareing changes.
+ **/
 void
-tsp_monitor_feed (const gchar *uri)
+libshares_monitor_feed (const gchar *uri)
 {
   ThunarVfsMonitor *monitor;
   ThunarVfsPath    *path;
@@ -284,7 +347,7 @@ tsp_ask_perms (gboolean  need_r,
                gboolean  need_w,
                gboolean  need_x)
 {
-  return tsp_ask_user (_("Thunar needs to add some permissions to your folder in order to share it. Do you agree?"));
+  return libshares_ask_user (_("Thunar needs to add some permissions to your folder in order to share it. Do you agree?"));
 }
 
 /* Checks if the current file has the necesary permissions */
@@ -325,7 +388,7 @@ tsp_check_perms (const gchar *path,
 #endif
     if (g_chmod (path, new_mode) != 0)
     {
-      tsp_show_error (NULL, _("Error when changing folder permissions."));
+      libshares_show_error (NULL, _("Error when changing folder permissions."));
       return FALSE;
     }
   }
