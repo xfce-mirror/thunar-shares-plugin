@@ -99,6 +99,12 @@ tsp_shares_unshare (const gchar *path)
     }
   }
 
+  /* Notify changes */
+  if (ret)
+  {
+    tsp_monitor_feed (path);
+  }
+
   return ret;
 }
 
@@ -171,12 +177,19 @@ tsp_shares_share (const gchar  *file_local,
 
     /* Share it */
     ret = shares_modify_share (file_local, share_info, &err);
-    if (!ret){
+    if (!ret)
+    {
       tsp_show_error (NULL, err->message);
       g_error_free (err);
       shares_free_share_info (share_info);
       share_info = NULL;
     }
+  }
+
+  /* Notify changes */
+  if (share_info)
+  {
+    tsp_monitor_feed (file_local);
   }
 
   return share_info;
@@ -244,6 +257,25 @@ tsp_is_shareable (ThunarxFileInfo *info)
   g_free (scheme);
 
   return retval;
+}
+
+/* Notify the file system about shareing changes */
+void
+tsp_monitor_feed (const gchar *uri)
+{
+  ThunarVfsMonitor *monitor;
+  ThunarVfsPath    *path;
+
+  path = thunar_vfs_path_new (uri, NULL);
+
+  if (G_LIKELY (path != NULL))
+  {
+    monitor = thunar_vfs_monitor_get_default ();
+    thunar_vfs_monitor_feed (monitor, THUNAR_VFS_MONITOR_EVENT_CHANGED, path);
+
+    g_object_unref (monitor);
+    thunar_vfs_path_unref (path);
+  }
 }
 
 /* Asks to the user if we can change the permissions of the folder */

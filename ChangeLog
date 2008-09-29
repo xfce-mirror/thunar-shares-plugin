@@ -1,4 +1,10 @@
-2008-09-22	Daniel Morales <daniel@daniel.com.uy>
+2008-09-29	Daniel Morales <daniel@daniel.com.uy>
+
+	* libshares/libshares-util.[ch]:
+	* thunar-plugin/tsp-page.c: Let's use ThunarVFSMonitor functions,
+	instead of thunarx_file_info_changed ().
+
+2008-09-24	Daniel Morales <daniel@daniel.com.uy>
 
 	* libshares/libshares-util.[ch]:
 	* thunar-plugin/tsp-provider.c: Add 'Unshare' menu provider to
