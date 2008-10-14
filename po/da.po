@@ -1,0 +1,175 @@
+# Danish translation thunar-shares-plugin.
+# Copyright (C) 2008 Daniel Morales
+# This file is distributed under the same license as the thunar-shares-plugin package.
+# Per Kongstad <p_kongstad@op.pl>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: thunar-shares-plugin 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
+"PO-Revision-Date: 2008-10-14 11:25+0100\n"
+"Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../libshares/libshares-util.c:111
+msgid "Please, write a name."
+msgstr "Skriv venligst et navn."
+
+#: ../libshares/libshares-util.c:162
+#: ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
+msgid "Cannot modify the share:"
+msgstr "Kan ikke ændre delingen:"
+
+#: ../libshares/libshares-util.c:232
+msgid "Error when changing folder permissions."
+msgstr "Fejl opstod ved ændring af mapperettigheder."
+
+#: ../libshares/shares.c:146
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s returnerede med signal %d"
+
+#: ../libshares/shares.c:155
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s fejlede af ukendt grund"
+
+#: ../libshares/shares.c:175
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' returnerede fejl %d: %s"
+
+#: ../libshares/shares.c:177
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' returnerede fejl %d"
+
+#: ../libshares/shares.c:208
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "uddata fra 'net usershare' er ikke gyldigt UTF-8 tegnsæt"
+
+#: ../libshares/shares.c:463
+#: ../libshares/shares.c:636
+#, c-format
+msgid "Failed"
+msgstr "Fejlede"
+
+#: ../libshares/shares.c:571
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Samba's testparm returnerede med signal %d"
+
+#: ../libshares/shares.c:577
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "Samba's testparm fejlede af en ukendt grund"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "Samba's testparm returnerede fejl %d: %s"
+
+#: ../libshares/shares.c:594
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "Samba's testparm returnerede fejl %d"
+
+#: ../libshares/shares.c:701
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "Kunne ikke fjerne delingen for sti %s: denne sti er ikke delt"
+
+#: ../libshares/shares.c:747
+#, c-format
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "Kunne ikke ændre stien af en eksisterende deling; fjern venligst den gamle deling først inden tilføjelse af en ny"
+
+#: ../thunar-plugin/tsp-admin-editor.c:174
+msgid "Thunar - Add a share"
+msgstr "Thunar - Tilføj en deling"
+
+#: ../thunar-plugin/tsp-admin-editor.c:196
+msgid "Thunar - Edit share"
+msgstr "Thunar - Redigér deling"
+
+#: ../thunar-plugin/tsp-page.c:229
+msgid "Share"
+msgstr "Deling"
+
+#: ../thunar-plugin/tsp-prefs-provider.c:99
+msgid "Manage shared folders..."
+msgstr "Håndtering af delte mapper..."
+
+#: ../thunar-plugin/tsp-prefs-provider.c:100
+msgid "Add, edit and remove shared folders"
+msgstr "Tilføj, redigér og fjern delte mapper"
+
+#: ../data/admin-dialog-editor.xml.h:1
+msgid "<b>Comments:</b>"
+msgstr "<b>Kommentarer:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:2
+msgid "<b>Folder:</b>"
+msgstr "<b>Mappe:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:3
+msgid "<b>Share name:</b>"
+msgstr "<b>Delingnavn:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:4
+#: ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr "Tillad gæsteadgang"
+
+#: ../data/admin-dialog-editor.xml.h:5
+msgid "Allow other users to write in this folder"
+msgstr "Tillad andre brugere at skrive i denne mappe"
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr "Thunar - håndtering af delingsmapper"
+
+#: ../data/dialogs.xml.h:2
+#: ../data/thunar-page.xml.h:8
+msgid "Thunar Shares Error"
+msgstr "Thunar-delingsfejl"
+
+#: ../data/dialogs.xml.h:3
+#: ../data/thunar-page.xml.h:9
+msgid "Thunar Shares Question"
+msgstr "Thunar-delingsspørgsmål"
+
+#: ../data/dialogs.xml.h:4
+#: ../data/thunar-page.xml.h:10
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Thunar er nødt til at tilføje nogle rettigheder til din mappe for af dele denne. Accepterer du?"
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Mappedeling</b>"
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr "Tillad andre brugere at skrive i denne mappe"
+
+#: ../data/thunar-page.xml.h:5
+msgid "Comments:"
+msgstr "Kommentarer:"
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share Name:"
+msgstr "Delingsnavn:"
+
+#: ../data/thunar-page.xml.h:7
+msgid "Share this folder"
+msgstr "Del denne mappe"
+
