@@ -1,3 +1,4 @@
+# translation of ru.po to ru_RU
 # Russian translation for thunar-shares
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # This file is distributed under the same license as the thunar-shares package.
@@ -5,31 +6,31 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: thunar-shares\n"
+"Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-07-13 12:59+0000\n"
-"Last-Translator: Sergei Zivukov <Unknown>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"PO-Revision-Date: 2008-10-19 11:03+0400\n"
+"Last-Translator: Nikita Belobrov <qvzqvz@gmail.com>\n"
+"Language-Team: ru_RU <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2008-07-17 13:36+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../libshares/libshares-util.c:111
-#, fuzzy
 msgid "Please, write a name."
-msgstr "Пожалуйста, напишите имя для общего доступа"
+msgstr "Пожалуйста, укажите имя для общего доступа"
 
 #: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
-msgstr ""
+msgstr "Не удалось изменить параметры общего доступа:"
 
 #: ../libshares/libshares-util.c:232
 msgid "Error when changing folder permissions."
-msgstr ""
+msgstr "При смене прав доступа возникла ошибка."
 
 #: ../libshares/shares.c:146
 #, c-format
@@ -54,7 +55,7 @@ msgstr "Ошибка %d при запуске 'net usershare'"
 #: ../libshares/shares.c:208
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "вывод 'net usershare' не является действительной строкой UTF-8"
+msgstr "вывод 'net usershare' не является допустимой строкой UTF-8"
 
 #: ../libshares/shares.c:463 ../libshares/shares.c:636
 #, c-format
@@ -92,89 +93,84 @@ msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
 msgstr ""
-"Не удалось изменить путь существущего ресурса; пожалуйста, удалите старый "
+"Не удалось изменить путь существующего ресурса; пожалуйста, удалите старый "
 "ресурс и добавьте новый"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
-msgstr ""
+msgstr "Thunar — Добавить папку общего доступа"
 
 #: ../thunar-plugin/tsp-admin-editor.c:196
 msgid "Thunar - Edit share"
-msgstr ""
+msgstr "Thunar — Редактировать папку общего доступа"
 
 #: ../thunar-plugin/tsp-page.c:229
 msgid "Share"
-msgstr ""
+msgstr "Папка общего доступа"
 
 #: ../thunar-plugin/tsp-prefs-provider.c:99
 msgid "Manage shared folders..."
-msgstr ""
+msgstr "Управление папками общего доступа"
 
 #: ../thunar-plugin/tsp-prefs-provider.c:100
 msgid "Add, edit and remove shared folders"
-msgstr ""
+msgstr "Добавить, редактировать и удалить папки общего доступа"
 
 #: ../data/admin-dialog-editor.xml.h:1
 msgid "<b>Comments:</b>"
-msgstr ""
+msgstr "<b>Коментарии:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
 msgid "<b>Folder:</b>"
-msgstr ""
+msgstr "<b>Папка:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
-msgstr ""
+msgstr "<b>Имя в сети:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
-msgstr ""
+msgstr "Разрешить гостевой доступ"
 
 #: ../data/admin-dialog-editor.xml.h:5
 msgid "Allow other users to write in this folder"
-msgstr ""
+msgstr "Разрешить другим пользователям записывать в эту папку"
 
 #: ../data/admin-dialog.xml.h:1
 msgid "Thunar - Manage Shared Folders"
-msgstr ""
+msgstr "Thunar — управление папками общего доступа"
 
 #: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
-msgstr ""
+msgstr "Ошибки общего доступа Thunar"
 
 #: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
-msgstr ""
+msgstr "Вопросы общего доступа Thunar"
 
 #: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do "
 "you agree?"
-msgstr ""
+msgstr "Приложению Thunar необходимо добавить определенные права доступа к вашей папке для организации общего доступа к ней. Вы согласны добавить новые права?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
-msgstr ""
+msgstr "<b>Общий доступ к папкам</b>"
 
 #: ../data/thunar-page.xml.h:3
 msgid "Allow others users to write in this folder"
-msgstr ""
+msgstr "Разрешить другим пользователям записывать в эту папку."
 
 #: ../data/thunar-page.xml.h:5
 msgid "Comments:"
-msgstr ""
+msgstr "Коментарии:"
 
 #: ../data/thunar-page.xml.h:6
 msgid "Share Name:"
-msgstr ""
+msgstr "Сетевое имя:"
 
 #: ../data/thunar-page.xml.h:7
 msgid "Share this folder"
-msgstr ""
+msgstr "Разрешить общий доступ к этой папке"
 
-#~ msgid "Insufficient permissions to share the folder."
-#~ msgstr "Недостаточно прав для открытия общего доступа к папке."
-
-#~ msgid "<span color=\"red\"><b>Error:</b> %s</span>"
-#~ msgstr "<span color=\"red\"><b>Ошибка:</b> %s</span>"

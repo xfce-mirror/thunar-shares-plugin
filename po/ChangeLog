@@ -1,13 +1,15 @@
+2008-10-28  Maximilian Schleiss <maximilian@xfce.org>
+
+	* ru.po: Russian translation update (Nikita Belobrov)
+
 2008-10-25 Michal Várady <miko.vaji@gmail.com>
 
-	* cs.po,LINGUAS: Czech translation added
+	* cs.po, LINGUAS: Czech translation added
 
 2008-10-14 Lars Nielsen <lars@mit-web.dk>
 
-	* da.po,LINGUAS: Danish translation added
+	* da.po, LINGUAS: Danish translation added
 
 2008-07-31  Og Maciel <ogmaciel@gnome.org>
 
-    * pt_BR.po: Added Brazilian Portuguese translation
-      by Fábio Nogueira <deb-user-ba@ubuntu.com>
-    * LINGUAS: Added pt_BR
+	* pt_BR.po, LINGUAS: Added Brazilian Portuguese translation (Fábio Nogueira)
