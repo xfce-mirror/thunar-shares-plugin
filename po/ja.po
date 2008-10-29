@@ -1,0 +1,174 @@
+# Japanese translations for thunar-shares-plugin package
+# thunar-shares-plugin パッケージに対する英訳.
+# Copyright (C) 2008 THE thunar-shares-plugin'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the thunar-shares-plugin package.
+# Masato Hashimoto <cabezon.hashimoto@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: thunar-shares-plugin 0.2.0-svn-r05812\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
+"PO-Revision-Date: 2008-10-29 23:45+0900\n"
+"Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
+"Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../libshares/libshares-util.c:111
+msgid "Please, write a name."
+msgstr "名前を入力してください。"
+
+#: ../libshares/libshares-util.c:162
+#: ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
+msgid "Cannot modify the share:"
+msgstr "共有を変更できません:"
+
+#: ../libshares/libshares-util.c:232
+msgid "Error when changing folder permissions."
+msgstr "フォルダのアクセス権変更時にエラーが発生しました。"
+
+#: ../libshares/shares.c:146
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s はシグナル %d を返しました"
+
+#: ../libshares/shares.c:155
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s は不明な理由で失敗しました"
+
+#: ../libshares/shares.c:175
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' はエラー %d を返しました: %s"
+
+#: ../libshares/shares.c:177
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' はエラー %d を返しました"
+
+#: ../libshares/shares.c:208
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "'net usershare' の出力は正しい UTF-8 エンコーディングではありません"
+
+#: ../libshares/shares.c:463
+#: ../libshares/shares.c:636
+#, c-format
+msgid "Failed"
+msgstr "失敗しました"
+
+#: ../libshares/shares.c:571
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Samba の testparm はシグナル %d を返しました"
+
+#: ../libshares/shares.c:577
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "Samba の testparm は不明な理由で失敗しました"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "Samba の testparm はエラー %d を返しました: %s"
+
+#: ../libshares/shares.c:594
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "Samba の testparm はエラー %d を返しました"
+
+#: ../libshares/shares.c:701
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "パス %s の共有を解除できません: これは共有されていません"
+
+#: ../libshares/shares.c:747
+#, c-format
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "既存の共有パスを変更できません。先に古い共有を解除してから新しく追加してください"
+
+#: ../thunar-plugin/tsp-admin-editor.c:174
+msgid "Thunar - Add a share"
+msgstr "Thunar - 共有の追加"
+
+#: ../thunar-plugin/tsp-admin-editor.c:196
+msgid "Thunar - Edit share"
+msgstr "Thunae - 共有の編集"
+
+#: ../thunar-plugin/tsp-page.c:229
+msgid "Share"
+msgstr "共有"
+
+#: ../thunar-plugin/tsp-prefs-provider.c:99
+msgid "Manage shared folders..."
+msgstr "共有フォルダの管理..."
+
+#: ../thunar-plugin/tsp-prefs-provider.c:100
+msgid "Add, edit and remove shared folders"
+msgstr "共有フォルダの追加、編集、および解除を行います"
+
+#: ../data/admin-dialog-editor.xml.h:1
+msgid "<b>Comments:</b>"
+msgstr "<b>コメント:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:2
+msgid "<b>Folder:</b>"
+msgstr "<b>フォルダ:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:3
+msgid "<b>Share name:</b>"
+msgstr "<b>共有名:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:4
+#: ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr "ゲストアクセスを許可する"
+
+#: ../data/admin-dialog-editor.xml.h:5
+msgid "Allow other users to write in this folder"
+msgstr "他のユーザのこのフォルダへの書き込みを許可する"
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr "Thunar - 共有フォルダの管理"
+
+#: ../data/dialogs.xml.h:2
+#: ../data/thunar-page.xml.h:8
+msgid "Thunar Shares Error"
+msgstr "Thunar 共有エラー"
+
+#: ../data/dialogs.xml.h:3
+#: ../data/thunar-page.xml.h:9
+msgid "Thunar Shares Question"
+msgstr "Thunar 共有の質問"
+
+#: ../data/dialogs.xml.h:4
+#: ../data/thunar-page.xml.h:10
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Thunar は共有するフォルダに対していくつかのアクセス権の追加を必要とします。よろしいですか?"
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>フォルダの共有</b>"
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr "他のユーザのこのフォルダへの書き込みを許可する"
+
+#: ../data/thunar-page.xml.h:5
+msgid "Comments:"
+msgstr "コメント:"
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share Name:"
+msgstr "共有名:"
+
+#: ../data/thunar-page.xml.h:7
+msgid "Share this folder"
+msgstr "このフォルダを共有する"
+
