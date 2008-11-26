@@ -5,29 +5,29 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Thunar-Shares 0.14\n"
+"Project-Id-Version: Thunar-Shares\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-07-17 18:39+0100\n"
+"PO-Revision-Date: 2008-11-26 20:23+0100\n"
 "Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
-"Language-Team: French\n"
+"Language-Team: French <i18n-xfce@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../libshares/libshares-util.c:111
-#, fuzzy
 msgid "Please, write a name."
-msgstr "Veuillez insérer un nom pour le partage."
+msgstr "Veuillez insérer un nom."
 
-#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../libshares/libshares-util.c:162
+#: ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "Échec à la modification du partage :"
 
 #: ../libshares/libshares-util.c:232
 msgid "Error when changing folder permissions."
-msgstr ""
+msgstr "Erreur lors du changement de permissions du dossier."
 
 #: ../libshares/shares.c:146
 #, c-format
@@ -54,7 +54,8 @@ msgstr "'net usershare' a renvoyé une erreur %d"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "la sortie de 'net usershare' n'est pas au format UTF-8"
 
-#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#: ../libshares/shares.c:463
+#: ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "Échec"
@@ -82,18 +83,12 @@ msgstr "testparm a renvoyé une erreur %d"
 #: ../libshares/shares.c:701
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr ""
-"Échec à la suppression du partage pour %s : le chemin d'accès n'est pas "
-"partagé"
+msgstr "Échec à la suppression du partage pour %s : le chemin d'accès n'est pas partagé"
 
 #: ../libshares/shares.c:747
 #, c-format
-msgid ""
-"Cannot change the path of an existing share; please remove the old share "
-"first and add a new one"
-msgstr ""
-"Un partage existant ne peut pas être modifié; veuillez le supprimer et le "
-"recréer"
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "Un partage existant ne peut pas être modifié; veuillez le supprimer et le recréer"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -104,9 +99,8 @@ msgid "Thunar - Edit share"
 msgstr "Thunar - Éditer un partage"
 
 #: ../thunar-plugin/tsp-page.c:229
-#, fuzzy
 msgid "Share"
-msgstr "Nom du partage :"
+msgstr "Partage"
 
 #: ../thunar-plugin/tsp-prefs-provider.c:99
 msgid "Manage shared folders..."
@@ -128,7 +122,8 @@ msgstr "<b>Dossier :</b>"
 msgid "<b>Share name:</b>"
 msgstr "<b>Nom du partage :</b>"
 
-#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+#: ../data/admin-dialog-editor.xml.h:4
+#: ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
 msgstr "Permettre l'accès hôte"
 
@@ -140,21 +135,20 @@ msgstr "Permettre l'écriture dans ce dossier aux autres utilisateurs"
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - Gérer les dossiers partagés"
 
-#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+#: ../data/dialogs.xml.h:2
+#: ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Erreur Thunar Shares"
 
-#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+#: ../data/dialogs.xml.h:3
+#: ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Question Thunar Shares"
 
-#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
-msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
-msgstr ""
-"Thunar doit ajouter des permissions à votre dossier pour en permettre le "
-"partage. Êtes-vous d'accord ?"
+#: ../data/dialogs.xml.h:4
+#: ../data/thunar-page.xml.h:10
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Thunar doit ajouter des permissions à votre dossier pour en permettre le partage. Êtes-vous d'accord ?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
@@ -178,15 +172,12 @@ msgstr "Partager ce dossier"
 
 #~ msgid "Insufficient permissions to share the folder."
 #~ msgstr "Permissions insuffisantes pour créer le partage."
-
 #~ msgid "gtk-cancel"
 #~ msgstr "Annuler"
-
 #~ msgid "gtk-ok"
 #~ msgstr "Ok"
-
 #~ msgid "gtk-apply"
 #~ msgstr "Appliquer"
-
 #~ msgid "gtk-revert-to-saved"
 #~ msgstr "Annuler"
+
