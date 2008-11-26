@@ -1,0 +1,171 @@
+# translation of eu.po to Euskara
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Piarres Beobide <pi@beobide.net>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: eu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
+"PO-Revision-Date: 2008-11-26 23:01+0100\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
+"Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../libshares/libshares-util.c:111
+msgid "Please, write a name."
+msgstr "Mesedez, idatzi izen bat."
+
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
+msgid "Cannot modify the share:"
+msgstr "Ezin da partekatzea aldatu:"
+
+#: ../libshares/libshares-util.c:232
+msgid "Error when changing folder permissions."
+msgstr "Errorea karpeta baimenak aldatzean."
+
+#: ../libshares/shares.c:146
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s %d seinaleaz amaitu da"
+
+#: ../libshares/shares.c:155
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s-ek arrazoi ezezagun bategatik huts egin du"
+
+#: ../libshares/shares.c:175
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' komandoak %d errorea itzuli du: %s"
+
+#: ../libshares/shares.c:177
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' komandoak %d errorea itzuli du"
+
+#: ../libshares/shares.c:208
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "'net usershare' komandoaren irteera ez UTF-8 kodeketan baliozkoa"
+
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#, c-format
+msgid "Failed"
+msgstr "Huts egin du"
+
+#: ../libshares/shares.c:571
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Sambaren testparm komandoak %d seinaleaz amaitu da"
+
+#: ../libshares/shares.c:577
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "Sambaren testparm komandoak arrazoi ezezagun bategatik huts egin du"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "Sambaren testparm komandoak %d errorea itzuli du: %s"
+
+#: ../libshares/shares.c:594
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "Sambaren testparm komandoak %d errorea itzuli du"
+
+#: ../libshares/shares.c:701
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "Ezin da %s bidearen partekatzea kendu: bidea ez dago partekatua"
+
+#: ../libshares/shares.c:747
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr "Ezin da sorturik dagoen partekatze baten bidea; mesedez kendu partekatze zaharra aurretik eta gero gehitu berri bat"
+
+#: ../thunar-plugin/tsp-admin-editor.c:174
+msgid "Thunar - Add a share"
+msgstr "Thunar - Gehitu partekatze bat"
+
+#: ../thunar-plugin/tsp-admin-editor.c:196
+msgid "Thunar - Edit share"
+msgstr "Thunar - Editatu partekatzea"
+
+#: ../thunar-plugin/tsp-page.c:229
+msgid "Share"
+msgstr "Partekatu"
+
+#: ../thunar-plugin/tsp-prefs-provider.c:99
+msgid "Manage shared folders..."
+msgstr "Kudeatu partekatutako karpetak..."
+
+#: ../thunar-plugin/tsp-prefs-provider.c:100
+msgid "Add, edit and remove shared folders"
+msgstr "Gehitu, editatu eta kendu partekatutako karpetak"
+
+#: ../data/admin-dialog-editor.xml.h:1
+msgid "<b>Comments:</b>"
+msgstr "<b>Iruzkinak:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:2
+msgid "<b>Folder:</b>"
+msgstr "<b>Karpeta:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:3
+msgid "<b>Share name:</b>"
+msgstr "<b>Partekatze izena:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr "Onartu gonbidatu sarrera"
+
+#: ../data/admin-dialog-editor.xml.h:5
+msgid "Allow other users to write in this folder"
+msgstr "Onartu beste erabiltzaileek karpeta honetan idaztea"
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr "Thunar - Kudeatu partekatutako karpetak"
+
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+msgid "Thunar Shares Error"
+msgstr "Thunar partekatze errorea"
+
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+msgid "Thunar Shares Question"
+msgstr "Thunar partekatze galdera"
+
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr "Thunarrek zure karpetara baimen batzuek gehitu behar dizkio partekatu ahal izateko. Ados zaude?"
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Karpeta partekatzea</b>"
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr "Onartu beste erabiltzaileek karpeta honetan idaztea"
+
+#: ../data/thunar-page.xml.h:5
+msgid "Comments:"
+msgstr "Iruzkinak:"
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share Name:"
+msgstr "Partekatze izena:"
+
+#: ../data/thunar-page.xml.h:7
+msgid "Share this folder"
+msgstr "Partekatu karpeta hau"
+
