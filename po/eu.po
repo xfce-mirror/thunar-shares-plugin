@@ -168,4 +168,3 @@ msgstr "Partekatze izena:"
 #: ../data/thunar-page.xml.h:7
 msgid "Share this folder"
 msgstr "Partekatu karpeta hau"
-
