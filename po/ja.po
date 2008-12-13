@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: thunar-shares-plugin 0.2.0-svn-r05812\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-10-29 23:45+0900\n"
+"PO-Revision-Date: 2008-12-04 00:40+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +90,7 @@ msgstr "パス %s の共有を解除できません: これは共有されてい
 #: ../libshares/shares.c:747
 #, c-format
 msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "既存の共有パスを変更できません。先に古い共有を解除してから新しく追加してください"
+msgstr "既存の共有パスを変更できません。先に古い共有を解除してから新しく追加してください。"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -131,7 +131,7 @@ msgstr "ゲストアクセスを許可する"
 
 #: ../data/admin-dialog-editor.xml.h:5
 msgid "Allow other users to write in this folder"
-msgstr "他のユーザのこのフォルダへの書き込みを許可する"
+msgstr "他のユーザのこのフォルダへの書き込みを許可します。"
 
 #: ../data/admin-dialog.xml.h:1
 msgid "Thunar - Manage Shared Folders"
