@@ -1,0 +1,172 @@
+# Chinese translations for PACKAGE package.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Hunt Xu <huntxu@live.cn>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: thunar-shares-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
+"PO-Revision-Date: 2008-12-04 17:05+0800\n"
+"Last-Translator: Hunt Xu <huntxu@live.cn>\n"
+"Language-Team: Chinese (simplified)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libshares/libshares-util.c:111
+msgid "Please, write a name."
+msgstr "请输入名字"
+
+#: ../libshares/libshares-util.c:162
+#: ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
+msgid "Cannot modify the share:"
+msgstr "无法修改共享:"
+
+#: ../libshares/libshares-util.c:232
+msgid "Error when changing folder permissions."
+msgstr "改变目录权限时发生错误。"
+
+#: ../libshares/shares.c:146
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s 返回 %d 信号"
+
+#: ../libshares/shares.c:155
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s 由于未知原因失败"
+
+#: ../libshares/shares.c:175
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' 返回错误代号 %d: %s"
+
+#: ../libshares/shares.c:177
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' 返回错误代号 %d"
+
+#: ../libshares/shares.c:208
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "'net usershare' 的输入不是合法 UTF-8 编码"
+
+#: ../libshares/shares.c:463
+#: ../libshares/shares.c:636
+#, c-format
+msgid "Failed"
+msgstr "失败"
+
+#: ../libshares/shares.c:571
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr ""
+
+#: ../libshares/shares.c:577
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr ""
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr ""
+
+#: ../libshares/shares.c:594
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr ""
+
+#: ../libshares/shares.c:701
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "无法删除共享路径 %s: 此路径未被共享"
+
+#: ../libshares/shares.c:747
+#, c-format
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "无法修改已有的共享路径；请删除旧的共享并重新添加新的"
+
+#: ../thunar-plugin/tsp-admin-editor.c:174
+msgid "Thunar - Add a share"
+msgstr "Thunar - 添加一个共享"
+
+#: ../thunar-plugin/tsp-admin-editor.c:196
+msgid "Thunar - Edit share"
+msgstr "Thunar - 修改一个共享"
+
+#: ../thunar-plugin/tsp-page.c:229
+msgid "Share"
+msgstr "共享"
+
+#: ../thunar-plugin/tsp-prefs-provider.c:99
+msgid "Manage shared folders..."
+msgstr "管理共享目录..."
+
+#: ../thunar-plugin/tsp-prefs-provider.c:100
+msgid "Add, edit and remove shared folders"
+msgstr "添加、修改和删除共享目录"
+
+#: ../data/admin-dialog-editor.xml.h:1
+msgid "<b>Comments:</b>"
+msgstr "<b>注释:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:2
+msgid "<b>Folder:</b>"
+msgstr "<b>文件夹:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:3
+msgid "<b>Share name:</b>"
+msgstr "<b>共享名:</b>"
+
+#: ../data/admin-dialog-editor.xml.h:4
+#: ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr "允许来宾访问"
+
+#: ../data/admin-dialog-editor.xml.h:5
+msgid "Allow other users to write in this folder"
+msgstr "允许其他用户写入此目录"
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr "Thunar - 管理共享目录"
+
+#: ../data/dialogs.xml.h:2
+#: ../data/thunar-page.xml.h:8
+msgid "Thunar Shares Error"
+msgstr "Thunar 共享错误"
+
+#: ../data/dialogs.xml.h:3
+#: ../data/thunar-page.xml.h:9
+msgid "Thunar Shares Question"
+msgstr "Thunar 共享问题"
+
+#: ../data/dialogs.xml.h:4
+#: ../data/thunar-page.xml.h:10
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Thunar 需要增加一些权限设置至您的目录以便共享。是否同意？"
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>文件夹共享</b>"
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr "允许其他用户写入此目录"
+
+#: ../data/thunar-page.xml.h:5
+msgid "Comments:"
+msgstr "注释:"
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share Name:"
+msgstr "共享名:"
+
+#: ../data/thunar-page.xml.h:7
+msgid "Share this folder"
+msgstr "共享此目录"
+
