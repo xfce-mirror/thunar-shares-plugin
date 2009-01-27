@@ -167,9 +167,9 @@ libshares_shares_share (const gchar  *file_local,
   /* Check length */
   if (g_utf8_strlen (name, -1) > 12)
   {
-    //-- Fixme this should be just a warning.
-    libshares_show_error (NULL, _("Share name is too long."));
-    return NULL;
+    /* Warn the user */
+	if (!libshares_ask_user (_("Share name too long. Some old clients may have problems to access it, continue anyway?")))
+      return NULL;
   }
 
   /* Do the name check only if this is a new share, or if
@@ -250,13 +250,10 @@ libshares_show_error (const char *text,
                                    GTK_MESSAGE_ERROR,
                                    GTK_BUTTONS_CLOSE,
                                    NULL);
-  if (text){
-    gtk_message_dialog_set_markup (GTK_MESSAGE_DIALOG (dialog), text);
-  } else {
-    gtk_message_dialog_set_markup (GTK_MESSAGE_DIALOG (dialog), _("Cannot modify the share:"));
-  }
+  if (!text)
+    text = _("Cannot modify the share:");
 
-  gtk_message_dialog_format_secondary_markup (GTK_MESSAGE_DIALOG (dialog), secondary);
+  g_object_set (G_OBJECT (dialog), "secondary-text", secondary, "text", text, NULL);
 
   gtk_dialog_run (GTK_DIALOG (dialog));
 
@@ -281,8 +278,10 @@ libshares_ask_user (const char *text)
                                    GTK_DIALOG_MODAL,
                                    GTK_MESSAGE_QUESTION,
                                    GTK_BUTTONS_OK_CANCEL,
-                                   text);
-     
+                                   NULL);
+
+  g_object_set (G_OBJECT (dialog), "text", text, NULL);
+
   result = gtk_dialog_run (GTK_DIALOG (dialog)) == GTK_RESPONSE_OK;
 
   gtk_widget_destroy (dialog);

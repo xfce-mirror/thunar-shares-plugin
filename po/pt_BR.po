@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thunar-Shares-PLugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-31 04:48-0400\n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
 "PO-Revision-Date: 2008-07-30 23:05-0300\n"
 "Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
@@ -21,6 +21,7 @@ msgid "Please, write a name."
 msgstr "Por favor, escreva um nome."
 
 #: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "Não foi possível modificar o compartilhamento:"
 
@@ -52,8 +53,8 @@ msgstr "O \"compartilhamento de rede do usuário\" retornou o erro %d"
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr ""
-"A saída do \"compartilhamento de rede do usuário\" não está codificado"
-" em UTF-8"
+"A saída do \"compartilhamento de rede do usuário\" não está codificado em "
+"UTF-8"
 
 #: ../libshares/shares.c:463 ../libshares/shares.c:636
 #, c-format
@@ -93,26 +94,26 @@ msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
 msgstr ""
-"Não é possível mudar o caminho de um compartilhamento existente; por "
-"favor, remova o compartilhamento antigo primeiro e adicione um novo"
+"Não é possível mudar o caminho de um compartilhamento existente; por favor, "
+"remova o compartilhamento antigo primeiro e adicione um novo"
 
-#: ../thunar-plugin/tsp-admin-editor.c:172
+#: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
 msgstr "Thunar - Adicionar um comartilhamento"
 
-#: ../thunar-plugin/tsp-admin-editor.c:194
+#: ../thunar-plugin/tsp-admin-editor.c:196
 msgid "Thunar - Edit share"
 msgstr "Thunar - Editar compartilhamento"
 
-#: ../thunar-plugin/tsp-page.c:228
+#: ../thunar-plugin/tsp-page.c:229
 msgid "Share"
 msgstr "Compartilhar"
 
-#: ../thunar-plugin/tsp-prefs-provider.c:95
+#: ../thunar-plugin/tsp-prefs-provider.c:99
 msgid "Manage shared folders..."
 msgstr "Gerenciar pasta compartilhadas..."
 
-#: ../thunar-plugin/tsp-prefs-provider.c:96
+#: ../thunar-plugin/tsp-prefs-provider.c:100
 msgid "Add, edit and remove shared folders"
 msgstr "Adicionar, editar ou remover pastas compartilhadas"
 
@@ -121,8 +122,9 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Comentários:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Pasta:</b>"
+msgstr "<b>Compartilhando pasta</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
@@ -140,15 +142,15 @@ msgstr "Permitir que outros usuários gravem nesta pasta"
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - Gerenciar pastas compartilhadas"
 
-#: ../data/dialogs.xml.h:2
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Erro de compartilhamentos do Thunar"
 
-#: ../data/dialogs.xml.h:3
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Questões sobre compartilhamentos do Thunar"
 
-#: ../data/dialogs.xml.h:4
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do "
 "you agree?"
@@ -164,14 +166,22 @@ msgstr "<b>Compartilhando pasta</b>"
 msgid "Allow others users to write in this folder"
 msgstr "Permitir que outros usuários gravem nesta pasta"
 
-#: ../data/thunar-page.xml.h:4
+#: ../data/thunar-page.xml.h:5
 msgid "Comments:"
 msgstr "Comentários:"
 
-#: ../data/thunar-page.xml.h:5
+#: ../data/thunar-page.xml.h:6
 msgid "Share Name:"
 msgstr "Nome do compartilhamento:"
 
-#: ../data/thunar-page.xml.h:6
+#: ../data/thunar-page.xml.h:7
 msgid "Share this folder"
 msgstr "Compartilhe esta pasta"
+
+#, fuzzy
+#~ msgid "Folder:"
+#~ msgstr "<b>Pasta:</b>"
+
+#, fuzzy
+#~ msgid "Share name:"
+#~ msgstr "Nome do compartilhamento:"

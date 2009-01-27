@@ -13,4 +13,4 @@ TODO for thunar-shares-plugin
 MILESTONE 0.20
 =======================================================================
 
-  * 12 chars share-name check should warn the user, isn't a error.
+  * Review/update if necesary: libshares/shares.[ch]. And port changes.

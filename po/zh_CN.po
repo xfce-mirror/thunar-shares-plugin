@@ -19,8 +19,7 @@ msgstr ""
 msgid "Please, write a name."
 msgstr "请输入名字"
 
-#: ../libshares/libshares-util.c:162
-#: ../data/dialogs.xml.h:1
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "无法修改共享:"
@@ -54,8 +53,7 @@ msgstr "'net usershare' 返回错误代号 %d"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "'net usershare' 的输入不是合法 UTF-8 编码"
 
-#: ../libshares/shares.c:463
-#: ../libshares/shares.c:636
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "失败"
@@ -87,7 +85,9 @@ msgstr "无法删除共享路径 %s: 此路径未被共享"
 
 #: ../libshares/shares.c:747
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr "无法修改已有的共享路径；请删除旧的共享并重新添加新的"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
@@ -115,15 +115,15 @@ msgid "<b>Comments:</b>"
 msgstr "<b>注释:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>文件夹:</b>"
+msgstr "<b>文件夹共享</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
 msgstr "<b>共享名:</b>"
 
-#: ../data/admin-dialog-editor.xml.h:4
-#: ../data/thunar-page.xml.h:2
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
 msgstr "允许来宾访问"
 
@@ -135,19 +135,18 @@ msgstr "允许其他用户写入此目录"
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - 管理共享目录"
 
-#: ../data/dialogs.xml.h:2
-#: ../data/thunar-page.xml.h:8
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Thunar 共享错误"
 
-#: ../data/dialogs.xml.h:3
-#: ../data/thunar-page.xml.h:9
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Thunar 共享问题"
 
-#: ../data/dialogs.xml.h:4
-#: ../data/thunar-page.xml.h:10
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
 msgstr "Thunar 需要增加一些权限设置至您的目录以便共享。是否同意？"
 
 #: ../data/thunar-page.xml.h:1
@@ -170,3 +169,10 @@ msgstr "共享名:"
 msgid "Share this folder"
 msgstr "共享此目录"
 
+#, fuzzy
+#~ msgid "Folder:"
+#~ msgstr "<b>文件夹:</b>"
+
+#, fuzzy
+#~ msgid "Share name:"
+#~ msgstr "共享名:"

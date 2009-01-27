@@ -20,8 +20,7 @@ msgstr ""
 msgid "Please, write a name."
 msgstr "Por favor, escreva um nome."
 
-#: ../libshares/libshares-util.c:162
-#: ../data/dialogs.xml.h:1
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "Incapaz de modificar a partilha:"
@@ -55,8 +54,7 @@ msgstr "'net usershare' retornou o erro %d"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "a saída do 'net usershare' não está codificado em UTF-8"
 
-#: ../libshares/shares.c:463
-#: ../libshares/shares.c:636
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "Falhou"
@@ -84,12 +82,18 @@ msgstr "O comando testparm do Samba retornou o erro %d"
 #: ../libshares/shares.c:701
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Incapaz de remover a partilha para o caminho %s: este caminho não está partilhado"
+msgstr ""
+"Incapaz de remover a partilha para o caminho %s: este caminho não está "
+"partilhado"
 
 #: ../libshares/shares.c:747
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "Incapaz de mudar o caminho de uma partilha existente; por favor, remova a partilha antiga primeiro e adicione uma nova"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"Incapaz de mudar o caminho de uma partilha existente; por favor, remova a "
+"partilha antiga primeiro e adicione uma nova"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -116,15 +120,15 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Comentários:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Pasta:</b>"
+msgstr "<b>Partilhar Pasta</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
 msgstr "<b>Nome da partilha:</b>"
 
-#: ../data/admin-dialog-editor.xml.h:4
-#: ../data/thunar-page.xml.h:2
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
 msgstr "Permitir acesso convidado"
 
@@ -136,20 +140,21 @@ msgstr "Permitir que outros utilizadores gravem nesta pasta"
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - Gerir pastas partilhadas"
 
-#: ../data/dialogs.xml.h:2
-#: ../data/thunar-page.xml.h:8
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Erro de partilha do Thunar"
 
-#: ../data/dialogs.xml.h:3
-#: ../data/thunar-page.xml.h:9
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Questões sobre partilhas do Thunar"
 
-#: ../data/dialogs.xml.h:4
-#: ../data/thunar-page.xml.h:10
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "O Thunar precisa adicionar algumas permissões à sua pasta para partilhá-la. Concorda?"
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+"O Thunar precisa adicionar algumas permissões à sua pasta para partilhá-la. "
+"Concorda?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
@@ -171,3 +176,10 @@ msgstr "Nome da partilha:"
 msgid "Share this folder"
 msgstr "Partilhar esta pasta"
 
+#, fuzzy
+#~ msgid "Folder:"
+#~ msgstr "<b>Pasta:</b>"
+
+#, fuzzy
+#~ msgid "Share name:"
+#~ msgstr "Nome da partilha:"

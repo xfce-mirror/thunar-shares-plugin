@@ -89,7 +89,9 @@ msgstr "Ezin da %s bidearen partekatzea kendu: bidea ez dago partekatua"
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "Ezin da sorturik dagoen partekatze baten bidea; mesedez kendu partekatze zaharra aurretik eta gero gehitu berri bat"
+msgstr ""
+"Ezin da sorturik dagoen partekatze baten bidea; mesedez kendu partekatze "
+"zaharra aurretik eta gero gehitu berri bat"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -116,8 +118,9 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Iruzkinak:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Karpeta:</b>"
+msgstr "<b>Karpeta partekatzea</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
@@ -147,7 +150,9 @@ msgstr "Thunar partekatze galdera"
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do "
 "you agree?"
-msgstr "Thunarrek zure karpetara baimen batzuek gehitu behar dizkio partekatu ahal izateko. Ados zaude?"
+msgstr ""
+"Thunarrek zure karpetara baimen batzuek gehitu behar dizkio partekatu ahal "
+"izateko. Ados zaude?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
@@ -168,3 +173,11 @@ msgstr "Partekatze izena:"
 #: ../data/thunar-page.xml.h:7
 msgid "Share this folder"
 msgstr "Partekatu karpeta hau"
+
+#, fuzzy
+#~ msgid "Folder:"
+#~ msgstr "<b>Karpeta:</b>"
+
+#, fuzzy
+#~ msgid "Share name:"
+#~ msgstr "Partekatze izena:"

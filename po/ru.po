@@ -17,7 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2008-07-17 13:36+0000\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../libshares/libshares-util.c:111
 msgid "Please, write a name."
@@ -121,8 +122,9 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Коментарии:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Папка:</b>"
+msgstr "<b>Общий доступ к папкам</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
@@ -152,7 +154,9 @@ msgstr "Вопросы общего доступа Thunar"
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do "
 "you agree?"
-msgstr "Приложению Thunar необходимо добавить определенные права доступа к вашей папке для организации общего доступа к ней. Вы согласны добавить новые права?"
+msgstr ""
+"Приложению Thunar необходимо добавить определенные права доступа к вашей "
+"папке для организации общего доступа к ней. Вы согласны добавить новые права?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
@@ -174,3 +178,10 @@ msgstr "Сетевое имя:"
 msgid "Share this folder"
 msgstr "Разрешить общий доступ к этой папке"
 
+#, fuzzy
+#~ msgid "Folder:"
+#~ msgstr "<b>Папка:</b>"
+
+#, fuzzy
+#~ msgid "Share name:"
+#~ msgstr "Сетевое имя:"

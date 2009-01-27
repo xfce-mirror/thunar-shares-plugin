@@ -120,8 +120,9 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Comentaris:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Carpeta:</b>"
+msgstr "<b>Compartició de carpetes</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
@@ -174,3 +175,11 @@ msgstr "Nom compartit:"
 #: ../data/thunar-page.xml.h:7
 msgid "Share this folder"
 msgstr "Comparteix aquesta carpeta"
+
+#, fuzzy
+#~ msgid "Folder:"
+#~ msgstr "<b>Carpeta:</b>"
+
+#, fuzzy
+#~ msgid "Share name:"
+#~ msgstr "Nom compartit:"

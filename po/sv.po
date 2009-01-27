@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-14 15:53+0100\n"
+"POT-Creation-Date: 2008-07-22 20:50-0300\n"
 "PO-Revision-Date: 2008-12-21 19:35+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -15,171 +15,183 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../libshares/libshares-util.c:163
+#: ../libshares/libshares-util.c:111
 msgid "Please, write a name."
 msgstr "Ange ett namn."
 
-#. -- Fixme this should be just a warning.
-#: ../libshares/libshares-util.c:171
-msgid "Share name is too long."
-msgstr "Utdelningens namn är för långt."
-
-#: ../libshares/libshares-util.c:184
-#, c-format
-msgid "Error while getting share information: %s"
-msgstr "Fel vid hämtning av utdelningsinformation: %s"
-
-#: ../libshares/libshares-util.c:194
-msgid "Another share has the same name"
-msgstr "En annan utdelning har samma namn"
-
-#: ../libshares/libshares-util.c:256
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "Kan inte ändra utdelningen:"
 
-#: ../libshares/libshares-util.c:350
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "Thunar behöver lägga till några rättigheter på din mapp för att kunna dela ut den. Godkänner du det?"
-
-#: ../libshares/libshares-util.c:391
+#: ../libshares/libshares-util.c:232
 msgid "Error when changing folder permissions."
 msgstr "Fel vid ändring av mapprättigheter."
 
-#: ../libshares/shares.c:153
+#: ../libshares/shares.c:146
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "%s %s %s returnerade signal %d"
 
-#: ../libshares/shares.c:162
+#: ../libshares/shares.c:155
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "%s %s %s misslyckades av en okänd anledning"
 
-#: ../libshares/shares.c:183
+#: ../libshares/shares.c:175
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "'net usershare' returnerade fel %d: %s"
 
-#: ../libshares/shares.c:185
+#: ../libshares/shares.c:177
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "'net usershare' returnerade fel %d"
 
-#: ../libshares/shares.c:219
+#: ../libshares/shares.c:208
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "utdata från 'net usershare' är inte i giltig UTF-8-kodning"
 
-#: ../libshares/shares.c:478
-#: ../libshares/shares.c:655
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "Misslyckades"
 
-#: ../libshares/shares.c:590
+#: ../libshares/shares.c:571
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr "Sambas testparm returnerade signal %d"
 
-#: ../libshares/shares.c:596
+#: ../libshares/shares.c:577
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
 msgstr "Sambas testparm misslyckades av en okänd anledning"
 
-#: ../libshares/shares.c:611
+#: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr "Sambas testparm returnerade fel %d: %s"
 
-#: ../libshares/shares.c:613
+#: ../libshares/shares.c:594
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr "Sambas testparm returnerade fel %d"
 
-#: ../libshares/shares.c:726
+#: ../libshares/shares.c:701
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Kan inte ta bort utdelningen för sökvägen %s: den sökvägen delas inte ut"
+msgstr ""
+"Kan inte ta bort utdelningen för sökvägen %s: den sökvägen delas inte ut"
 
-#: ../libshares/shares.c:779
+#: ../libshares/shares.c:747
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "Kan inte ändra sökvägen för en befintlig utdelning; ta bort den gamla utdelningen och lägg till en ny"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"Kan inte ändra sökvägen för en befintlig utdelning; ta bort den gamla "
+"utdelningen och lägg till en ny"
 
-#. Dialog setup
-#: ../thunar-plugin/tsp-admin.c:108
-msgid "Thunar - Manage Shared Folders"
-msgstr "Thunar - Hantera utdelade mappar"
-
-#: ../thunar-plugin/tsp-admin.c:326
-#: ../thunar-plugin/tsp-admin-editor.c:251
-msgid "There was an error while listing shares"
-msgstr "Det uppstod et fel vid listning av utdelningar"
-
-#. Dialog setup
-#: ../thunar-plugin/tsp-admin-editor.c:95
+#: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
 msgstr "Thunar - Lägg till en utdelning"
 
-#. Folder chooser
-#: ../thunar-plugin/tsp-admin-editor.c:112
-msgid "Folder:"
-msgstr "Mapp:"
-
-#. Name
-#: ../thunar-plugin/tsp-admin-editor.c:121
-msgid "Share name:"
-msgstr "Utdelningens namn:"
-
-#. Write access
-#: ../thunar-plugin/tsp-admin-editor.c:130
-#: ../thunar-plugin/tsp-page.c:182
-msgid "Allow others users to write in this folder"
-msgstr "Tillåt andra användare att skriva till denna mapp"
-
-#. Guests access
-#. Guest access
-#: ../thunar-plugin/tsp-admin-editor.c:134
-#: ../thunar-plugin/tsp-page.c:187
-msgid "Allow Guest access"
-msgstr "Tillåt gäståtkomst"
-
-#. Comments
-#: ../thunar-plugin/tsp-admin-editor.c:138
-#: ../thunar-plugin/tsp-page.c:195
-msgid "Comments:"
-msgstr "Kommentarer:"
-
-#: ../thunar-plugin/tsp-admin-editor.c:243
+#: ../thunar-plugin/tsp-admin-editor.c:196
 msgid "Thunar - Edit share"
 msgstr "Thunar - Redigera utdelning"
 
-#: ../thunar-plugin/tsp-page.c:154
-msgid "<b>Folder Sharing</b>"
-msgstr "<b>Mapputdelning</b>"
-
-#. Share check button
-#: ../thunar-plugin/tsp-page.c:164
-msgid "Share this folder"
-msgstr "Dela ut denna mapp"
-
-#: ../thunar-plugin/tsp-page.c:172
-msgid "Share Name:"
-msgstr "Utdelningens namn:"
-
-#: ../thunar-plugin/tsp-page.c:296
+#: ../thunar-plugin/tsp-page.c:229
 msgid "Share"
 msgstr "Utdelning"
 
-#: ../thunar-plugin/tsp-page.c:390
-msgid "There was an error while getting the sharing information"
-msgstr "Det uppstod ett fel vid hämtning av utdelningsinformation"
-
-#: ../thunar-plugin/tsp-provider.c:129
+#: ../thunar-plugin/tsp-prefs-provider.c:99
 msgid "Manage shared folders..."
 msgstr "Hantera utdelade mappar..."
 
-#: ../thunar-plugin/tsp-provider.c:130
+#: ../thunar-plugin/tsp-prefs-provider.c:100
 msgid "Add, edit and remove shared folders"
 msgstr "Lägg till, redigera och ta bort utdelade mappar"
 
+#: ../data/admin-dialog-editor.xml.h:1
+#, fuzzy
+msgid "<b>Comments:</b>"
+msgstr "Kommentarer:"
+
+#: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
+msgid "<b>Folder:</b>"
+msgstr "<b>Mapputdelning</b>"
+
+#: ../data/admin-dialog-editor.xml.h:3
+#, fuzzy
+msgid "<b>Share name:</b>"
+msgstr "Utdelningens namn:"
+
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+msgid "Allow Guest access"
+msgstr "Tillåt gäståtkomst"
+
+#: ../data/admin-dialog-editor.xml.h:5
+#, fuzzy
+msgid "Allow other users to write in this folder"
+msgstr "Tillåt andra användare att skriva till denna mapp"
+
+#: ../data/admin-dialog.xml.h:1
+msgid "Thunar - Manage Shared Folders"
+msgstr "Thunar - Hantera utdelade mappar"
+
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+#, fuzzy
+msgid "Thunar Shares Error"
+msgstr "Thunar - Hantera utdelade mappar"
+
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+msgid "Thunar Shares Question"
+msgstr ""
+
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+"Thunar behöver lägga till några rättigheter på din mapp för att kunna dela "
+"ut den. Godkänner du det?"
+
+#: ../data/thunar-page.xml.h:1
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Mapputdelning</b>"
+
+#: ../data/thunar-page.xml.h:3
+msgid "Allow others users to write in this folder"
+msgstr "Tillåt andra användare att skriva till denna mapp"
+
+#: ../data/thunar-page.xml.h:5
+msgid "Comments:"
+msgstr "Kommentarer:"
+
+#: ../data/thunar-page.xml.h:6
+msgid "Share Name:"
+msgstr "Utdelningens namn:"
+
+#: ../data/thunar-page.xml.h:7
+msgid "Share this folder"
+msgstr "Dela ut denna mapp"
+
+#~ msgid "Error while getting share information: %s"
+#~ msgstr "Fel vid hämtning av utdelningsinformation: %s"
+
+#~ msgid "Another share has the same name"
+#~ msgstr "En annan utdelning har samma namn"
+
+#~ msgid "There was an error while listing shares"
+#~ msgstr "Det uppstod et fel vid listning av utdelningar"
+
+#~ msgid "Folder:"
+#~ msgstr "Mapp:"
+
+#~ msgid "There was an error while getting the sharing information"
+#~ msgstr "Det uppstod ett fel vid hämtning av utdelningsinformation"
+
+#~ msgid "Share name is too long."
+#~ msgstr "Utdelningens namn är för långt."

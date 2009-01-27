@@ -21,8 +21,7 @@ msgstr ""
 msgid "Please, write a name."
 msgstr "名前を入力してください。"
 
-#: ../libshares/libshares-util.c:162
-#: ../data/dialogs.xml.h:1
+#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "共有を変更できません:"
@@ -56,8 +55,7 @@ msgstr "'net usershare' はエラー %d を返しました"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "'net usershare' の出力は正しい UTF-8 エンコーディングではありません"
 
-#: ../libshares/shares.c:463
-#: ../libshares/shares.c:636
+#: ../libshares/shares.c:463 ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "失敗しました"
@@ -89,8 +87,12 @@ msgstr "パス %s の共有を解除できません: これは共有されてい
 
 #: ../libshares/shares.c:747
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "既存の共有パスを変更できません。先に古い共有を解除してから新しく追加してください。"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"既存の共有パスを変更できません。先に古い共有を解除してから新しく追加してくだ"
+"さい。"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -117,15 +119,15 @@ msgid "<b>Comments:</b>"
 msgstr "<b>コメント:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
+#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>フォルダ:</b>"
+msgstr "<b>フォルダの共有</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
 msgstr "<b>共有名:</b>"
 
-#: ../data/admin-dialog-editor.xml.h:4
-#: ../data/thunar-page.xml.h:2
+#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
 msgstr "ゲストアクセスを許可する"
 
@@ -137,20 +139,21 @@ msgstr "他のユーザのこのフォルダへの書き込みを許可します
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - 共有フォルダの管理"
 
-#: ../data/dialogs.xml.h:2
-#: ../data/thunar-page.xml.h:8
+#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Thunar 共有エラー"
 
-#: ../data/dialogs.xml.h:3
-#: ../data/thunar-page.xml.h:9
+#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Thunar 共有の質問"
 
-#: ../data/dialogs.xml.h:4
-#: ../data/thunar-page.xml.h:10
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "Thunar は共有するフォルダに対していくつかのアクセス権の追加を必要とします。よろしいですか?"
+#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+"Thunar は共有するフォルダに対していくつかのアクセス権の追加を必要とします。よ"
+"ろしいですか?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
@@ -172,3 +175,10 @@ msgstr "共有名:"
 msgid "Share this folder"
 msgstr "このフォルダを共有する"
 
+#, fuzzy
+#~ msgid "Folder:"
+#~ msgstr "<b>フォルダ:</b>"
+
+#, fuzzy
+#~ msgid "Share name:"
+#~ msgstr "共有名:"
