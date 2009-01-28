@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Piarres Beobide <pi@beobide.net>, 2008.
+# Piarres Beobide <pi@beobide.net>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-11-26 23:01+0100\n"
+"PO-Revision-Date: 2009-01-28 01:12+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -118,9 +118,8 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Iruzkinak:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
-#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Karpeta partekatzea</b>"
+msgstr "<b>Karpeta:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
@@ -174,10 +173,3 @@ msgstr "Partekatze izena:"
 msgid "Share this folder"
 msgstr "Partekatu karpeta hau"
 
-#, fuzzy
-#~ msgid "Folder:"
-#~ msgstr "<b>Karpeta:</b>"
-
-#, fuzzy
-#~ msgid "Share name:"
-#~ msgstr "Partekatze izena:"
