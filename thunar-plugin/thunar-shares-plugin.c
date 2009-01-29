@@ -1,6 +1,6 @@
 /* vim: set ts=4 sw=8 noet ai nocindent syntax=c: */
 /*
- * Copyright (C) 2008 Daniel Morales <daniel@daniel.com.uy>
+ * Copyright (C) 2009 Daniel Morales <daniel@daniel.com.uy>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as

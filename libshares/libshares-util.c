@@ -1,6 +1,6 @@
 /* vim: set ts=4 sw=8 noet ai nocindent syntax=c: */
 /*
- * Copyright (C) 2008 Daniel Morales <daniel@daniel.com.uy>
+ * Copyright (C) 2009 Daniel Morales <daniel@daniel.com.uy>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -168,7 +168,7 @@ libshares_shares_share (const gchar  *file_local,
   if (g_utf8_strlen (name, -1) > 12)
   {
     /* Warn the user */
-	if (!libshares_ask_user (_("Share name too long. Some old clients may have problems to access it, continue anyway?")))
+    if (!libshares_ask_user (_("Share name too long. Some old clients may have problems to access it, continue anyway?")))
       return NULL;
   }
 

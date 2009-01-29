@@ -2,7 +2,7 @@
 
         * eu.po: Basque translation update
 
-2009-01-27  Maximilian Schleiss <maximilian@xfce.org>
+2009-01-27  Daniel Morales <daniel@daniel.com.uy>
 
 	* POTFILES.in: Added/Removed old files
 	* update-po. (First since 0.10, and last one before 0.20 release)

@@ -1,9 +1,9 @@
 NEW in 0.2.0:
 =============
 - New build system (Using XFCE dev tools).
-- Minor tweaks.
+- Major rewrite.
 - Project renamed to: thunar-shares-plugin.
-- Moved to XFce Goodies website:
+- Project moved to Xfce Goodies:
   http://goodies.xfce.org/projects/thunar-plugins/thunar-shares-plugin
 - More translations.
 

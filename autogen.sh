@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright (c) 2002-2006
+# Copyright (c) 2002-2009
 #         The Thunar development team. All rights reserved.
 #
 # Written for Thunar by Benedikt Meurer <benny@xfce.org>.
