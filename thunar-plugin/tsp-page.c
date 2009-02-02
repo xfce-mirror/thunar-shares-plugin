@@ -68,6 +68,8 @@ static void tsp_page_cmt_changed   (GtkEditable     *editable,
                                     TspPage         *tsp_page);
 static void tsp_page_sensibility   (TspPage         *tsp_page,
                                     gboolean         sens);
+static void tsp_page_set_error     (TspPage         *tsp_page,
+                                    const char      *msg);
 
 static gboolean tsp_check_changes  (TspPage         *page);
 
@@ -214,6 +216,7 @@ tsp_page_init (TspPage *page)
   /* Status label */
   page->label_status = gtk_label_new (NULL);
   gtk_label_set_use_markup (GTK_LABEL (page->label_status), TRUE);
+  gtk_label_set_line_wrap (GTK_LABEL (page->label_status), TRUE);
   gtk_misc_set_alignment (GTK_MISC (page->label_status ), 0.0f, 0.50f);
   gtk_misc_set_padding (GTK_MISC (page->label_status), 5, 0);
   gtk_box_pack_start (GTK_BOX (vbox1), page->label_status, FALSE, FALSE, 5);
@@ -384,11 +387,20 @@ tsp_page_file_changed (ThunarVfsMonitor       *monitor,
 
   result = shares_get_share_info_for_path (file_local, &share_info, &error);
 
+  /* Free some memory */
+  g_free (uri);
+  g_free (file_local);
+
   /* Check error */
   if (!result)
   {
-    libshares_show_error (_("There was an error while getting the sharing information"), error->message);
+    tsp_page_set_error (tsp_page, _("You may need to install Samba, check your "
+                                  "user permissions(usershares group) and re-login."
+                                  "\n<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"));
+ 
     g_error_free (error);
+    
+    return;
   }
 
   /* Check if shared */
@@ -408,9 +420,6 @@ tsp_page_file_changed (ThunarVfsMonitor       *monitor,
     tsp_update_default (tsp_page, NULL);
     tsp_page_sensibility (tsp_page, FALSE);
   }
-
-  g_free (uri);
-  g_free (file_local);
 }
 
 /* Share name changed */
@@ -523,6 +532,20 @@ tsp_page_apply_clicked (GtkButton *button,
 
   g_free (local_file);
 }
+
+static void
+tsp_page_set_error (TspPage    *tsp_page,
+                    const char *msg)
+{
+  gchar *errormsg = g_strdup_printf ("<span color='red'>%s</span>", msg);
+
+  gtk_label_set_markup (GTK_LABEL (tsp_page->label_status), errormsg);
+  tsp_page_sensibility (tsp_page, FALSE);
+  tsp_update_default (tsp_page, NULL);
+  gtk_widget_set_sensitive (tsp_page->cb_share_folder, FALSE);
+  g_free (errormsg);
+}
+
 
 /* Disable ore enable widgets when 'share folder' is toggled */
 static void

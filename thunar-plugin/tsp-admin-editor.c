@@ -248,7 +248,7 @@ tsp_admin_editor_set_path (TspAdminEditor *editor,
   /* Check error */
   if (!result)
   {
-    libshares_show_error (_("There was an error while listing shares"), error->message);
+    libshares_show_error (_("There was an error while getting the sharing information"), error->message);
     g_error_free (error);
   }
 

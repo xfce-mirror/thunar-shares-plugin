@@ -71,8 +71,11 @@ struct _TspAdminManager
   GtkDialog   __parent__;
   
   GtkWidget  *share_list;
+  GtkWidget  *share_add;
   GtkWidget  *share_edit;
   GtkWidget  *share_remove;
+
+  GtkWidget  *label_status;
 };
 
 THUNARX_DEFINE_TYPE (TspAdminManager, tsp_admin_manager, GTK_TYPE_DIALOG);
@@ -162,9 +165,9 @@ tsp_admin_manager_init (TspAdminManager *manager)
   gtk_button_box_set_layout (GTK_BUTTON_BOX (buttonbox), GTK_BUTTONBOX_START);
   gtk_box_pack_start (GTK_BOX (hbox), buttonbox, FALSE, FALSE, 0);
   
-  widget = gtk_button_new_from_stock (GTK_STOCK_ADD);
-  g_signal_connect (G_OBJECT (widget), "clicked", G_CALLBACK (tsp_admin_manager_add_cb), manager);
-  gtk_container_add (GTK_CONTAINER (buttonbox), widget);
+  manager->share_add = gtk_button_new_from_stock (GTK_STOCK_ADD);
+  g_signal_connect (G_OBJECT (manager->share_add), "clicked", G_CALLBACK (tsp_admin_manager_add_cb), manager);
+  gtk_container_add (GTK_CONTAINER (buttonbox), manager->share_add);
   
   manager->share_edit = gtk_button_new_from_stock (GTK_STOCK_EDIT);
   g_signal_connect (G_OBJECT (manager->share_edit), "clicked", G_CALLBACK (tsp_admin_manager_edit_cb), manager);
@@ -173,13 +176,24 @@ tsp_admin_manager_init (TspAdminManager *manager)
   manager->share_remove = gtk_button_new_from_stock (GTK_STOCK_REMOVE);
   g_signal_connect (G_OBJECT (manager->share_remove), "clicked", G_CALLBACK (tsp_admin_manager_remove_cb), manager);
   gtk_container_add (GTK_CONTAINER (buttonbox), manager->share_remove);
-  
+
+  /* Status label */
+  manager->label_status = gtk_label_new (NULL);
+  gtk_label_set_use_markup (GTK_LABEL (manager->label_status), TRUE);
+  gtk_label_set_line_wrap (GTK_LABEL (manager->label_status), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (manager->label_status ), 0.0f, 0.50f);
+  gtk_misc_set_padding (GTK_MISC (manager->label_status), 5, 0);
+  gtk_box_pack_start (GTK_BOX (vbox), manager->label_status, FALSE, FALSE, 5);
+
   /* Disable edit and remove buttons */
   gtk_widget_set_sensitive (manager->share_edit, FALSE);
   gtk_widget_set_sensitive (manager->share_remove, FALSE);
   
   /* Let's show all ;) */
   gtk_widget_show_all (vbox);
+
+  /* Hide status label */
+  gtk_widget_hide (manager->label_status);
 
   /* Load shares */
   tsp_admin_manager_reload_shares (manager);
@@ -323,7 +337,20 @@ tsp_admin_manager_reload_shares (TspAdminManager *manager)
   /* Check error */
   if (!result)
   {
-    libshares_show_error (_("There was an error while listing shares"), error->message);
+    gchar *errormsg = g_strdup_printf ("<span color='red'>%s</span>",
+                                     _("You may need to install Samba, check your "
+                                       "user permissions(usershares group) and re-login."
+                                       "\n<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"));
+
+    gtk_label_set_markup (GTK_LABEL (manager->label_status), errormsg);
+    gtk_widget_show (manager->label_status);
+
+    gtk_widget_set_sensitive (manager->share_add, FALSE);
+    gtk_widget_set_sensitive (manager->share_edit, FALSE);
+    gtk_widget_set_sensitive (manager->share_remove, FALSE);
+    gtk_widget_set_sensitive (manager->share_list, FALSE);
+
+    g_free (errormsg);
     g_error_free (error);
   }
 

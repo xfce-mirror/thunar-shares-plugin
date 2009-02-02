@@ -506,8 +506,6 @@ refresh_if_needed (GError **error)
 	if (refresh_timestamp_update_counter == 0) {
 		time_t new_timestamp;
 
-		refresh_timestamp_update_counter = NUM_CALLS_BETWEEN_TIMESTAMP_UPDATES;
-
 		new_timestamp = time (NULL);
 		if (new_timestamp - refresh_timestamp > TIMESTAMP_THRESHOLD) {
 #ifdef G_ENABLE_DEBUG
@@ -517,7 +515,12 @@ refresh_if_needed (GError **error)
 		} else
 			retval = TRUE;
 
-		refresh_timestamp = new_timestamp;
+		if (retval)
+		{
+			refresh_timestamp = new_timestamp;
+			
+			refresh_timestamp_update_counter = NUM_CALLS_BETWEEN_TIMESTAMP_UPDATES;
+		}
 	} else {
 		refresh_timestamp_update_counter--;
 		retval = TRUE;
