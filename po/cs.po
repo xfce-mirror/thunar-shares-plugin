@@ -1,14 +1,14 @@
 # Czech translations for thunar-shares-plugin package.
 # Copyright (C) 2008 THE thunar-shares-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the thunar-shares-plugin package.
-# Michal Várady <miko.vaji@gmail.com>, 2008.
+# Michal Várady <miko.vaji@gmail.com>, 2008-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin 0.2.0-svn-r05805\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-10-25 23:30+0100\n"
+"PO-Revision-Date: 2009-02-05 13:54+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,8 @@ msgstr ""
 msgid "Please, write a name."
 msgstr "Zadejte název."
 
-#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../libshares/libshares-util.c:162
+#: ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "Nelze změnit sdílenou složku:"
@@ -54,7 +55,8 @@ msgstr "Příkaz 'net usershare' vrátil chybu %d"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "výstup příkazu 'net usershare' není platný řetězec s kódováním UTF-8"
 
-#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#: ../libshares/shares.c:463
+#: ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "Selhal"
@@ -86,12 +88,8 @@ msgstr "Nelze odebrat sdílení z cesty %s: tato cesta není sdílená"
 
 #: ../libshares/shares.c:747
 #, c-format
-msgid ""
-"Cannot change the path of an existing share; please remove the old share "
-"first and add a new one"
-msgstr ""
-"Nelze změnit cestu existující sdílené složky; nejdříve odeberte starou "
-"sdílenou složku a poté přidejte novou"
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "Nelze změnit cestu existující sdílené složky; nejdříve odeberte starou sdílenou složku a poté přidejte novou"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -118,45 +116,44 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Komentáře:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
-#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Sdílění složky</b>"
+msgstr "<b>Složka:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
 msgstr "<b>Název sdílené složky:</b>"
 
-#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+#: ../data/admin-dialog-editor.xml.h:4
+#: ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
 msgstr "Povolit přístup nepřihlášeným uživatelům"
 
 #: ../data/admin-dialog-editor.xml.h:5
 msgid "Allow other users to write in this folder"
-msgstr "Povolit ostatním uživatelům zápis do této složky"
+msgstr "Povolí jiným uživatelům zápis do této složky"
 
 #: ../data/admin-dialog.xml.h:1
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - Správa sdílených složek"
 
-#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+#: ../data/dialogs.xml.h:2
+#: ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Chybové hlášení aplikace Thunar - sdílení složek"
 
-#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+#: ../data/dialogs.xml.h:3
+#: ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Dotaz aplikace Thunar - sdílení složek"
 
-#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
-msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
-msgstr ""
-"Aplikace Thunar přidá některá oprávnění vaší složce tak, aby ji mohla "
-"sdílet. Chcete pokračovat?"
+#: ../data/dialogs.xml.h:4
+#: ../data/thunar-page.xml.h:10
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Aplikace Thunar přidá této složce oprávnění, aby ji mohla sdílet. Chcete pokračovat?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
-msgstr "<b>Sdílění složky</b>"
+msgstr "<b>Sdílení složky</b>"
 
 #: ../data/thunar-page.xml.h:3
 msgid "Allow others users to write in this folder"
@@ -181,3 +178,4 @@ msgstr "Sdílet tuto složku"
 #, fuzzy
 #~ msgid "Share name:"
 #~ msgstr "Název sdílené složky:"
+
