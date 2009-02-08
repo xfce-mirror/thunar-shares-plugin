@@ -1,7 +1,7 @@
 # Norwegian Bokmal translation for thunar-shares
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # This file is distributed under the same license as the thunar-shares package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+# Terje Uriansrud <terje@uriansrud.net>, 2009.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
 "PO-Revision-Date: 2008-04-24 20:31+0000\n"
-"Last-Translator: Lomz <christian@vindstille.net>\n"
+"Last-Translator: Terje Uriansrud <terje@uriansrud.net>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,18 +18,17 @@ msgstr ""
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: ../libshares/libshares-util.c:111
-#, fuzzy
 msgid "Please, write a name."
-msgstr "Vennligst, skriv inn navnet for delingen"
+msgstr "Vennligst, skriv inn navn"
 
 #: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
-msgstr ""
+msgstr "Kan ikke endre nettverksområde"
 
 #: ../libshares/libshares-util.c:232
 msgid "Error when changing folder permissions."
-msgstr ""
+msgstr "Feil under endring av mapperettigheter."
 
 #: ../libshares/shares.c:146
 #, c-format
@@ -54,7 +53,7 @@ msgstr "'net usershare' rkom tilbake med feil %d"
 #: ../libshares/shares.c:208
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "Utdata fra 'net usershare' er ikke i korrekt UTF-8 koding"
+msgstr "Utdata fra 'net usershare' er ikke i korrekt UTF-8 tegnkoding"
 
 #: ../libshares/shares.c:463 ../libshares/shares.c:636
 #, c-format
@@ -97,84 +96,79 @@ msgstr ""
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
-msgstr ""
+msgstr "Thunar - Legg til nettverksområde"
 
 #: ../thunar-plugin/tsp-admin-editor.c:196
 msgid "Thunar - Edit share"
-msgstr ""
+msgstr "Thunar - Endre nettverksområde"
 
 #: ../thunar-plugin/tsp-page.c:229
 msgid "Share"
-msgstr ""
+msgstr "Nettverksområde"
 
 #: ../thunar-plugin/tsp-prefs-provider.c:99
 msgid "Manage shared folders..."
-msgstr ""
+msgstr "Administrer nettverksområder.."
 
 #: ../thunar-plugin/tsp-prefs-provider.c:100
 msgid "Add, edit and remove shared folders"
-msgstr ""
+msgstr "Legg til, endre og slett nettverksområder"
 
 #: ../data/admin-dialog-editor.xml.h:1
 msgid "<b>Comments:</b>"
-msgstr ""
+msgstr "<b>Kommentarer:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
 msgid "<b>Folder:</b>"
-msgstr ""
+msgstr "<b>Mappe:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
-msgstr ""
+msgstr "<b>Nettverksområde navn:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
-msgstr ""
+msgstr "Tillat gjester"
 
 #: ../data/admin-dialog-editor.xml.h:5
 msgid "Allow other users to write in this folder"
-msgstr ""
+msgstr "Tillat at andre brukere kan skrive til denne mappen"
 
 #: ../data/admin-dialog.xml.h:1
 msgid "Thunar - Manage Shared Folders"
-msgstr ""
+msgstr "Thunar - Administrer nettverksområder"
 
 #: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
-msgstr ""
+msgstr "Thunar Nettverksområdefeil"
 
 #: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
-msgstr ""
+msgstr "Thunar Nettverksområde spørsmål"
 
 #: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do "
 "you agree?"
 msgstr ""
+"Thunar må endre rettigheter til mappen for å kunne dele den. Ønsker du dette?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
-msgstr ""
+msgstr "<b>Deling av mappe</b>"
 
 #: ../data/thunar-page.xml.h:3
 msgid "Allow others users to write in this folder"
-msgstr ""
+msgstr "Tillat at andre brukere kan skrive til denne mappen"
 
 #: ../data/thunar-page.xml.h:5
 msgid "Comments:"
-msgstr ""
+msgstr "Kommentarer:"
 
 #: ../data/thunar-page.xml.h:6
 msgid "Share Name:"
-msgstr ""
+msgstr "Nanv på område"
 
 #: ../data/thunar-page.xml.h:7
 msgid "Share this folder"
-msgstr ""
-
-#~ msgid "Insufficient permissions to share the folder."
-#~ msgstr "Mangler rettigheter for å dele ut mappen."
-
-#~ msgid "<span color=\"red\"><b>Error:</b> %s</span>"
-#~ msgstr "<span color=\"red\"><b>Feil:</b> %s</span>"
+msgstr "Del denne mappen"

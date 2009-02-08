@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: thunar-shares-plugin 0.1.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-11-04 22:07+0700\n"
+"PO-Revision-Date: 2009-01-27 22:54+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,10 @@ msgstr ""
 
 #: ../libshares/libshares-util.c:111
 msgid "Please, write a name."
-msgstr ""
+msgstr "Tolong, tulis nama."
 
-#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../libshares/libshares-util.c:162
+#: ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "Tak dapat memodifikasi bagian:"
@@ -53,7 +54,8 @@ msgstr "'net usershare' mengembalikan galat %d"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "keluaran 'net usershare' bukan penyandian UTF-8 yang sah"
 
-#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#: ../libshares/shares.c:463
+#: ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "Gagal"
@@ -81,17 +83,12 @@ msgstr "Parameter tes Samba mengembalikan galat %d"
 #: ../libshares/shares.c:701
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr ""
-"Tak dapat menghapus bagian untuk alamat %s: alamat tersebut tidak dibagi"
+msgstr "Tak dapat menghapus bagian untuk alamat %s: alamat tersebut tidak dibagi"
 
 #: ../libshares/shares.c:747
 #, c-format
-msgid ""
-"Cannot change the path of an existing share; please remove the old share "
-"first and add a new one"
-msgstr ""
-"Tak dapat mengubah alaman bagian yang telah ada; silakan hapus bagian yang "
-"lama terlebih dahulu kemudian tambah yang baru"
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "Tak dapat mengubah alaman bagian yang telah ada; silakan hapus bagian yang lama terlebih dahulu kemudian tambah yang baru"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -118,15 +115,15 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Komentar:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
-#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Berbagi Folder</b>"
+msgstr "<b>Folder:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
 msgstr "<b>Name bagian:</b>"
 
-#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+#: ../data/admin-dialog-editor.xml.h:4
+#: ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
 msgstr "Izinkan akses Tamu"
 
@@ -138,21 +135,20 @@ msgstr "Izinkan pengguna lain untuk menulis di folder ini"
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - Atur Folder Terbagi"
 
-#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+#: ../data/dialogs.xml.h:2
+#: ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Galat Pembagian Thunar"
 
-#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+#: ../data/dialogs.xml.h:3
+#: ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Pertanyaan Pembagian Thunar"
 
-#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
-msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
-msgstr ""
-"Thunar perlu menambah beberapa hak akses ke folder anda supaya dapat "
-"membaginya. Anda setuju?"
+#: ../data/dialogs.xml.h:4
+#: ../data/thunar-page.xml.h:10
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Thunar perlu menambah beberapa hak akses ke folder anda supaya dapat membaginya. Anda setuju?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
@@ -181,3 +177,4 @@ msgstr "Bagi folder ini"
 #, fuzzy
 #~ msgid "Share name:"
 #~ msgstr "Nama Bagian:"
+
