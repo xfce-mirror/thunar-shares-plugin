@@ -3,7 +3,5 @@
 libshares/libshares-util.c
 libshares/shares.c
 thunar-plugin/thunar-shares-plugin.c
-thunar-plugin/tsp-admin.c
-thunar-plugin/tsp-admin-editor.c
 thunar-plugin/tsp-page.c
 thunar-plugin/tsp-provider.c

@@ -1,10 +1,14 @@
+2009-02-14	Daniel Morales <daniel@daniel.com.uy>
+
+	* Changed notification system. Let's use "changed" from thunarx.
+	* Dropped "admin" and "editor" dialogs. The preferences menu isn't a good
+	place for them. Maybe they can will added as a helper program some day.
+
 2009-02-02	Daniel Morales <daniel@daniel.com.uy>
 
 	* libshares/shares.c:
-	* thunar-plugin/tsp-page.c:
-	* thunar-plugin/tsp-admin.c: Do not display error message in dialogs,
+	* thunar-plugin/tsp-page.c: Do not display error message in dialogs,
 	let's display that errors on a embed label.
-	* thunar-plugin/tsp-admin-editor.c: Fixed message string.
 	* po/thunar-shares-plugin.pot: Bring back the POT file.
 
 2009-01-27	Daniel Morales <daniel@daniel.com.uy>

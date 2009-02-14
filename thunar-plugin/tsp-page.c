@@ -22,8 +22,8 @@
 #include <config.h>
 #endif
 
+#include <glib/gi18n.h>
 #include <gtk/gtk.h>
-#include <thunar-vfs/thunar-vfs.h>
 
 #include <libshares/shares.h>
 #include <libshares/libshares-util.h>
@@ -48,12 +48,8 @@ static void tsp_page_set_property  (GObject         *object,
                                     guint            prop_id,
                                     const GValue    *value,
                                     GParamSpec      *pspec);
-static void tsp_page_file_changed  (ThunarVfsMonitor       *monitor,
-                                    ThunarVfsMonitorHandle *handle,
-                                    ThunarVfsMonitorEvent   event,
-                                    ThunarVfsPath          *handle_path,
-                                    ThunarVfsPath          *event_path,
-                                    gpointer                user_data);
+static void tsp_page_file_changed  (ThunarxFileInfo *file,
+                                    gpointer         user_data);
 static void tsp_page_share_toggled (GtkToggleButton *togglebutton,
                                     TspPage         *tsp_page);
 static void tsp_page_write_toggled (GtkToggleButton *togglebutton,
@@ -85,8 +81,6 @@ struct _TspPage
 {
   ThunarxPropertyPage __parent__;
   ThunarxFileInfo    *file;
-
-  ThunarVfsMonitorHandle *handle;
 
   GtkWidget          *cb_share_folder;
   GtkWidget          *entry_share_name;
@@ -312,62 +306,38 @@ void
 tsp_page_set_file (TspPage         *tsp_page,
                    ThunarxFileInfo *file)
 {
-  ThunarVfsMonitor *monitor;
-  ThunarVfsPath    *path;
-  gchar            *uri;
-
   g_return_if_fail (TSP_IS_PAGE (tsp_page));
   g_return_if_fail (file == NULL || THUNARX_IS_FILE_INFO (file));
 
-  if (tsp_page->file == file){
+  /* Check if we already use this file */
+  if (G_UNLIKELY (tsp_page->file == file))
     return;
-  }
 
-  monitor = thunar_vfs_monitor_get_default ();
-
-  if (G_LIKELY (tsp_page->handle != NULL))
-  {
-    thunar_vfs_monitor_remove (monitor, tsp_page->handle);
-    tsp_page->handle = NULL;
-  }
-
+  /* Disconnect from the previous file (if any) */
   if (G_LIKELY (tsp_page->file != NULL))
   {
+    g_signal_handlers_disconnect_by_func (G_OBJECT (tsp_page->file), tsp_page_file_changed, tsp_page);
     g_object_unref (G_OBJECT (tsp_page->file));
   }
 
+  /* Assign the value */
   tsp_page->file = file;
 
-  if (file != NULL)
+  /* Connect to the new file (if any) */
+  if (G_LIKELY (file != NULL))
   {
-    g_object_ref (tsp_page->file);
-    tsp_page_file_changed (NULL, NULL, THUNAR_VFS_MONITOR_EVENT_CHANGED, NULL, NULL, tsp_page);
-    
-    /* Let's monitor file changes */
-    uri = thunarx_file_info_get_uri (tsp_page->file);
-    path = thunar_vfs_path_new (uri, NULL);
+    /* Take a reference on the info file */
+    g_object_ref (G_OBJECT (tsp_page->file));
+    tsp_page_file_changed (file, tsp_page);
 
-    if (G_LIKELY (path != NULL))
-    {
-      tsp_page->handle = thunar_vfs_monitor_add_file (monitor, path, tsp_page_file_changed, tsp_page);
-      thunar_vfs_path_unref (path);
-    }
-
-    g_free (uri);
+    g_signal_connect (G_OBJECT (file), "changed", G_CALLBACK (tsp_page_file_changed), tsp_page);
   }
-
-  g_object_unref (monitor);
-  g_object_notify (G_OBJECT (tsp_page), "file");
 }
 
 /* File changed */
 static void
-tsp_page_file_changed (ThunarVfsMonitor       *monitor,
-                       ThunarVfsMonitorHandle *handle,
-                       ThunarVfsMonitorEvent   event,
-                       ThunarVfsPath          *handle_path,
-                       ThunarVfsPath          *event_path,
-                       gpointer                user_data)
+tsp_page_file_changed (ThunarxFileInfo *file,
+                       gpointer         user_data)
 {
   ShareInfo   *share_info;
   gboolean     result;
@@ -375,11 +345,9 @@ tsp_page_file_changed (ThunarVfsMonitor       *monitor,
   GError      *error = NULL;
   gchar       *uri, *file_local;
 
-  if (G_LIKELY (event != THUNAR_VFS_MONITOR_EVENT_CHANGED)){
-    return;
-  }
-
   tsp_page = TSP_PAGE (user_data);
+
+  tsp_page->file = file; 
 
   /* Load share info */
   uri = thunarx_file_info_get_uri (tsp_page->file);
@@ -395,8 +363,8 @@ tsp_page_file_changed (ThunarVfsMonitor       *monitor,
   if (!result)
   {
     tsp_page_set_error (tsp_page, _("You may need to install Samba, check your "
-                                  "user permissions(usershares group) and re-login."
-                                  "\n<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"));
+                                    "user permissions(usershares group) and re-login."
+                                    "\n<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"));
  
     g_error_free (error);
     
@@ -529,6 +497,8 @@ tsp_page_apply_clicked (GtkButton *button,
       tsp_update_default (tsp_page, NULL);
     }
   }
+  
+  thunarx_file_info_changed (tsp_page->file);
 
   g_free (local_file);
 }

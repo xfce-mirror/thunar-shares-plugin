@@ -13,9 +13,7 @@ extensions_LTLIBRARIES = thunar-shares-plugin.la
 thunar_shares_plugin_la_SOURCES =				\
 	thunar-shares-plugin.c					\
 	tsp-page.c		tsp-page.h			\
-	tsp-admin.c		tsp-admin.h			\
-	tsp-provider.c		tsp-provider.h			\
-	tsp-admin-editor.c	tsp-admin-editor.h
+	tsp-provider.c		tsp-provider.h
 
 thunar_shares_plugin_la_CFLAGS =				\
 	$(PLATFORM_CFLAGS)					\

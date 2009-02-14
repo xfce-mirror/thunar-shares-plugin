@@ -122,12 +122,6 @@ libshares_shares_unshare (const gchar *path)
     }
   }
 
-  /* Notify changes */
-  if (ret)
-  {
-    libshares_monitor_feed (path);
-  }
-
   return ret;
 }
 
@@ -222,12 +216,6 @@ libshares_shares_share (const gchar  *file_local,
     }
   }
 
-  /* Notify changes */
-  if (share_info)
-  {
-    libshares_monitor_feed (file_local);
-  }
-
   return share_info;
 }
 
@@ -314,30 +302,6 @@ libshares_is_shareable (ThunarxFileInfo *info)
   g_free (scheme);
 
   return retval;
-}
-
-/**
- * libshares_monitor_feed:
- * @uri: Absolute path or URI of the file.
- *
- * Notify the file system about shareing changes.
- **/
-void
-libshares_monitor_feed (const gchar *uri)
-{
-  ThunarVfsMonitor *monitor;
-  ThunarVfsPath    *path;
-
-  path = thunar_vfs_path_new (uri, NULL);
-
-  if (G_LIKELY (path != NULL))
-  {
-    monitor = thunar_vfs_monitor_get_default ();
-    thunar_vfs_monitor_feed (monitor, THUNAR_VFS_MONITOR_EVENT_CHANGED, path);
-
-    g_object_unref (monitor);
-    thunar_vfs_path_unref (path);
-  }
 }
 
 /* Asks to the user if we can change the permissions of the folder */
