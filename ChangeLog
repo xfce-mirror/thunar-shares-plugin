@@ -1,5 +1,6 @@
 2009-02-15	Daniel Morales <daniel@daniel.com.uy>
 
+	* === Released 0.2.0 ===
 	* libshares/shares.c: Fixed usershare_acl key.
 	* thunar-plugin/tsp-page.c: A couple of tweaks around the 
 	changed signal, and error handling.
