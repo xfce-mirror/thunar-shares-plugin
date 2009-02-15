@@ -1,5 +1,4 @@
-/* nautilus-share -- Nautilus File Sharing Extension
- *
+/*
  * Sebastien Estienne <sebastien.estienne@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,13 +16,26 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  * (C) Copyright 2005 Ethium, Inc.
+ * (C) Copyright 2008-2009 Daniel Morales <daniel@daniel.com.uy>
  */
 
+#ifdef HAVE_CONFIG_H
 #include <config.h>
+#endif
+
+#ifdef HAVE_STRING_H
 #include <string.h>
+#endif
+#ifdef HAVE_TIME_H
 #include <time.h>
+#endif
+#ifdef HAVE_SYS_TYPES_H
 #include <sys/types.h>
+#endif
+#ifdef HAVE_SYS_WAIT_H
 #include <sys/wait.h>
+#endif
+
 #include <glib/gi18n-lib.h>
 #include "shares.h"
 
@@ -386,9 +398,9 @@ add_key_group_to_hashes (GKeyFile *key_file, const char *group)
 
 	acl = get_string_from_key_file (key_file, group, KEY_ACL);
 	if (acl) {
-		if (strcmp (acl, "Everyone:R") == 0)
+		if (strncmp (acl, "Everyone:R", 10) == 0)
 			is_writable = FALSE;
-		else if (strcmp (acl, "Everyone:F") == 0)
+		else if (strncmp (acl, "Everyone:F", 10) == 0)
 			is_writable = TRUE;
 		else {
 #ifdef G_ENABLE_DEBUG
@@ -547,21 +559,8 @@ copy_share_info (ShareInfo *info)
 	return copy;
 }
 
-/**
- * shares_supports_guest_ok:
- * @supports_guest_ok_ret: Location to store whether "usershare allow guests"
- * is enabled.
- * @error: Location to store error, or #NULL.
- *
- * Determines whether the option "usershare allow guests" is enabled in samba
- * config as shown by testparm.
- *
- * Return value: #TRUE if if the info could be queried successfully, #FALSE
- * otherwise.  If this function returns #FALSE, an error code will be returned
- * in the @error argument, and *@ret_info_list will be set to #FALSE.
- **/
-gboolean
-shares_supports_guest_ok (gboolean *supports_guest_ok_ret, GError **error)
+static gboolean
+test_param (const gchar *testparam, gboolean *supports_test_ret, GError **error)
 {
 	gboolean retval;
 	gboolean result;
@@ -570,9 +569,9 @@ shares_supports_guest_ok (gboolean *supports_guest_ok_ret, GError **error)
 	int exit_status;
 	int exit_code;
 
-	*supports_guest_ok_ret = FALSE;
+	*supports_test_ret = FALSE;
 
-	result = g_spawn_command_line_sync ("testparm -s --parameter-name='usershare allow guests'",
+	result = g_spawn_command_line_sync (testparam,
 					    &stdout_contents,
 					    &stderr_contents,
 					    &exit_status,
@@ -629,13 +628,56 @@ shares_supports_guest_ok (gboolean *supports_guest_ok_ret, GError **error)
 	}
 
 	retval = TRUE;
-	*supports_guest_ok_ret = (g_ascii_strncasecmp (stdout_contents, "Yes", 3) == 0);
+	*supports_test_ret = (g_ascii_strncasecmp (stdout_contents, "Yes", 3) == 0);
 
  out:
 	g_free (stdout_contents);
 	g_free (stderr_contents);
 
 	return retval;
+}
+
+/**
+ * shares_supports_guest_ok:
+ * @supports_guest_ok_ret: Location to store whether "usershare allow guests"
+ * is enabled.
+ * @error: Location to store error, or #NULL.
+ *
+ * Determines whether the option "usershare allow guests" is enabled in samba
+ * config as shown by testparm.
+ *
+ * Return value: #TRUE if if the info could be queried successfully, #FALSE
+ * otherwise.  If this function returns #FALSE, an error code will be returned
+ * in the @error argument, and *@supports_guest_ok_ret will be set to #FALSE.
++ **/
+gboolean
+shares_supports_guest_ok (gboolean *supports_guest_ok_ret, GError **error)
+{
+	return test_param ("testparm -s --parameter-name='usershare allow guests'",
+						supports_guest_ok_ret,
+						error);
+}
+
+/**
+ * shares_has_owner_only:
+ * @supports_owner_only_ret: Location to store whether "usershare owner only"
+ * is enabled.
+ * @error: Location to store error, or #NULL.
+ *
+ * Determines whether the option "usershare usershare owner only" is enabled in samba
+ * config as shown by testparm.
+ *
+ * Return value: #TRUE if if the info could be queried successfully, #FALSE
+ * otherwise.  If this function returns #FALSE, an error code will be returned
+ * in the @error argument, and *@supports_owner_only_ret will be set to #FALSE.
+ **/
+gboolean
+shares_has_owner_only (gboolean *supports_owner_only_ret, 
+					   GError **error)
+{
+	return test_param ("testparm -s --parameter-name='usershare owner only'",
+						supports_owner_only_ret,
+						error);
 }
 
 static gboolean

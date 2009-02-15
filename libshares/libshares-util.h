@@ -43,6 +43,8 @@ void       libshares_monitor_feed   (const gchar *uri);
 
 gboolean   libshares_is_shareable   (ThunarxFileInfo *info);
 
+gboolean   libshares_check_owner    (ThunarxFileInfo *info);
+
 gboolean   libshares_shares_unshare (const gchar     *path);
 
 ShareInfo *libshares_shares_share   (const gchar     *file_local,

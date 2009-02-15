@@ -304,6 +304,36 @@ libshares_is_shareable (ThunarxFileInfo *info)
   return retval;
 }
 
+/**
+ * libshares_check_owner:
+ * @info: FileInfo
+ *
+ * Checks the owner only param, and the owner of the file.
+ *
+ * Return value: #TRUE is shareable.
+ **/
+gboolean
+libshares_check_owner (ThunarxFileInfo *info)
+{
+  ThunarVfsInfo *vfsinfo;
+  gboolean retval = TRUE;
+  gboolean owner_only;
+
+  if (shares_has_owner_only (&owner_only, NULL))
+  {
+    if (owner_only)
+    {
+      vfsinfo = thunarx_file_info_get_vfs_info (info);
+
+      retval = (geteuid () == vfsinfo->uid);
+
+      thunar_vfs_info_unref (vfsinfo);
+    }
+  }
+
+  return retval;
+}
+
 /* Asks to the user if we can change the permissions of the folder */
 static gboolean
 tsp_ask_perms (gboolean  need_r,

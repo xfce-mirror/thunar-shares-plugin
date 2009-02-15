@@ -66,6 +66,7 @@ static void tsp_page_sensibility   (TspPage         *tsp_page,
                                     gboolean         sens);
 static void tsp_page_set_error     (TspPage         *tsp_page,
                                     const char      *msg);
+static void tsp_page_reset_error   (TspPage         *tsp_page);
 
 static gboolean tsp_check_changes  (TspPage         *page);
 
@@ -359,6 +360,14 @@ tsp_page_file_changed (ThunarxFileInfo *file,
   g_free (uri);
   g_free (file_local);
 
+  /* Check folder owner */
+  if (!libshares_check_owner (tsp_page->file))
+  {
+    tsp_page_set_error (tsp_page, _("You are not the owner of the folder."));
+
+    return;
+  }
+
   /* Check error */
   if (!result)
   {
@@ -370,6 +379,9 @@ tsp_page_file_changed (ThunarxFileInfo *file,
     
     return;
   }
+
+  /* Reset error */
+  tsp_page_reset_error (tsp_page);
 
   /* Check if shared */
   if (share_info)
@@ -489,18 +501,28 @@ tsp_page_apply_clicked (GtkButton *button,
     {
       tsp_update_default (tsp_page, share_info);
       shares_free_share_info (share_info);
+
+      thunarx_file_info_changed (tsp_page->file);
     }
   } else {
     /* Un-share the folder */
     if (libshares_shares_unshare (local_file))
     {
       tsp_update_default (tsp_page, NULL);
+
+      thunarx_file_info_changed (tsp_page->file);
     }
   }
-  
-  thunarx_file_info_changed (tsp_page->file);
 
   g_free (local_file);
+}
+
+static void
+tsp_page_reset_error (TspPage *tsp_page)
+{
+  gtk_label_set_markup (GTK_LABEL (tsp_page->label_status), NULL);
+
+  gtk_widget_set_sensitive (GTK_WIDGET (tsp_page), TRUE);
 }
 
 static void
@@ -510,10 +532,8 @@ tsp_page_set_error (TspPage    *tsp_page,
   gchar *errormsg = g_strdup_printf ("<span color='red'>%s</span>", msg);
 
   gtk_label_set_markup (GTK_LABEL (tsp_page->label_status), errormsg);
-  tsp_page_sensibility (tsp_page, FALSE);
-  tsp_update_default (tsp_page, NULL);
-  gtk_widget_set_sensitive (tsp_page->cb_share_folder, FALSE);
-  g_free (errormsg);
+
+  gtk_widget_set_sensitive (GTK_WIDGET (tsp_page), FALSE);
 }
 
 
