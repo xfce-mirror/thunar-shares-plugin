@@ -3,14 +3,14 @@
 # Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the
 # thunar-shares-plugin package.
-# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2008.
+# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2008-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-12-28 16:02+0100\n"
+"PO-Revision-Date: 2009-02-01 12:22+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: Catalan\n"
 "MIME-Version: 1.0\n"
@@ -120,9 +120,8 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Comentaris:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
-#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Compartició de carpetes</b>"
+msgstr "<b>Carpeta:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
