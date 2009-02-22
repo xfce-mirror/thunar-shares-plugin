@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Thunar Shares 0.16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-12-16 21:31+0100\n"
+"PO-Revision-Date: 2009-02-09 23:34+0100\n"
 "Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,8 @@ msgstr ""
 msgid "Please, write a name."
 msgstr "Por favor, escriba un nombre."
 
-#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
+#: ../libshares/libshares-util.c:162
+#: ../data/dialogs.xml.h:1
 #: ../data/thunar-page.xml.h:4
 msgid "Cannot modify the share:"
 msgstr "No se puede modificar el recurso compartido:"
@@ -54,10 +55,10 @@ msgstr "'net usershare' devolvió el error %d"
 #: ../libshares/shares.c:208
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr ""
-"la salida del comando 'net usershare' no tiene una codificación UTF-8 válida"
+msgstr "la salida del comando 'net usershare' no tiene una codificación UTF-8 válida"
 
-#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#: ../libshares/shares.c:463
+#: ../libshares/shares.c:636
 #, c-format
 msgid "Failed"
 msgstr "Fallo"
@@ -85,18 +86,12 @@ msgstr "El comando testparm de Samba devolvió el error %d"
 #: ../libshares/shares.c:701
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr ""
-"No se puede eliminar el recurso compartido para la ruta %s: esta ruta no "
-"está compartida"
+msgstr "No se puede eliminar el recurso compartido para la ruta %s: esta ruta no está compartida"
 
 #: ../libshares/shares.c:747
 #, c-format
-msgid ""
-"Cannot change the path of an existing share; please remove the old share "
-"first and add a new one"
-msgstr ""
-"No se puede cambiar la ruta de un recurso compartido; por favor, elimine el "
-"antiguo recurso compartido primero y añada uno nuevo"
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "No se puede cambiar la ruta de un recurso compartido; por favor, elimine el antiguo recurso compartido primero y añada uno nuevo"
 
 #: ../thunar-plugin/tsp-admin-editor.c:174
 msgid "Thunar - Add a share"
@@ -123,15 +118,15 @@ msgid "<b>Comments:</b>"
 msgstr "<b>Comentarios:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
-#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>Compartir carpetas</b>"
+msgstr "<b>Carpeta:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
 msgstr "<b>Nombre de recurso compartido:</b>"
 
-#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
+#: ../data/admin-dialog-editor.xml.h:4
+#: ../data/thunar-page.xml.h:2
 msgid "Allow Guest access"
 msgstr "Permitir acceso a invitados"
 
@@ -143,21 +138,20 @@ msgstr "Permitir que otros usuarios escriban en esta carpeta"
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - Administrar carpetas compartidas"
 
-#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
+#: ../data/dialogs.xml.h:2
+#: ../data/thunar-page.xml.h:8
 msgid "Thunar Shares Error"
 msgstr "Thunar Shares - Error"
 
-#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
+#: ../data/dialogs.xml.h:3
+#: ../data/thunar-page.xml.h:9
 msgid "Thunar Shares Question"
 msgstr "Thunar Shares - Pregunta"
 
-#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
-msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
-msgstr ""
-"Thunar necesita añadir algunos permisos a su carpeta para compartirla. ¿Está "
-"de acuerdo?"
+#: ../data/dialogs.xml.h:4
+#: ../data/thunar-page.xml.h:10
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Thunar necesita añadir algunos permisos a su carpeta para compartirla. ¿Está de acuerdo?"
 
 #: ../data/thunar-page.xml.h:1
 msgid "<b>Folder Sharing</b>"
@@ -186,6 +180,6 @@ msgstr "Compartir esta carpeta"
 #, fuzzy
 #~ msgid "Share name:"
 #~ msgstr "Nombre del recurso compartido:"
-
 #~ msgid "Insufficient permissions to share the folder."
 #~ msgstr "Permisos de carpeta no cumplidos para compartir"
+
