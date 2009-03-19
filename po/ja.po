@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: thunar-shares-plugin 0.2.0-svn-r05812\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-15 15:02+0900\n"
-"PO-Revision-Date: 2009-02-15 15:03+0900\n"
+"PO-Revision-Date: 2009-03-15 23:12+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,12 @@ msgstr "名前を入力してください。"
 
 #. Warn the user
 #: ../libshares/libshares-util.c:165
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
-msgstr "共有名が長すぎます。一部旧式のクライアントからのアクセスで問題があるかもしれません。それでも続けますか?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
+msgstr ""
+"共有名が長すぎます。一部旧式のクライアントからのアクセスで問題があるかもしれ"
+"ません。それでも続けますか?"
 
 #: ../libshares/libshares-util.c:178
 #, c-format
@@ -40,8 +44,12 @@ msgid "Cannot modify the share:"
 msgstr "共有を変更できません:"
 
 #: ../libshares/libshares-util.c:343
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "Thunar は共有するフォルダに対していくつかのアクセス権の追加を必要とします。よろしいですか?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+"Thunar は共有するフォルダに対していくつかのアクセス権の追加を必要とします。よ"
+"ろしいですか?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
@@ -72,8 +80,7 @@ msgstr "'net usershare' はエラー %d を返しました"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "'net usershare' の出力は正しい UTF-8 エンコーディングではありません"
 
-#: ../libshares/shares.c:490
-#: ../libshares/shares.c:700
+#: ../libshares/shares.c:490 ../libshares/shares.c:700
 #, c-format
 msgid "Failed"
 msgstr "失敗しました"
@@ -105,8 +112,12 @@ msgstr "パス %s の共有を解除できません: これは共有されてい
 
 #: ../libshares/shares.c:824
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "既存の共有パスを変更できません。先に古い共有を解除してから新しく追加してください。"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"既存の共有パスを変更できません。先に古い共有を解除してから新しく追加してくだ"
+"さい。"
 
 #: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
@@ -145,26 +156,11 @@ msgstr "あなたはそのフォルダの所有者ではありません。"
 
 #: ../thunar-plugin/tsp-page.c:374
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
+"You may need to install Samba, check your user permissions(usershares group) "
+"and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-"Samba がインストールされていないか、ユーザのアクセス権がありません。アクセス権の場合は Samba へのユーザ登録または共有グループへの登録後、再ログインしてください。\n"
+"Samba がインストールされていないか、ユーザのアクセス権がありません。アクセス"
+"権の場合は Samba へのユーザ登録または共有グループへの登録後、再ログインしてく"
+"ださい。\n"
 "<b>詳細:</b> <u>http://thunar-shares.googlecode.com/</u>"
-
-#~ msgid "Thunar - Manage Shared Folders"
-#~ msgstr "Thunar - 共有フォルダの管理"
-#~ msgid "Thunar - Add a share"
-#~ msgstr "Thunar - 共有の追加"
-#~ msgid "Folder:"
-#~ msgstr "フォルダ:"
-#~ msgid "Share name:"
-#~ msgstr "共有名:"
-#~ msgid "Thunar - Edit share"
-#~ msgstr "Thunae - 共有の編集"
-#~ msgid "There was an error while getting the sharing information"
-#~ msgstr "共有情報の取得中にエラーが発生しました"
-#~ msgid "Manage shared folders..."
-#~ msgstr "共有フォルダの管理..."
-#~ msgid "Add, edit and remove shared folders"
-#~ msgstr "共有フォルダの追加、編集、または解除を行います"
-
