@@ -1,14 +1,14 @@
 # Chinese translations for PACKAGE package.
 # Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Hunt Xu <huntxu@live.cn>, 2008.
+# Hunt Xu <huntxu@live.cn>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-12-04 17:05+0800\n"
+"PO-Revision-Date: 2009-05-09 03:26+0800\n"
 "Last-Translator: Hunt Xu <huntxu@live.cn>\n"
 "Language-Team: Chinese (simplified)\n"
 "MIME-Version: 1.0\n"
@@ -61,22 +61,22 @@ msgstr "失败"
 #: ../libshares/shares.c:571
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr ""
+msgstr "Samba 测试返回信号 %d"
 
 #: ../libshares/shares.c:577
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr ""
+msgstr "Samba 测试由于未知原因而失败"
 
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr ""
+msgstr "Samba 测试返回错误号 %d: %s"
 
 #: ../libshares/shares.c:594
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr ""
+msgstr "Samba 测试返回错误号 %d"
 
 #: ../libshares/shares.c:701
 #, c-format
@@ -115,9 +115,8 @@ msgid "<b>Comments:</b>"
 msgstr "<b>注释:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:2
-#, fuzzy
 msgid "<b>Folder:</b>"
-msgstr "<b>文件夹共享</b>"
+msgstr "<b>文件夹:</b>"
 
 #: ../data/admin-dialog-editor.xml.h:3
 msgid "<b>Share name:</b>"
