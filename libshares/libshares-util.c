@@ -355,7 +355,7 @@ tsp_check_perms (const gchar *path,
   mode_t      new_mode;
   mode_t      mode;
 
-  if (stat (path, &st) != 0)
+  if (g_stat (path, &st) != 0)
     return FALSE;
 
   mode = st.st_mode;
