@@ -9,84 +9,111 @@ msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2009-02-01 12:22+0100\n"
+"POT-Creation-Date: 2009-02-02 16:52-0200\n"
+"PO-Revision-Date: 2009-09-05 15:35+0100\n"
 "Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
 "Language-Team: Catalan\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Catalan\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#: ../libshares/libshares-util.c:111
+#: ../libshares/libshares-util.c:163
 msgid "Please, write a name."
 msgstr "Escriviu un nom."
 
-#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
-#: ../data/thunar-page.xml.h:4
+#. Warn the user
+#: ../libshares/libshares-util.c:171
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
+msgstr ""
+"Nom compartit massa llarg. Alguns clients antics poden tenir problemes per "
+"accedir-hi, voleu continuar?"
+
+#: ../libshares/libshares-util.c:184
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Error al obtenir la informació compartida: %s"
+
+#: ../libshares/libshares-util.c:194
+msgid "Another share has the same name"
+msgstr "Hi ha una altra compartició amb aquest nom"
+
+#: ../libshares/libshares-util.c:254
 msgid "Cannot modify the share:"
 msgstr "No s'ha pogut modificar la compartició:"
 
-#: ../libshares/libshares-util.c:232
+#: ../libshares/libshares-util.c:349
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+"Cal afegir alguns permisos a la carpeta per poder compartir-la. Esteu "
+"d'acord?"
+
+#: ../libshares/libshares-util.c:390
 msgid "Error when changing folder permissions."
 msgstr "Hi ha hagut un error al canviar els permisos de la carpeta."
 
-#: ../libshares/shares.c:146
+#: ../libshares/shares.c:153
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "%s %s %s acabat amb el senyal %d"
 
-#: ../libshares/shares.c:155
+#: ../libshares/shares.c:162
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "%s %s %s ha fallat per motius desconeguts"
 
-#: ../libshares/shares.c:175
+#: ../libshares/shares.c:183
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "«net usershare» ha tornat l'error %d: %s"
 
-#: ../libshares/shares.c:177
+#: ../libshares/shares.c:185
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "«net usershare» ha tornat l'error %d"
 
-#: ../libshares/shares.c:208
+#: ../libshares/shares.c:219
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "la sortida de «net usershare» no te una codificació UTF-8 vàlida"
 
-#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#: ../libshares/shares.c:478 ../libshares/shares.c:658
 #, c-format
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: ../libshares/shares.c:571
+#: ../libshares/shares.c:593
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr "«testparm» de samba ha acabat amb el senyal %d"
 
-#: ../libshares/shares.c:577
+#: ../libshares/shares.c:599
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
 msgstr "«testparm» de samba ha fallat per motius desconeguts"
 
-#: ../libshares/shares.c:592
+#: ../libshares/shares.c:614
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr "«testparm» de samba ha acabat amb l'error %d: %s"
 
-#: ../libshares/shares.c:594
+#: ../libshares/shares.c:616
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr "«testparm» de samba ha acabat amb l'error %d"
 
-#: ../libshares/shares.c:701
+#: ../libshares/shares.c:729
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
 msgstr "No es pot treure la compartició de %s: la carpeta no està compartida"
 
-#: ../libshares/shares.c:747
+#: ../libshares/shares.c:782
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
@@ -95,90 +122,100 @@ msgstr ""
 "No es pot canviar la carpeta de una compartició ja existent; traieu primer "
 "l'antiga carpeta compartida i afegiu després la nova"
 
-#: ../thunar-plugin/tsp-admin-editor.c:174
-msgid "Thunar - Add a share"
-msgstr "Thunar - Afegeix compartició"
-
-#: ../thunar-plugin/tsp-admin-editor.c:196
-msgid "Thunar - Edit share"
-msgstr "Thunar - Treu compartició"
-
-#: ../thunar-plugin/tsp-page.c:229
-msgid "Share"
-msgstr "Comparteix"
-
-#: ../thunar-plugin/tsp-prefs-provider.c:99
-msgid "Manage shared folders..."
-msgstr "Gestiona les carpetes compartides…"
-
-#: ../thunar-plugin/tsp-prefs-provider.c:100
-msgid "Add, edit and remove shared folders"
-msgstr "Afegeix, edita o treu carpetes compartides"
-
-#: ../data/admin-dialog-editor.xml.h:1
-msgid "<b>Comments:</b>"
-msgstr "<b>Comentaris:</b>"
-
-#: ../data/admin-dialog-editor.xml.h:2
-msgid "<b>Folder:</b>"
-msgstr "<b>Carpeta:</b>"
-
-#: ../data/admin-dialog-editor.xml.h:3
-msgid "<b>Share name:</b>"
-msgstr "<b>Nom compartit:</b>"
-
-#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
-msgid "Allow Guest access"
-msgstr "Permet l'accés de visitants (Guest)"
-
-#: ../data/admin-dialog-editor.xml.h:5
-msgid "Allow other users to write in this folder"
-msgstr "Permet escriure en aquesta carpeta a altres usuaris"
-
-#: ../data/admin-dialog.xml.h:1
+#. Dialog setup
+#: ../thunar-plugin/tsp-admin.c:111
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar - Gestió de carpetes compartides"
 
-#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
-msgid "Thunar Shares Error"
-msgstr "Error de «thunar-shares»"
-
-#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
-msgid "Thunar Shares Question"
-msgstr "Pregunta de «thunar-shares»"
-
-#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+#: ../thunar-plugin/tsp-admin.c:341 ../thunar-plugin/tsp-page.c:397
 msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
+"You may need to install Samba, check your user permissions(usershares group) "
+"and re-login.\n"
+"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-"Cal afegir alguns permisos a la carpeta per poder compartir-la. Esteu "
-"d'acord?"
+"Pot ser que us calgui instaŀlar Samba, comproveu els permisos d'usuari (grup "
+"d'usuaris de compartició)\n"
+"i torneu a carregar.\n"
+"<b>Més informació a</b> <u>http://thunar-shares.googlecode.com/</u>"
 
-#: ../data/thunar-page.xml.h:1
-msgid "<b>Folder Sharing</b>"
-msgstr "<b>Compartició de carpetes</b>"
+#. Dialog setup
+#: ../thunar-plugin/tsp-admin-editor.c:95
+msgid "Thunar - Add a share"
+msgstr "Thunar - Afegeix compartició"
 
-#: ../data/thunar-page.xml.h:3
+#. Folder chooser
+#: ../thunar-plugin/tsp-admin-editor.c:112
+msgid "Folder:"
+msgstr "Carpeta:"
+
+#. Name
+#: ../thunar-plugin/tsp-admin-editor.c:121
+msgid "Share name:"
+msgstr "Nom compartit:"
+
+#. Write access
+#: ../thunar-plugin/tsp-admin-editor.c:130 ../thunar-plugin/tsp-page.c:184
 msgid "Allow others users to write in this folder"
 msgstr "Permet a altres usuaris escriure en aquesta carpeta "
 
-#: ../data/thunar-page.xml.h:5
+#. Guests access
+#. Guest access
+#: ../thunar-plugin/tsp-admin-editor.c:134 ../thunar-plugin/tsp-page.c:189
+msgid "Allow Guest access"
+msgstr "Permet l'accés de visitants (Guest)"
+
+#. Comments
+#: ../thunar-plugin/tsp-admin-editor.c:138 ../thunar-plugin/tsp-page.c:197
 msgid "Comments:"
 msgstr "Comentaris:"
 
-#: ../data/thunar-page.xml.h:6
-msgid "Share Name:"
-msgstr "Nom compartit:"
+#: ../thunar-plugin/tsp-admin-editor.c:243
+msgid "Thunar - Edit share"
+msgstr "Thunar - Treu compartició"
 
-#: ../data/thunar-page.xml.h:7
+#: ../thunar-plugin/tsp-admin-editor.c:251
+msgid "There was an error while getting the sharing information"
+msgstr "Hi ha hagut un error al obtenir la informació de la compartició"
+
+#: ../thunar-plugin/tsp-page.c:156
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Compartició de carpetes</b>"
+
+#. Share check button
+#: ../thunar-plugin/tsp-page.c:166
 msgid "Share this folder"
 msgstr "Comparteix aquesta carpeta"
 
-#, fuzzy
-#~ msgid "Folder:"
+#: ../thunar-plugin/tsp-page.c:174
+msgid "Share Name:"
+msgstr "Nom compartit:"
+
+#: ../thunar-plugin/tsp-page.c:299
+msgid "Share"
+msgstr "Comparteix"
+
+#: ../thunar-plugin/tsp-provider.c:129
+msgid "Manage shared folders..."
+msgstr "Gestiona les carpetes compartides…"
+
+#: ../thunar-plugin/tsp-provider.c:130
+msgid "Add, edit and remove shared folders"
+msgstr "Afegeix, edita o treu carpetes compartides"
+
+#~ msgid "<b>Comments:</b>"
+#~ msgstr "<b>Comentaris:</b>"
+
+#~ msgid "<b>Folder:</b>"
 #~ msgstr "<b>Carpeta:</b>"
 
-#, fuzzy
-#~ msgid "Share name:"
-#~ msgstr "Nom compartit:"
+#~ msgid "<b>Share name:</b>"
+#~ msgstr "<b>Nom compartit:</b>"
+
+#~ msgid "Allow other users to write in this folder"
+#~ msgstr "Permet escriure en aquesta carpeta a altres usuaris"
+
+#~ msgid "Thunar Shares Error"
+#~ msgstr "Error de «thunar-shares»"
+
+#~ msgid "Thunar Shares Question"
+#~ msgstr "Pregunta de «thunar-shares»"
