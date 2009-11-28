@@ -6,182 +6,205 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ru\n"
+"Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-22 20:50-0300\n"
-"PO-Revision-Date: 2008-10-19 11:03+0400\n"
-"Last-Translator: Nikita Belobrov <qvzqvz@gmail.com>\n"
+"POT-Creation-Date: 2009-02-02 16:52-0200\n"
+"PO-Revision-Date: 2009-11-28 22:52+0600\n"
+"Last-Translator: Urmas <dwqwt3i02@sneakemail.com>\n"
 "Language-Team: ru_RU <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2008-07-17 13:36+0000\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
 
-#: ../libshares/libshares-util.c:111
+#: ../libshares/libshares-util.c:163
 msgid "Please, write a name."
 msgstr "Пожалуйста, укажите имя для общего доступа"
 
-#: ../libshares/libshares-util.c:162 ../data/dialogs.xml.h:1
-#: ../data/thunar-page.xml.h:4
+#. Warn the user
+#: ../libshares/libshares-util.c:171
+msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgstr "Слишком длинное имя ресурса. Некоторым устаревшим клиентам не удастся к нему подключиться. Продолжить?"
+
+#: ../libshares/libshares-util.c:184
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Не удалось получить сведения о ресурсе: %s"
+
+#: ../libshares/libshares-util.c:194
+msgid "Another share has the same name"
+msgstr "Другой ресурс уже имеет это название"
+
+#: ../libshares/libshares-util.c:254
 msgid "Cannot modify the share:"
 msgstr "Не удалось изменить параметры общего доступа:"
 
-#: ../libshares/libshares-util.c:232
+#: ../libshares/libshares-util.c:349
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Приложению Thunar необходимо добавить определенные права доступа к вашей папке для организации общего доступа к ней. Вы согласны добавить новые права?"
+
+#: ../libshares/libshares-util.c:390
 msgid "Error when changing folder permissions."
 msgstr "При смене прав доступа возникла ошибка."
 
-#: ../libshares/shares.c:146
+#: ../libshares/shares.c:153
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "Процесс %s %s %s завершён с сигналом возврата %d"
 
-#: ../libshares/shares.c:155
+#: ../libshares/shares.c:162
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "Неизвестная ошибка при запуске %s %s %s"
 
-#: ../libshares/shares.c:175
+#: ../libshares/shares.c:183
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "Ошибка %d при запуске 'net usershare': %s"
 
-#: ../libshares/shares.c:177
+#: ../libshares/shares.c:185
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "Ошибка %d при запуске 'net usershare'"
 
-#: ../libshares/shares.c:208
+#: ../libshares/shares.c:219
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "вывод 'net usershare' не является допустимой строкой UTF-8"
 
-#: ../libshares/shares.c:463 ../libshares/shares.c:636
+#: ../libshares/shares.c:478
+#: ../libshares/shares.c:658
 #, c-format
 msgid "Failed"
 msgstr "Ошибка"
 
-#: ../libshares/shares.c:571
+#: ../libshares/shares.c:593
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr "Процесс testparm завершён с сигналом возврата %d"
 
-#: ../libshares/shares.c:577
+#: ../libshares/shares.c:599
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
 msgstr "Неизвестная ошибка при запуске testparm"
 
-#: ../libshares/shares.c:592
+#: ../libshares/shares.c:614
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr "Ошибка %d при запуске testparm: %s"
 
-#: ../libshares/shares.c:594
+#: ../libshares/shares.c:616
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr "Ошибка %d при запуске testparm"
 
-#: ../libshares/shares.c:701
+#: ../libshares/shares.c:729
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
 msgstr "Не удалось удалить ресурс для папки %s: эта папка не опубликована"
 
-#: ../libshares/shares.c:747
+#: ../libshares/shares.c:782
 #, c-format
-msgid ""
-"Cannot change the path of an existing share; please remove the old share "
-"first and add a new one"
-msgstr ""
-"Не удалось изменить путь существующего ресурса; пожалуйста, удалите старый "
-"ресурс и добавьте новый"
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "Не удалось изменить путь существующего ресурса; пожалуйста, удалите старый ресурс и добавьте новый"
 
-#: ../thunar-plugin/tsp-admin-editor.c:174
-msgid "Thunar - Add a share"
-msgstr "Thunar — Добавить папку общего доступа"
-
-#: ../thunar-plugin/tsp-admin-editor.c:196
-msgid "Thunar - Edit share"
-msgstr "Thunar — Редактировать папку общего доступа"
-
-#: ../thunar-plugin/tsp-page.c:229
-msgid "Share"
-msgstr "Папка общего доступа"
-
-#: ../thunar-plugin/tsp-prefs-provider.c:99
-msgid "Manage shared folders..."
-msgstr "Управление папками общего доступа"
-
-#: ../thunar-plugin/tsp-prefs-provider.c:100
-msgid "Add, edit and remove shared folders"
-msgstr "Добавить, редактировать и удалить папки общего доступа"
-
-#: ../data/admin-dialog-editor.xml.h:1
-msgid "<b>Comments:</b>"
-msgstr "<b>Коментарии:</b>"
-
-#: ../data/admin-dialog-editor.xml.h:2
-#, fuzzy
-msgid "<b>Folder:</b>"
-msgstr "<b>Общий доступ к папкам</b>"
-
-#: ../data/admin-dialog-editor.xml.h:3
-msgid "<b>Share name:</b>"
-msgstr "<b>Имя в сети:</b>"
-
-#: ../data/admin-dialog-editor.xml.h:4 ../data/thunar-page.xml.h:2
-msgid "Allow Guest access"
-msgstr "Разрешить гостевой доступ"
-
-#: ../data/admin-dialog-editor.xml.h:5
-msgid "Allow other users to write in this folder"
-msgstr "Разрешить другим пользователям записывать в эту папку"
-
-#: ../data/admin-dialog.xml.h:1
+#. Dialog setup
+#: ../thunar-plugin/tsp-admin.c:111
 msgid "Thunar - Manage Shared Folders"
 msgstr "Thunar — управление папками общего доступа"
 
-#: ../data/dialogs.xml.h:2 ../data/thunar-page.xml.h:8
-msgid "Thunar Shares Error"
-msgstr "Ошибки общего доступа Thunar"
-
-#: ../data/dialogs.xml.h:3 ../data/thunar-page.xml.h:9
-msgid "Thunar Shares Question"
-msgstr "Вопросы общего доступа Thunar"
-
-#: ../data/dialogs.xml.h:4 ../data/thunar-page.xml.h:10
+#: ../thunar-plugin/tsp-admin.c:341
+#: ../thunar-plugin/tsp-page.c:397
 msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
+"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
+"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-"Приложению Thunar необходимо добавить определенные права доступа к вашей "
-"папке для организации общего доступа к ней. Вы согласны добавить новые права?"
+"Вам может потребоваться установить Samba, проверить разрешения (usershares group), и заново войти в систему.\n"
+"<b>Дополнительная информация:</b> <u>http://thunar-shares.googlecode.com/</u>"
 
-#: ../data/thunar-page.xml.h:1
-msgid "<b>Folder Sharing</b>"
-msgstr "<b>Общий доступ к папкам</b>"
+#. Dialog setup
+#: ../thunar-plugin/tsp-admin-editor.c:95
+msgid "Thunar - Add a share"
+msgstr "Thunar — Добавить папку общего доступа"
 
-#: ../data/thunar-page.xml.h:3
+#. Folder chooser
+#: ../thunar-plugin/tsp-admin-editor.c:112
+msgid "Folder:"
+msgstr "Папка:"
+
+#. Name
+#: ../thunar-plugin/tsp-admin-editor.c:121
+msgid "Share name:"
+msgstr "Сетевое имя:"
+
+#. Write access
+#: ../thunar-plugin/tsp-admin-editor.c:130
+#: ../thunar-plugin/tsp-page.c:184
 msgid "Allow others users to write in this folder"
 msgstr "Разрешить другим пользователям записывать в эту папку."
 
-#: ../data/thunar-page.xml.h:5
+#. Guests access
+#. Guest access
+#: ../thunar-plugin/tsp-admin-editor.c:134
+#: ../thunar-plugin/tsp-page.c:189
+msgid "Allow Guest access"
+msgstr "Разрешить гостевой доступ"
+
+#. Comments
+#: ../thunar-plugin/tsp-admin-editor.c:138
+#: ../thunar-plugin/tsp-page.c:197
 msgid "Comments:"
 msgstr "Коментарии:"
 
-#: ../data/thunar-page.xml.h:6
-msgid "Share Name:"
-msgstr "Сетевое имя:"
+#: ../thunar-plugin/tsp-admin-editor.c:243
+msgid "Thunar - Edit share"
+msgstr "Thunar — Редактировать общий ресурс"
 
-#: ../data/thunar-page.xml.h:7
+#: ../thunar-plugin/tsp-admin-editor.c:251
+msgid "There was an error while getting the sharing information"
+msgstr "В ходе установки свойств ресурса произошла ошибка"
+
+#: ../thunar-plugin/tsp-page.c:156
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Общий доступ к папкам</b>"
+
+#. Share check button
+#: ../thunar-plugin/tsp-page.c:166
 msgid "Share this folder"
 msgstr "Разрешить общий доступ к этой папке"
 
-#, fuzzy
-#~ msgid "Folder:"
-#~ msgstr "<b>Папка:</b>"
+#: ../thunar-plugin/tsp-page.c:174
+msgid "Share Name:"
+msgstr "Сетевое имя:"
+
+#: ../thunar-plugin/tsp-page.c:299
+msgid "Share"
+msgstr "Общий ресурс"
+
+#: ../thunar-plugin/tsp-provider.c:129
+msgid "Manage shared folders..."
+msgstr "Управление папками общего доступа"
+
+#: ../thunar-plugin/tsp-provider.c:130
+msgid "Add, edit and remove shared folders"
+msgstr "Добавить, редактировать и удалить папки общего доступа"
+
+#~ msgid "<b>Comments:</b>"
+#~ msgstr "<b>Коментарии:</b>"
 
 #, fuzzy
-#~ msgid "Share name:"
-#~ msgstr "Сетевое имя:"
+#~ msgid "<b>Folder:</b>"
+#~ msgstr "<b>Общий доступ к папкам</b>"
+#~ msgid "<b>Share name:</b>"
+#~ msgstr "<b>Имя в сети:</b>"
+#~ msgid "Allow other users to write in this folder"
+#~ msgstr "Разрешить другим пользователям записывать в эту папку"
+#~ msgid "Thunar Shares Error"
+#~ msgstr "Ошибки общего доступа Thunar"
+#~ msgid "Thunar Shares Question"
+#~ msgstr "Вопросы общего доступа Thunar"
+
