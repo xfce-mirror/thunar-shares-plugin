@@ -5,16 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Thunar-Shares-PLugin\n"
+"Project-Id-Version: Thunar-Shares-Plugin 0.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-02 16:52-0200\n"
-"PO-Revision-Date: 2009-10-29 16:33+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2010-01-05 10:58-0000\n"
+"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: PORTUGAL\n"
 
 #: ../libshares/libshares-util.c:163
 msgid "Please, write a name."
@@ -36,15 +38,15 @@ msgstr "Já existe uma partilha com o mesmo nome"
 
 #: ../libshares/libshares-util.c:254
 msgid "Cannot modify the share:"
-msgstr "Incapaz de modificar a partilha:"
+msgstr "Não pode modificar a partilha:"
 
 #: ../libshares/libshares-util.c:349
 msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "O Thunar precisa adicionar algumas permissões à sua pasta para partilhá-la. Concorda?"
+msgstr "O Thunar precisa adicionar algumas permissões à sua pasta para a partilhar. Concorda?"
 
 #: ../libshares/libshares-util.c:390
 msgid "Error when changing folder permissions."
-msgstr "Erro durante a alteração das permissões da pasta."
+msgstr "Erro ao alterar as permissões da pasta."
 
 #: ../libshares/shares.c:153
 #, c-format
@@ -69,7 +71,7 @@ msgstr "'net usershare' retornou o erro %d"
 #: ../libshares/shares.c:219
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "a saída do 'net usershare' não está codificado em UTF-8"
+msgstr "a saída do 'net usershare' não é uma codificação UTF-8 válida"
 
 #: ../libshares/shares.c:478
 #: ../libshares/shares.c:658
@@ -100,17 +102,17 @@ msgstr "O testparm do Samba retornou o erro %d"
 #: ../libshares/shares.c:729
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Incapaz de remover a partilha para o caminho %s: este caminho não está partilhado"
+msgstr "Não pode remover a partilha para o caminho %s: este caminho não está partilhado"
 
 #: ../libshares/shares.c:782
 #, c-format
 msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "Incapaz de mudar o caminho de uma partilha existente; por favor, remova a partilha antiga primeiro e adicione uma nova"
+msgstr "Não pode mudar o caminho de uma partilha existente; por favor, remova primeiro a partilha antiga e adicione uma nova"
 
 #. Dialog setup
 #: ../thunar-plugin/tsp-admin.c:111
 msgid "Thunar - Manage Shared Folders"
-msgstr "Thunar - Gestão de pastas partilhadas"
+msgstr "Thunar - Gestão de Pastas Partilhadas"
 
 #: ../thunar-plugin/tsp-admin.c:341
 #: ../thunar-plugin/tsp-page.c:397
@@ -134,20 +136,20 @@ msgstr "Pasta:"
 #. Name
 #: ../thunar-plugin/tsp-admin-editor.c:121
 msgid "Share name:"
-msgstr "Nome de partilha:"
+msgstr "Nome da partilha:"
 
 #. Write access
 #: ../thunar-plugin/tsp-admin-editor.c:130
 #: ../thunar-plugin/tsp-page.c:184
 msgid "Allow others users to write in this folder"
-msgstr "Permitir que outros utilizadores gravem nesta pasta"
+msgstr "Permitir que outros utilizadores escrevam nesta pasta"
 
 #. Guests access
 #. Guest access
 #: ../thunar-plugin/tsp-admin-editor.c:134
 #: ../thunar-plugin/tsp-page.c:189
 msgid "Allow Guest access"
-msgstr "Permitir acesso de convidado"
+msgstr "Permitir acesso de Convidado"
 
 #. Comments
 #: ../thunar-plugin/tsp-admin-editor.c:138
@@ -161,7 +163,7 @@ msgstr "Thunar - Editar partilha"
 
 #: ../thunar-plugin/tsp-admin-editor.c:251
 msgid "There was an error while getting the sharing information"
-msgstr "Ocorreu um erro ao obter a informação de partilha"
+msgstr "Ocorreu um erro ao obter a informação da partilha"
 
 #: ../thunar-plugin/tsp-page.c:156
 msgid "<b>Folder Sharing</b>"
@@ -174,11 +176,11 @@ msgstr "Partilhar esta pasta"
 
 #: ../thunar-plugin/tsp-page.c:174
 msgid "Share Name:"
-msgstr "Nome da partilha:"
+msgstr "Nome da Partilha:"
 
 #: ../thunar-plugin/tsp-page.c:299
 msgid "Share"
-msgstr "Partilhar"
+msgstr "Partilha"
 
 #: ../thunar-plugin/tsp-provider.c:129
 msgid "Manage shared folders..."
@@ -186,7 +188,7 @@ msgstr "Gerir pastas partilhadas..."
 
 #: ../thunar-plugin/tsp-provider.c:130
 msgid "Add, edit and remove shared folders"
-msgstr "Adicionar, editar ou remover pastas partilhadas"
+msgstr "Adicionar, editar e remover pastas partilhadas"
 
 #~ msgid "<b>Comments:</b>"
 #~ msgstr "<b>Comentários:</b>"
