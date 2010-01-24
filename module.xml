@@ -6,7 +6,7 @@
          xmlns="http://usefulinc.com/ns/doap#">
 
   <name xml:lang="en">thunar-shares-plugin</name>
-  <shortdesc xml:lang="en">Share folders using Samba from Thunar</shortdesc>
+  <shortdesc xml:lang="en">Quickly share a folder using Samba from Thunar</shortdesc>
   <homepage rdf:resource="http://goodies.xfce.org/projects/thunar-plugins/thunar-shares-plugin"/>
   <mailing-list rdf:resource="http://foo-projects.org/mailman/listinfo/xfce"/>
 
