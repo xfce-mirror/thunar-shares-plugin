@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">thunar-shares-plugin</name>
+  <shortdesc xml:lang="en">Share folders using Samba from Thunar</shortdesc>
+  <homepage rdf:resource="http://goodies.xfce.org/projects/thunar-plugins/thunar-shares-plugin"/>
+  <mailing-list rdf:resource="http://foo-projects.org/mailman/listinfo/xfce"/>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Daniel Morales</foaf:name>
+      <foaf:mbox>mailto:daniel@daniel.com.uy</foaf:mbox>
+      <gnome:userid>danielm</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+</Project>
+
