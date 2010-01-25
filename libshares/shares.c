@@ -398,9 +398,9 @@ add_key_group_to_hashes (GKeyFile *key_file, const char *group)
 
 	acl = get_string_from_key_file (key_file, group, KEY_ACL);
 	if (acl) {
-		if (strncmp (acl, "Everyone:R", 10) == 0)
+		if (strstr (acl, "Everyone:R") == 0)
 			is_writable = FALSE;
-		else if (strncmp (acl, "Everyone:F", 10) == 0)
+		else if (strstr (acl, "Everyone:R") == 0)
 			is_writable = TRUE;
 		else {
 #ifdef G_ENABLE_DEBUG
