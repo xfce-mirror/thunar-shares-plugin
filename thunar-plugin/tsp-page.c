@@ -99,6 +99,8 @@ struct _TspPage
   gboolean            can_guests;
   gchar              *share_name;
   gchar              *share_comment;
+
+  gboolean            supports_guest;
 };
 
 /* implements the tsp_page_get_type() and tsp_page_register_type() functions */
@@ -132,7 +134,6 @@ tsp_page_init (TspPage *page)
   GtkWidget *vbox1;
   GtkWidget *hbox1;
   GtkWidget *widget;
-  gboolean   guest_ok = FALSE;
 
   /* Main container */
   vbox1 = gtk_vbox_new (FALSE, 0);
@@ -222,9 +223,10 @@ tsp_page_init (TspPage *page)
   gtk_widget_show_all (vbox1);
 
   /* Check if guest access is supported */
-  shares_supports_guest_ok (&guest_ok, NULL);
-  if (!guest_ok){
-    gtk_widget_hide (page->cb_share_guest);
+  shares_supports_guest_ok (&page->supports_guest, NULL);
+
+  if (!page->supports_guest){
+    gtk_widget_set_sensitive(page->cb_share_guest, FALSE);
   }
 }
 
@@ -549,7 +551,10 @@ tsp_page_sensibility (TspPage  *tsp_page,
   gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->label_name), sens);
   gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->label_comments), sens);
   gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->label_comments), sens);
-  gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->cb_share_guest), sens);
+
+  if (tsp_page->supports_guest){
+    gtk_widget_set_sensitive (GTK_WIDGET (tsp_page->cb_share_guest), sens);
+  }
 }
 
 /* Checks if the settings of the current file has been changed */
