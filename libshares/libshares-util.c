@@ -22,6 +22,8 @@
 #include <config.h>
 #endif
 
+#include <sys/stat.h>
+
 #include <glib/gstdio.h>
 #include <gtk/gtk.h>
 
@@ -31,12 +33,11 @@
 #include "libshares-util.h"
 #include "shares.h"
 
-static gboolean tsp_ask_perms   (gboolean     need_r,
-                                 gboolean     need_w,
-                                 gboolean     need_x);
+static gboolean tsp_ask_perms   (void);
 
 static gboolean tsp_check_perms (const gchar *path,
-                                 gboolean     is_writable);
+                                 gboolean     is_writable,
+                                 gboolean     guests_ok);
 
 /**
  * libshares_get_local_file:
@@ -190,7 +191,7 @@ libshares_shares_share (const gchar  *file_local,
     }
   }
 
-  if (tsp_check_perms (file_local, is_writable))
+  if (tsp_check_perms (file_local, is_writable, guests_ok))
   {
     share_info = g_new0 (ShareInfo, 1);
 
@@ -336,9 +337,7 @@ libshares_check_owner (ThunarxFileInfo *info)
 
 /* Asks to the user if we can change the permissions of the folder */
 static gboolean
-tsp_ask_perms (gboolean  need_r,
-               gboolean  need_w,
-               gboolean  need_x)
+tsp_ask_perms (void)
 {
   return libshares_ask_user (_("Thunar needs to add some permissions to your folder in order to share it. Do you agree?"));
 }
@@ -346,35 +345,33 @@ tsp_ask_perms (gboolean  need_r,
 /* Checks if the current file has the necesary permissions */
 static gboolean
 tsp_check_perms (const gchar *path,
-                 gboolean     is_writable)
+                 gboolean     is_writable,
+                 gboolean     guests_ok)
 {
   struct stat st;
-  gboolean    need_r;
-  gboolean    need_w;
-  gboolean    need_x;
   mode_t      new_mode;
   mode_t      mode;
+  mode_t      need_mask;
 
   if (g_stat (path, &st) != 0)
     return FALSE;
 
-  mode = st.st_mode;
+  new_mode = mode = st.st_mode;
 
-  new_mode = mode;
+  /* go+rx is necesary to guest enabled shares */
+  if (guests_ok)
+    new_mode |= (S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH);
 
-  need_r = (mode & THUNAR_VFS_FILE_MODE_OTH_READ) == 0;
-  new_mode |= THUNAR_VFS_FILE_MODE_OTH_READ;
+  /* go+w is necesary to writable shares */
+  if (is_writable)
+    new_mode |= (S_IWGRP | S_IWOTH);
 
-  need_w = is_writable && (mode & THUNAR_VFS_FILE_MODE_OTH_WRITE) == 0;
-  if (need_w)
-    new_mode |= THUNAR_VFS_FILE_MODE_OTH_WRITE;
+  /* Compare both modes */
+  need_mask = new_mode & ~mode;
 
-  need_x = (mode & THUNAR_VFS_FILE_MODE_OTH_EXEC) == 0;
-  new_mode |= THUNAR_VFS_FILE_MODE_OTH_EXEC;
-
-  if (need_r || need_w || need_x)
+  if (need_mask != 0)
   {
-    if (!tsp_ask_perms (need_r, need_w, need_x))
+    if (!tsp_ask_perms ())
       return FALSE;
 #ifdef G_ENABLE_DEBUG
     g_message ("Changing permissions of '%s'", path);
