@@ -400,7 +400,7 @@ add_key_group_to_hashes (GKeyFile *key_file, const char *group)
 	if (acl) {
 		if (strstr (acl, "Everyone:R") == 0)
 			is_writable = FALSE;
-		else if (strstr (acl, "Everyone:R") == 0)
+		else if (strstr (acl, "Everyone:F") == 0)
 			is_writable = TRUE;
 		else {
 #ifdef G_ENABLE_DEBUG
@@ -715,11 +715,10 @@ add_share (ShareInfo *info, GError **error)
 	argv[2] = info->share_name;
 	argv[3] = info->path;
 	argv[4] = info->comment;
-	argv[5] = "Everyone:F";
 
-	if (info->is_writable)
-	{
-		/* Review: Maye set Everyone:R when is guest_ok (?) */
+	if (info->is_writable){
+		argv[5] = "Everyone:F";
+	} else {
 		argv[5] = g_strdup_printf ("Everyone:R,%s:F", g_get_user_name ());
 	}
 
