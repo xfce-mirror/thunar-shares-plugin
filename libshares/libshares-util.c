@@ -22,10 +22,13 @@
 #include <config.h>
 #endif
 
+#ifdef HAVE_SYS_STAT_H
 #include <sys/stat.h>
+#endif
 
 #include <glib/gstdio.h>
 #include <gtk/gtk.h>
+#include <glib/gi18n-lib.h>
 
 #include <thunar-vfs/thunar-vfs.h>
 #include <thunarx/thunarx.h>
