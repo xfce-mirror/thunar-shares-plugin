@@ -732,7 +732,7 @@ add_share (ShareInfo *info, GError **error)
 
 	net_success = net_usershare_run (argc, argv, &key_file, &real_error);
 
-	if (info->is_writable) g_free (argv[5]);
+	if (!info->is_writable) g_free (argv[5]);
 
 	if (!net_success)
 	{
