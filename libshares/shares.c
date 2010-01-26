@@ -690,6 +690,8 @@ add_share (ShareInfo *info, GError **error)
 	GError *real_error;
 	gboolean supports_success;
 	gboolean supports_guest_ok;
+        gboolean net_success;
+
 #ifdef G_ENABLE_DEBUG
 	g_message ("add_share() start");
 #endif
@@ -713,7 +715,13 @@ add_share (ShareInfo *info, GError **error)
 	argv[2] = info->share_name;
 	argv[3] = info->path;
 	argv[4] = info->comment;
-	argv[5] = info->is_writable ? "Everyone:F" : "Everyone:R";
+	argv[5] = "Everyone:F";
+
+	if (info->is_writable)
+	{
+		/* Review: Maye set Everyone:R when is guest_ok (?) */
+		argv[5] = g_strdup_printf ("Everyone:R,%s:F", g_get_user_name ());
+	}
 
 	if (supports_guest_ok) {
 		argv[6] = info->guest_ok ? "guest_ok=y" : "guest_ok=n";
@@ -722,7 +730,13 @@ add_share (ShareInfo *info, GError **error)
 		argc = 6;
 
 	real_error = NULL;
-	if (!net_usershare_run (argc, argv, &key_file, &real_error)) {
+
+	net_success = net_usershare_run (argc, argv, &key_file, &real_error);
+
+	if (info->is_writable) g_free (argv[5]);
+
+	if (!net_success)
+	{
 #ifdef G_ENABLE_DEBUG
 		g_message ("Called \"net usershare add\" but it failed: %s", real_error->message);
 #endif
