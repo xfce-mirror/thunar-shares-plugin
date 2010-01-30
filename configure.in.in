@@ -21,7 +21,7 @@ m4_define([tsp_debug_default], [ifelse(tsp_version_tag(), [git], [full], [minimu
 dnl -------------------------------------------------------
 dnl Init autoconf
 dnl -------------------------------------------------------
-AC_COPYRIGHT([Copyright (c) 2008 Daniel Morales <daniel@daniel.com.uy>.])
+AC_COPYRIGHT([Copyright (c) 2009-2010 Daniel Morales <daniel@daniel.com.uy>.])
 AC_INIT([thunar-shares-plugin], [tsp_version], [thunar-dev@xfce.org])
 AC_CONFIG_SRCDIR([thunar-plugin/thunar-shares-plugin.c])
 AC_PREREQ(2.59)
@@ -49,15 +49,14 @@ AC_PROG_INTLTOOL([0.31])
 dnl -------------------------------------------------------
 dnl Check headers
 dnl -------------------------------------------------------
-AC_CHECK_HEADERS([string.h sys/types.h sys/wait.h time.h sys/stat.h]) 
+AC_CHECK_HEADERS([string.h sys/types.h sys/wait.h time.h sys/stat.h unistd.h]) 
 
 dnl -------------------------------------------------------
 dnl Packages checks
 dnl -------------------------------------------------------
 XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.12.0])
-XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.10.0])
-XDT_CHECK_PACKAGE([THUNARX], [thunarx-1], [0.8.0])
-XDT_CHECK_PACKAGE([THUNARVFS], [thunar-vfs-1], [0.8.0])
+XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.18.0])
+XDT_CHECK_PACKAGE([THUNARX], [thunarx-2], [1.0.1])
 
 dnl -------------------------------------------------------
 dnl Languages
