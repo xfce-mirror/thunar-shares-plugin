@@ -1,0 +1,152 @@
+# translation of el.po to Euskara
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: el\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-20 16:08+0000\n"
+"PO-Revision-Date: 2010-06-20 21:02+0200\n"
+"Last-Translator: Spiros Georgaras <sng@hellug.gr>\n"
+"Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: ../libshares/libshares-util.c:161
+msgid "Please, write a name."
+msgstr "Παρακαλώ δώστε ένα όνομα:"
+
+#. Warn the user
+#: ../libshares/libshares-util.c:169
+msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgstr "Το όνομα έχει πολλούς χαρακτήρες. Κάποιοι από τους παλιότερους πελάτες μπορεί να έχουν πρόβλημα με αυτό. Συνέχεια με αυτό το όνομα; "
+
+#: ../libshares/libshares-util.c:182
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Σφάλμα κατά τη λήψη πληροφοριών για τον κοινόχρηστο πόρο: %s"
+
+#: ../libshares/libshares-util.c:192
+msgid "Another share has the same name"
+msgstr "Ένας άλλος κοινόχρηστος πόρος έχει το ίδιο όνομα"
+
+#: ../libshares/libshares-util.c:246
+msgid "Cannot modify the share:"
+msgstr "Αδύνατη η τροποποίηση του κοινόχρηστου πόρου:"
+
+#: ../libshares/libshares-util.c:345
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Ο Thunar πρέπει να αλλάξει τα δικαιώματα του φακέλου για να ενεργοποιηθεί η κοινή χρήση του. Συμφωνείτε;"
+
+#: ../libshares/libshares-util.c:384
+msgid "Error when changing folder permissions."
+msgstr "Παρουσιάστηκε σφάλμα κατά την αλλαγή των δικαιωμάτων του φακέλου."
+
+#: ../libshares/shares.c:165
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "Το %s %s %s επέστρεψε σήμα %d"
+
+#: ../libshares/shares.c:174
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "Το %s %s %s απέτυχε για άγνωστο λόγο"
+
+#: ../libshares/shares.c:195
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "Η εντολή 'net usershare' επέστρεψε σφάλμα %d: %s"
+
+#: ../libshares/shares.c:197
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "Η εντολή 'net usershare' επέστρεψε σφάλμα %d"
+
+#: ../libshares/shares.c:231
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "Η έξοδος της εντολής 'net usershare' δεν είναι σε έγκυρη κωδικοποίηση UTF-8"
+
+#: ../libshares/shares.c:490
+#: ../libshares/shares.c:702
+#, c-format
+msgid "Failed"
+msgstr "Απέτυχε"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Το testparm της Samba επέστρεψε με σήμα %d"
+
+#: ../libshares/shares.c:598
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "Το testparm της Samba απέτυχε για άγνωστο λόγο"
+
+#: ../libshares/shares.c:613
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "Το testparm της Samba επέστρεψε σφάλμα %d: %s"
+
+#: ../libshares/shares.c:615
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "Το testparm της Samba επέστρεψε σφάλμα %d"
+
+#: ../libshares/shares.c:784
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "Δεν είναι δυνατή η διαγραφή του κοινόχρηστου πόρου με διαδρομή %s. Η διαδρομή δεν είναι σε κοινή χρήση"
+
+#: ../libshares/shares.c:837
+#, c-format
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "Δεν είναι δυνατή η αλλαγή της διαδρομής ενός υπάρχοντος κοινόχρηστου πόρου. Παρακαλώ διαγράψτε πρώτα τον παλιό και δημιουργήστε έναν καινούριο κοινόχρηστο πόρο"
+
+#: ../thunar-plugin/tsp-page.c:152
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Κοινή χρήση φακέλου</b>"
+
+#. Share check button
+#: ../thunar-plugin/tsp-page.c:162
+msgid "Share this folder"
+msgstr "Φάκελος σε κοινή χρήση"
+
+#: ../thunar-plugin/tsp-page.c:170
+msgid "Share Name:"
+msgstr "Όνομα κοινόχρηστου:"
+
+#. Write access
+#: ../thunar-plugin/tsp-page.c:180
+msgid "Allow others users to write in this folder"
+msgstr "Επιτρέπεται η εγγραφή σε άλλους χρήστες στο φάκελο"
+
+#. Guest access
+#: ../thunar-plugin/tsp-page.c:185
+msgid "Allow Guest access"
+msgstr "Επιτρέπεται πρόσβαση Guest"
+
+#: ../thunar-plugin/tsp-page.c:193
+msgid "Comments:"
+msgstr "Σχόλια:"
+
+#: ../thunar-plugin/tsp-page.c:296
+msgid "Share"
+msgstr "Κοινή χρήση"
+
+#: ../thunar-plugin/tsp-page.c:368
+msgid "You are not the owner of the folder."
+msgstr "Δεν είστε ο ιδιοκτήτης αυτού του φακέλου."
+
+#: ../thunar-plugin/tsp-page.c:376
+msgid ""
+"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
+"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr ""
+"Μπορεί να χρειαστεί να εγκαταστήσετε την Samba, να ελέγξετε τα δικαιώματα χρήστη (usershares group) και να επανασυνδεθείτε.\n"
+"<b>Περισσότερες πληροφορίες:</b> <u>http://thunar-shares.googlecode.com/</u>"
+
