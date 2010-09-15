@@ -141,7 +141,6 @@ msgid "You are not the owner of the folder."
 msgstr "Vous n'êtes pas le propriétaire du répertoire."
 
 #: ../thunar-plugin/tsp-page.c:376
-#, fuzzy
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
