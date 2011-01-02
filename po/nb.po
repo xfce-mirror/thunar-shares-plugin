@@ -140,13 +140,15 @@ msgstr "Nettverksområde"
 
 #: ../thunar-plugin/tsp-page.c:368
 msgid "You are not the owner of the folder."
-msgstr ""
+msgstr "Du er ikke eier av mappen"
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
+"Du må kanskje installere Samba, kontroller dine brukerrettigheter (usershares gruppe) og logg inn på nytt.\n"
+"<b>Mer info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 
 #~ msgid "Thunar - Add a share"
 #~ msgstr "Thunar - Legg til nettverksområde"
