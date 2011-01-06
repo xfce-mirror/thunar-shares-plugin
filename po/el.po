@@ -2,13 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
+# George Vasilakos <forfolias@gmail.com>, 2011
+# Stavros Giannouris <stavrosg@hellug.gr>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-06-20 16:08+0000\n"
-"PO-Revision-Date: 2010-06-20 21:02+0200\n"
-"Last-Translator: Spiros Georgaras <sng@hellug.gr>\n"
+"PO-Revision-Date: 2011-01-06 16:12+0200\n"
+"Last-Translator: Stavros Giannouris <stavrosg@hellug.gr>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,7 +20,7 @@ msgstr ""
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
-msgstr "Παρακαλώ δώστε ένα όνομα:"
+msgstr "Παρακαλώ δώστε ένα όνομα."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
@@ -114,7 +116,7 @@ msgstr "<b>Κοινή χρήση φακέλου</b>"
 #. Share check button
 #: ../thunar-plugin/tsp-page.c:162
 msgid "Share this folder"
-msgstr "Φάκελος σε κοινή χρήση"
+msgstr "Κοινή χρήση αυτού του φακέλου"
 
 #: ../thunar-plugin/tsp-page.c:170
 msgid "Share Name:"
@@ -123,12 +125,12 @@ msgstr "Όνομα κοινόχρηστου:"
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
 msgid "Allow others users to write in this folder"
-msgstr "Επιτρέπεται η εγγραφή σε άλλους χρήστες στο φάκελο"
+msgstr "Να επιτρέπεται η εγγραφή σε άλλους χρήστες στο φάκελο"
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
 msgid "Allow Guest access"
-msgstr "Επιτρέπεται πρόσβαση Guest"
+msgstr "Να επιτρέπεται πρόσβαση σε επισκέπτες"
 
 #: ../thunar-plugin/tsp-page.c:193
 msgid "Comments:"
@@ -136,7 +138,7 @@ msgstr "Σχόλια:"
 
 #: ../thunar-plugin/tsp-page.c:296
 msgid "Share"
-msgstr "Κοινή χρήση"
+msgstr "Κοινόχρηστος πόρος"
 
 #: ../thunar-plugin/tsp-page.c:368
 msgid "You are not the owner of the folder."
@@ -147,6 +149,6 @@ msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-"Μπορεί να χρειαστεί να εγκαταστήσετε την Samba, να ελέγξετε τα δικαιώματα χρήστη (usershares group) και να επανασυνδεθείτε.\n"
+"Μπορεί να χρειαστεί να εγκαταστήσετε την Samba, να ελέγξετε τα δικαιώματα χρήστη (ομάδα usershares) και να επανασυνδεθείτε.\n"
 "<b>Περισσότερες πληροφορίες:</b> <u>http://thunar-shares.googlecode.com/</u>"
 
