@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-22 18:07+0100\n"
+"POT-Creation-Date: 2011-03-06 17:15+0000\n"
 "PO-Revision-Date: 2009-03-11 22:53+0000\n"
 "Last-Translator: Simon Schneider <simon@schneiderimtal.de>\n"
 "Language-Team: German <xfce-i18n-de@xfce-org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
-msgstr "Geben Sie bitte einen Namen ein."
+msgstr "Bitte einen Namen eingeben."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
@@ -41,11 +41,11 @@ msgstr "Freigabe kann nicht bearbeitet werden:"
 
 #: ../libshares/libshares-util.c:345
 msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "Thunar muss einige Rechte dieses Ordners ändern, um ihn freizugeben. Wollen Sie das?"
+msgstr "Thunar muss einige Rechte dieses Ordners ändern, um ihn freizugeben. Möchten Sie das?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
-msgstr "Fehler beim Ändern der Ordnerrechte"
+msgstr "Fehler beim Ändern der Ordnerrechte."
 
 #: ../libshares/shares.c:165
 #, c-format
@@ -55,17 +55,17 @@ msgstr "%s %s %s gab das Signal %d zurück."
 #: ../libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
-msgstr "%s %s %s schlug mit unbekanntem Grund fehl."
+msgstr "%s %s %s schlug aus unbekanntem Grund fehl."
 
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "Der Aufruf von »net usershare« erzeugte Fehler Nummer %d: %s"
+msgstr "Der Aufruf von »net usershare« erzeugte Fehler %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "Der Aufruf von »net usershare« erzeugte Fehler Nummer %d."
+msgstr "Der Aufruf von »net usershare« erzeugte Fehler %d."
 
 #: ../libshares/shares.c:231
 #, c-format
@@ -90,22 +90,22 @@ msgstr "Die Sambafunktion »testparm« schlug aus unbekanntem Grund fehl."
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Die Sambafunktion »testparm« erzeugte Fehler Nummer %d: %s"
+msgstr "Die Sambafunktion »testparm« erzeugte Fehler %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Die Sambafunktion »testparm« erzeugte Fehler Nummer %d."
+msgstr "Die Sambafunktion »testparm« erzeugte Fehler %d."
 
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Die Freigabe für »%s« kann nicht entfernt werden: Das ist keine Freigabe."
+msgstr "Die Freigabe für »%s« kann nicht entfernt werden: Dieser Pfad ist nicht freigegeben."
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "Der Dateipfad einer Freigabe kann nicht geändert werden. Bitte entfernen Sie die Freigabe und erzeugen Sie sie neu."
+msgstr "Der Dateipfad einer Freigabe kann nicht geändert werden. Bitte entfernen Sie zuerst die alte Freigabe und erzeugen Sie eine neue."
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
@@ -123,7 +123,7 @@ msgstr "Freigabename"
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
 msgid "Allow others users to write in this folder"
-msgstr "Andere Benutzer dürfen in diesen Ordner schreiben."
+msgstr "Andere Benutzer dürfen in diesem Ordner schreiben."
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
