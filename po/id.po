@@ -2,7 +2,7 @@
 # Copyright (C) 2008 THE thunar-shares-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the thunar-shares-plugin package.
 # Andhika Padmawan <andhika.padmawan@gmail.com>, 2011.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin 0.1.6\n"
@@ -21,31 +21,25 @@ msgstr "Tolong, tulis nama."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid ""
-"Share name too long. Some old clients may have problems to access it, "
-"continue anyway?"
-msgstr ""
+msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgstr "Nama kongsi terlalu panjang. Beberapa klien lama akan bermasalah ketika mengaksesnya, tetap lanjutkan?"
 
 #: ../libshares/libshares-util.c:182
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr ""
+msgstr "Galat ketika mendapatkan informasi kongsi: %s"
 
 #: ../libshares/libshares-util.c:192
 msgid "Another share has the same name"
-msgstr ""
+msgstr "Kongsi lainnya telah mempunyai nama yang sama"
 
 #: ../libshares/libshares-util.c:246
 msgid "Cannot modify the share:"
 msgstr "Tak dapat memodifikasi bagian:"
 
 #: ../libshares/libshares-util.c:345
-msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
-msgstr ""
-"Thunar perlu menambah beberapa hak akses ke folder anda supaya dapat "
-"membaginya. Anda setuju?"
+msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgstr "Thunar perlu menambah beberapa hak akses ke folder anda supaya dapat membaginya. Anda setuju?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
@@ -104,17 +98,12 @@ msgstr "Parameter tes Samba mengembalikan galat %d"
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr ""
-"Tak dapat menghapus bagian untuk alamat %s: alamat tersebut tidak dibagi"
+msgstr "Tak dapat menghapus bagian untuk alamat %s: alamat tersebut tidak dibagi"
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid ""
-"Cannot change the path of an existing share; please remove the old share "
-"first and add a new one"
-msgstr ""
-"Tak dapat mengubah alaman bagian yang telah ada; silakan hapus bagian yang "
-"lama terlebih dahulu kemudian tambah yang baru"
+msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgstr "Tak dapat mengubah alaman bagian yang telah ada; silakan hapus bagian yang lama terlebih dahulu kemudian tambah yang baru"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
@@ -149,14 +138,15 @@ msgstr "Bagi"
 
 #: ../thunar-plugin/tsp-page.c:368
 msgid "You are not the owner of the folder."
-msgstr ""
+msgstr "Anda bukan pemilik dari folder"
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) "
-"and re-login.\n"
+"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
+"Anda perlu menginstal Samba, cek hak akses pengguna anda (grup usershares) dan masuk kembali.\n"
+"<b>Info lebih lanjut:</b> <u>http://thunar-shares.googlecode.com/</u>"
 
 #~ msgid "Thunar - Add a share"
 #~ msgstr "Thunar - Tambah bagian"
@@ -191,10 +181,8 @@ msgstr ""
 #~ msgid "Thunar Shares Question"
 #~ msgstr "Pertanyaan Pembagian Thunar"
 
-#, fuzzy
 #~ msgid "Folder:"
 #~ msgstr "<b>Folder:</b>"
 
-#, fuzzy
 #~ msgid "Share name:"
 #~ msgstr "Nama Bagian:"
