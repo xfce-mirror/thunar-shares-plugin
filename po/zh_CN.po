@@ -1,17 +1,18 @@
 # Chinese translations for PACKAGE package.
 # Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the thunar-shares-plugin.
 # Hunt Xu <huntxu@live.cn>, 2008, 2009.
 # Ivy Lee <ivyleexyg@gmail.com>, 2009.
-# 
+# Chipong Luo <chipong_l@yahoo.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-30 22:17+0000\n"
+"POT-Creation-Date: 2011-11-11 17:12+0000\n"
 "PO-Revision-Date: 2009-10-16 17:46+0800\n"
-"Last-Translator: Ivy Lee <ivyleexyg@gmail.com>\n"
-"Language-Team: Chinese (simplified)\n"
+"Last-Translator: Chipong Luo <chipong_l@yahoo.com>\n"
+"Language-Team: Chinese (simplified) <xfce-i18n@xfce.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,7 +31,7 @@ msgstr "共享名太长。一些旧的客户端访问它时可能会有问题，
 #: ../libshares/libshares-util.c:182
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr "获取共享信息时发生错误： %s"
+msgstr "获取共享信息时出错：%s"
 
 #: ../libshares/libshares-util.c:192
 msgid "Another share has the same name"
@@ -38,7 +39,7 @@ msgstr "与另一个共享重名"
 
 #: ../libshares/libshares-util.c:246
 msgid "Cannot modify the share:"
-msgstr "无法修改共享："
+msgstr "未能修改共享："
 
 #: ../libshares/libshares-util.c:345
 msgid ""
@@ -48,12 +49,12 @@ msgstr "Thunar 需要为您的文件夹增加一些权限以便共享。您接�
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
-msgstr "更改文件夹权限时发生错误。"
+msgstr "更改文件夹权限时出错。"
 
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s 返回 %d 信号"
+msgstr "%s %s %s 返回了 %d 信号"
 
 #: ../libshares/shares.c:174
 #, c-format
@@ -63,12 +64,12 @@ msgstr "%s %s %s 由于未知原因失败"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "’net usershare‘ 返回错误号 %d: %s"
+msgstr "‘net usershare’ 返回错误 %d：%s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "‘net usershare’ 返回错误号 %d"
+msgstr "‘net usershare’ 返回错误 %d"
 
 #: ../libshares/shares.c:231
 #, c-format
@@ -93,24 +94,24 @@ msgstr "Samba 测试由于未知原因失败"
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Samba 测试返回错误号 %d: %s"
+msgstr "Samba 测试返回错误 %d：%s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Samba 测试返回错误号 %d"
+msgstr "Samba 测试返回错误 %d"
 
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "无法移除共享路径 %s: 此路径未被共享"
+msgstr "未能移除共享路径 %s：此路径未被共享"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "无法修改已有的共享路径；请移除旧的共享并重新添加新的"
+msgstr "未能修改已有的共享路径；请移除旧的共享并添加新的"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
@@ -154,46 +155,4 @@ msgid ""
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
 "您可能需要安装 Samba ，检查您的用户权限(用户共享组)然后重新登录。\n"
-"<b>详情请看:</b> <u>http://thunar-shares.googlecode.com/</u>"
-
-#~ msgid "Thunar - Manage Shared Folders"
-#~ msgstr "Thunar-管理共享目录"
-
-#~ msgid "Thunar - Add a share"
-#~ msgstr "Thunar-添加一个共享"
-
-#~ msgid "Folder:"
-#~ msgstr "文件夹："
-
-#~ msgid "Share name:"
-#~ msgstr "共享名："
-
-#~ msgid "Thunar - Edit share"
-#~ msgstr "Thunar-修改一个共享"
-
-#~ msgid "There was an error while getting the sharing information"
-#~ msgstr "获取共享信息时发生一个错误"
-
-#~ msgid "Manage shared folders..."
-#~ msgstr "管理共享目录..."
-
-#~ msgid "Add, edit and remove shared folders"
-#~ msgstr "添加、修改和移除共享文件夹"
-
-#~ msgid "<b>Comments:</b>"
-#~ msgstr "<b>注释:</b>"
-
-#~ msgid "<b>Folder:</b>"
-#~ msgstr "<b>文件夹:</b>"
-
-#~ msgid "<b>Share name:</b>"
-#~ msgstr "<b>共享名:</b>"
-
-#~ msgid "Allow other users to write in this folder"
-#~ msgstr "允许其他用户在此目录中写"
-
-#~ msgid "Thunar Shares Error"
-#~ msgstr "Thunar 共享错误"
-
-#~ msgid "Thunar Shares Question"
-#~ msgstr "Thunar 共享问题"
+"<b>详情：</b> <u>http://thunar-shares.googlecode.com/</u>"
