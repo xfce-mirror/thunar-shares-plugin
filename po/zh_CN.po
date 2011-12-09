@@ -1,9 +1,11 @@
-# Chinese translations for PACKAGE package.
-# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the thunar-shares-plugin.
+# Simplified Chinese translations for
+# the thunar-shares-plugin package.
+# This file is distributed under the same license as
+# the thunar-shares-plugin package.
 # Hunt Xu <huntxu@live.cn>, 2008, 2009.
 # Ivy Lee <ivyleexyg@gmail.com>, 2009.
 # Chipong Luo <chipong_l@yahoo.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
@@ -11,8 +13,8 @@ msgstr ""
 "POT-Creation-Date: 2011-11-11 17:12+0000\n"
 "PO-Revision-Date: 2009-10-16 17:46+0800\n"
 "Last-Translator: Chipong Luo <chipong_l@yahoo.com>\n"
-"Language-Team: Chinese (simplified) <xfce-i18n@xfce.org>\n"
-"Language: \n"
+"Language-Team: Chinese (Simplified) <xfce-i18n@xfce.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
