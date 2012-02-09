@@ -4,15 +4,15 @@
 # the thunar-shares-plugin package.
 # Hunt Xu <huntxu@live.cn>, 2008, 2009.
 # Ivy Lee <ivyleexyg@gmail.com>, 2009.
-# Chipong Luo <chipong_l@yahoo.com>, 2011.
+# Chipong Luo <chipong.luo@yahoo.com>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-11 17:12+0000\n"
+"POT-Creation-Date: 2012-02-09 03:51+0000\n"
 "PO-Revision-Date: 2009-10-16 17:46+0800\n"
-"Last-Translator: Chipong Luo <chipong_l@yahoo.com>\n"
+"Last-Translator: Chipong Luo <chipong.luo@yahoo.com>\n"
 "Language-Team: Chinese (Simplified) <xfce-i18n@xfce.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,9 @@ msgstr "请输入名称。"
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
-msgstr "共享名太长。一些旧的客户端访问它时可能会有问题，还要继续吗？"
+msgstr ""
+"共享名太长。一些旧的客户端访问它时可能会"
+"有问题，仍然继续？"
 
 #: ../libshares/libshares-util.c:182
 #, c-format
@@ -47,7 +49,9 @@ msgstr "未能修改共享："
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do "
 "you agree?"
-msgstr "Thunar 需要为您的文件夹增加一些权限以便共享。您接受吗？"
+msgstr ""
+"Thunar 需要为您的文件夹增加一些权限以便"
+"共享它。您同意吗？"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
@@ -56,7 +60,7 @@ msgstr "更改文件夹权限时出错。"
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s 返回了 %d 信号"
+msgstr "%s %s %s 返回了信号 %d"
 
 #: ../libshares/shares.c:174
 #, c-format
@@ -106,14 +110,16 @@ msgstr "Samba 测试返回错误 %d"
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "未能移除共享路径 %s：此路径未被共享"
+msgstr "未能移除共享路径 %s：此路径未共享"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "未能修改已有的共享路径；请移除旧的共享并添加新的"
+msgstr ""
+"未能更改已存在共享的路径；请移除原来的共享"
+"并添加一个新的共享"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
@@ -131,7 +137,7 @@ msgstr "共享名："
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
 msgid "Allow others users to write in this folder"
-msgstr "允许其他用户在此文件夹中写"
+msgstr "允许其他用户在此文件夹中写入"
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
@@ -156,5 +162,6 @@ msgid ""
 "and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-"您可能需要安装 Samba ，检查您的用户权限(用户共享组)然后重新登录。\n"
-"<b>详情：</b> <u>http://thunar-shares.googlecode.com/</u>"
+"您可能需要安装 Samba，检查您的用户权限"
+"(用户共享群组)然后重新登录。\n"
+"<b>更多信息：</b> <u>http://thunar-shares.googlecode.com/</u>"
