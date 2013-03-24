@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
-msgstr "이름을 적어 주시기 바랍니다."
+msgstr "이름을 적어 주십시오."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
@@ -44,7 +44,7 @@ msgstr "공유를 수정할 수 없습니다:"
 
 #: ../libshares/libshares-util.c:345
 msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "Thunar는 이것을 공유하기 위해 여러분의 폴더에 대한 권한을 추가하려 합니다. 동의하시렵니까?"
+msgstr "서너는 이것을 공유하려면 여러분의 폴더에 대한 권한을 추가하려 합니다. 동의하시렵니까?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
@@ -109,7 +109,7 @@ msgstr "%s 경로에 대한 공유를 제거할 수 없습니다: 공유된 경�
 #: ../libshares/shares.c:837
 #, c-format
 msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
-msgstr "이미 존재하는 공유의 경로를 바꿀 수 없습니다. 그러니 이전 공유를 제거하고 새로운 공유를 추가해주시기 바랍니다"
+msgstr "이미 존재하는 공유의 경로를 바꿀 수 없습니다. 그러니 이전 공유를 제거하고 새로운 공유를 추가해주십시오"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
@@ -151,6 +151,6 @@ msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-"삼바 설치가 필요한 것 같습니다. 사용자 권한(사용자 공유 그룹)을 확인하시고 다시 로그인해주시기 바랍니다.\n"
+"삼바 설치가 필요한 것 같습니다. 사용자 권한(사용자 공유 그룹)을 확인하시고 다시 로그인해주십시오.\n"
 "<b>추가 정보:</b> <u>http://thunar-shares.googlecode.com/</u>"
 
