@@ -44,7 +44,7 @@ msgstr "공유를 수정할 수 없습니다:"
 
 #: ../libshares/libshares-util.c:345
 msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "서너는 이것을 공유하려면 여러분의 폴더에 대한 권한을 추가하려 합니다. 동의하시렵니까?"
+msgstr "투나에서 폴더를 공유하려면 권한을 추가해야 합니다. 동의하시렵니까?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
