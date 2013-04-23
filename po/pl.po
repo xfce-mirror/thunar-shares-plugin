@@ -2,23 +2,23 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Piotr Strębski <strebski@o2.pl>, 2013.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-08 12:51+0000\n"
+"POT-Creation-Date: 2013-04-23 20:30+0000\n"
 "PO-Revision-Date: 2013-01-08 17:53+0100\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: PL-pl <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: 2\n"
 "X-Poedit-Language: Polish\n"
-"X-Poedit-Country: POLAND\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: POLAND\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
@@ -26,8 +26,12 @@ msgstr "Proszę podać imię."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
-msgstr "Nazwa współudziału jest za długa. Niektóre starsze programy mogą mieć problem z dostępem. Mimo wszystko kontynuować?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
+msgstr ""
+"Nazwa współudziału jest za długa. Niektóre starsze programy mogą mieć "
+"problem z dostępem. Mimo wszystko kontynuować?"
 
 #: ../libshares/libshares-util.c:182
 #, c-format
@@ -43,8 +47,12 @@ msgid "Cannot modify the share:"
 msgstr "Nie można modyfikować współudziału:"
 
 #: ../libshares/libshares-util.c:345
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
-msgstr "Thunar wymaga dodania pewnych uprawnień do tego katalogu, by móc go współdzielić. Czy się zgadzasz?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do "
+"you agree?"
+msgstr ""
+"Thunar wymaga dodania pewnych uprawnień do tego katalogu, by móc go "
+"współdzielić. Czy się zgadzasz?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
@@ -63,20 +71,19 @@ msgstr "%s %s %s napotkało błąd z nieznanego powodu"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr ""
+msgstr "Polecenie „net usershare” zwróciło błąd %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr ""
+msgstr "Polecenie „net usershare” zwróciło błąd %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr ""
 
-#: ../libshares/shares.c:490
-#: ../libshares/shares.c:702
+#: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
 msgstr "Błąd"
@@ -102,13 +109,15 @@ msgid "Samba's testparm returned error %d"
 msgstr ""
 
 #: ../libshares/shares.c:784
-#, c-format
+#, c-format, fuzzy
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr ""
+msgstr "Nie można usunąć udziału przypisanego ścieżce %s: ścieżka nie jest współdzielona"
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr ""
 
 #: ../thunar-plugin/tsp-page.c:152
@@ -148,7 +157,7 @@ msgstr "Nie jesteś właścicielem tego katalogu."
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
+"You may need to install Samba, check your user permissions(usershares group) "
+"and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-
