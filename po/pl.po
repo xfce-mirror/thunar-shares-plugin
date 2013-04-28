@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-23 20:30+0000\n"
+"POT-Creation-Date: 2013-04-28 03:45+0000\n"
 "PO-Revision-Date: 2013-01-08 17:53+0100\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: PL-pl <LL@li.org>\n"
@@ -79,9 +79,9 @@ msgid "'net usershare' returned error %d"
 msgstr "Polecenie „net usershare” zwróciło błąd %d"
 
 #: ../libshares/shares.c:231
-#, c-format
+#, c-format, fuzzy
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr ""
+msgstr "wartość 'net usershare' nie jest prawidłowym zapisem UTF-8"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -109,16 +109,18 @@ msgid "Samba's testparm returned error %d"
 msgstr ""
 
 #: ../libshares/shares.c:784
-#, c-format, fuzzy
+#, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Nie można usunąć udziału przypisanego ścieżce %s: ścieżka nie jest współdzielona"
+msgstr ""
+"Nie można usunąć udziału przypisanego ścieżce %s: ścieżka nie jest "
+"współdzielona"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr ""
+msgstr "Nie można zmienić ścieżki dla istniejącego udziału; usuń stary udział, a następnie dodaj nowy"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
