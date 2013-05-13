@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Slovenian translation for thunar-shares-plugin.
+# Copyright (C) 2013 The Xfce Development Team.
+# This file is distributed under the same license as the thunar-shares-plugin package.
 #
-#, fuzzy
+# Klemen Košir <klemen913@gmail.com>, 2013.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: thunar-shares-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-18 18:57+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2013-05-08 22:57+0000\n"
+"PO-Revision-Date: 2013-05-13 18:35+0100\n"
+"Last-Translator: Klemen Košir <klemen913@gmail.com>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
-msgstr "Prosim, vpišite ime."
+msgstr "Prosimo, vnesite ime."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
@@ -27,88 +29,88 @@ msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr ""
-"Ime izmenjave je predolgo. Nekateri starejši programi bodo morda imeli težave z dostopom."
-"Nadaljujem vseeno?"
+"Ime souporabe je predolgo, zato imajo lahko nekateri starejši programi "
+"težave z dostopom. Ali želite nadaljevati?"
 
 #: ../libshares/libshares-util.c:182
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr "Napaka pri pridobivanju informacij o izmenjavi: %s"
+msgstr "Med pridobivanjem podatkov o souporabi je prišlo do napake: %s"
 
 #: ../libshares/libshares-util.c:192
 msgid "Another share has the same name"
-msgstr "Druga izmenjava ima isto ime"
+msgstr "Souporaba s tem imenom že obstaja"
 
 #: ../libshares/libshares-util.c:246
 msgid "Cannot modify the share:"
-msgstr "Ne morem prilagoditi izmenjave:"
+msgstr "Souporabe ni mogoče spremeniti:"
 
 #: ../libshares/libshares-util.c:345
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do "
 "you agree?"
-msgstr "" 
-"Thunar mora dodati nekatera dovoljenja k vaši mapi, da bi jo lahko delil. Ali "
-"se strinjate?"
+msgstr ""
+"Za souporabo mape morajo biti nastavljena ustrezna dovoljenja. Ali želite, "
+"da Thunar ta dovoljenja samodejno nastavi?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
-msgstr "Napaka pri spreminjaju dovoljenj mape."
+msgstr "Med spreminjanjem dovoljenj mape je prišlo do napake."
 
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s se je vrnil s signalom %d"
+msgstr "Ukaz \"%s %s %s\" je vrnil vrednost %d"
 
 #: ../libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
-msgstr "%s %s %s zaradi neznanega vzroka ni uspel"
+msgstr "Ukaz \"%s %s %s\" je spodletel iz neznanega vzroka"
 
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare' javlja napako %d: %s"
+msgstr "Ukaz \"net usershare\" je sporočil napako %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare' javlja napako %d"
+msgstr "Ukaz \"net usershare\" je sporočil napako %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "rezultat 'net usershare' ni veljavno UTF-8 kodiran"
+msgstr "Izhod ukaza \"net usershare\" ni v veljavnem kodiranju UTF-8"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
-msgstr "Neuspešno"
+msgstr "Napaka"
 
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "Sambin testparm vrača signal %d"
+msgstr "Ukaz \"testparm\" programa Samba je vrnil vrednost %d"
 
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "Sambin testparm zaradi neznanih vzrokov ni uspel"
+msgstr "Ukaz \"testparm\" programa Samba je spodletel iz neznanega razloga"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Sambin testparm je sporočil napako %d: %s"
+msgstr "Ukaz \"testparm\" programa Samba je sporočil napako %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Sambin testparm je sporočil napako %d"
+msgstr "Ukaz \"testparm\" programa Samba je sporočil napako %d"
 
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Ne morem odstraniti izmenjave za pot %s: ta pot ni v izmenjavi"
+msgstr "Poti %s ni mogoče odstraniti, saj ni v souporabi"
 
 #: ../libshares/shares.c:837
 #, c-format
@@ -116,26 +118,26 @@ msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
 msgstr ""
-"Ne morem spremeniti poti obstoječe izmenjave; prosimo, odstranite staro izmenjavo"
-"in dodajte novo"
+"Poti obstoječe souporabe ni mogoče spremeniti. Prosimo, odstranite staro in "
+"nato dodajte novo"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
-msgstr "<b>Izmenjava map</b>"
+msgstr "<b>Souporaba mape</b>"
 
 #. Share check button
 #: ../thunar-plugin/tsp-page.c:162
 msgid "Share this folder"
-msgstr "Deli mapo"
+msgstr "Dodaj mapo v souporabo"
 
 #: ../thunar-plugin/tsp-page.c:170
 msgid "Share Name:"
-msgstr "Ime izmenjave:"
+msgstr "Ime souporabe:"
 
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
 msgid "Allow others users to write in this folder"
-msgstr "Dovoli drugim pisanje v tej mapi"
+msgstr "Dovoli drugim uporabnikom zapisovanje v to mapo"
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
@@ -144,15 +146,15 @@ msgstr "Dovoli dostop gostom"
 
 #: ../thunar-plugin/tsp-page.c:193
 msgid "Comments:"
-msgstr "Komentarji:"
+msgstr "Opombe:"
 
 #: ../thunar-plugin/tsp-page.c:296
 msgid "Share"
-msgstr "Izmenjava"
+msgstr "Souporaba"
 
 #: ../thunar-plugin/tsp-page.c:368
 msgid "You are not the owner of the folder."
-msgstr "Niste lastnik mape"
+msgstr "Niste lastnik mape."
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
@@ -160,6 +162,7 @@ msgid ""
 "and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
 msgstr ""
-"Morda boste morali namestiti Sambo, preverite svoja uporabniška dovoljenja(uporabniške skupine)"
-"in se ponovno vpišite.\n"
-"<b>Več informacij:</b> <u>http://thunar-shares.googlecode.com/</u>"
+"Morda boste morali namestiti program Samba, preveriti vaša dovoljenja in se "
+"ponovno prijaviti.\n"
+"<b>Več podatkov:</b> <u>http://goodies.xfce.org/projects/thunar-plugins/"
+"thunar-shares-plugin/</u>"
