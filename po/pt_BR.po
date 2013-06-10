@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thunar-Shares-PLugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-19 16:09+0000\n"
+"POT-Creation-Date: 2013-06-10 13:57+0000\n"
 "PO-Revision-Date: 2009-02-04 19:52-0500\n"
 "Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
@@ -34,7 +34,7 @@ msgstr ""
 #: ../libshares/libshares-util.c:182
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr "Erro ao obter informação sobre o compartilhamento: %s"
+msgstr "Erro ao obter informações sobre o compartilhamento: %s"
 
 #: ../libshares/libshares-util.c:192
 msgid "Another share has the same name"
@@ -86,7 +86,7 @@ msgstr ""
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
-msgstr "Falhou"
+msgstr "Falha"
 
 #: ../libshares/shares.c:592
 #, c-format
@@ -145,7 +145,7 @@ msgstr "Permitir que outros usuários gravem nesta pasta"
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
 msgid "Allow Guest access"
-msgstr "Permitir acesso remoto"
+msgstr "Permitir acesso de convidados"
 
 #: ../thunar-plugin/tsp-page.c:193
 msgid "Comments:"
