@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# k3lt01 <keltoiboy@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunar Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2013-07-25 08:19+0000\n"
+"Last-Translator: k3lt01 <keltoiboy@gmail.com>\n"
+"Language-Team: English (Australia) (http://www.transifex.com/projects/p/xfce/language/en_AU/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_AU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../libshares/libshares-util.c:161
+msgid "Please, write a name."
+msgstr "Please, write a name."
+
+#. Warn the user
+#: ../libshares/libshares-util.c:169
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
+msgstr "Share name too long. Some old clients may have problems to access it, continue anyway?"
+
+#: ../libshares/libshares-util.c:182
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Error while getting share information: %s"
+
+#: ../libshares/libshares-util.c:192
+msgid "Another share has the same name"
+msgstr "Another share has the same name"
+
+#: ../libshares/libshares-util.c:246
+msgid "Cannot modify the share:"
+msgstr "Cannot modify the share:"
+
+#: ../libshares/libshares-util.c:345
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
+msgstr "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+
+#: ../libshares/libshares-util.c:384
+msgid "Error when changing folder permissions."
+msgstr "Error when changing folder permissions."
+
+#: ../libshares/shares.c:165
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s returned with signal %d"
+
+#: ../libshares/shares.c:174
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s failed for an unknown reason"
+
+#: ../libshares/shares.c:195
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' returned error %d: %s"
+
+#: ../libshares/shares.c:197
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' returned error %d"
+
+#: ../libshares/shares.c:231
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "the output of 'net usershare' is not in valid UTF-8 encoding"
+
+#: ../libshares/shares.c:490 ../libshares/shares.c:702
+#, c-format
+msgid "Failed"
+msgstr "Failed"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Samba's testparm returned with signal %d"
+
+#: ../libshares/shares.c:598
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "Samba's testparm failed for an unknown reason"
+
+#: ../libshares/shares.c:613
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "Samba's testparm returned error %d: %s"
+
+#: ../libshares/shares.c:615
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "Samba's testparm returned error %d"
+
+#: ../libshares/shares.c:784
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "Cannot remove the share for path %s: that path is not shared"
+
+#: ../libshares/shares.c:837
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr "Cannot change the path of an existing share; please remove the old share first and add a new one"
+
+#: ../thunar-plugin/tsp-page.c:152
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Folder Sharing</b>"
+
+#. Share check button
+#: ../thunar-plugin/tsp-page.c:162
+msgid "Share this folder"
+msgstr "Share this folder"
+
+#: ../thunar-plugin/tsp-page.c:170
+msgid "Share Name:"
+msgstr "Share Name:"
+
+#. Write access
+#: ../thunar-plugin/tsp-page.c:180
+msgid "Allow others users to write in this folder"
+msgstr "Allow others users to write in this folder"
+
+#. Guest access
+#: ../thunar-plugin/tsp-page.c:185
+msgid "Allow Guest access"
+msgstr "Allow Guest access"
+
+#: ../thunar-plugin/tsp-page.c:193
+msgid "Comments:"
+msgstr "Comments:"
+
+#: ../thunar-plugin/tsp-page.c:296
+msgid "Share"
+msgstr "Share"
+
+#: ../thunar-plugin/tsp-page.c:368
+msgid "You are not the owner of the folder."
+msgstr "You are not the owner of the folder."
+
+#: ../thunar-plugin/tsp-page.c:376
+msgid ""
+"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
+"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "You may need to install Samba, check your user permissions(usershares group) and re-login.\n<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
