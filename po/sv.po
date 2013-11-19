@@ -1,19 +1,22 @@
-# Swedish translation for thunar-shares-plugin.
-# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the thunar-shares-plugin package.
-# Daniel Nylander <po@danielnylander.se>, 2008, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2008-2009
 msgid ""
 msgstr ""
-"Project-Id-Version: thunar-shares-plugin\n"
+"Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-19 17:13+0000\n"
-"PO-Revision-Date: 2009-02-09 00:33+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
-"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2013-11-19 16:13+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Swedish (http://www.transifex.com/projects/p/xfce/language/sv/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
@@ -21,7 +24,9 @@ msgstr "Ange ett namn."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
 msgstr "Utdelningsnamnet är för långt. Vissa gamla klienter kan få problem med att komma åt den. Fortsätt ändå?"
 
 #: ../libshares/libshares-util.c:182
@@ -38,7 +43,9 @@ msgid "Cannot modify the share:"
 msgstr "Kan inte ändra utdelningen:"
 
 #: ../libshares/libshares-util.c:345
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
 msgstr "Thunar behöver lägga till några rättigheter på din mapp för att kunna dela ut den. Godkänner du det?"
 
 #: ../libshares/libshares-util.c:384
@@ -102,7 +109,9 @@ msgstr "Kan inte ta bort utdelningen för sökvägen %s: den sökvägen delas in
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr "Kan inte ändra sökvägen för en befintlig utdelning; ta bort den gamla utdelningen och lägg till en ny"
 
 #: ../thunar-plugin/tsp-page.c:152
@@ -144,36 +153,4 @@ msgstr "Du äger inte mappen."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"Du kan behöva installera Samba. Kontrollera dina användarrättigheter (gruppen usershares) och logga in igen.\n"
-"<b>Mer information:</b> <u>http://thunar-shares.googlecode.com/</u>"
-
-#~ msgid "Thunar - Manage Shared Folders"
-#~ msgstr "Thunar - Hantera utdelade mappar"
-
-#~ msgid "Thunar - Add a share"
-#~ msgstr "Thunar - Lägg till en utdelning"
-
-#~ msgid "Folder:"
-#~ msgstr "Mapp:"
-
-#~ msgid "Share name:"
-#~ msgstr "Utdelningens namn:"
-
-#~ msgid "Thunar - Edit share"
-#~ msgstr "Thunar - Redigera utdelning"
-
-#~ msgid "There was an error while getting the sharing information"
-#~ msgstr "Det uppstod ett fel vid hämtning av utdelningsinformation"
-
-#~ msgid "Manage shared folders..."
-#~ msgstr "Hantera utdelade mappar..."
-
-#~ msgid "Add, edit and remove shared folders"
-#~ msgstr "Lägg till, redigera och ta bort utdelade mappar"
-
-#~ msgid "There was an error while listing shares"
-#~ msgstr "Det uppstod et fel vid listning av utdelningar"
-
-#~ msgid "Share name is too long."
-#~ msgstr "Utdelningens namn är för långt."
+msgstr "Du kan behöva installera Samba. Kontrollera dina användarrättigheter (gruppen usershares) och logga in igen.\n<b>Mer information:</b> <u>http://thunar-shares.googlecode.com/</u>"
