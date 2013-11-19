@@ -1,19 +1,22 @@
-# Italian translation of the thunar-shares-plugin package.
-# Copyright (C) YEAR THE thunar-shares-plugin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the thunar-shares-plugin package.
-# Cristian Marchi <cri.penta@gmail.com>, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# cri <cri.penta@gmail.com>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.2.0\n"
+"Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-03 10:10+0000\n"
-"PO-Revision-Date: 2009-04-11 09:41+0100\n"
-"Last-Translator: Cristian Marchi <cri.penta@gmail.com>\n"
-"Language-Team: Italian Translation Team <xfce-it-translators@googlegroups.com>\n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2013-11-19 16:13+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/xfce/language/it/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
@@ -21,7 +24,9 @@ msgstr "Inserire un nome per favore."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
 msgstr "Nome della condivisione troppo lungo. Alcuni vecchi client potrebbero avere dei problemi ad accedervi, continuare comunque?"
 
 #: ../libshares/libshares-util.c:182
@@ -38,7 +43,9 @@ msgid "Cannot modify the share:"
 msgstr "Impossibile modificare la condivisione:"
 
 #: ../libshares/libshares-util.c:345
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
 msgstr "Thunar deve aggiungere dei permessi alla cartella per condividerla. Si è d'accordo?"
 
 #: ../libshares/libshares-util.c:384
@@ -102,7 +109,9 @@ msgstr "Impossibile rimuovere la condivisione per il percorso %s: tale percorso 
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr "Impossibile cambiare il percorso di una condivisione esistente; rimuovere la vecchia condivisione e poi aggiungerne una nuova"
 
 #: ../thunar-plugin/tsp-page.c:152
@@ -144,30 +153,4 @@ msgstr "Non si è i proprietari della cartella."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"È necessario installare Samba; controllare i propri permessi utente (gruppo usershares) e rieffettuare il log-in.\n"
-"<b>Maggiori informazioni:</b> <u>http://thunar-shares.googlecode.com/</u>"
-
-#~ msgid "Thunar - Manage Shared Folders"
-#~ msgstr "Thunar - Gestione delle cartelle condivise"
-
-#~ msgid "Thunar - Add a share"
-#~ msgstr "Thunar - Aggiunta di una condivisione"
-
-#~ msgid "Folder:"
-#~ msgstr "Cartella:"
-
-#~ msgid "Share name:"
-#~ msgstr "Nome condivisione:"
-
-#~ msgid "Thunar - Edit share"
-#~ msgstr "Thunar - Modifica di una condivisione"
-
-#~ msgid "There was an error while getting the sharing information"
-#~ msgstr "Si è verificato un errore durante il recupero delle informazioni di condivisione"
-
-#~ msgid "Manage shared folders..."
-#~ msgstr "Gestione delle cartelle condivise..."
-
-#~ msgid "Add, edit and remove shared folders"
-#~ msgstr "Permette di aggiungere, modificare e rimuovere le cartelle condivise"
+msgstr "È necessario installare Samba; controllare i propri permessi utente (gruppo usershares) e rieffettuare il log-in.\n<b>Maggiori informazioni:</b> <u>http://thunar-shares.googlecode.com/</u>"
