@@ -1,21 +1,22 @@
-# Ukrainian translation of thunar-shares-plugin.
-# Copyright (C) 2008 Dmitry Nikitin
-# This file is distributed under the same license as the thunar-shares-plugin package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
-# Dmitry Nikitin <luckas_fb@mail.ru>, 2008.
+# Translators:
+# Dmitry Nikitin <luckas_fb@mail.ru>, 2008
 msgid ""
 msgstr ""
-"Project-Id-Version: thunar-shares-plugin\n"
+"Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-18 06:06+0100\n"
-"PO-Revision-Date: 2009-02-24 19:46+0200\n"
-"Last-Translator: Dmitry Nikitin <luckas_fb@mail.ru>\n"
-"Language-Team: Ukrainian <xfce4-dev@xfce.org>\n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2013-11-19 16:13+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/projects/p/xfce/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: KBabel 1.11.4\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
@@ -23,7 +24,9 @@ msgstr "Будь-ласка, вкажіть назву"
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
 msgstr "Назва ресурсу занадто довга. Деякі старі клієнти можуть мати проблеми з доступом до нього, все одно продовжити?"
 
 #: ../libshares/libshares-util.c:182
@@ -40,7 +43,9 @@ msgid "Cannot modify the share:"
 msgstr "Не вдається змінити теку загального доступу:"
 
 #: ../libshares/libshares-util.c:345
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
 msgstr "Програмі Thunar необхідно додати деякі права доступу до вашої теки для організації загального доступу до неї. Ви погоджуєтесь з цим?"
 
 #: ../libshares/libshares-util.c:384
@@ -104,7 +109,9 @@ msgstr "Не вдалось видалити загальний ресурс %s:
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr "Не вдалось змінити шлях існуючого загальнодоступного ресурсу; будь ласка, спочатку видаліть старий ресурс і тоді додайте новий"
 
 #: ../thunar-plugin/tsp-page.c:152
@@ -146,39 +153,4 @@ msgstr "Ви не є власником цієї теки."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"Вам варто встановити Samba, перевірте ваші права доступу (ресурси групи) і перелогіньтесь.\n"
-"<b>Більше інформації:</b> <u>http://thunar-shares.googlecode.com/</u>"
-
-#~ msgid "Thunar - Add a share"
-#~ msgstr "Thunar — Додати теку загального доступу"
-
-#~ msgid "Thunar - Edit share"
-#~ msgstr "Thunar — Редагувати теку загального доступу"
-
-#~ msgid "Manage shared folders..."
-#~ msgstr "Керувати теками загального доступу..."
-
-#~ msgid "Add, edit and remove shared folders"
-#~ msgstr "Додавати, редагувати і видаляти теки загального доступу"
-
-#~ msgid "<b>Comments:</b>"
-#~ msgstr "<b>Коментарі:</b>"
-
-#~ msgid "<b>Folder:</b>"
-#~ msgstr "<b>Тека:</b>"
-
-#~ msgid "<b>Share name:</b>"
-#~ msgstr "<b>Ім'я теки в мережі:</b>"
-
-#~ msgid "Allow other users to write in this folder"
-#~ msgstr "Дозволити іншим користувачам запис в цю теку"
-
-#~ msgid "Thunar - Manage Shared Folders"
-#~ msgstr "Thunar — Керувати теками загального доступу"
-
-#~ msgid "Thunar Shares Error"
-#~ msgstr "Помилка тек загального доступу Thunar"
-
-#~ msgid "Thunar Shares Question"
-#~ msgstr "Питання загального доступу Thunar"
+msgstr "Вам варто встановити Samba, перевірте ваші права доступу (ресурси групи) і перелогіньтесь.\n<b>Більше інформації:</b> <u>http://thunar-shares.googlecode.com/</u>"
