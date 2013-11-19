@@ -1,23 +1,22 @@
-# European Portuguese translations for Thunar-Shares-Plugin package.
-# Copyright (C) 2008 THE Thunar-Shares-Plugin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Thunar-Shares-Plugin package.
-# Nuno Miguel <nunis@netcabo.pt>, 2008, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Nuno Miguel <nunis@netcabo.pt>, 2008-2009
 msgid ""
 msgstr ""
-"Project-Id-Version: Thunar-Shares-Plugin 0.2.0\n"
+"Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-08 22:21+0000\n"
-"PO-Revision-Date: 2012-04-18 18:57+0100\n"
-"Last-Translator: Nuno Miguel <nunomgue@gmail.com>\n"
-"Language-Team: \n"
-"Language: \n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2013-11-19 16:13+0000\n"
+"Last-Translator: Nick <nick@xfce.org>\n"
+"Language-Team: Portuguese (http://www.transifex.com/projects/p/xfce/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Country: PORTUGAL\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-Language: Portuguese\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
@@ -25,7 +24,9 @@ msgstr "Por favor, indique um nome."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
 msgstr "O nome de partilha é muito extenso. Alguns programas podem ter problemas de acesso. Continuar?"
 
 #: ../libshares/libshares-util.c:182
@@ -42,7 +43,9 @@ msgid "Cannot modify the share:"
 msgstr "Não pode modificar a partilha:"
 
 #: ../libshares/libshares-util.c:345
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
 msgstr "O Thunar precisa adicionar algumas permissões à sua pasta para a partilhar. Concorda?"
 
 #: ../libshares/libshares-util.c:384
@@ -74,8 +77,7 @@ msgstr "'net usershare' retornou o erro %d"
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "o resultado de 'net usershare' não tem uma codificação UTF-8 válida"
 
-#: ../libshares/shares.c:490
-#: ../libshares/shares.c:702
+#: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
 msgstr "Falhou"
@@ -107,7 +109,9 @@ msgstr "Não pode remover a partilha do caminho %s. Este caminho não está part
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr "Não pode mudar o caminho de uma partilha existente; por favor remova-a primeiro e adicione uma nova partilha"
 
 #: ../thunar-plugin/tsp-page.c:152
@@ -149,48 +153,4 @@ msgstr "Não é o proprietário da pasta."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"Pode precisar de instalar o Samba. Verifique as permissões (grupo \"usershares\") e reinicie a sessão.\n"
-"<b>Mais informações</b> <u>http://thunar-shares.googlecode.com/</u>"
-
-#~ msgid "Thunar - Manage Shared Folders"
-#~ msgstr "Thunar - Gestão de Pastas Partilhadas"
-
-#~ msgid "Thunar - Add a share"
-#~ msgstr "Thunar - Adicionar uma partilha"
-
-#~ msgid "Folder:"
-#~ msgstr "Pasta:"
-
-#~ msgid "Share name:"
-#~ msgstr "Nome da partilha:"
-
-#~ msgid "Thunar - Edit share"
-#~ msgstr "Thunar - Editar partilha"
-
-#~ msgid "There was an error while getting the sharing information"
-#~ msgstr "Ocorreu um erro ao obter a informação da partilha"
-
-#~ msgid "Manage shared folders..."
-#~ msgstr "Gerir pastas partilhadas..."
-
-#~ msgid "Add, edit and remove shared folders"
-#~ msgstr "Adicionar, editar e remover pastas partilhadas"
-
-#~ msgid "<b>Comments:</b>"
-#~ msgstr "<b>Comentários:</b>"
-
-#~ msgid "<b>Folder:</b>"
-#~ msgstr "<b>Pasta:</b>"
-
-#~ msgid "<b>Share name:</b>"
-#~ msgstr "<b>Nome da partilha:</b>"
-
-#~ msgid "Allow other users to write in this folder"
-#~ msgstr "Permitir que outros utilizadores gravem nesta pasta"
-
-#~ msgid "Thunar Shares Error"
-#~ msgstr "Erro de partilha do Thunar"
-
-#~ msgid "Thunar Shares Question"
-#~ msgstr "Questões sobre partilhas do Thunar"
+msgstr "Pode precisar de instalar o Samba. Verifique as permissões (grupo \"usershares\") e reinicie a sessão.\n<b>Mais informações</b> <u>http://thunar-shares.googlecode.com/</u>"
