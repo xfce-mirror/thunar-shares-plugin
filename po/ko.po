@@ -1,33 +1,33 @@
-# Korean translation for thunar-shares-plugin package.
-# Copyright (C) 2008-2012 Daniel Morales et al. 
-# This file is distributed under the same license as the thunar-shares-plugin package.
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2012, 2013.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Darkcircle <darkcircle.0426@gmail.com>, 2012-2014
 msgid ""
 msgstr ""
-"Project-Id-Version: thunar-shares-plugin.master\n"
-"Report-Msgid-Bugs-To: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2012-02-27 09:12+0000\n"
-"PO-Revision-Date: 2012-02-27 23:49+0900\n"
-"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
-"Language-Team: xfce4-users-kr-i18n <xfce4-users-kr-i18n@lists.sourceforge.net>\n"
-"Language: ko\n"
+"Project-Id-Version: Thunar Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2014-04-08 05:10+0000\n"
+"Last-Translator: Darkcircle <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/xfce/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-Language: Korean\n"
-"X-Poedit-Country: KOREA, REPUBLIC OF\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
-msgstr "이름을 적어 주십시오."
+msgstr "이름을 적으십시오."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
-msgstr "공유 이름이 너무 깁니다. 몇몇 오래된 클라이언트가 이것에 접근하는데 문제가 생길 수도 있습니다, 계속하시렵니까?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
+msgstr "공유 이름이 너무 깁니다. 일부 오래된 클라이언트에서 접근에 문제가 발생할 수 있습니다, 계속하시렵니까?"
 
 #: ../libshares/libshares-util.c:182
 #, c-format
@@ -43,7 +43,9 @@ msgid "Cannot modify the share:"
 msgstr "공유를 수정할 수 없습니다:"
 
 #: ../libshares/libshares-util.c:345
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
 msgstr "투나에서 폴더를 공유하려면 권한을 추가해야 합니다. 동의하시렵니까?"
 
 #: ../libshares/libshares-util.c:384
@@ -53,7 +55,7 @@ msgstr "폴더 권한을 바꾸는데 오류가 발생했습니다."
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s이(가) 시그널 %d을(를) 반환했습니다"
+msgstr "%s %s %s이(가) 시그널 %d번을 반환했습니다"
 
 #: ../libshares/shares.c:174
 #, c-format
@@ -63,20 +65,19 @@ msgstr "%s %s %s이(가) 알 수 없는 이유로 실패했습니다"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare'이 오류 %d을(를) 반환했습니다: %s"
+msgstr "'net usershare'이 오류 %d번을 반환했습니다: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare'이 오류 %d을(를) 반환했습니다"
+msgstr "'net usershare'이 오류 %d번을 반환했습니다"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "'net usershare'의 결과가 올바른 UTF-8 인코딩이 아닙니다"
 
-#: ../libshares/shares.c:490
-#: ../libshares/shares.c:702
+#: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
 msgstr "실패"
@@ -84,7 +85,7 @@ msgstr "실패"
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "삼바 테스트팜이 시그널 %d을(를)리턴했습니다"
+msgstr "삼바 테스트팜이 시그널 %d번을 반환했습니다"
 
 #: ../libshares/shares.c:598
 #, c-format
@@ -94,12 +95,12 @@ msgstr "삼바 테스트팜이 알 수 없는 이유로 실패했습니다"
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "삼바 테스트팜이 오류 %d을(를)리턴했습니다: %s"
+msgstr "삼바 테스트팜이 오류 %d번을 반환했습니다: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "삼바 테스트팜이 오류 %d을(를)리턴했습니다"
+msgstr "삼바 테스트팜이 오류 %d번을 반환했습니다"
 
 #: ../libshares/shares.c:784
 #, c-format
@@ -108,7 +109,9 @@ msgstr "%s 경로에 대한 공유를 제거할 수 없습니다: 공유된 경�
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr "이미 존재하는 공유의 경로를 바꿀 수 없습니다. 그러니 이전 공유를 제거하고 새로운 공유를 추가해주십시오"
 
 #: ../thunar-plugin/tsp-page.c:152
@@ -150,7 +153,4 @@ msgstr "이 폴더의 소유자가 아닙니다."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"삼바 설치가 필요한 것 같습니다. 사용자 권한(사용자 공유 그룹)을 확인하시고 다시 로그인해주십시오.\n"
-"<b>추가 정보:</b> <u>http://thunar-shares.googlecode.com/</u>"
-
+msgstr "삼바 설치가 필요한 것 같습니다. 사용자 권한(사용자 공유 그룹)을 확인하시고 다시 로그인해주십시오.\n<b>추가 정보:</b> <u>http://thunar-shares.googlecode.com/</u>"
