@@ -37,8 +37,6 @@ enum
   PROP_FILE,
 };
 
-static void tsp_page_class_init    (TspPageClass    *klass);
-static void tsp_page_init          (TspPage         *page);
 static void tsp_page_finalize      (GObject         *object);
 static void tsp_page_get_property  (GObject         *object,
                                     guint            prop_id,

@@ -30,8 +30,8 @@ AC_CANONICAL_TARGET()
 dnl -------------------------------------------------------
 dnl Init automake
 dnl -------------------------------------------------------
-AM_INIT_AUTOMAKE([1.9])
-AM_CONFIG_HEADER([config.h])
+AM_INIT_AUTOMAKE([1.9 dist-bzip2 tar-ustar no-dist-gzip])
+AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE
 
 AC_ISC_POSIX
@@ -43,8 +43,13 @@ dnl -------------------------------------------------------
 AC_PROG_CC
 AC_PROG_LD
 AC_PROG_INSTALL
-AC_PROG_LIBTOOL
 AC_PROG_INTLTOOL([0.31])
+
+dnl -------------------------------------------------------
+dnl Initialize libtool
+dnl-------------------------------------------------------
+LT_PREREQ([2.2.6])
+LT_INIT([disable-static])
 
 dnl -------------------------------------------------------
 dnl Check headers
@@ -66,63 +71,12 @@ XDT_I18N([@LINGUAS@])
 dnl -------------------------------------------------------
 dnl Debugging support
 dnl -------------------------------------------------------
-AC_ARG_ENABLE([debug],
-AC_HELP_STRING([--enable-debug=@<:@no/minimum/yes/full@:>@], [Turn on debugging @<:@default=tsp_debug_default@:>@]),
-  [], [enable_debug=tsp_debug_default])
-AC_MSG_CHECKING([whether to enable debugging support])
-if test x"$enable_debug" = x"full" -o x"$enable_debug" = x"yes"; then
-  dnl Check whether the compiler accepts the -fno-strict-aliasing
-  dnl switch, as certain packages - like Glib - still dont work
-  dnl properly with newer compilers.
-  save_CFLAGS="$CFLAGS"
-  CFLAGS="$CFLAGS -fno-strict-aliasing"
-  AC_MSG_CHECKING([whether $CC accepts -fno-strict-aliasing])
-  AC_COMPILE_IFELSE(AC_LANG_SOURCE([int x;]), [
-    AC_MSG_RESULT([yes])
-    PLATFORM_CFLAGS="$PLATFORM_CFLAGS -fno-strict-aliasing"
-  ], [
-    AC_MSG_RESULT([no])
-  ])
-  CFLAGS="$save_CFLAGS"
-
-  dnl Make sure we detect possible errors
-  PLATFORM_CFLAGS="$PLATFORM_CFLAGS -Werror -Wall"
-
-  dnl Paranoia for --enable-debug=full
-  if test x"$enable_debug" = x"full"; then
-    PLATFORM_CFLAGS="$PLATFORM_CFLAGS -O0 -g3"
-    PLATFORM_CPPFLAGS="$PLATFORM_CPPFLAGS -DG_DISABLE_DEPRECATED -DG_ENABLE_DEBUG"
-  fi
-else
-  dnl Disable object cast checks
-  PLATFORM_CPPFLAGS="$PLATFORM_CPPFLAGS -DG_DISABLE_CAST_CHECKS"
-
-  dnl Disable all checks for --enable-debug=no
-  if test x"$enable_debug" = x"no"; then
-    PLATFORM_CPPFLAGS="$PLATFORM_CPPFLAGS -DG_DISABLE_ASSERT -DG_DISABLE_CHECKS"
-  fi
-fi
+XDT_FEATURE_DEBUG([tsp_debug_default])
 
 dnl -------------------------------------------------------
 dnl Check for linker optimizations
 dnl -------------------------------------------------------
-AC_MSG_CHECKING([whether $LD accepts -O1])
-case `$LD -O1 -v 2>&1 </dev/null` in
-*GNU* | *'with BFD'*)
-  PLATFORM_LDFLAGS="$PLATFORM_LDFLAGS -Wl,-O1"
-  AC_MSG_RESULT([yes])
-  ;;
-*)
-  AC_MSG_RESULT([no])
-  ;;
-esac
-
-dnl -------------------------------------------------------
-dnl Export vars
-dnl -------------------------------------------------------
-AC_SUBST(PLATFORM_CPPFLAGS)
-AC_SUBST(PLATFORM_CFLAGS)
-AC_SUBST(PLATFORM_LDFLAGS)
+XDT_FEATURE_LINKER_OPTS()
 
 AC_OUTPUT([
 	Makefile
