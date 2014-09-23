@@ -26,11 +26,16 @@
 #include <sys/stat.h>
 #endif
 
+#ifdef HAVE_UNISTD_H
+#include <unistd.h>
+#endif
+
+#include <gio/gio.h>
+
 #include <glib/gstdio.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n-lib.h>
 
-#include <thunar-vfs/thunar-vfs.h>
 #include <thunarx/thunarx.h>
 
 #include "libshares-util.h"
@@ -293,17 +298,17 @@ gboolean
 libshares_is_shareable (ThunarxFileInfo *info)
 {
   gboolean retval;
-  gchar   *scheme;
+  GFile   *file;
 
   if (!thunarx_file_info_is_directory (info)){
     return FALSE;
   }
 
-  scheme = thunarx_file_info_get_uri_scheme (info);
+  file = thunarx_file_info_get_location (info);
 
-  retval = g_str_equal ("file", scheme);
+  retval = g_file_is_native (file);
 
-  g_free (scheme);
+  g_object_unref (file);
 
   return retval;
 }
@@ -319,19 +324,22 @@ libshares_is_shareable (ThunarxFileInfo *info)
 gboolean
 libshares_check_owner (ThunarxFileInfo *info)
 {
-  ThunarVfsInfo *vfsinfo;
-  gboolean retval = TRUE;
-  gboolean owner_only;
+  GFileInfo *fileinfo;
+  gboolean   retval = TRUE;
+  gboolean   owner_only;
+  guint32    uid;
 
   if (shares_has_owner_only (&owner_only, NULL))
   {
     if (owner_only)
     {
-      vfsinfo = thunarx_file_info_get_vfs_info (info);
+      fileinfo = thunarx_file_info_get_file_info (info);
 
-      retval = (geteuid () == vfsinfo->uid);
+      uid = g_file_info_get_attribute_uint32 (fileinfo, G_FILE_ATTRIBUTE_UNIX_UID);
 
-      thunar_vfs_info_unref (vfsinfo);
+      retval = (geteuid () == uid);
+
+      g_object_unref (fileinfo);
     }
   }
 

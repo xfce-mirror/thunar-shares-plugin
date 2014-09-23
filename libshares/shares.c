@@ -1118,7 +1118,7 @@ shares_free_share_info_list (GSList *list)
 		ShareInfo *info;
 
 		info = l->data;
-		shares_free_share_info (l->data);
+		shares_free_share_info (info);
 	}
 
 	g_slist_free (list);

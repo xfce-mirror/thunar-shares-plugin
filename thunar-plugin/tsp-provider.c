@@ -29,8 +29,6 @@
 #include "tsp-provider.h"
 #include "tsp-page.h"
 
-static void     tsp_provider_class_init          (TspProviderClass                 *klass);
-static void     tsp_provider_init                (TspProvider                      *tsp_provider);
 static void     tsp_provider_finalize            (GObject                          *object);
 
 static void     tsp_provider_page_provider_init  (ThunarxPropertyPageProviderIface *iface);

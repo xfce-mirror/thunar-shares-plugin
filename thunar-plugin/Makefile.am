@@ -7,7 +7,7 @@ INCLUDES =							\
 	-DDATADIR=\"$(datadir)\"				\
 	$(PLATFORM_CPPFLAGS)
 
-extensionsdir = $(libdir)/thunarx-1
+extensionsdir = $(libdir)/thunarx-2
 extensions_LTLIBRARIES = thunar-shares-plugin.la
 
 thunar_shares_plugin_la_SOURCES =				\
@@ -19,8 +19,7 @@ thunar_shares_plugin_la_CFLAGS =				\
 	$(PLATFORM_CFLAGS)					\
 	$(GTK_CFLAGS)						\
 	$(GLIB_CFLAGS)						\
-	$(THUNARX_CFLAGS)					\
-	$(THUNARVFS_CFLAGS)
+	$(THUNARX_CFLAGS)
 
 thunar_shares_plugin_la_LDFLAGS =				\
 	-avoid-version						\
@@ -29,7 +28,6 @@ thunar_shares_plugin_la_LDFLAGS =				\
 	$(GTK_LIBS)						\
 	$(GLIB_LIBS)						\
 	$(THUNARX_LIBS)						\
-	$(THUNARVFS_LIBS)					\
 	$(PLATFORM_LDFLAGS)
 
 thunar_shares_plugin_la_LIBADD=					\
