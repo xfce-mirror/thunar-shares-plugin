@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2014-06-08 05:24+0000\n"
+"PO-Revision-Date: 2014-12-26 06:07+0000\n"
 "Last-Translator: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/thunar-plugins/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -66,17 +66,17 @@ msgstr "%s %s %s falló por un motivo desconocido"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare' devolvió el error %d: %s"
+msgstr "«net usershare» devolvió el error %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare' devolvió el error %d"
+msgstr "«net usershare» devolvió el error %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "la salida del comando 'net usershare' no tiene una codificación UTF-8 válida"
+msgstr "la salida de la orden «net usershare» no tiene una codificación UTF-8 válida"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -86,22 +86,22 @@ msgstr "Fallo"
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "El comando testparm de Samba finalizó con la señal %d"
+msgstr "La orden «testparm» de Samba finalizó con la señal %d"
 
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "El comando testparm de Samba falló por un motivo desconocido"
+msgstr "La orden «testparm» de Samba falló por un motivo desconocido"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "El comando testparm de Samba devolvió el error %d: %s"
+msgstr "La orden «testparm» de Samba devolvió el error %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "El comando testparm de Samba devolvió el error %d"
+msgstr "La orden «testparm» de Samba devolvió el error %d"
 
 #: ../libshares/shares.c:784
 #, c-format
@@ -154,4 +154,4 @@ msgstr "No es el propietario de la carpeta."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Puede que necesite instalar «Samba», compruebe sus permisos de usuario (grupo «usershares») y reinicie la sesión.\n<b>Para más información:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "Puede que necesite instalar Samba, compruebe sus permisos de usuario (grupo «usershares») y reinicie la sesión.\n<b>Para más información:</b> <u>http://thunar-shares.googlecode.com/</u>"
