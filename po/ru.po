@@ -4,14 +4,15 @@
 # 
 # Translators:
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
+# Lowrider <pams@imail.ru>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2013-11-19 16:13+0000\n"
-"Last-Translator: Nick <nick@xfce.org>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/xfce/language/ru/)\n"
+"PO-Revision-Date: 2015-01-18 11:05+0000\n"
+"Last-Translator: Lowrider <pams@imail.ru>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/thunar-plugins/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -139,7 +140,7 @@ msgstr "Разрешить гостевой доступ"
 
 #: ../thunar-plugin/tsp-page.c:193
 msgid "Comments:"
-msgstr "Коментарии:"
+msgstr "Описание:"
 
 #: ../thunar-plugin/tsp-page.c:296
 msgid "Share"
