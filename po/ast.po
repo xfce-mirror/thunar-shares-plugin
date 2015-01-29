@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Tornes Llume <l.lumex03.tornes@gmail.com>, 2014
+# enolp <enolp@softastur.org>, 2015
+# Ḷḷumex03 <tornes@opmbx.org>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2014-04-13 01:25+0000\n"
-"Last-Translator: Tornes Llume <l.lumex03.tornes@gmail.com>\n"
-"Language-Team: Asturian (http://www.transifex.com/projects/p/xfce/language/ast/)\n"
+"PO-Revision-Date: 2015-01-29 20:07+0000\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
+"Language-Team: Asturian (http://www.transifex.com/projects/p/thunar-plugins/language/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -147,10 +148,10 @@ msgstr "Compartir"
 
 #: ../thunar-plugin/tsp-page.c:368
 msgid "You are not the owner of the folder."
-msgstr "Nun yes el propietariu de la carpeta."
+msgstr "Nun yes el dueñu de la carpeta."
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Pues necesitar la instalación de Samba, comprueba los tos permisos d'usuariu (usershares group) y anicia sesión otra vegada.\n<b>Más información:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "Pues necesitar la instalación de Samba, comprueba los tos permisos d'usuariu (grupu usershares) y anicia sesión de nueves.\n<b>Más información:</b> <u>http://thunar-shares.googlecode.com/</u>"
