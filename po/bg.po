@@ -1,23 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# Lyubomir Vasilev, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: thunar-shares-plugin\n"
+"Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-29 19:09+0000\n"
-"PO-Revision-Date: 2011-12-30 00:54+0200\n"
-"Last-Translator: Milen Milev <fanfolet@gmail.com>\n"
-"Language-Team: BULGARIAN\n"
-"Language: \n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2015-02-23 06:50+0000\n"
+"Last-Translator: Lyubomir Vasilev\n"
+"Language-Team: Bulgarian (http://www.transifex.com/projects/p/thunar-plugins/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: BULGARIAN\n"
-"X-Poedit-Country: BULGARIA\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
@@ -25,7 +24,9 @@ msgstr "Моля, напишете име."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:169
-msgid "Share name too long. Some old clients may have problems to access it, continue anyway?"
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
 msgstr "Името на споделения ресурс е твърде дълго. Някои по-стари програми може да имат проблеми с достъпа до него. Продължаване въпреки това?"
 
 #: ../libshares/libshares-util.c:182
@@ -42,7 +43,9 @@ msgid "Cannot modify the share:"
 msgstr "Не може да се промени споделения ресурс:"
 
 #: ../libshares/libshares-util.c:345
-msgid "Thunar needs to add some permissions to your folder in order to share it. Do you agree?"
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
 msgstr "Thunar трябва да добави някои права към Вашата папка за да може да я сподели. Съгласни ли сте?"
 
 #: ../libshares/libshares-util.c:384
@@ -57,25 +60,24 @@ msgstr "%s %s %s се върна със сигнал %d"
 #: ../libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
-msgstr "%s %s %s пропадна поради неустановена причина"
+msgstr "%s %s %s се провали поради неустановена причина"
 
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare' върна грешка %d: %s"
+msgstr "„net usershare“ върна грешка %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare' върна грешка %d"
+msgstr "„net usershare“ върна грешка %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "Изходът от 'net usershare' е с невалидно UTF-8 кодиране"
+msgstr "Изходът от „net usershare“ е с невалидна UTF-8 кодировка"
 
-#: ../libshares/shares.c:490
-#: ../libshares/shares.c:702
+#: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
 msgstr "Отказ"
@@ -107,7 +109,9 @@ msgstr "Не може да се премахне споделянето за %s:
 
 #: ../libshares/shares.c:837
 #, c-format
-msgid "Cannot change the path of an existing share; please remove the old share first and add a new one"
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
 msgstr "Не може да се промени пътят за съществуващият споделен ресурс; премахнете го и го добавете отново."
 
 #: ../thunar-plugin/tsp-page.c:152
@@ -149,7 +153,4 @@ msgstr "Не сте собственик на тази папка."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"Трябва да инсталирате Samba, да проверите правата си за достъп (група usershares)  и да влезете отново.\n"
-"<b>Повече инфо:</b> <u>http://thunar-shares.googlecode.com/</u>"
-
+msgstr "Трябва да инсталирате Samba, да проверите правата си за достъп (група usershares)  и да влезете отново.\n<b>Повече инфо:</b> <u>http://thunar-shares.googlecode.com/</u>"
