@@ -4,14 +4,15 @@
 # 
 # Translators:
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2006,2008-2009
+# Xosé <xosecalvo@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2013-11-19 16:13+0000\n"
-"Last-Translator: Nick <nick@xfce.org>\n"
-"Language-Team: Galician (http://www.transifex.com/projects/p/xfce/language/gl/)\n"
+"PO-Revision-Date: 2015-09-18 20:20+0000\n"
+"Last-Translator: Xosé <xosecalvo@gmail.com>\n"
+"Language-Team: Galician (http://www.transifex.com/xfce/thunar-plugins/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,7 +51,7 @@ msgstr "Thunar ten que lle engadir algúns permisos ó seu cartafol para podelo 
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
-msgstr "Erro ó cambiar os permisos do cartafol."
+msgstr "Erro ao cambiar os permisos do cartafol."
 
 #: ../libshares/shares.c:165
 #, c-format
@@ -65,17 +66,17 @@ msgstr "%s %s %s fallou debido a unha razón descoñecida"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare' rematou co erro %d: %s"
+msgstr "«net usershare» rematou co erro %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare' rematou co erro %d"
+msgstr "«net usershare» rematou co erro %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "a saída de 'net usershare' non está nunha codificación UTF-8 válida"
+msgstr "a saída de «net usershare» non está nunha codificación UTF-8 válida"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -105,14 +106,14 @@ msgstr "O testparm de Samba rematou co erro %d"
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Non se puido eliminar o recurso da ruta %s: dita ruta non está compartida"
+msgstr "Non foi posíbel eliminar o recurso da ruta %s: esta ruta non está compartida"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "Non se puido cambiar a ruta do recurso existente; elimine primeiro o recurso antigo e engada outro novo"
+msgstr "Non foi posíbel cambiar a ruta do recurso existente; elimine primeiro o recurso antigo e engada outro novo"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
