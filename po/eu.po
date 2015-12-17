@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2015
 # Piarres Beobide <pi@beobide.net>, 2008-2009
 # Piarres Beobide <pi+debian@beobide.net>, 2009
 msgid ""
@@ -10,9 +11,9 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2013-11-19 16:13+0000\n"
-"Last-Translator: Nick <nick@xfce.org>\n"
-"Language-Team: Basque (http://www.transifex.com/projects/p/xfce/language/eu/)\n"
+"PO-Revision-Date: 2015-12-17 20:09+0000\n"
+"Last-Translator: Asier Iturralde Sarasola <asier.iturralde@gmail.com>\n"
+"Language-Team: Basque (http://www.transifex.com/xfce/thunar-plugins/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,11 +48,11 @@ msgstr "Ezin da partekatzea aldatu:"
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
-msgstr "Thunarrek zure karpetara baimen batzuek gehitu behar dizkio partekatu ahal izateko. Ados zaude?"
+msgstr "Thunarrek zure karpetari baimen batzuek gehitu behar dizkio partekatu ahal izateko. Ados zaude?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
-msgstr "Errorea karpeta baimenak aldatzean."
+msgstr "Errorea karpetaren baimenak aldatzean."
 
 #: ../libshares/shares.c:165
 #, c-format
@@ -61,7 +62,7 @@ msgstr "%s %s %s %d seinaleaz amaitu da"
 #: ../libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
-msgstr "%s %s %s-ek arrazoi ezezagun bategatik huts egin du"
+msgstr "%s %s %s(e)k arrazoi ezezagun bategatik huts egin du"
 
 #: ../libshares/shares.c:195
 #, c-format
@@ -76,7 +77,7 @@ msgstr "'net usershare' komandoak %d errorea itzuli du"
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "'net usershare' komandoaren irteera ez UTF-8 kodeketan baliozkoa"
+msgstr "'net usershare' komandoaren irteera ez dago baliozko UTF-8 kodeketan"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -86,7 +87,7 @@ msgstr "Huts egin du"
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "Sambaren testparm komandoak %d seinaleaz amaitu da"
+msgstr "Sambaren testparm komandoak %d seinalea itzuli du"
 
 #: ../libshares/shares.c:598
 #, c-format
@@ -113,7 +114,7 @@ msgstr "Ezin da %s bidearen partekatzea kendu: bidea ez dago partekatua"
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "Ezin da sorturik dagoen partekatze baten bidea; mesedez kendu partekatze zaharra aurretik eta gero gehitu berri bat"
+msgstr "Ezin da sorturik dagoen partekatze baten bidea aldatu; mesedez kendu partekatze zaharra aurretik eta gero gehitu berri bat"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
@@ -148,7 +149,7 @@ msgstr "Partekatu"
 
 #: ../thunar-plugin/tsp-page.c:368
 msgid "You are not the owner of the folder."
-msgstr "E zara karpetaren jabea."
+msgstr "Ez zara karpetaren jabea."
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
