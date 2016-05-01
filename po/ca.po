@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2016-04-29 21:29+0000\n"
+"PO-Revision-Date: 2016-05-01 06:11+0000\n"
 "Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/thunar-plugins/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgstr "Cal afegir alguns permisos a la carpeta per poder compartir-la. Esteu d'
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
-msgstr "Hi ha hagut un error al canviar els permisos de la carpeta."
+msgstr "S'ha produït un error en canviar els permisos de la carpeta."
 
 #: ../libshares/shares.c:165
 #, c-format
@@ -112,7 +112,7 @@ msgstr "No es pot treure la compartició de %s: la carpeta no està compartida"
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "No es pot canviar la carpeta de una compartició ja existent; traieu primer l'antiga carpeta compartida i afegiu després la nova"
+msgstr "No es pot canviar el camí a una compartició ja existent; traieu primer l'antiga compartició i afegiu després la nova"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
