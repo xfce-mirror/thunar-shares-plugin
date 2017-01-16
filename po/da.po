@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# scootergrisen, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2013-11-19 16:13+0000\n"
-"Last-Translator: Nick <nick@xfce.org>\n"
-"Language-Team: Danish (http://www.transifex.com/projects/p/xfce/language/da/)\n"
+"PO-Revision-Date: 2017-01-16 10:39+0000\n"
+"Last-Translator: scootergrisen\n"
+"Language-Team: Danish (http://www.transifex.com/xfce/thunar-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -152,4 +153,4 @@ msgstr "Du er ikke ejer af mappen."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Du kan være nødt til at installere Samba. Kontrollér dine rettigheder (brugerdelingsgruppe) og logind igen.\n<b>For mere information:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "Du kan være nødt til at installere Samba. Kontrollér dine rettigheder (brugerdelingsgruppe) og logge ind igen.\n<b>For mere information:</b> <u>http://thunar-shares.googlecode.com/</u>"
