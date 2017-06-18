@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012.
-#
+# 
+# Translators:
+# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012
+# Moo, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: share\n"
+"Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-24 10:51+0000\n"
-"PO-Revision-Date: 2012-01-24 18:21+0200\n"
-"Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
-"Language-Team: Lietuvių <>\n"
-"Language: \n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2017-06-17 23:11+0000\n"
+"Last-Translator: Moo\n"
+"Language-Team: Lithuanian (http://www.transifex.com/xfce/thunar-plugins/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../libshares/libshares-util.c:161
 msgid "Please, write a name."
@@ -28,9 +28,7 @@ msgstr "Įveskite vardą."
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
-msgstr ""
-"Bendrinimo vardas per ilgas. Kai kuriem seniem klientams gali kilti bėdų "
-"pasiekiant tai, vistiek tęsti?"
+msgstr "Bendrinimo vardas per ilgas. Kai kuriem seniem klientams gali kilti bėdų pasiekiant tai, vistiek tęsti?"
 
 #: ../libshares/libshares-util.c:182
 #, c-format
@@ -47,11 +45,9 @@ msgstr "Nepavyko pakeisti bendrinimo:"
 
 #: ../libshares/libshares-util.c:345
 msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
-msgstr ""
-"Kad Thunar galėtų bendrinti aplanką, reikia pridėti kelis leidimus prie "
-"aplanko. Ar sutinkate?"
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
+msgstr "Tam, kad Thunar galėtų bendrinti aplanką, jam reikia pridėti kelis leidimus. Ar sutinkate?"
 
 #: ../libshares/libshares-util.c:384
 msgid "Error when changing folder permissions."
@@ -110,17 +106,14 @@ msgstr "Samba testparm grąžino klaidą %d"
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr ""
-"Nepavyko pašalinti bendrinamo aplanko keliui %s: šis kelias neviešinamas"
+msgstr "Nepavyko pašalinti bendrinamo aplanko keliui %s: šis kelias neviešinamas"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr ""
-"Nepavyko pakeisti kelio bendrinamam aplankui; pirmiausia pašalinkite seną "
-"viešinamą aplanką, po to pridėkite naują"
+msgstr "Nepavyko pakeisti kelio bendrinamam aplankui; pirmiausia pašalinkite seną viešinamą aplanką, po to pridėkite naują"
 
 #: ../thunar-plugin/tsp-page.c:152
 msgid "<b>Folder Sharing</b>"
@@ -159,10 +152,6 @@ msgstr "Jūs nesate šio aplanko savininkas."
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) "
-"and re-login.\n"
+"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"Turite įdiegti Samba, patikrinkite savo leidimus(usershares grupė) ir "
-"prisijunkite iš naujo.\n"
-"<b>Daugiau informacijos:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "Turite įdiegti Samba, patikrinkite savo leidimus(usershares grupė) ir prisijunkite iš naujo.\n<b>Daugiau informacijos:</b> <u>http://thunar-shares.googlecode.com/</u>"
