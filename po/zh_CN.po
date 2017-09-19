@@ -1,23 +1,23 @@
-# Simplified Chinese translations for
-# the thunar-shares-plugin package.
-# This file is distributed under the same license as
-# the thunar-shares-plugin package.
-# Hunt Xu <huntxu@live.cn>, 2008, 2009.
-# Ivy Lee <ivyleexyg@gmail.com>, 2009.
-# Chipong Luo <chipong.luo@yahoo.com>, 2011, 2012.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Chipong Luo <chipong.luo@yahoo.com>, 2011-2012
+# Hunt Xu <huntxu@live.cn>, 2008-2009
+# xsoul <ivyleexyg@gmail.com>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: thunar-shares-plugin\n"
-"Report-Msgid-Bugs-To: <xfce-i18n@xfce.org>\n"
-"POT-Creation-Date: 2012-04-20 11:21+0000\n"
-"PO-Revision-Date: 2009-10-16 17:46+0800\n"
-"Last-Translator: Chipong Luo <chipong.luo@yahoo.com>\n"
-"Language-Team: Chinese (Simplified) <xfce-i18n-cn@xfce.org>\n"
-"Language: zh_CN\n"
+"Project-Id-Version: Thunar Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-03 20:10+0200\n"
+"PO-Revision-Date: 2017-09-19 18:03+0000\n"
+"Last-Translator: Nick Schermer <nick@xfce.org>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/xfce/thunar-plugins/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../libshares/libshares-util.c:161
@@ -46,8 +46,8 @@ msgstr "未能修改共享："
 
 #: ../libshares/libshares-util.c:345
 msgid ""
-"Thunar needs to add some permissions to your folder in order to share it. Do "
-"you agree?"
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
 msgstr "Thunar 需要为您的文件夹增加一些权限以便共享它。您同意吗？"
 
 #: ../libshares/libshares-util.c:384
@@ -153,9 +153,6 @@ msgstr "您不是此文件夹的所有者。"
 
 #: ../thunar-plugin/tsp-page.c:376
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) "
-"and re-login.\n"
+"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr ""
-"您可能需要安装 Samba，检查您的用户权限(用户共享群组)然后重新登录。\n"
-"<b>更多信息：</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "您可能需要安装 Samba，检查您的用户权限(用户共享群组)然后重新登录。\n<b>更多信息：</b> <u>http://thunar-shares.googlecode.com/</u>"
