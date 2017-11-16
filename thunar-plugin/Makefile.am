@@ -7,7 +7,7 @@ INCLUDES =							\
 	-DDATADIR=\"$(datadir)\"				\
 	$(PLATFORM_CPPFLAGS)
 
-extensionsdir = $(libdir)/thunarx-2
+extensionsdir = $(libdir)/thunarx-3
 extensions_LTLIBRARIES = thunar-shares-plugin.la
 
 thunar_shares_plugin_la_SOURCES =				\
