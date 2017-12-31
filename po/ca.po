@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2017-09-19 18:03+0000\n"
+"PO-Revision-Date: 2017-12-31 18:01+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/thunar-plugins/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +41,7 @@ msgstr "Hi ha una altra compartició amb aquest nom"
 
 #: ../libshares/libshares-util.c:246
 msgid "Cannot modify the share:"
-msgstr "No s'ha pogut modificar la compartició:"
+msgstr "No es pot modificar la compartició:"
 
 #: ../libshares/libshares-util.c:345
 msgid ""
@@ -55,7 +56,7 @@ msgstr "S'ha produït un error en canviar els permisos de la carpeta."
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s acabat amb el senyal %d"
+msgstr "%s %s %s ha retornat amb el senyal %d"
 
 #: ../libshares/shares.c:174
 #, c-format
@@ -135,7 +136,7 @@ msgstr "Permet a altres usuaris escriure en aquesta carpeta "
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
 msgid "Allow Guest access"
-msgstr "Permet l'accés de visitants (Guest)"
+msgstr "Permet l'accés de convidat"
 
 #: ../thunar-plugin/tsp-page.c:193
 msgid "Comments:"
