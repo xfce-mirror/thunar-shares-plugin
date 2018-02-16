@@ -1,5 +1,4 @@
-
-INCLUDES =						\
+AM_CPPFLAGS =						\
 	-I$(top_builddir)				\
 	-I$(top_srcdir)					\
 	-DG_LOG_DOMAIN=\"thunar-shares-plugin-lib\"	\
