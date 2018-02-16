@@ -134,26 +134,27 @@ tsp_page_init (TspPage *page)
   GtkWidget *widget;
 
   /* Main container */
-  vbox1 = gtk_vbox_new (FALSE, 0);
+  vbox1 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
   gtk_container_set_border_width (GTK_CONTAINER (vbox1), 5);
 
   /* Header */
-  hbox1 = gtk_hbox_new (FALSE, 0);
+  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
   gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, TRUE, 5);
 
   widget = gtk_image_new ();
   gtk_image_set_from_icon_name (GTK_IMAGE (widget), "gnome-fs-share", GTK_ICON_SIZE_DIALOG);
-  gtk_misc_set_padding (GTK_MISC (widget), 13, 0);
-  gtk_misc_set_alignment (GTK_MISC (widget), 0.0, 0.50);
+  gtk_widget_set_margin_start (widget, 13);
+  gtk_widget_set_margin_end (widget, 13);
+  gtk_widget_set_halign (widget, GTK_ALIGN_START);
   gtk_box_pack_start (GTK_BOX (hbox1), widget, FALSE, FALSE, 0);
 
   widget = gtk_label_new (_("<b>Folder Sharing</b>"));
   gtk_label_set_use_markup (GTK_LABEL(widget), TRUE);
-  gtk_misc_set_alignment (GTK_MISC (widget), 0.0f, 0.50f);
+  gtk_label_set_xalign (GTK_LABEL (widget), 0.0f);
   gtk_box_pack_start (GTK_BOX (hbox1), widget, FALSE, TRUE, 5);
 
   /* Horizontal separator */
-  widget = gtk_hseparator_new ();
+  widget = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
   gtk_box_pack_start (GTK_BOX (vbox1), widget, FALSE, TRUE, 5);
 
   /* Share check button */
@@ -162,12 +163,13 @@ tsp_page_init (TspPage *page)
   gtk_box_pack_start (GTK_BOX (vbox1), page->cb_share_folder, FALSE, FALSE, 5);
 
   /* Share name */
-  hbox1 = gtk_hbox_new (FALSE, 0);
+  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
   gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, FALSE, 5);
 
   page->label_name = gtk_label_new (_("Share Name:"));
-  gtk_misc_set_padding (GTK_MISC (page->label_name), 5, 0);
-  gtk_misc_set_alignment (GTK_MISC (page->label_name), 0.0f, 0.50f);
+  gtk_widget_set_margin_start (page->label_name, 5);
+  gtk_widget_set_margin_end (page->label_name, 5);
+  gtk_label_set_xalign (GTK_LABEL (page->label_name), 0.0f);
   gtk_box_pack_start (GTK_BOX (hbox1), page->label_name, FALSE, FALSE, 0);
 
   page->entry_share_name = gtk_entry_new ();
@@ -185,12 +187,13 @@ tsp_page_init (TspPage *page)
   gtk_box_pack_start (GTK_BOX (vbox1), page->cb_share_guest, FALSE, FALSE, 5);
 
   /* Share comments */
-  hbox1 = gtk_hbox_new (FALSE, 0);
+  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
   gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, FALSE, 5);
 
   page->label_comments = gtk_label_new (_("Comments:"));
-  gtk_misc_set_padding (GTK_MISC (page->label_comments), 5, 0);
-  gtk_misc_set_alignment (GTK_MISC (page->label_comments), 0.0f, 0.50f);
+  gtk_widget_set_margin_start (page->label_comments, 5);
+  gtk_widget_set_margin_end (page->label_comments, 5);
+  gtk_label_set_xalign (GTK_LABEL (page->label_comments), 0.0f);
   gtk_box_pack_start (GTK_BOX (hbox1), page->label_comments, FALSE, FALSE, 0);
 
   page->entry_share_comments = gtk_entry_new ();
@@ -198,12 +201,12 @@ tsp_page_init (TspPage *page)
   gtk_box_pack_start (GTK_BOX (hbox1), page->entry_share_comments, TRUE, TRUE, 0);
 
   /* Apply button */
-  hbox1 = gtk_hbutton_box_new ();
+  hbox1 = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
   gtk_box_set_spacing (GTK_BOX (hbox1), 5);
-  gtk_hbutton_box_set_layout_default (GTK_BUTTONBOX_END);
+  gtk_button_box_set_layout (GTK_BUTTON_BOX (hbox1), GTK_BUTTONBOX_END);
   gtk_box_pack_start (GTK_BOX (vbox1), hbox1, TRUE, TRUE, 7);
 
-  page->button_apply = gtk_button_new_from_stock (GTK_STOCK_APPLY);
+  page->button_apply = gtk_button_new_with_mnemonic (_("_Apply"));
   g_signal_connect (G_OBJECT (page->button_apply), "clicked", G_CALLBACK (tsp_page_apply_clicked), page);
   gtk_box_pack_end (GTK_BOX (hbox1), page->button_apply, FALSE, FALSE, 0);
 
@@ -211,8 +214,9 @@ tsp_page_init (TspPage *page)
   page->label_status = gtk_label_new (NULL);
   gtk_label_set_use_markup (GTK_LABEL (page->label_status), TRUE);
   gtk_label_set_line_wrap (GTK_LABEL (page->label_status), TRUE);
-  gtk_misc_set_alignment (GTK_MISC (page->label_status ), 0.0f, 0.50f);
-  gtk_misc_set_padding (GTK_MISC (page->label_status), 5, 0);
+  gtk_label_set_xalign (GTK_LABEL (page->label_status), 0.0f);
+  gtk_widget_set_margin_start (page->label_status, 5);
+  gtk_widget_set_margin_end (page->label_status, 5);
   gtk_box_pack_start (GTK_BOX (vbox1), page->label_status, FALSE, FALSE, 5);
 
   /* Add to the dialog */
