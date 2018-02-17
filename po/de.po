@@ -5,12 +5,13 @@
 # Translators:
 # Simon Schneider <simon@schneiderimtal.de>, 2009
 # Tobias Bannert <tobannert@gmail.com>, 2014
+# Vinzenz Vietzke <vinz@vinzv.de>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2017-12-16 19:05+0000\n"
+"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"PO-Revision-Date: 2018-02-16 23:51+0000\n"
 "Last-Translator: Vinzenz Vietzke <vinz@vinzv.de>\n"
 "Language-Team: German (http://www.transifex.com/xfce/thunar-plugins/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -19,37 +20,37 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libshares/libshares-util.c:161
+#: ../libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Bitte einen Namen eingeben."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:169
+#: ../libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "Der Freigabename ist zu lang. Einige ältere Programme könnten Probleme haben, auf die Freigabe zuzugreifen. Möchten Sie trotzdem fortfahren?"
 
-#: ../libshares/libshares-util.c:182
+#: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Fehler beim Abrufen der Freigabeinformationen: %s"
 
-#: ../libshares/libshares-util.c:192
+#: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "Es gibt bereits eine andere Freigabe dieses Namens."
 
-#: ../libshares/libshares-util.c:246
+#: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "Freigabe kann nicht bearbeitet werden:"
 
-#: ../libshares/libshares-util.c:345
+#: ../libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "Thunar muss einige Rechte dieses Ordners ändern, um ihn freizugeben. Möchten Sie das?"
 
-#: ../libshares/libshares-util.c:384
+#: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Fehler beim Ändern der Ordnerrechte."
 
@@ -115,16 +116,16 @@ msgid ""
 "first and add a new one"
 msgstr "Der Dateipfad einer Freigabe kann nicht geändert werden. Bitte entfernen Sie zuerst die alte Freigabe und erzeugen Sie eine neue."
 
-#: ../thunar-plugin/tsp-page.c:152
+#: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Ordnerfreigabe</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:162
+#: ../thunar-plugin/tsp-page.c:161
 msgid "Share this folder"
 msgstr "Diesen Ordner freigeben"
 
-#: ../thunar-plugin/tsp-page.c:170
+#: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
 msgstr "Freigabename:"
 
@@ -142,15 +143,19 @@ msgstr "Gastzugang erlauben"
 msgid "Comments:"
 msgstr "Kommentar:"
 
-#: ../thunar-plugin/tsp-page.c:296
+#: ../thunar-plugin/tsp-page.c:209
+msgid "_Apply"
+msgstr "_Anwenden"
+
+#: ../thunar-plugin/tsp-page.c:298
 msgid "Share"
 msgstr "Freigabe"
 
-#: ../thunar-plugin/tsp-page.c:368
+#: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
 msgstr "Sie sind nicht der Besitzer des Ordners."
 
-#: ../thunar-plugin/tsp-page.c:376
+#: ../thunar-plugin/tsp-page.c:378
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
