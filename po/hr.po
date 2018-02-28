@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Edin Veskovic <edin.lockedin@gmail.com>, 2014
-# Ivica  Kolić <ikoli@yahoo.com>, 2013
+# Ivica  Kolić <ikoli@yahoo.com>, 2013,2018
 # Ivica  Kolić <ikoli@yahoo.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2017-09-23 19:02+0000\n"
+"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"PO-Revision-Date: 2018-02-28 10:46+0000\n"
 "Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/xfce/thunar-plugins/language/hr/)\n"
 "MIME-Version: 1.0\n"
@@ -20,37 +20,37 @@ msgstr ""
 "Language: hr\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../libshares/libshares-util.c:161
+#: ../libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Molim, napišite ime."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:169
+#: ../libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "Ime dijeljenja je predugo.Neki stariji klijenti mogu imati problema pri pristupu, svejedno nastaviti?"
 
-#: ../libshares/libshares-util.c:182
+#: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Greška pri dobivanju informacija o dijeljenju: %s"
 
-#: ../libshares/libshares-util.c:192
+#: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "Još jedno dijeljenje ime isto ime"
 
-#: ../libshares/libshares-util.c:246
+#: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "Ne mogu izmijeniti dijeljenje:"
 
-#: ../libshares/libshares-util.c:345
+#: ../libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "Thunar treba dodati neke dozvole vašoj mapi da bi je mogli dijeliti.Slažete li se?"
 
-#: ../libshares/libshares-util.c:384
+#: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Greška pri promjeni dozvola mape."
 
@@ -116,16 +116,16 @@ msgid ""
 "first and add a new one"
 msgstr "Ne mogu promijeniti putanju postojećeg dijeljenja; molim najprije uklonite staro dijeljenje i onda dodajte novo"
 
-#: ../thunar-plugin/tsp-page.c:152
+#: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Dijeljenje mape</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:162
+#: ../thunar-plugin/tsp-page.c:161
 msgid "Share this folder"
 msgstr "Dijeli ovu mapu"
 
-#: ../thunar-plugin/tsp-page.c:170
+#: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
 msgstr "Ime dijeljenja:"
 
@@ -143,15 +143,19 @@ msgstr "Dozvoli pristup gostu"
 msgid "Comments:"
 msgstr "Komentari:"
 
-#: ../thunar-plugin/tsp-page.c:296
+#: ../thunar-plugin/tsp-page.c:209
+msgid "_Apply"
+msgstr "_Primjeni"
+
+#: ../thunar-plugin/tsp-page.c:298
 msgid "Share"
 msgstr "Dijeli"
 
-#: ../thunar-plugin/tsp-page.c:368
+#: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
 msgstr "Niste vlasnik mape."
 
-#: ../thunar-plugin/tsp-page.c:376
+#: ../thunar-plugin/tsp-page.c:378
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
