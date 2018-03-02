@@ -4,12 +4,13 @@
 # 
 # Translators:
 # Daniel Nylander <po@danielnylander.se>, 2008-2009
+# Påvel Nicklasson <pavel2@frimix.se>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2017-09-19 18:03+0000\n"
+"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"PO-Revision-Date: 2018-03-02 08:30+0000\n"
 "Last-Translator: Påvel Nicklasson <pavel2@frimix.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/xfce/thunar-plugins/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -18,37 +19,37 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libshares/libshares-util.c:161
+#: ../libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Ange ett namn."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:169
+#: ../libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "Utdelningsnamnet är för långt. Vissa gamla klienter kan få problem med att komma åt den. Fortsätt ändå?"
 
-#: ../libshares/libshares-util.c:182
+#: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Fel vid hämtning av utdelningsinformation: %s"
 
-#: ../libshares/libshares-util.c:192
+#: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "En annan utdelning har samma namn"
 
-#: ../libshares/libshares-util.c:246
+#: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "Kan inte ändra utdelningen:"
 
-#: ../libshares/libshares-util.c:345
+#: ../libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "Thunar behöver lägga till några rättigheter på din mapp för att kunna dela ut den. Godkänner du det?"
 
-#: ../libshares/libshares-util.c:384
+#: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Fel vid ändring av mapprättigheter."
 
@@ -114,16 +115,16 @@ msgid ""
 "first and add a new one"
 msgstr "Kan inte ändra sökvägen för en befintlig utdelning; ta bort den gamla utdelningen och lägg till en ny"
 
-#: ../thunar-plugin/tsp-page.c:152
+#: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Mapputdelning</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:162
+#: ../thunar-plugin/tsp-page.c:161
 msgid "Share this folder"
 msgstr "Dela ut denna mapp"
 
-#: ../thunar-plugin/tsp-page.c:170
+#: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
 msgstr "Utdelningens namn:"
 
@@ -141,15 +142,19 @@ msgstr "Tillåt gäståtkomst"
 msgid "Comments:"
 msgstr "Kommentarer:"
 
-#: ../thunar-plugin/tsp-page.c:296
+#: ../thunar-plugin/tsp-page.c:209
+msgid "_Apply"
+msgstr "_Verkställ"
+
+#: ../thunar-plugin/tsp-page.c:298
 msgid "Share"
 msgstr "Utdelning"
 
-#: ../thunar-plugin/tsp-page.c:368
+#: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
 msgstr "Du äger inte mappen."
 
-#: ../thunar-plugin/tsp-page.c:376
+#: ../thunar-plugin/tsp-page.c:378
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
