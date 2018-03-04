@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-03-04 15:52+0000\n"
+"PO-Revision-Date: 2018-03-04 18:16+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/thunar-plugins/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -89,17 +89,17 @@ msgstr "Samba's testparm u përgjig me sinjalin %d"
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr ""
+msgstr "testparm-i i Samba-s dështoi për një arsye të panjohur"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr ""
+msgstr "testparm-i i Samba-s u përgjigj me gabimin %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr ""
+msgstr "testparm-i i Samba-s u përgjigj me gabimin %d"
 
 #: ../libshares/shares.c:784
 #, c-format
