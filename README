@@ -10,10 +10,9 @@ Required packages
 
 thunar-shares-plugin depends on the following packages:
 
- - thunarx - 0.8.0 or above
- - thunar-vfs - 0.8.0 or above
- - gtk+-2.0 - 2.12.0 or above
- - glib-2.0 - 2.10.0 or above
+ - thunarx-3 - 1.0.1 or above
+ - gtk+-3.0 - 3.22.0 or above
+ - glib-2.0 - 2.18.0 or above
 
 
 Installation

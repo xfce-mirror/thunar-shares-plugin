@@ -1,3 +1,17 @@
+2018-03-03	Andre Miranda <andreldm@xfce.org>
+
+	* === Released 0.3.0 ===
+	* GTK3 Port
+	* Thunarx-3 Port (Thunar >=1.7.0 required)
+	* Translation updates: Arabic, Asturian, Basque, Belarusian, Bulgarian,
+	  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+	  Dutch, English (Australia), English (United Kingdom), Finnish, French,
+	  Galician, German, Greek, Hebrew, Hungarian, Icelandic, Indonesian,
+	  Italian, Japanese, Kazakh, Korean, Latvian, Lithuanian, Malay,
+	  Norwegian Bokmål, Occitan, Polish, Portuguese,Portuguese (Brazil),
+	  Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Turkish,
+	  Ukrainian, Urdu, Urdu (Pakistan), Uyghur, Uzbek, Vietnamese
+
 2009-02-15	Daniel Morales <daniel@daniel.com.uy>
 
 	* === Released 0.2.0 ===
