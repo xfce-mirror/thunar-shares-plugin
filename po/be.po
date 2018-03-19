@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-02-23 19:08+0000\n"
+"PO-Revision-Date: 2018-03-19 19:37+0000\n"
 "Last-Translator: Zmicer Turok <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/xfce/thunar-plugins/language/be/)\n"
 "MIME-Version: 1.0\n"
@@ -125,7 +125,7 @@ msgstr "Дазволіць доступ да гэтага каталога"
 
 #: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
-msgstr "Сеціўная назва:"
+msgstr "Сеткавая назва:"
 
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
