@@ -4,14 +4,15 @@
 # 
 # Translators:
 # Cristian Marchi <cri.penta@gmail.com>, 2009
+# Emanuele Petriglia <inbox@emanuelepetriglia.me>, 2018
 # Francesco Galizzi <f.galizzi92@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2017-09-19 18:03+0000\n"
-"Last-Translator: Francesco Galizzi <f.galizzi92@gmail.com>\n"
+"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"PO-Revision-Date: 2018-03-31 10:53+0000\n"
+"Last-Translator: Emanuele Petriglia <inbox@emanuelepetriglia.me>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/thunar-plugins/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,37 +20,37 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libshares/libshares-util.c:161
+#: ../libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Inserire un nome per favore."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:169
+#: ../libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "Nome della condivisione troppo lungo. Alcuni vecchi client potrebbero avere dei problemi ad accedervi, continuare comunque?"
 
-#: ../libshares/libshares-util.c:182
+#: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Errore nell'ottenere le informazioni di condivisione: %s"
 
-#: ../libshares/libshares-util.c:192
+#: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "Un'altra condivisione ha lo stesso nome"
 
-#: ../libshares/libshares-util.c:246
+#: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "Impossibile modificare la condivisione:"
 
-#: ../libshares/libshares-util.c:345
+#: ../libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "Thunar deve aggiungere dei permessi alla cartella per condividerla. Consentirlo?"
 
-#: ../libshares/libshares-util.c:384
+#: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Errore nel cambiare i permessi della cartella."
 
@@ -115,16 +116,16 @@ msgid ""
 "first and add a new one"
 msgstr "Impossibile cambiare il percorso di una condivisione esistente; rimuovere la vecchia condivisione e poi aggiungerne una nuova"
 
-#: ../thunar-plugin/tsp-page.c:152
+#: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Condivisione cartella</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:162
+#: ../thunar-plugin/tsp-page.c:161
 msgid "Share this folder"
 msgstr "Condividi questa cartella"
 
-#: ../thunar-plugin/tsp-page.c:170
+#: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
 msgstr "Nome della condivisione:"
 
@@ -142,15 +143,19 @@ msgstr "Permetti accesso ospite"
 msgid "Comments:"
 msgstr "Commenti:"
 
-#: ../thunar-plugin/tsp-page.c:296
+#: ../thunar-plugin/tsp-page.c:209
+msgid "_Apply"
+msgstr "_Applica"
+
+#: ../thunar-plugin/tsp-page.c:298
 msgid "Share"
 msgstr "Condividi"
 
-#: ../thunar-plugin/tsp-page.c:368
+#: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
 msgstr "Non sei il proprietario della cartella."
 
-#: ../thunar-plugin/tsp-page.c:376
+#: ../thunar-plugin/tsp-page.c:378
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
