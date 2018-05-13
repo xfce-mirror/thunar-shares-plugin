@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-03-31 10:53+0000\n"
+"PO-Revision-Date: 2018-05-13 13:06+0000\n"
 "Last-Translator: Emanuele Petriglia <inbox@emanuelepetriglia.me>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/thunar-plugins/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../libshares/libshares-util.c:166
 msgid "Please, write a name."
-msgstr "Inserire un nome per favore."
+msgstr "Inserire un nome."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:174
@@ -67,17 +67,17 @@ msgstr "%s %s %s non riuscito per un motivo sconosciuto"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "\"net usershare\" ha restituito l'errore %d: %s"
+msgstr "'net usershare' ha restituito l'errore %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "\"net usershare\" ha restituito l'errore %d"
+msgstr "'net usershare' ha restituito l'errore %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "l'output di \"net usershare\" non è codificato in UTF-8"
+msgstr "l'output di 'net usershare' non è codificato in UTF-8"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -87,22 +87,22 @@ msgstr "Fallito"
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "\"testparm\" di Samba ha restituito il segnale %d"
+msgstr "Il programma 'testparm' di Samba ha restituito il segnale %d"
 
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "\"testparm\" di Samba non riuscito per un motivo sconosciuto"
+msgstr "Il programma 'testparm' di Samba ha fallito per un motivo sconosciuto"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "\"testparm\" di Samba ha restituito l'errore %d: %s"
+msgstr "Il programma 'testparm' di Samba ha restituito l'errore %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "\"testparm\" di Samba ha restituito l'errore %d"
+msgstr "Il programma 'testparm' di Samba ha restituito l'errore %d"
 
 #: ../libshares/shares.c:784
 #, c-format
@@ -137,7 +137,7 @@ msgstr "Permetti agli altri utenti di scrivere in questa cartella"
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
 msgid "Allow Guest access"
-msgstr "Permetti accesso ospite"
+msgstr "Permetti l'accesso ospite"
 
 #: ../thunar-plugin/tsp-page.c:193
 msgid "Comments:"
