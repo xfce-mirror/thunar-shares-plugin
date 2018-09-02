@@ -131,84 +131,78 @@ tsp_page_init (TspPage *page)
 {
   GtkWidget *vbox1;
   GtkWidget *hbox1;
+  GtkWidget *grid;
   GtkWidget *widget;
 
   /* Main container */
-  vbox1 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-  gtk_container_set_border_width (GTK_CONTAINER (vbox1), 5);
+  vbox1 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+  gtk_container_set_border_width (GTK_CONTAINER (vbox1), 6);
 
   /* Header */
-  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-  gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, TRUE, 5);
+  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+  gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, TRUE, 0);
 
   widget = gtk_image_new ();
   gtk_image_set_from_icon_name (GTK_IMAGE (widget), "gnome-fs-share", GTK_ICON_SIZE_DIALOG);
-  gtk_widget_set_margin_start (widget, 13);
-  gtk_widget_set_margin_end (widget, 13);
   gtk_widget_set_halign (widget, GTK_ALIGN_START);
   gtk_box_pack_start (GTK_BOX (hbox1), widget, FALSE, FALSE, 0);
 
   widget = gtk_label_new (_("<b>Folder Sharing</b>"));
   gtk_label_set_use_markup (GTK_LABEL(widget), TRUE);
   gtk_label_set_xalign (GTK_LABEL (widget), 0.0f);
-  gtk_box_pack_start (GTK_BOX (hbox1), widget, FALSE, TRUE, 5);
+  gtk_box_pack_start (GTK_BOX (hbox1), widget, FALSE, TRUE, 0);
 
   /* Horizontal separator */
   widget = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
-  gtk_box_pack_start (GTK_BOX (vbox1), widget, FALSE, TRUE, 5);
+  gtk_box_pack_start (GTK_BOX (vbox1), widget, FALSE, TRUE, 6);
 
   /* Share check button */
   page->cb_share_folder = gtk_check_button_new_with_label (_("Share this folder"));
   g_signal_connect (G_OBJECT (page->cb_share_folder), "toggled", G_CALLBACK (tsp_page_share_toggled), page);
   gtk_box_pack_start (GTK_BOX (vbox1), page->cb_share_folder, FALSE, FALSE, 5);
 
-  /* Share name */
-  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-  gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, FALSE, 5);
+  grid = gtk_grid_new ();
+  gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
+  gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
+  gtk_widget_set_margin_start (GTK_WIDGET (grid), 12);
+  gtk_box_pack_start (GTK_BOX (vbox1), grid, FALSE, TRUE, 0);
 
+  /* Share name */
   page->label_name = gtk_label_new (_("Share Name:"));
-  gtk_widget_set_margin_start (page->label_name, 5);
-  gtk_widget_set_margin_end (page->label_name, 5);
   gtk_label_set_xalign (GTK_LABEL (page->label_name), 0.0f);
-  gtk_box_pack_start (GTK_BOX (hbox1), page->label_name, FALSE, FALSE, 0);
+  gtk_grid_attach (GTK_GRID (grid), page->label_name, 0, 0, 1, 1);
 
   page->entry_share_name = gtk_entry_new ();
+  gtk_widget_set_hexpand (GTK_WIDGET (page->entry_share_name), TRUE);
   g_signal_connect (G_OBJECT (page->entry_share_name), "changed", G_CALLBACK (tsp_page_name_changed), page);
-  gtk_box_pack_start (GTK_BOX (hbox1), page->entry_share_name, TRUE, TRUE, 0);
+  gtk_grid_attach (GTK_GRID (grid), page->entry_share_name, 1, 0, 1, 1);
+
+  /* Share comments */
+  page->label_comments = gtk_label_new (_("Comments:"));
+  gtk_label_set_xalign (GTK_LABEL (page->label_comments), 0.0f);
+  gtk_grid_attach (GTK_GRID (grid), page->label_comments, 0, 1, 1, 1);
+
+  page->entry_share_comments = gtk_entry_new ();
+  g_signal_connect (G_OBJECT (page->entry_share_comments), "changed", G_CALLBACK (tsp_page_cmt_changed), page);
+  gtk_grid_attach (GTK_GRID (grid), page->entry_share_comments, 1, 1, 1, 1);
 
   /* Write access */
   page->cb_share_write = gtk_check_button_new_with_label (_("Allow others users to write in this folder"));
+  gtk_widget_set_margin_top (GTK_WIDGET (page->cb_share_write), 6);
   g_signal_connect (G_OBJECT (page->cb_share_write), "toggled", G_CALLBACK (tsp_page_write_toggled), page);
-  gtk_box_pack_start (GTK_BOX (vbox1), page->cb_share_write, FALSE, FALSE, 5);
+  gtk_grid_attach (GTK_GRID (grid), page->cb_share_write, 0, 2, 2, 1);
 
   /* Guest access */
   page->cb_share_guest = gtk_check_button_new_with_label (_("Allow Guest access"));
   g_signal_connect (G_OBJECT (page->cb_share_guest), "toggled", G_CALLBACK (tsp_page_guest_toggled), page);
-  gtk_box_pack_start (GTK_BOX (vbox1), page->cb_share_guest, FALSE, FALSE, 5);
-
-  /* Share comments */
-  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-  gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, FALSE, 5);
-
-  page->label_comments = gtk_label_new (_("Comments:"));
-  gtk_widget_set_margin_start (page->label_comments, 5);
-  gtk_widget_set_margin_end (page->label_comments, 5);
-  gtk_label_set_xalign (GTK_LABEL (page->label_comments), 0.0f);
-  gtk_box_pack_start (GTK_BOX (hbox1), page->label_comments, FALSE, FALSE, 0);
-
-  page->entry_share_comments = gtk_entry_new ();
-  g_signal_connect (G_OBJECT (page->entry_share_comments), "changed", G_CALLBACK (tsp_page_cmt_changed), page);
-  gtk_box_pack_start (GTK_BOX (hbox1), page->entry_share_comments, TRUE, TRUE, 0);
+  gtk_grid_attach (GTK_GRID (grid), page->cb_share_guest, 0, 3, 2, 1);
 
   /* Apply button */
-  hbox1 = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
-  gtk_box_set_spacing (GTK_BOX (hbox1), 5);
-  gtk_button_box_set_layout (GTK_BUTTON_BOX (hbox1), GTK_BUTTONBOX_END);
-  gtk_box_pack_start (GTK_BOX (vbox1), hbox1, TRUE, TRUE, 7);
-
   page->button_apply = gtk_button_new_with_mnemonic (_("_Apply"));
+  gtk_widget_set_halign (GTK_WIDGET (page->button_apply), GTK_ALIGN_END);
+  gtk_widget_set_margin_top (GTK_WIDGET (page->button_apply), 12);
   g_signal_connect (G_OBJECT (page->button_apply), "clicked", G_CALLBACK (tsp_page_apply_clicked), page);
-  gtk_box_pack_end (GTK_BOX (hbox1), page->button_apply, FALSE, FALSE, 0);
+  gtk_box_pack_start (GTK_BOX (vbox1), page->button_apply, FALSE, FALSE, 0);
 
   /* Status label */
   page->label_status = gtk_label_new (NULL);
@@ -221,7 +215,7 @@ tsp_page_init (TspPage *page)
 
   /* Add to the dialog */
   gtk_container_add (GTK_CONTAINER (page), vbox1);
-  gtk_container_set_border_width (GTK_CONTAINER (page), 5);
+  gtk_container_set_border_width (GTK_CONTAINER (page), 6);
   gtk_widget_show_all (vbox1);
 
   /* Check if guest access is supported */
