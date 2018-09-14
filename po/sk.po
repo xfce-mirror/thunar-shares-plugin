@@ -9,47 +9,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:10+0200\n"
-"PO-Revision-Date: 2017-09-19 18:03+0000\n"
+"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"PO-Revision-Date: 2018-09-14 00:15+0000\n"
 "Last-Translator: Nick Schermer <nick@xfce.org>\n"
 "Language-Team: Slovak (http://www.transifex.com/xfce/thunar-plugins/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sk\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: ../libshares/libshares-util.c:161
+#: ../libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Zadajte názov."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:169
+#: ../libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "Názov zdieľanej položky je príliš dlhý. Niektorí starší klienti môžu mať problémy s prístupom. Chcete napriek tomu pokračovať?"
 
-#: ../libshares/libshares-util.c:182
+#: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Pri získavaní informácií o zdieľaní došlo k chybe: %s"
 
-#: ../libshares/libshares-util.c:192
+#: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "Iná zdieľaná položka má rovnaký názov"
 
-#: ../libshares/libshares-util.c:246
+#: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "Nemožno zmeniť zdieľaný priečinok:"
 
-#: ../libshares/libshares-util.c:345
+#: ../libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "Aplikácia Thunar pridá tomuto priečinku oprávnenia, aby ho mohla zdieľať. Chcete pokračovať?"
 
-#: ../libshares/libshares-util.c:384
+#: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Chyba pri nastavovaní práv k priečinku."
 
@@ -115,16 +115,16 @@ msgid ""
 "first and add a new one"
 msgstr "Nie je možné zmeniť cestu existujúcej zdieľanej zložky; najprv odoberte straú zdieľanú zložku a potom pridajte novú"
 
-#: ../thunar-plugin/tsp-page.c:152
+#: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Zdieľanie priečinka</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:162
+#: ../thunar-plugin/tsp-page.c:161
 msgid "Share this folder"
 msgstr "Zdieľať tento priečinok"
 
-#: ../thunar-plugin/tsp-page.c:170
+#: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
 msgstr "Názov zdieľaného priečinka:"
 
@@ -142,15 +142,19 @@ msgstr "Povoliť prístup neprihláseným používateľom"
 msgid "Comments:"
 msgstr "Komentáre:"
 
-#: ../thunar-plugin/tsp-page.c:296
+#: ../thunar-plugin/tsp-page.c:209
+msgid "_Apply"
+msgstr ""
+
+#: ../thunar-plugin/tsp-page.c:298
 msgid "Share"
 msgstr "Zdieľaný priečinok"
 
-#: ../thunar-plugin/tsp-page.c:368
+#: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
 msgstr "Nieste vlastník priečinka."
 
-#: ../thunar-plugin/tsp-page.c:376
+#: ../thunar-plugin/tsp-page.c:378
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
