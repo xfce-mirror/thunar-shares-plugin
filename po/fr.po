@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Charles Monzat <c.monzat@laposte.net>, 2018
+# Charles Monzat <c.monzat@laposte.net>, 2018
 # jc1 <jc1.quebecos@gmail.com>, 2013
 # jc1 <jc1.quebecos@gmail.com>, 2013
 # Maximilian Schleiss <maximilian@xfce.org>, 2008
@@ -12,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-10-06 15:38+0000\n"
+"PO-Revision-Date: 2018-10-07 16:27+0000\n"
 "Last-Translator: Charles Monzat <c.monzat@laposte.net>\n"
 "Language-Team: French (http://www.transifex.com/xfce/thunar-plugins/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -30,16 +31,16 @@ msgstr "Veuillez écrire un nom."
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
-msgstr "Le nom de partage est trop long. Certains clients anciens pourraient avoir des problèmes en voulant y accéder, continuer malgré tout ?"
+msgstr "Nom de partage trop long. Certains anciens clients pourraient avoir des problèmes pour y accéder, continuer malgré tout ?"
 
 #: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr "Erreur lors de l’obtention des informations du partage : %s"
+msgstr "Erreur lors de l’obtention des informations de partage : %s"
 
 #: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
-msgstr "Un autre partage a le même nom"
+msgstr "Un autre partage porte le même nom"
 
 #: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
@@ -53,12 +54,12 @@ msgstr "Thunar a besoin d’ajouter des permissions à votre dossier afin de le 
 
 #: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
-msgstr "Erreur lors du changement de permissions du dossier."
+msgstr "Erreur lors de la modification des permissions du dossier."
 
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s a renvoyé un signal %d"
+msgstr "%s %s %s a renvoyé le signal %d"
 
 #: ../libshares/shares.c:174
 #, c-format
@@ -68,17 +69,17 @@ msgstr "%s %s %s a échoué pour une raison inconnue"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "« net usershare » a renvoyé une erreur %d : %s"
+msgstr "« net usershare » a renvoyé l’erreur %d : %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "« net usershare » a renvoyé une erreur %d"
+msgstr "« net usershare » a renvoyé l’erreur %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "la sortie de « net usershare » n’est pas dans un encodage UTF-8 valide"
+msgstr "la sortie de « net usershare » n’est pas dans un codage UTF-8 valide"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -88,7 +89,7 @@ msgstr "Échec"
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "Le testparm de Samba a renvoyé un signal %d"
+msgstr "Le testparm de Samba a renvoyé le signal %d"
 
 #: ../libshares/shares.c:598
 #, c-format
@@ -98,12 +99,12 @@ msgstr "Le testparm de Samba a échoué pour une raison inconnue"
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Le testparm de Samba a renvoyé une erreur %d : %s"
+msgstr "Le testparm de Samba a renvoyé l’erreur %d : %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Le testparm de Samba a renvoyé une erreur %d"
+msgstr "Le testparm de Samba a renvoyé l’erreur %d"
 
 #: ../libshares/shares.c:784
 #, c-format
@@ -119,7 +120,7 @@ msgstr "Impossible de modifier le chemin d’un partage existant ; veuillez d�
 
 #: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
-msgstr "<b>Partage de dossier</b>"
+msgstr "<b>Partage de dossiers</b>"
 
 #. Share check button
 #: ../thunar-plugin/tsp-page.c:161
@@ -154,10 +155,10 @@ msgstr "Partage"
 
 #: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
-msgstr "Vous n’êtes pas le propriétaire du répertoire."
+msgstr "Vous n’êtes pas le propriétaire du dossier."
 
 #: ../thunar-plugin/tsp-page.c:378
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Vous pourriez avoir besoin d’installer Samba, vérifiez vos permissions (groupes de partage) et reconnectez-vous.\n<b>Plus d’informations :</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "Vous avez peut-être besoin d’installer Samba, de vérifier vos permissions utilisateur (groupes de partage) et de vous reconnecter.\n<b>Plus d’informations :</b> <u>http://thunar-shares.googlecode.com/</u>"
