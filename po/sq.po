@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-03-04 18:16+0000\n"
+"PO-Revision-Date: 2019-01-18 16:11+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/thunar-plugins/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Një tjetër pjesë ka të njëjtin emër"
 
 #: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
-msgstr "S’mund të ndryshojë ndarjen:"
+msgstr "S’mund të ndryshohet ndarja:"
 
 #: ../libshares/libshares-util.c:353
 msgid ""
@@ -129,7 +129,7 @@ msgstr "Emër Pjese:"
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
 msgid "Allow others users to write in this folder"
-msgstr "Lejojini përdoruesit e tjerë të shkruajnë në këtë dosje"
+msgstr "Lejojini përdoruesve të tjerë të shkruajnë në këtë dosje"
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
