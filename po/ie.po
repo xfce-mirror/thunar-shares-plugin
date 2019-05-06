@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunar Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"PO-Revision-Date: 2019-05-06 16:39+0000\n"
+"Last-Translator: Caarmi\n"
+"Language-Team: Interlingue (http://www.transifex.com/xfce/thunar-plugins/language/ie/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ie\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../libshares/libshares-util.c:166
+msgid "Please, write a name."
+msgstr "Ples provider un nómine."
+
+#. Warn the user
+#: ../libshares/libshares-util.c:174
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
+msgstr "Li nómine del partite es tro long. Alcun old clientes fórsan va haver problemas con accesse a it. Continuar?"
+
+#: ../libshares/libshares-util.c:187
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Errore evenit obtenente li information pri partite: %s"
+
+#: ../libshares/libshares-util.c:197
+msgid "Another share has the same name"
+msgstr "Un altri partite have li sam nómine"
+
+#: ../libshares/libshares-util.c:251
+msgid "Cannot modify the share:"
+msgstr "Ne successat modificar li partite:"
+
+#: ../libshares/libshares-util.c:353
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
+msgstr "Thunar deve adjunter alcun permissiones a ti-ci fólder por partir it. Esque vu consenti?"
+
+#: ../libshares/libshares-util.c:392
+msgid "Error when changing folder permissions."
+msgstr "Errore evenit modificante permissiones de fólder"
+
+#: ../libshares/shares.c:165
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s retornat con signal %d"
+
+#: ../libshares/shares.c:174
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s ne successat por un ínconosset cause"
+
+#: ../libshares/shares.c:195
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' retrodat un errore %d: %s"
+
+#: ../libshares/shares.c:197
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' retrodat un errore %d"
+
+#: ../libshares/shares.c:231
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "li production de 'net usershare' ne es in un codification UTF-8 valid"
+
+#: ../libshares/shares.c:490 ../libshares/shares.c:702
+#, c-format
+msgid "Failed"
+msgstr "Ne successat"
+
+#: ../libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "testparm de Samba retornat con signal %d"
+
+#: ../libshares/shares.c:598
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "testparm de Samba ne successat por un ínconisset cause"
+
+#: ../libshares/shares.c:613
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "testparm de Samba retrodat un errore %d: %s"
+
+#: ../libshares/shares.c:615
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "testparm de Samba retrodat un errore %d"
+
+#: ../libshares/shares.c:784
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "Ne successat remover li partite con rute %s: ta rute ne es partit"
+
+#: ../libshares/shares.c:837
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr "Ne posse modificar li rute de un existent partite; ples remover li anteyan partite e crea un nov"
+
+#: ../thunar-plugin/tsp-page.c:151
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Partition del fólder</b>"
+
+#. Share check button
+#: ../thunar-plugin/tsp-page.c:161
+msgid "Share this folder"
+msgstr "Partir ti-ci folder"
+
+#: ../thunar-plugin/tsp-page.c:169
+msgid "Share Name:"
+msgstr "Nómine de partite:"
+
+#. Write access
+#: ../thunar-plugin/tsp-page.c:180
+msgid "Allow others users to write in this folder"
+msgstr "Permisser a altri usatores scrir ad-in ti-ci fólder"
+
+#. Guest access
+#: ../thunar-plugin/tsp-page.c:185
+msgid "Allow Guest access"
+msgstr "Permisser accesse de gastes"
+
+#: ../thunar-plugin/tsp-page.c:193
+msgid "Comments:"
+msgstr "Comentas:"
+
+#: ../thunar-plugin/tsp-page.c:209
+msgid "_Apply"
+msgstr "_Applicar"
+
+#: ../thunar-plugin/tsp-page.c:298
+msgid "Share"
+msgstr "Partite"
+
+#: ../thunar-plugin/tsp-page.c:370
+msgid "You are not the owner of the folder."
+msgstr "Vu ne es li possessor del fólder."
+
+#: ../thunar-plugin/tsp-page.c:378
+msgid ""
+"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
+"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "Vu fórsan besona installar Samba, controlar vor permissiones (usershares group) e aperter li session denov."
