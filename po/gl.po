@@ -5,7 +5,7 @@
 # Translators:
 # Daniel Muñiz Fontoira <dani@damufo.com>, 2018
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2006,2008-2009
-# Xosé <xosecalvo@gmail.com>, 2015
+# Xosé, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
