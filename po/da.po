@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2019-05-17 11:00+0000\n"
+"PO-Revision-Date: 2019-06-05 19:29+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/thunar-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr "Delingsnavn er for langt. Nogle ældre klienter kan have problemer med a
 #: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr "Fejl under hentning af delingsinformation: %s"
+msgstr "Fejl da delingsinformation skulle hentes: %s"
 
 #: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
