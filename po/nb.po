@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2019
 # Terje Uriansrud <terje@uriansrud.net>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-09-14 00:15+0000\n"
-"Last-Translator: Harald H. <haarektrans@gmail.com>\n"
+"PO-Revision-Date: 2019-07-24 06:07+0000\n"
+"Last-Translator: Kjell Cato Heskjestad <cato@heskjestad.xyz>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/xfce/thunar-plugins/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ../libshares/libshares-util.c:166
 msgid "Please, write a name."
-msgstr "Vennligst, skriv inn navn"
+msgstr "Skriv inn et navn."
 
 #. Warn the user
 #: ../libshares/libshares-util.c:174
@@ -55,7 +56,7 @@ msgstr "Feil under endring av mapperettigheter."
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s kom tilbake med meldingen %d"
+msgstr "%s %s %s gav tilbake meldingen %d"
 
 #: ../libshares/shares.c:174
 #, c-format
@@ -65,54 +66,54 @@ msgstr "%s %s %s feilet av en ukjent grunn"
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare' kom tilbake med feil %d: %s"
+msgstr "«net usershare» gav tilbake feilen %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare' rkom tilbake med feil %d"
+msgstr "«net usershare» gav tilbake feilen %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "Utdata fra 'net usershare' er ikke i korrekt UTF-8 tegnkoding"
+msgstr "Utdata fra «net usershare» er ikke i korrekt UTF-8-tegnkoding"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
-msgstr "Feilet"
+msgstr "Mislyktes"
 
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "Samba's testparm kom tilbake med meldingen %d"
+msgstr "Sambas testparm gav tilbake meldingen %d"
 
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "Samba's testparm feilet for en ukjent grunn"
+msgstr "Sambas testparm mislyktes av en ukjent grunn"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Samba's testparm kom tilbake med feilen %d: %s"
+msgstr "Sambas testparm gav tilbake feilen %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Samba's testparm kom tilbake med feil %d"
+msgstr "Sambas testparm gav tilbake feilen %d"
 
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Kunne ikke fjerne deling for stien %s: stien er ikke delt"
+msgstr "Klarte ikke fjerne deling for stien %s: stien er ikke delt"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "Kunne ikke endre stien for en eksisterende deling; vennligst fjern den gamle delingen først og så legg til en ny en."
+msgstr "Klarte ikke endre stien for en eksisterende deling. Fjern den gamle delingen først og legg deretter til en ny en."
 
 #: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
@@ -143,7 +144,7 @@ msgstr "Kommentarer:"
 
 #: ../thunar-plugin/tsp-page.c:209
 msgid "_Apply"
-msgstr ""
+msgstr "_Bruk"
 
 #: ../thunar-plugin/tsp-page.c:298
 msgid "Share"
@@ -151,7 +152,7 @@ msgstr "Nettverksområde"
 
 #: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
-msgstr "Du er ikke eier av mappen"
+msgstr "Du eier ikke mappen."
 
 #: ../thunar-plugin/tsp-page.c:378
 msgid ""
