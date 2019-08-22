@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2019-08-16 13:59+0000\n"
+"PO-Revision-Date: 2019-08-22 13:48+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/thunar-plugins/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "Non se puido modificar o recurso:"
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
-msgstr "Thunar ten que lle engadir algúns permisos ó seu cartafol para podelo compartir. Está de acordo?"
+msgstr "O Thunar precisa engadir algúns permisos ao seu cartafol para poder compartilo. Está de acordo?"
 
 #: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
@@ -77,7 +77,7 @@ msgstr "«net usershare» rematou co erro %d"
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "a saída de «net usershare» non está nunha codificación UTF-8 válida"
+msgstr "a saída de «net usershare» non ten unha codificación UTF-8 correcta"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
