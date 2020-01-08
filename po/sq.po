@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Besnik <besnik@programeshqip.org>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2019-01-18 16:11+0000\n"
+"PO-Revision-Date: 2020-01-08 19:26+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/thunar-plugins/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -26,16 +27,16 @@ msgstr "Ju lutemi, shkruani një emër."
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
-msgstr "Emër pjese shumë i gjatë. Disa klientë të vjetër mund të kenë probleme ta përdorin, të vazhdohet sido qoftë?"
+msgstr "Emër ndarjeje shumë i gjatë. Disa klientë të vjetër mund të kenë probleme ta përdorin, të vazhdohet sido qoftë?"
 
 #: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr "Gabim teksa merreshin të dhëna pjese: %s"
+msgstr "Gabim teksa merreshin të dhëna ndarjeje: %s"
 
 #: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
-msgstr "Një tjetër pjesë ka të njëjtin emër"
+msgstr "Një tjetër ndarje ka të njëjtin emër"
 
 #: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
@@ -54,7 +55,7 @@ msgstr "Gabim gjatë ndryshimit të lejeve mbi dosjen."
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s është përgjigjur me një sinjal %d"
+msgstr "%s %s %s u përgjigj me një sinjal %d"
 
 #: ../libshares/shares.c:174
 #, c-format
@@ -74,7 +75,7 @@ msgstr "'net usershare' u përgjigj me gabimin %d"
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "përfundimi i dhënë nga 'net usershare' s’është në kodim të vlefshëm UTF-8"
+msgstr "përfundimi i dhënë nga 'net usershare' s’është në kodim UTF-8 të vlefshëm"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -104,14 +105,14 @@ msgstr "testparm-i i Samba-s u përgjigj me gabimin %d"
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "S’hiqet dot pjesa për shtegun %s: ai shteg nuk ndahet me dikë"
+msgstr "S’hiqet dot ndarja për shtegun %s: ai shteg nuk ndahet me dikë"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "S’mund të ndryshohet shtegu i një pjese ekzistuese; ju lutemi, së pari hiqni pjesën e vjetër dhe mandej shtoni një të re"
+msgstr "S’mund të ndryshohet shtegu i një ndarjeje ekzistuese; ju lutemi, së pari hiqni ndarjen e vjetër dhe mandej shtoni një të re"
 
 #: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
@@ -124,12 +125,12 @@ msgstr "Ndajeni këtë dosje me të tjerë"
 
 #: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
-msgstr "Emër Pjese:"
+msgstr "Emër Ndarjeje:"
 
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
 msgid "Allow others users to write in this folder"
-msgstr "Lejojini përdoruesve të tjerë të shkruajnë në këtë dosje"
+msgstr "Lejojuni përdoruesve të tjerë të shkruajnë në këtë dosje"
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
