@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Zmicer Turok <zmicerturok@gmail.com>, 2018
+# Zmicer Turok <nashtlumach@gmail.com>, 2018
+# Zmicer Turok <nashtlumach@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-03-19 19:37+0000\n"
-"Last-Translator: Zmicer Turok <zmicerturok@gmail.com>\n"
+"PO-Revision-Date: 2020-03-02 08:49+0000\n"
+"Last-Translator: Zmicer Turok <nashtlumach@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/xfce/thunar-plugins/language/be/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,13 +41,13 @@ msgstr "Іншы рэсурс ужо мае такую назву"
 
 #: ../libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
-msgstr "Не атрымалася змянініць:"
+msgstr "Не атрымалася змяніць:"
 
 #: ../libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
-msgstr "Thunar мае неабходнасць дадаць пэўныя правы доступу да гэтага каталога. Вы згодны?"
+msgstr "Thunar мае патрэбу дадаць пэўныя правы доступу да гэтага каталога. Вы згодныя?"
 
 #: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
@@ -90,17 +91,17 @@ msgstr "Testparm вярнуўся з сігналам %d"
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "Невядомая памылка падчас запуску testparm Samba"
+msgstr "Падчас запуску testparm Samba адбылася невядомая памылка"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Памылка %d: %s падчас запуску testparm Samba"
+msgstr "Падчас запуску testparm Samba адбылася памылка %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Памылка %d падчас запуску testparm Samba"
+msgstr "Падчас запуску testparm Samba адбылася памылка %d"
 
 #: ../libshares/shares.c:784
 #, c-format
@@ -112,7 +113,7 @@ msgstr "Не атрымалася выдаліць рэсурс для ката�
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "Не атрымалася змяніць шлях да існуючага рэсурса; калі ласка, выдаліце стары рэсурс і дадайце новы"
+msgstr "Не атрымалася змяніць шлях да існага рэсурса; калі ласка, выдаліце стары рэсурс і дадайце новы"
 
 #: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
