@@ -32,8 +32,6 @@
 static void     tsp_provider_finalize            (GObject                          *object);
 
 static void     tsp_provider_page_provider_init  (ThunarxPropertyPageProviderIface *iface);
-static void     tsp_provider_prefs_provider_init (ThunarxPreferencesProviderIface  *iface);
-
 static GList   *tsp_provider_get_pages           (ThunarxPropertyPageProvider      *provider,
                                                   GList                            *files);
 
@@ -51,9 +49,7 @@ THUNARX_DEFINE_TYPE_WITH_CODE (TspProvider,
                                tsp_provider,
                                G_TYPE_OBJECT,
                                THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_PROPERTY_PAGE_PROVIDER,
-                                                            tsp_provider_page_provider_init)
-                               THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_PREFERENCES_PROVIDER,
-                                                            tsp_provider_prefs_provider_init));
+                                                            tsp_provider_page_provider_init));
 
 static void
 tsp_provider_class_init (TspProviderClass *klass)
@@ -80,12 +76,6 @@ static void
 tsp_provider_page_provider_init (ThunarxPropertyPageProviderIface *iface)
 {
   iface->get_pages = tsp_provider_get_pages;
-}
-
-static void
-tsp_provider_prefs_provider_init (ThunarxPreferencesProviderIface *iface)
-{
-  /* Bleh..! */
 }
 
 static GList*
