@@ -1,0 +1,57 @@
+[![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/blob/master/COPYING)
+
+# thunar-shares-plugin
+
+The Thunar Shares Plugin (thunar-shares-plugin) allows you to quickly share a folder using Samba from Thunar (the Xfce file manager) without requiring root access.
+
+----
+
+### Homepage
+
+[Thunar-shares-plugin documentation](https://docs.xfce.org/thunar-plugins/thunar-shares-plugin/start)
+
+### Changelog
+
+See [NEWS](https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/blob/master/NEWS) for details on changes and fixes made in the current release.
+
+### Source Code Repository
+
+[Thunar-shares-plugin source code](https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin)
+
+### Download a Release Tarball
+
+[Thunar-shares-plugin shares](https://shares.xfce.org/src/thunar-plugins/thunar-shares-plugin)
+    or
+[Thunar-shares-plugin tags](https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/tags)
+
+### Required Packages
+
+* [Thunarx](https://gitlab.xfce.org/bindings/thunarx-python)
+* [GLib](https://wiki.gnome.org/Projects/GLib)
+* [GTK+-3.0](https://www.gtk.org)
+
+For detailed information on the minimum required versions, check the [[https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/blob/master/configure.ac.in|configure.ac.in]] file.
+
+### Installation
+
+From source code repository: 
+
+    % cd thunar-shares-plugin
+    % ./autogen.sh
+    % make
+    % make install
+
+From release tarball:
+
+    % tar xf thunar-shares-plugin-<version>.tar.bz2
+    % cd thunar-shares-plugin-<version>
+    % ./configure
+    % make
+    % make install
+
+For information about how to setup Samba correctly, see [Samba Setup](https://docs.xfce.org/xfce/thunar/thunar-shares-plugin#samba_setup) in the Xfce documentation.
+
+### Reporting Bugs
+
+Visit the [reporting bugs](https://docs.xfce.org/thunar-plugins/thunar-shares-plugin/bugs) page to view currently open bug reports and instructions on reporting new bugs or submitting bugfixes.
+
