@@ -8,7 +8,7 @@ The Thunar Shares Plugin (thunar-shares-plugin) allows you to quickly share a fo
 
 ### Homepage
 
-[Thunar-shares-plugin documentation](https://docs.xfce.org/thunar-plugins/thunar-shares-plugin/start)
+[Thunar-shares-plugin documentation](https://docs.xfce.org/xfce/thunar/thunar-shares-plugin)
 
 ### Changelog
 
@@ -20,17 +20,9 @@ See [NEWS](https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/blob/ma
 
 ### Download a Release Tarball
 
-[Thunar-shares-plugin shares](https://shares.xfce.org/src/thunar-plugins/thunar-shares-plugin)
+[Thunar-shares-plugin shares](https://archive.xfce.org/src/thunar-plugins/thunar-shares-plugin)
     or
 [Thunar-shares-plugin tags](https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/tags)
-
-### Required Packages
-
-* [Thunarx](https://gitlab.xfce.org/bindings/thunarx-python)
-* [GLib](https://wiki.gnome.org/Projects/GLib)
-* [GTK+-3.0](https://www.gtk.org)
-
-For detailed information on the minimum required versions, check the [[https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/blob/master/configure.ac.in|configure.ac.in]] file.
 
 ### Installation
 
