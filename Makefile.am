@@ -8,7 +8,7 @@ INTLTOOL =				\
 
 EXTRA_DIST =				\
 	ChangeLog			\
-	README				\
+	README.md				\
 	AUTHORS				\
 	NEWS				\
 	$(INTLTOOL)
