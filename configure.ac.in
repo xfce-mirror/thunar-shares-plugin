@@ -41,7 +41,7 @@ AC_HEADER_STDC
 dnl -------------------------------------------------------
 dnl Programs
 dnl -------------------------------------------------------
-AC_PROG_CC_C99
+AC_PROG_CC
 AC_PROG_LD
 AC_PROG_INSTALL
 IT_PROG_INTLTOOL([0.35.0])
