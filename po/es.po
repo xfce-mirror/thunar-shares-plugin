@@ -7,14 +7,14 @@
 # Ignacio Poggi <ignaciop.3@gmail.com>, 2020
 # Jaime Marquínez Ferrándiz, 2018
 # prflr88 <prflr88@gmail.com>, 2014
-# Toni Estévez <toni.estevez@gmail.com>, 2019
+# Toni Estévez <toni.estevez@gmail.com>, 2019,2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2020-04-21 01:24+0000\n"
-"Last-Translator: Ignacio Poggi <ignaciop.3@gmail.com>\n"
+"PO-Revision-Date: 2021-04-25 18:18+0000\n"
+"Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/thunar-plugins/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,7 +36,7 @@ msgstr "El nombre del recurso compartido es demasiado largo. Algunos clientes an
 #: ../libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
-msgstr "Error al obtener la información del recurso compartido: %s"
+msgstr "Error al obtener información del recurso compartido: %s"
 
 #: ../libshares/libshares-util.c:197
 msgid "Another share has the same name"
@@ -59,22 +59,22 @@ msgstr "Error al cambiar los permisos de la carpeta."
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s %s %s finalizó con la señal %d"
+msgstr "%s %s %s ha devuelto la señal %d"
 
 #: ../libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
-msgstr "%s %s %s falló por un motivo desconocido"
+msgstr "%s %s %s ha fallado por un motivo desconocido"
 
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "«net usershare» devolvió el error %d: %s"
+msgstr "«net usershare» ha devuelto el error %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "«net usershare» devolvió el error %d"
+msgstr "«net usershare» ha devuelto el error %d"
 
 #: ../libshares/shares.c:231
 #, c-format
@@ -84,27 +84,27 @@ msgstr "la salida de la orden «net usershare» no tiene una codificación UTF-8
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
 msgid "Failed"
-msgstr "Falló"
+msgstr "Ha fallado"
 
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "La orden «testparm» de Samba finalizó con la señal %d"
+msgstr "La orden «testparm» de Samba ha devuelto la señal %d"
 
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "La orden «testparm» de Samba falló por un motivo desconocido"
+msgstr "La orden «testparm» de Samba ha fallado por un motivo desconocido"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "La orden «testparm» de Samba devolvió el error %d: %s"
+msgstr "La orden «testparm» de Samba ha devuelto el error %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "La orden «testparm» de Samba devolvió el error %d"
+msgstr "La orden «testparm» de Samba ha devuelto el error %d"
 
 #: ../libshares/shares.c:784
 #, c-format
@@ -161,4 +161,4 @@ msgstr "No es el propietario de la carpeta."
 msgid ""
 "You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
 "<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Puede que necesite instalar Samba, compruebe sus permisos de usuario (grupo «usershares») y reinicie la sesión.\n<b>Para más información:</b> <u>http://thunar-shares.googlecode.com/</u>"
+msgstr "Es posible que tenga que instalar Samba, comprobar sus permisos de usuario (grupo «usershares») y volver a iniciar sesión.\n<b>Más información:</b> <u>http://thunar-shares.googlecode.com/</u>"
