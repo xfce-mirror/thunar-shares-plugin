@@ -5,14 +5,15 @@
 # Translators:
 # Emin Tufan Çetin <etcetin@gmail.com>, 2020
 # Necdet Yücel <necdetyucel@gmail.com>, 2018
+# Sabri Ünal <libreajans@gmail.com>, 2022
 # Serdar Sağlam <teknomobil@msn.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2020-11-04 22:30+0000\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"PO-Revision-Date: 2013-07-03 18:10+0000\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>, 2022\n"
 "Language-Team: Turkish (http://www.transifex.com/xfce/thunar-plugins/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,11 +49,11 @@ msgstr "Paylaşım değiştirilemiyor:"
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
-msgstr "Thunar, paylaşım için dizin izinlerin değiştirilmesine gereksiniyor. Kabul ediyor musunuz?"
+msgstr "Thunar, paylaşım için klasör izinlerin değiştirilmesine gereksiniyor. Kabul ediyor musunuz?"
 
 #: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
-msgstr "Dizin izinleri değiştirilirken hata oluştu."
+msgstr "Klasör izinleri değiştirilirken hata oluştu."
 
 #: ../libshares/shares.c:165
 #, c-format
@@ -118,12 +119,12 @@ msgstr "Var olan paylaşımın dosya yolu değiştirilemiyor; lütfen eski payla
 
 #: ../thunar-plugin/tsp-page.c:151
 msgid "<b>Folder Sharing</b>"
-msgstr "<b>Dizin Paylaşımı</b>"
+msgstr "<b>Klasör Paylaşımı</b>"
 
 #. Share check button
 #: ../thunar-plugin/tsp-page.c:161
 msgid "Share this folder"
-msgstr "Bu dizini paylaş"
+msgstr "Bu klasörü paylaş"
 
 #: ../thunar-plugin/tsp-page.c:169
 msgid "Share Name:"
@@ -132,7 +133,7 @@ msgstr "Paylaşım Adı:"
 #. Write access
 #: ../thunar-plugin/tsp-page.c:180
 msgid "Allow others users to write in this folder"
-msgstr "Diğerlerinin bu dizine yazmasına izin ver"
+msgstr "Diğerlerinin bu klasöre yazmasına izin ver"
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:185
@@ -153,7 +154,7 @@ msgstr "Paylaşım"
 
 #: ../thunar-plugin/tsp-page.c:370
 msgid "You are not the owner of the folder."
-msgstr "Bu dizinin sahibi değilsiniz."
+msgstr "Bu klasörün sahibi değilsiniz."
 
 #: ../thunar-plugin/tsp-page.c:378
 msgid ""
