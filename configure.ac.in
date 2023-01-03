@@ -8,9 +8,9 @@ dnl Version
 dnl -------------------------------------------------------
 m4_define([tsp_version_major], [0])
 m4_define([tsp_version_minor], [3])
-m4_define([tsp_version_micro], [1])
+m4_define([tsp_version_micro], [2])
 m4_define([tsp_version_build], [@REVISION@])
-m4_define([tsp_version_tag], [git])
+m4_define([tsp_version_tag], [])
 m4_define([tsp_version], [tsp_version_major().tsp_version_minor().tsp_version_micro()ifelse(tsp_version_tag(),[],[], [-ifelse(tsp_version_tag(), [git], [tsp_version_tag()-tsp_version_build()], [tsp_version_tag()])])])
 
 dnl -------------------------------------------------------

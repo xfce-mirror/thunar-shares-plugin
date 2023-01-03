@@ -1,3 +1,18 @@
+0.3.2 (2023-01-03)
+=====
+- Use long argument for net usershare (Issue #16)
+- build: Bump GLib minimum required to 2.26
+- Revert "configure.ac: use AC_PROG_CC_C99"
+- configure.ac: use AC_PROG_CC_C99
+- Create README.md. Update configure.ac.in
+- Add basic GitLab pipeline
+- Translation Updates:
+  Albanian, Basque, Belarusian, Catalan, Chinese (China), Chinese
+  (Taiwan), Eastern Armenian, Eastern Armenian (Russia), Estonian,
+  Finnish, Galician, Greek, Hebrew, Hungarian, Indonesian, Italian,
+  Kabyle, Norwegian Bokmål, Occitan (post 1500), Romanian, Slovak,
+  Spanish, Turkish, Uyghur, Uzbek
+
 0.3.1
 ======
 - Remove unused THUNARX_TYPE_PREFERENCES_PROVIDER, since it may cause
