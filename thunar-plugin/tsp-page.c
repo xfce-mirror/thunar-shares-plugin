@@ -370,8 +370,8 @@ tsp_page_file_changed (ThunarxFileInfo *file,
   if (!result)
   {
     tsp_page_set_error (tsp_page, _("You may need to install Samba, check your "
-                                    "user permissions(usershares group) and re-login."
-                                    "\n<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"));
+                                    "user permissions (usershares group) and re-login."
+                                    "\n<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"));
  
     g_error_free (error);
     
