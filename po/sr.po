@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-06-27 09:33+0000\n"
-"Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
+"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"PO-Revision-Date: 2013-07-03 18:10+0000\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>, 2018\n"
 "Language-Team: Serbian (http://www.transifex.com/xfce/thunar-plugins/language/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -115,47 +115,50 @@ msgid ""
 "first and add a new one"
 msgstr "Не могу да изменим путању постојећег дељења; молим прво уклоните старо дељење а затим додајте ново"
 
-#: ../thunar-plugin/tsp-page.c:151
+#: ../thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Дељење фасцикле</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:161
+#: ../thunar-plugin/tsp-page.c:160
 msgid "Share this folder"
 msgstr "Дели ову фасциклу"
 
-#: ../thunar-plugin/tsp-page.c:169
+#. Share name
+#: ../thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Назив дељења:"
 
+#. Share comments
+#: ../thunar-plugin/tsp-page.c:181
+msgid "Comments:"
+msgstr "Напомене:"
+
 #. Write access
-#: ../thunar-plugin/tsp-page.c:180
+#: ../thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Допусти другима да праве и бришу датотеке у овој фасцикли"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:185
+#: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Одобри приступ госту"
 
-#: ../thunar-plugin/tsp-page.c:193
-msgid "Comments:"
-msgstr "Напомене:"
-
-#: ../thunar-plugin/tsp-page.c:209
+#. Apply button
+#: ../thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "_Примени"
 
-#: ../thunar-plugin/tsp-page.c:298
+#: ../thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Дели"
 
-#: ../thunar-plugin/tsp-page.c:370
+#: ../thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Ви нисте власник фасцикле."
 
-#: ../thunar-plugin/tsp-page.c:378
+#: ../thunar-plugin/tsp-page.c:372
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
-"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Можда ћете морати да инсталирате Самбу, проверите ваша корисничка овлашћења(групу корисничких дељења — „usershares“) и поново се пријавите.\n<b>Више података:</b> <u>http://thunar-shares.googlecode.com/</u>"
+"You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
+"<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr ""
