@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-02-27 14:35+0000\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"PO-Revision-Date: 2013-07-03 18:10+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010,2018\n"
 "Language-Team: Kazakh (http://www.transifex.com/xfce/thunar-plugins/language/kk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -114,47 +114,50 @@ msgid ""
 "first and add a new one"
 msgstr "Бар болып тұрған ортақ буманың атын ауыстыру мүмкін емес; ескі ортақ буманы өшіріп жаңасын қосыңыз"
 
-#: ../thunar-plugin/tsp-page.c:151
+#: ../thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Ортақ бумалар</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:161
+#: ../thunar-plugin/tsp-page.c:160
 msgid "Share this folder"
 msgstr "Бұл буманы ортақ қылу"
 
-#: ../thunar-plugin/tsp-page.c:169
+#. Share name
+#: ../thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Ортақ бума аты:"
 
+#. Share comments
+#: ../thunar-plugin/tsp-page.c:181
+msgid "Comments:"
+msgstr "Түсіндірмелер:"
+
 #. Write access
-#: ../thunar-plugin/tsp-page.c:180
+#: ../thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Басқа пайдаланушыларға осы бумаға жазуға рұқсат ету"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:185
+#: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Қонақтарға рұқсат ету"
 
-#: ../thunar-plugin/tsp-page.c:193
-msgid "Comments:"
-msgstr "Түсіндірмелер:"
-
-#: ../thunar-plugin/tsp-page.c:209
+#. Apply button
+#: ../thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "Іске _асыру"
 
-#: ../thunar-plugin/tsp-page.c:298
+#: ../thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Ортақ бума"
 
-#: ../thunar-plugin/tsp-page.c:370
+#: ../thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Сіз осы буманың иесі емессіз."
 
-#: ../thunar-plugin/tsp-page.c:378
+#: ../thunar-plugin/tsp-page.c:372
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
-"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Сізге Samba орнату, пайдаланушы рұқсаттарын тексеру (usershares тобы) және қайта кіру керек болуы мүмкін.\n<b>Көбірек білу:</b> <u>http://thunar-shares.googlecode.com/</u>"
+"You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
+"<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr ""
