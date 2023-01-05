@@ -5,13 +5,14 @@
 # Translators:
 # 黃柏諺 <s8321414@gmail.com>, 2018
 # Walter Cheuk <wwycheuk@gmail.com>, 2013
+# 黃柏諺 <s8321414@gmail.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-02-17 01:13+0000\n"
-"Last-Translator: 黃柏諺 <s8321414@gmail.com>\n"
+"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"PO-Revision-Date: 2013-07-03 18:10+0000\n"
+"Last-Translator: 黃柏諺 <s8321414@gmail.com>, 2023\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/xfce/thunar-plugins/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -115,47 +116,50 @@ msgid ""
 "first and add a new one"
 msgstr "無法變更既有分享的路徑；請先移除舊的分享，再加入新的"
 
-#: ../thunar-plugin/tsp-page.c:151
+#: ../thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>資料夾分享</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:161
+#: ../thunar-plugin/tsp-page.c:160
 msgid "Share this folder"
 msgstr "分享此資料夾"
 
-#: ../thunar-plugin/tsp-page.c:169
+#. Share name
+#: ../thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "分享名稱："
 
+#. Share comments
+#: ../thunar-plugin/tsp-page.c:181
+msgid "Comments:"
+msgstr "評註："
+
 #. Write access
-#: ../thunar-plugin/tsp-page.c:180
+#: ../thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "允許其他使用者寫入此資料夾"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:185
+#: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "允許訪客存取"
 
-#: ../thunar-plugin/tsp-page.c:193
-msgid "Comments:"
-msgstr "評註："
-
-#: ../thunar-plugin/tsp-page.c:209
+#. Apply button
+#: ../thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "套用(_A)"
 
-#: ../thunar-plugin/tsp-page.c:298
+#: ../thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "分享"
 
-#: ../thunar-plugin/tsp-page.c:370
+#: ../thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "您不是該資料夾的擁有者。"
 
-#: ../thunar-plugin/tsp-page.c:378
+#: ../thunar-plugin/tsp-page.c:372
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
-"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "您可能需要安裝 Samba，請檢查您的使用者許可權設定 (usershares 群組) 並重新登入。\n<b>更多資訊：</b> <u>http://thunar-shares.googlecode.com/</u>"
+"You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
+"<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr "您可能需要安裝 Samba，請檢查您的使用者權限（usershares 群組）並重新登入。\n<b>更多資訊：</b><u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
