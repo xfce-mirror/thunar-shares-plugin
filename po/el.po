@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"POT-Creation-Date: 2023-01-05 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
 "Last-Translator: Stavros Giannouris <stavrosg@hellug.gr>, 2011\n"
 "Language-Team: Greek (http://www.transifex.com/xfce/thunar-plugins/language/el/)\n"
@@ -116,47 +116,50 @@ msgid ""
 "first and add a new one"
 msgstr "Δεν είναι δυνατή η αλλαγή της διαδρομής ενός υπάρχοντος κοινόχρηστου πόρου. Παρακαλώ διαγράψτε πρώτα τον παλιό και δημιουργήστε έναν καινούριο κοινόχρηστο πόρο"
 
-#: ../thunar-plugin/tsp-page.c:151
+#: ../thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Κοινή χρήση φακέλου</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:161
+#: ../thunar-plugin/tsp-page.c:160
 msgid "Share this folder"
 msgstr "Κοινή χρήση αυτού του φακέλου"
 
-#: ../thunar-plugin/tsp-page.c:169
+#. Share name
+#: ../thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Όνομα κοινόχρηστου:"
 
+#. Share comments
+#: ../thunar-plugin/tsp-page.c:181
+msgid "Comments:"
+msgstr "Σχόλια:"
+
 #. Write access
-#: ../thunar-plugin/tsp-page.c:180
+#: ../thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Να επιτρέπεται η εγγραφή σε άλλους χρήστες στο φάκελο"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:185
+#: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Να επιτρέπεται πρόσβαση σε επισκέπτες"
 
-#: ../thunar-plugin/tsp-page.c:193
-msgid "Comments:"
-msgstr "Σχόλια:"
-
-#: ../thunar-plugin/tsp-page.c:209
+#. Apply button
+#: ../thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "_Εφαρμογή"
 
-#: ../thunar-plugin/tsp-page.c:298
+#: ../thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Κοινόχρηστος πόρος"
 
-#: ../thunar-plugin/tsp-page.c:370
+#: ../thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Δεν είστε ο ιδιοκτήτης αυτού του φακέλου."
 
-#: ../thunar-plugin/tsp-page.c:378
+#: ../thunar-plugin/tsp-page.c:372
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
-"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Μπορεί να χρειαστεί να εγκαταστήσετε την Samba, να ελέγξετε τα δικαιώματα χρήστη (ομάδα usershares) και να επανασυνδεθείτε.\n<b>Περισσότερες πληροφορίες:</b> <u>http://thunar-shares.googlecode.com/</u>"
+"You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
+"<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr ""
