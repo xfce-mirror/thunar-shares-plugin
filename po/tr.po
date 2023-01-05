@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-16 06:30+0100\n"
+"POT-Creation-Date: 2023-01-05 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>, 2022\n"
 "Language-Team: Turkish (http://www.transifex.com/xfce/thunar-plugins/language/tr/)\n"
@@ -117,47 +117,50 @@ msgid ""
 "first and add a new one"
 msgstr "Var olan paylaşımın dosya yolu değiştirilemiyor; lütfen eski paylaşımı kaldırıp yeni paylaşım ekleyin"
 
-#: ../thunar-plugin/tsp-page.c:151
+#: ../thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Klasör Paylaşımı</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:161
+#: ../thunar-plugin/tsp-page.c:160
 msgid "Share this folder"
 msgstr "Bu klasörü paylaş"
 
-#: ../thunar-plugin/tsp-page.c:169
+#. Share name
+#: ../thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Paylaşım Adı:"
 
+#. Share comments
+#: ../thunar-plugin/tsp-page.c:181
+msgid "Comments:"
+msgstr "Yorum:"
+
 #. Write access
-#: ../thunar-plugin/tsp-page.c:180
+#: ../thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Diğerlerinin bu klasöre yazmasına izin ver"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:185
+#: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Misafir erişimine izin ver"
 
-#: ../thunar-plugin/tsp-page.c:193
-msgid "Comments:"
-msgstr "Yorum:"
-
-#: ../thunar-plugin/tsp-page.c:209
+#. Apply button
+#: ../thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "_Uygula"
 
-#: ../thunar-plugin/tsp-page.c:298
+#: ../thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Paylaşım"
 
-#: ../thunar-plugin/tsp-page.c:370
+#: ../thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Bu klasörün sahibi değilsiniz."
 
-#: ../thunar-plugin/tsp-page.c:378
+#: ../thunar-plugin/tsp-page.c:372
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
-"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Sambayı kurmanız gerekebilir, lütfen kullanıcı izinlerini gözden geçirip yeniden giriş yapın.\n<b>Ayrıntılı bilgi:</b> <u>http://thunar-shares.googlecode.com/</u>"
+"You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
+"<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr ""
