@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Andreas Eitel <github-aneitel@online.de>, 2023
 # Simon Schneider <simon@schneiderimtal.de>, 2009
 # Tobias Bannert <tobannert@gmail.com>, 2014
 # Vinzenz Vietzke <vinz@vinzv.de>, 2018
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Vinzenz Vietzke <vinz@vinzv.de>, 2018\n"
+"Last-Translator: Andreas Eitel <github-aneitel@online.de>, 2023\n"
 "Language-Team: German (http://www.transifex.com/xfce/thunar-plugins/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -162,4 +163,4 @@ msgstr "Sie sind nicht der Besitzer des Ordners."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Möglicherweise müssen Sie Samba installieren, Ihre Benutzerrechte überprüfen (Gruppe usershares) und sich neu anmelden.\n<b>Weitere Informationen:</b><u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
