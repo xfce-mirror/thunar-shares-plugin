@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# heskjestad <cato@heskjestad.xyz>, 2023
 # heskjestad <cato@heskjestad.xyz>, 2019
 # Terje Uriansrud <terje@uriansrud.net>, 2009
 msgid ""
@@ -11,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: heskjestad <cato@heskjestad.xyz>, 2019\n"
+"Last-Translator: heskjestad <cato@heskjestad.xyz>, 2023\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/xfce/thunar-plugins/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,4 +162,4 @@ msgstr "Du eier ikke mappen."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Du må kanskje installere Samba. Kontroller dine brukerrettigheter (gruppen «usershares») og logg inn på nytt.\n<b>Mer info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
