@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Elishai Eliyahu <elishai@mailfence.com>, 2016,2018
+# Elishai Eliyahu <elishai@mailfence.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Elishai Eliyahu <elishai@mailfence.com>, 2016,2018\n"
+"Last-Translator: Elishai Eliyahu <elishai@mailfence.com>, 2023\n"
 "Language-Team: Hebrew (http://www.transifex.com/xfce/thunar-plugins/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -160,4 +161,4 @@ msgstr "אתה לא הבעלים של התיקייה."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "יתכן ותצטרך להתקין סמבה, בדוק הרשאות משתמש שלך (קבוצת usershares) והיכנס מחדש.\n<b>מידע נוסף:</b><u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
