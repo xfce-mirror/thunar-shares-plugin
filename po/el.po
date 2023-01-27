@@ -138,17 +138,17 @@ msgstr "Σχόλια:"
 #. Write access
 #: ../thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
-msgstr "Να επιτρέπεται η εγγραφή σε άλλους χρήστες στο φάκελο"
+msgstr "Να επιτρέπεται σε άλλους χρήστες η εγγραφή στο φάκελο"
 
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
-msgstr "Να επιτρέπεται πρόσβαση σε επισκέπτες"
+msgstr "Να επιτρέπεται σε επισκέπτη η πρόσβαση"
 
 #. Apply button
 #: ../thunar-plugin/tsp-page.c:201
 msgid "_Apply"
-msgstr "_Εφαρμογή"
+msgstr "Ε_φαρμογή"
 
 #: ../thunar-plugin/tsp-page.c:292
 msgid "Share"
@@ -162,4 +162,4 @@ msgstr "Δεν είστε ο ιδιοκτήτης αυτού του φακέλο
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Μπορεί να χρειαστεί να εγκαταστήσετε την Samba, ελέγξετε τα δικαιώματα του χρήστη (ομάδα usershares) και επανασυνδεθείτε.\n<b>Περισσότερες πληροφορίες:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
