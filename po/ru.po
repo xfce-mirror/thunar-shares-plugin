@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Andrei Stepanov, 2023
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008
 # Igor <f2404@yandex.ru>, 2018
 # Lowrider <pams@imail.ru>, 2015
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Igor <f2404@yandex.ru>, 2018\n"
+"Last-Translator: Andrei Stepanov, 2023\n"
 "Language-Team: Russian (http://www.transifex.com/xfce/thunar-plugins/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -162,4 +163,4 @@ msgstr "Вы не являетесь владельцем этой папки."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Вам может потребоваться установить Samba, проверить разрешения (usershares group) и заново войти в систему.\n<b>Подробности:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
