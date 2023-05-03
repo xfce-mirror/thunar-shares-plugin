@@ -4,15 +4,15 @@
 # 
 # Translators:
 # 1763f4a4329a2376c933c5e919a36cbc_341ca53 <1f851310383599d03339229d772e1290_119292>, 2018
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2012-2014
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2012-2014,2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: 1763f4a4329a2376c933c5e919a36cbc_341ca53 <1f851310383599d03339229d772e1290_119292>, 2018\n"
-"Language-Team: Korean (http://www.transifex.com/xfce/thunar-plugins/language/ko/)\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>, 2012-2014,2023\n"
+"Language-Team: Korean (http://app.transifex.com/xfce/thunar-plugins/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -161,4 +161,4 @@ msgstr "이 폴더의 소유자가 아닙니다."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "삼바를 설치해야 합니다. 사용자 권한을 확인(사용자 권한 그룹)하시고 다시 로그인하십시오.\n<b>추가 정보:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
