@@ -4,15 +4,15 @@
 # 
 # Translators:
 # scootergrisen, 2017
-# scootergrisen, 2017-2019
+# scootergrisen, 2017-2019,2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"POT-Creation-Date: 2023-05-29 11:54+0200\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: scootergrisen, 2017-2019\n"
-"Language-Team: Danish (http://www.transifex.com/xfce/thunar-plugins/language/da/)\n"
+"Last-Translator: scootergrisen, 2017-2019,2023\n"
+"Language-Team: Danish (http://app.transifex.com/xfce/thunar-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -161,4 +161,4 @@ msgstr "Du er ikke ejer af mappen."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Det kan være nødvendigt at installere Samba. Tjek dine tilladelser (usershares-gruppe) og log ind igen.\n<b>Mere information:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
