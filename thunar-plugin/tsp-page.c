@@ -143,7 +143,7 @@ tsp_page_init (TspPage *page)
   gtk_box_pack_start (GTK_BOX (vbox1), hbox1, FALSE, TRUE, 0);
 
   widget = gtk_image_new ();
-  gtk_image_set_from_icon_name (GTK_IMAGE (widget), "gnome-fs-share", GTK_ICON_SIZE_DIALOG);
+  gtk_image_set_from_icon_name (GTK_IMAGE (widget), "folder-publicshare", GTK_ICON_SIZE_DIALOG);
   gtk_widget_set_halign (widget, GTK_ALIGN_START);
   gtk_box_pack_start (GTK_BOX (hbox1), widget, FALSE, FALSE, 0);
 
