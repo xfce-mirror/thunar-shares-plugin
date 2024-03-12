@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010,2018
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010,2018,2024
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"POT-Creation-Date: 2023-05-30 00:46+0200\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010,2018\n"
-"Language-Team: Kazakh (http://www.transifex.com/xfce/thunar-plugins/language/kk/)\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010,2018,2024\n"
+"Language-Team: Kazakh (http://app.transifex.com/xfce/thunar-plugins/language/kk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -160,4 +160,4 @@ msgstr "Сіз осы буманың иесі емессіз."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Сізге Samba орнату, пайдаланушы рұқсаттарын тексеру (usershares тобы) және қайта кіру керек болуы мүмкін.\n<b>Көбірек білу:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
