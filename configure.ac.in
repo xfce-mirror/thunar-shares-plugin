@@ -26,6 +26,7 @@ AC_INIT([thunar-shares-plugin], [tsp_version], [thunar-dev@xfce.org])
 AC_CONFIG_SRCDIR([thunar-plugin/thunar-shares-plugin.c])
 AC_PREREQ(2.59)
 AC_CANONICAL_TARGET()
+AC_CONFIG_MACRO_DIRS([m4])
 
 dnl -------------------------------------------------------
 dnl Init automake
@@ -35,16 +36,11 @@ AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
-AC_ISC_POSIX
-AC_HEADER_STDC
-
 dnl -------------------------------------------------------
 dnl Programs
 dnl -------------------------------------------------------
 AC_PROG_CC
-AC_PROG_LD
 AC_PROG_INSTALL
-IT_PROG_INTLTOOL([0.35.0])
 
 dnl -------------------------------------------------------
 dnl Initialize libtool
@@ -55,6 +51,7 @@ LT_INIT([disable-static])
 dnl -------------------------------------------------------
 dnl Check headers
 dnl -------------------------------------------------------
+AC_CHECK_INCLUDES_DEFAULT
 AC_CHECK_HEADERS([string.h sys/types.h sys/wait.h time.h sys/stat.h unistd.h]) 
 
 dnl -------------------------------------------------------
@@ -67,7 +64,11 @@ XDT_CHECK_PACKAGE([THUNARX], [thunarx-3], [1.0.1])
 dnl -------------------------------------------------------
 dnl Languages
 dnl -------------------------------------------------------
-XDT_I18N([@LINGUAS@])
+GETTEXT_PACKAGE="$PACKAGE"
+AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [Name of default gettext domain])
+AC_SUBST([GETTEXT_PACKAGE])
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.19.8])
 
 dnl -------------------------------------------------------
 dnl Debugging support
@@ -79,12 +80,13 @@ dnl Check for linker optimizations
 dnl -------------------------------------------------------
 XDT_FEATURE_LINKER_OPTS()
 
-AC_OUTPUT([
+AC_CONFIG_FILES([
 	Makefile
 	po/Makefile.in
 	libshares/Makefile
 	thunar-plugin/Makefile
 ])
+AC_OUTPUT()
 
 echo
 echo "Prefix:        $prefix"

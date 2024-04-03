@@ -37,3 +37,15 @@ missing
 mkinstalldirs
 Makefile.in.in
 POTFILES
+ABOUT-NLS
+config.rpath
+m4/
+po/Makevars.template
+po/Rules-quot
+po/boldquot.sed
+po/en@boldquot.header
+po/en@quot.header
+po/insert-header.sin
+po/quot.sed
+po/remove-potcdate.sin
+po/remove-potcdate.sed
