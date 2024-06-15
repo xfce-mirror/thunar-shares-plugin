@@ -14,7 +14,6 @@ stamp-*
 *.diff
 *.log
 *.patch
-ChangeLog
 INSTALL
 aclocal.m4
 autom4te.cache
@@ -26,11 +25,7 @@ config.log
 config.status
 config.sub
 configure
-configure.ac
 depcomp
-intltool-extract.in
-intltool-merge.in
-intltool-update.in
 install-sh
 libtool
 ltmain.sh

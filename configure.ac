@@ -6,25 +6,16 @@ dnl
 dnl -------------------------------------------------------
 dnl Version
 dnl -------------------------------------------------------
-m4_define([tsp_version_major], [0])
-m4_define([tsp_version_minor], [3])
-m4_define([tsp_version_micro], [2])
-m4_define([tsp_version_build], [@REVISION@])
-m4_define([tsp_version_tag], [git])
-m4_define([tsp_version], [tsp_version_major().tsp_version_minor().tsp_version_micro()ifelse(tsp_version_tag(),[],[], [-ifelse(tsp_version_tag(), [git], [tsp_version_tag()-tsp_version_build()], [tsp_version_tag()])])])
-
-dnl -------------------------------------------------------
-dnl Debugging support for GIT
-dnl -------------------------------------------------------
-m4_define([tsp_debug_default], [ifelse(tsp_version_tag(), [git], [yes], [minimum])])
+XDT_VERSION_INIT([0.3.2], [git])
 
 dnl -------------------------------------------------------
 dnl Init autoconf
 dnl -------------------------------------------------------
 AC_COPYRIGHT([Copyright (c) 2009-2010 Daniel Morales <daniel@daniel.com.uy>.])
-AC_INIT([thunar-shares-plugin], [tsp_version], [thunar-dev@xfce.org])
+AC_INIT([thunar-shares-plugin], [xdt_version], [https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin])
+AC_REVISION([xdt_version_build])
 AC_CONFIG_SRCDIR([thunar-plugin/thunar-shares-plugin.c])
-AC_PREREQ(2.59)
+AC_PREREQ(2.69)
 AC_CANONICAL_TARGET()
 AC_CONFIG_MACRO_DIRS([m4])
 
@@ -76,7 +67,7 @@ AC_SEARCH_LIBS([bind_textdomain_codeset], [intl],
 dnl -------------------------------------------------------
 dnl Debugging support
 dnl -------------------------------------------------------
-XDT_FEATURE_DEBUG([tsp_debug_default])
+XDT_FEATURE_DEBUG([xdt_debug_default])
 
 dnl -------------------------------------------------------
 dnl Check for linker optimizations
