@@ -1,5 +1,5 @@
 # Without this, error: gettext infrastructure mismatch
-ACLOCAL_AMFLAGS = -I m4
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 SUBDIRS = libshares thunar-plugin po
 
