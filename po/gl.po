@@ -4,16 +4,17 @@
 # 
 # Translators:
 # Daniel Muñiz Fontoira <dani@damufo.eu>, 2018-2019
+# Daniel Muñiz Fontoira <dani@damufo.eu>, 2024
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2006,2008-2009
 # Xosé, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"POT-Creation-Date: 2023-05-30 00:46+0200\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Daniel Muñiz Fontoira <dani@damufo.eu>, 2018-2019\n"
-"Language-Team: Galician (http://www.transifex.com/xfce/thunar-plugins/language/gl/)\n"
+"Last-Translator: Daniel Muñiz Fontoira <dani@damufo.eu>, 2024\n"
+"Language-Team: Galician (http://app.transifex.com/xfce/thunar-plugins/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -162,4 +163,4 @@ msgstr "Non é o propietario do cartafol."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Quizais precise instalar Samba, comprobe os seus permisos de usuario (grupo de usuarios compartidos) e volva entrar na sesión.\n<b>Máis información:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
