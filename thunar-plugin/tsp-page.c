@@ -530,6 +530,7 @@ tsp_page_set_error (TspPage    *tsp_page,
   gchar *errormsg = g_strdup_printf ("<span color='red'>%s</span>", msg);
 
   gtk_label_set_markup (GTK_LABEL (tsp_page->label_status), errormsg);
+  g_free (errormsg);
 
   gtk_widget_set_sensitive (GTK_WIDGET (tsp_page), FALSE);
 }
