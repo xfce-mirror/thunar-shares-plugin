@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# U A <u.almasov@gmail.com>, 2014
+# Umidjon Almasov <umidjon@almasov.uz>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-16 06:30+0100\n"
-"PO-Revision-Date: 2018-02-16 05:30+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
-"Language-Team: Uzbek (http://www.transifex.com/xfce/thunar-plugins/language/uz/)\n"
+"POT-Creation-Date: 2023-05-30 00:46+0200\n"
+"PO-Revision-Date: 2013-07-03 18:10+0000\n"
+"Last-Translator: Umidjon Almasov <umidjon@almasov.uz>, 2014\n"
+"Language-Team: Uzbek (http://app.transifex.com/xfce/thunar-plugins/language/uz/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -114,47 +114,50 @@ msgid ""
 "first and add a new one"
 msgstr ""
 
-#: ../thunar-plugin/tsp-page.c:151
+#: ../thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Jild almashish</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:161
+#: ../thunar-plugin/tsp-page.c:160
 msgid "Share this folder"
 msgstr "Ushbu jild bilan almashish"
 
-#: ../thunar-plugin/tsp-page.c:169
+#. Share name
+#: ../thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Almashish nomi:"
 
+#. Share comments
+#: ../thunar-plugin/tsp-page.c:181
+msgid "Comments:"
+msgstr "Sharhlar:"
+
 #. Write access
-#: ../thunar-plugin/tsp-page.c:180
+#: ../thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Boshqa foydalanuvchilarga ushbu jildga yozishga ruxsat berish"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:185
+#: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Mehmon foydalanishiga ruxsat berish"
 
-#: ../thunar-plugin/tsp-page.c:193
-msgid "Comments:"
-msgstr "Sharhlar:"
-
-#: ../thunar-plugin/tsp-page.c:209
+#. Apply button
+#: ../thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr ""
 
-#: ../thunar-plugin/tsp-page.c:298
+#: ../thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Almashish"
 
-#: ../thunar-plugin/tsp-page.c:370
+#: ../thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Siz ushbu jildning egasi emassiz."
 
-#: ../thunar-plugin/tsp-page.c:378
+#: ../thunar-plugin/tsp-page.c:372
 msgid ""
-"You may need to install Samba, check your user permissions(usershares group) and re-login.\n"
-"<b>More info:</b> <u>http://thunar-shares.googlecode.com/</u>"
-msgstr "Siz ehtimol Samba o'rnatishingiz kerak, foydalanuvchi huquqlaringizni tekshiring (usershares guruhi) va qayta tizimga kiring.\n<b>Qo'shimcha ma'lumot:</b> <u>http://thunar-shares.googlecode.com/</u>"
+"You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
+"<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr ""
