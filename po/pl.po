@@ -77,7 +77,7 @@ msgstr "Polecenie „net usershare” zwróciło błąd %d"
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "wartość wyjściowa „net usershare” nie jest w prawidłowym kodowaniu UTF-8"
+msgstr "Wartość wyjściowa „net usershare” nie jest w prawidłowym kodowaniu UTF-8"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -87,22 +87,22 @@ msgstr "Błąd"
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "Testparm Samby zwrócił sygnał %d"
+msgstr "Program testparm Samby zwrócił sygnał %d"
 
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "Testparm Samby napotkało błąd z nieznanego powodu"
+msgstr "Program testparm Samby napotkał błąd z nieznanego powodu"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Testparm Samby zwróciło błąd %d: %s"
+msgstr "Program testparm Samby zwrócił błąd %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Testparm Samby zwróciło błąd %d"
+msgstr "Program testparm Samby zwrócił błąd %d"
 
 #: ../libshares/shares.c:784
 #, c-format
