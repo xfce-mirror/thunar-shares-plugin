@@ -5,16 +5,17 @@
 # Translators:
 # Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2015
 # beriain, 2021
+# Eder Etxebarria Rojo, 2024
 # Piarres Beobide <pi@beobide.net>, 2008-2009
 # Piarres Beobide <pi+debian@beobide.net>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"POT-Creation-Date: 2023-05-30 00:46+0200\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: beriain, 2021\n"
-"Language-Team: Basque (http://www.transifex.com/xfce/thunar-plugins/language/eu/)\n"
+"Last-Translator: Eder Etxebarria Rojo, 2024\n"
+"Language-Team: Basque (http://app.transifex.com/xfce/thunar-plugins/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -163,4 +164,4 @@ msgstr "Ez zara karpetaren jabea."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr ""
+msgstr "Seguraski Samba instalatu, zure erabiltzaile baimenak (erabiltzaileen partekatzeak taldea) berifikatu eta saioa berriro hasi beharko duzu.\n<b>Informazio gehiago:</b><u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
