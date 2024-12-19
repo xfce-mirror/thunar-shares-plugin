@@ -4,15 +4,16 @@
 # 
 # Translators:
 # Marius Ghita, 2022-2023
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2024
 # Yupy <yupy_17y@yahoo.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"POT-Creation-Date: 2023-05-30 00:46+0200\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Marius Ghita, 2022-2023\n"
-"Language-Team: Romanian (http://www.transifex.com/xfce/thunar-plugins/language/ro/)\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2024\n"
+"Language-Team: Romanian (http://app.transifex.com/xfce/thunar-plugins/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,36 +48,36 @@ msgstr "Nu se poate modifica partajarea:"
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
-msgstr "Thunar trebuie să adauge niște permisiuni în dosarul dvs. pentru a le partaja. Ești de acord?"
+msgstr "Thunar trebuie să adauge anumite permisiuni dosarului dvs. pentru a-l partaja. Sunteți de acord?"
 
 #: ../libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
-msgstr "Eroare la schimbarea permisiunilor folderului."
+msgstr "Eroare la schimbarea permisiunilor dosarului."
 
 #: ../libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
-msgstr "%s%s%s întors cu semnalul %d "
+msgstr "%s %s %s a returnat semnalul %d"
 
 #: ../libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
-msgstr "%s%s%s a eșuat din motive necunoscute "
+msgstr "%s%s%s a eșuat din motive necunoscute"
 
 #: ../libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare' a returnat eroare %d: %s"
+msgstr "„net usershare” a returnat eroarea %d: %s"
 
 #: ../libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare' a a returnat eroare %d"
+msgstr "„net usershare” a returnat eroarea %d"
 
 #: ../libshares/shares.c:231
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "ieșirea din 'net usershare' nu este în codificare UTF-8 validă"
+msgstr "ieșirea din „net usershare” nu are o codificare UTF-8 validă"
 
 #: ../libshares/shares.c:490 ../libshares/shares.c:702
 #, c-format
@@ -86,38 +87,38 @@ msgstr "A eșuat"
 #: ../libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "Testparm-ul lui Samba se întoarse cu semnal %d"
+msgstr "Comanda «testparm» a Samba a returnat semnalul %d"
 
 #: ../libshares/shares.c:598
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "Testparm-ul lui Samba a eșuat din motive necunoscute"
+msgstr "Comanda «testparm» a Samba a eșuat dintr-un motiv necunoscut"
 
 #: ../libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "Testparm Samba a returnat eroare %d: %s"
+msgstr "Comanda «testparm» a Samba a returnat eroarea %d: %s"
 
 #: ../libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "Testparm Samba a returnat eroare %d"
+msgstr "Comanda «testparm» a Samba a returnat eroarea %d"
 
 #: ../libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "Nu se poate elimina partajarea pentru calea %s: această cale nu este partajată"
+msgstr "Nu se poate elimina partajarea pentru ruta %s: această rută nu este partajată"
 
 #: ../libshares/shares.c:837
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
-msgstr "Nu se poate schimba calea unei partajări existente; eliminați mai întâi veche partajare și adăugați una nouă"
+msgstr "Nu se poate modifica ruta unei partajări existente; eliminați mai întâi partajarea veche și apoi adăugați una nouă"
 
 #: ../thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
-msgstr "<b>Partajare Dosar</b>"
+msgstr "<b>Partajare dosar</b>"
 
 #. Share check button
 #: ../thunar-plugin/tsp-page.c:160
@@ -127,7 +128,7 @@ msgstr "Partajează acest dosar"
 #. Share name
 #: ../thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
-msgstr "Nume Partajare:"
+msgstr "Numele partajării:"
 
 #. Share comments
 #: ../thunar-plugin/tsp-page.c:181
@@ -142,7 +143,7 @@ msgstr "Permite altor utilizatori să scrie în acest dosar"
 #. Guest access
 #: ../thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
-msgstr "Permite access Guest"
+msgstr "Permite accesul invitaților"
 
 #. Apply button
 #: ../thunar-plugin/tsp-page.c:201
@@ -161,4 +162,4 @@ msgstr "Nu sunteți proprietarul dosarului."
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
-msgstr "Este posibil să fie nevoie să instalați Samba, verificați permisiunile utilizatorilor (usershares group) și să vă re-conectați.\n<b>Mai multe informatii:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr "Este posibil să fie nevoie să instalați Samba, verificați permisiunile utilizatorilor (grupului „usershares”) și să vă reautentificați.\n<b>Mai multe informații la:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
