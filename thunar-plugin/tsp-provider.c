@@ -22,6 +22,8 @@
 #include <config.h>
 #endif
 
+#include <glib/gi18n-lib.h>
+
 #include <thunarx/thunarx.h>
 
 #include <libshares/libshares-util.h>
@@ -34,6 +36,10 @@ static void     tsp_provider_finalize            (GObject                       
 static void     tsp_provider_page_provider_init  (ThunarxPropertyPageProviderIface *iface);
 static GList   *tsp_provider_get_pages           (ThunarxPropertyPageProvider      *provider,
                                                   GList                            *files);
+static void     tsp_provider_menu_provider_init  (ThunarxMenuProviderIface         *iface);
+static GList   *tsp_provider_get_menu            (ThunarxMenuProvider      *provider,
+                                                  GtkWidget                *window,
+                                                  GList                    *files);
 
 struct _TspProviderClass
 {
@@ -49,7 +55,9 @@ THUNARX_DEFINE_TYPE_WITH_CODE (TspProvider,
                                tsp_provider,
                                G_TYPE_OBJECT,
                                THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_PROPERTY_PAGE_PROVIDER,
-                                                            tsp_provider_page_provider_init));
+                                                            tsp_provider_page_provider_init)
+			                         THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_MENU_PROVIDER,
+                                                            tsp_provider_menu_provider_init));/* add a menu provider */
 
 static void
 tsp_provider_class_init (TspProviderClass *klass)
@@ -65,6 +73,14 @@ tsp_provider_init (TspProvider *tsp_provider)
 {
   /* Bleh..! */
 }
+
+static void
+tsp_provider_menu_provider_init (ThunarxMenuProviderIface *iface)
+{
+  /* add right click menu contribution */
+  iface->get_file_menu_items = tsp_provider_get_menu;
+}
+
 
 static void
 tsp_provider_finalize (GObject *object)
@@ -89,4 +105,73 @@ tsp_provider_get_pages (ThunarxPropertyPageProvider *property_page_provider,
   }
 
   return g_list_append (NULL, (gpointer)tsp_page_new (files->data));
+}
+
+/* show share property page callback function */
+static void
+share_this_folder_callback (GtkAction *action, gpointer user_data)
+{
+  GtkWidget * window;
+  GtkWidget * tsp_page;
+  
+  tsp_page  = tsp_page_new (user_data);
+  window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+
+  gtk_container_add (GTK_CONTAINER (window), tsp_page);  
+  gtk_widget_show (tsp_page);
+  gtk_widget_show (window);
+}
+
+static GList*
+tsp_provider_get_menu (ThunarxMenuProvider *menu_provider,
+                       GtkWidget           *window,
+                       GList               *files)
+{
+  ThunarxMenuItem *item;
+  ShareInfo       *share_info;
+  GError          *error = NULL;
+  gchar           *uri, *file_local;
+  ThunarxFileInfo *file = files->data;
+
+  /* only show for single folders */
+  if (g_list_length (files) != 1)
+    return NULL;
+
+  if (!libshares_is_shareable (file))
+    return NULL;
+
+  /* Only sharable when you are the owner  */
+  if (!libshares_check_owner (file))
+    return NULL;
+
+  /* Load share info */
+  uri = thunarx_file_info_get_uri (file);
+  file_local = g_filename_from_uri (uri, NULL, NULL);
+
+  if (!shares_get_share_info_for_path (file_local, &share_info, &error))
+  {
+    g_error_free (error);
+    return NULL;
+  }
+
+  /* Free some memory */
+  g_free (uri);
+  g_free (file_local);
+
+  /* This folder is already shared */
+  if (share_info)
+  {
+    shares_free_share_info (share_info);
+    return NULL;
+  }
+
+  item = thunarx_menu_item_new ("TspProvider::share",
+                            _("Folder _Sharing"),
+                            _("Share this folder"),
+                            "folder-publicshare");
+
+  /* set callback function */
+  g_signal_connect (G_OBJECT (item), "activate", G_CALLBACK (share_this_folder_callback), file);
+
+  return g_list_prepend (NULL, item);
 }
