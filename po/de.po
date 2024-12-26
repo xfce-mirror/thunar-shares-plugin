@@ -1,166 +1,166 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the thunar-plugins.thunar-shares-plugin package.
 # 
 # Translators:
-# Andreas Eitel <github-aneitel@online.de>, 2023
+# Andreas Eitel <github-aneitel@online.de>, 2023-2024
 # Simon Schneider <simon@schneiderimtal.de>, 2009
 # Tobias Bannert <tobannert@gmail.com>, 2014
 # Vinzenz Vietzke <vinz@vinzv.de>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-12-26 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Andreas Eitel <github-aneitel@online.de>, 2023\n"
-"Language-Team: German (http://www.transifex.com/xfce/thunar-plugins/language/de/)\n"
+"Last-Translator: Andreas Eitel <github-aneitel@online.de>, 2023-2024\n"
+"Language-Team: German (http://app.transifex.com/xfce/thunar-plugins/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libshares/libshares-util.c:166
+#: libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Bitte einen Namen eingeben."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:174
+#: libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "Der Freigabename ist zu lang. Einige ältere Programme könnten Probleme haben, auf die Freigabe zuzugreifen. Möchten Sie trotzdem fortfahren?"
 
-#: ../libshares/libshares-util.c:187
+#: libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Fehler beim Abrufen der Freigabeinformationen: %s"
 
-#: ../libshares/libshares-util.c:197
+#: libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "Es gibt bereits eine andere Freigabe dieses Namens."
 
-#: ../libshares/libshares-util.c:251
+#: libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "Freigabe kann nicht bearbeitet werden:"
 
-#: ../libshares/libshares-util.c:353
+#: libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "Thunar muss einige Rechte dieses Ordners ändern, um ihn freizugeben. Möchten Sie das?"
 
-#: ../libshares/libshares-util.c:392
+#: libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Fehler beim Ändern der Ordnerrechte."
 
-#: ../libshares/shares.c:165
+#: libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "%s %s %s gab das Signal %d zurück."
 
-#: ../libshares/shares.c:174
+#: libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "%s %s %s schlug aus unbekanntem Grund fehl."
 
-#: ../libshares/shares.c:195
+#: libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "Der Aufruf von »net usershare« erzeugte Fehler %d: %s"
 
-#: ../libshares/shares.c:197
+#: libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "Der Aufruf von »net usershare« erzeugte Fehler %d."
 
-#: ../libshares/shares.c:231
-#, c-format
+#: libshares/shares.c:231
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "Die Ausgabe von »net usershare« ist nicht nach UTF-8 kodiert."
 
-#: ../libshares/shares.c:490 ../libshares/shares.c:702
-#, c-format
+#: libshares/shares.c:490 libshares/shares.c:702
 msgid "Failed"
 msgstr "Fehlgeschlagen"
 
-#: ../libshares/shares.c:592
+#: libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr "Die Sambafunktion »testparm« erzeugte Signalnummer %d."
 
-#: ../libshares/shares.c:598
-#, c-format
+#: libshares/shares.c:598
 msgid "Samba's testparm failed for an unknown reason"
 msgstr "Die Sambafunktion »testparm« schlug aus unbekanntem Grund fehl."
 
-#: ../libshares/shares.c:613
+#: libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr "Die Sambafunktion »testparm« erzeugte Fehler %d: %s"
 
-#: ../libshares/shares.c:615
+#: libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr "Die Sambafunktion »testparm« erzeugte Fehler %d."
 
-#: ../libshares/shares.c:784
+#: libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
 msgstr "Die Freigabe für »%s« kann nicht entfernt werden: Dieser Pfad ist nicht freigegeben."
 
-#: ../libshares/shares.c:837
-#, c-format
+#: libshares/shares.c:837
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
 msgstr "Der Dateipfad einer Freigabe kann nicht geändert werden. Bitte entfernen Sie zuerst die alte Freigabe und erzeugen Sie eine neue."
 
-#: ../thunar-plugin/tsp-page.c:150
+#: thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Ordnerfreigabe</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:160
+#: thunar-plugin/tsp-page.c:160 thunar-plugin/tsp-provider.c:170
 msgid "Share this folder"
 msgstr "Diesen Ordner freigeben"
 
 #. Share name
-#: ../thunar-plugin/tsp-page.c:171
+#: thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Freigabename:"
 
 #. Share comments
-#: ../thunar-plugin/tsp-page.c:181
+#: thunar-plugin/tsp-page.c:181
 msgid "Comments:"
 msgstr "Kommentar:"
 
 #. Write access
-#: ../thunar-plugin/tsp-page.c:190
+#: thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Andere Benutzer dürfen in diesem Ordner schreiben."
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:196
+#: thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Gastzugang erlauben"
 
 #. Apply button
-#: ../thunar-plugin/tsp-page.c:201
+#: thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "_Anwenden"
 
-#: ../thunar-plugin/tsp-page.c:292
+#: thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Freigabe"
 
-#: ../thunar-plugin/tsp-page.c:364
+#: thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Sie sind nicht der Besitzer des Ordners."
 
-#: ../thunar-plugin/tsp-page.c:372
+#: thunar-plugin/tsp-page.c:372
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
 msgstr "Möglicherweise müssen Sie Samba installieren, Ihre Benutzerrechte überprüfen (Gruppe usershares) und sich neu anmelden.\n<b>Weitere Informationen:</b><u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+
+#: thunar-plugin/tsp-provider.c:169
+msgid "Folder _Sharing"
+msgstr "Ordner_freigabe"
