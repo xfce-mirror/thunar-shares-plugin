@@ -47,7 +47,7 @@ msgstr "S’mund të ndryshohet pjesa:"
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
-msgstr "Thunar-i lyp të shtojë disa leje mbi dosjen tuaj që të mund ta ndani me të tjerët. Pajtoheni me këtë?"
+msgstr "Që të mund ta ndani me të tjerët, Thunar-i lyp të shtojë disa leje mbi dosjen tuaj. Pajtoheni me këtë?"
 
 #: libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
@@ -66,16 +66,16 @@ msgstr "%s %s %s dështoi për një arsye të panjohur"
 #: libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
-msgstr "'net usershare' u përgjigj me gabimin %d: %s"
+msgstr "“net usershare” u përgjigj me gabimin %d: %s"
 
 #: libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
-msgstr "'net usershare' u përgjigj me gabimin %d"
+msgstr "“net usershare” u përgjigj me gabimin %d"
 
 #: libshares/shares.c:231
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
-msgstr "përfundimi i dhënë nga 'net usershare' s’është në kodim të vlefshëm UTF-8"
+msgstr "përfundimi i dhënë nga “net usershare” s’është në kodim të vlefshëm UTF-8"
 
 #: libshares/shares.c:490 libshares/shares.c:702
 msgid "Failed"
@@ -84,26 +84,26 @@ msgstr "Dështoi"
 #: libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
-msgstr "Samba's testparm u përgjig me sinjalin %d"
+msgstr "Testparm i Samba-s u përgjig me sinjalin %d"
 
 #: libshares/shares.c:598
 msgid "Samba's testparm failed for an unknown reason"
-msgstr "testparm-i i Samba-s dështoi për një arsye të panjohur"
+msgstr "Testparm-i i Samba-s dështoi për një arsye të panjohur"
 
 #: libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
-msgstr "testparm-i i Samba-s u përgjigj me gabimin %d: %s"
+msgstr "Testparm-i i Samba-s u përgjigj me gabimin %d: %s"
 
 #: libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
-msgstr "testparm-i i Samba-s u përgjigj me gabimin %d"
+msgstr "Testparm-i i Samba-s u përgjigj me gabimin %d"
 
 #: libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
-msgstr "S’hiqet dot pjesa për shtegun %s: ai shteg nuk ndahet me dikë"
+msgstr "S’hiqet dot pjesa për shtegun %s: ai shteg s’ndahet me dikë"
 
 #: libshares/shares.c:837
 msgid ""
