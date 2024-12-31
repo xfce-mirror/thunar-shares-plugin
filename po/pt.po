@@ -135,7 +135,7 @@ msgstr "Comentários:"
 #. Write access
 #: thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
-msgstr "Permitir que outros utilizadores escrevam nesta pasta"
+msgstr "Permitir que outros utilizadores gravem nesta pasta"
 
 #. Guest access
 #: thunar-plugin/tsp-page.c:196
