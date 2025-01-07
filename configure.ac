@@ -51,6 +51,7 @@ dnl -------------------------------------------------------
 XDT_CHECK_PACKAGE([GTK], [gtk+-3.0], [3.22.0])
 XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.26.0])
 XDT_CHECK_PACKAGE([THUNARX], [thunarx-3], [1.0.1])
+XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.12.0])
 
 dnl -------------------------------------------------------
 dnl Languages

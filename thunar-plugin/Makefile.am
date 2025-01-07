@@ -18,7 +18,8 @@ thunar_shares_plugin_la_CFLAGS =				\
 	$(PLATFORM_CFLAGS)					\
 	$(GTK_CFLAGS)						\
 	$(GLIB_CFLAGS)						\
-	$(THUNARX_CFLAGS)
+	$(THUNARX_CFLAGS)					\
+	$(XFCONF_CFLAGS)
 
 thunar_shares_plugin_la_LDFLAGS =				\
 	-avoid-version						\
@@ -27,6 +28,7 @@ thunar_shares_plugin_la_LDFLAGS =				\
 	$(GTK_LIBS)						\
 	$(GLIB_LIBS)						\
 	$(THUNARX_LIBS)						\
+	$(XFCONF_LIBS)						\
 	$(PLATFORM_LDFLAGS)
 
 thunar_shares_plugin_la_LIBADD=					\

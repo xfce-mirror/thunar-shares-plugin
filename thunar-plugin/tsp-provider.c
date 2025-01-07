@@ -30,6 +30,9 @@
 
 #include "tsp-provider.h"
 #include "tsp-page.h"
+#include "xfconf/xfconf.h"
+
+#define THUNAR_SHARES_PLUGIN_PROP_SHOW_MENU_CONTRIBUTION "/show-menu-contribution"
 
 static void     tsp_provider_finalize            (GObject                          *object);
 
@@ -71,7 +74,14 @@ tsp_provider_class_init (TspProviderClass *klass)
 static void
 tsp_provider_init (TspProvider *tsp_provider)
 {
-  /* Bleh..! */
+  GError *error = NULL;
+
+  /* initialize xfconf */
+  if (!xfconf_init (&error))
+  {
+      g_warning (PACKAGE_NAME ": Failed to initialize Xfconf: %s", error->message);
+      g_clear_error (&error);
+  }
 }
 
 static void
@@ -132,9 +142,20 @@ tsp_provider_get_menu (ThunarxMenuProvider *menu_provider,
   GError          *error = NULL;
   gchar           *uri, *file_local;
   ThunarxFileInfo *file = files->data;
+  XfconfChannel   *channel;
 
   /* only show for single folders */
   if (g_list_length (files) != 1)
+    return NULL;
+
+
+  channel = xfconf_channel_get ("thunar-shares-plugin");
+
+  /* Create the channel, if it does not exist yet */
+  if (!xfconf_channel_has_property (channel, THUNAR_SHARES_PLUGIN_PROP_SHOW_MENU_CONTRIBUTION))
+    xfconf_channel_set_bool (channel, THUNAR_SHARES_PLUGIN_PROP_SHOW_MENU_CONTRIBUTION, TRUE);
+
+  if (!xfconf_channel_get_bool (channel, THUNAR_SHARES_PLUGIN_PROP_SHOW_MENU_CONTRIBUTION, TRUE))
     return NULL;
 
   if (!libshares_is_shareable (file))
