@@ -168,15 +168,16 @@ tsp_provider_get_menu (ThunarxMenuProvider *menu_provider,
   /* Load share info */
   uri = thunarx_file_info_get_uri (file);
   file_local = g_filename_from_uri (uri, NULL, NULL);
+  g_free (uri);
 
   if (!shares_get_share_info_for_path (file_local, &share_info, &error))
   {
     g_error_free (error);
+    g_free (file_local);
     return NULL;
   }
 
   /* Free some memory */
-  g_free (uri);
   g_free (file_local);
 
   /* This folder is already shared */
