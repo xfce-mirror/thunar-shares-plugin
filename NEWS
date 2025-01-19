@@ -1,3 +1,28 @@
+0.4.0 (2025-01-19)
+=====
+- Fix string leaks in tsp_provider_get_menu
+- Use xfconf channel to toggle contect menu contribution
+- Context menu contribution to share folder
+- tsp-page: Fix string leak in tsp_page_set_error
+- build: Add ACLOCAL_FLAGS to ACLOCAL_AMFLAGS
+- build: Use XDT_VERSION_INIT and get rid of configure.ac.in
+- build: Add missing check for bind_textdomain_codeset
+- I18n: Update po/LINGUAS list
+- build: Cleanup autotools warning, remove intltool
+- tsp-page: Replace gnome-fs-share with folder-publicshare icon
+- Update documentation link
+- Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+  Dutch, Eastern Armenian, Eastern Armenian (Russia), English
+  (Australia), English (United Kingdom), Estonian, Finnish, French,
+  Galician, German, Greek, Hebrew, Hungarian, Icelandic, Indonesian,
+  Interlingue, Italian, Japanese, Kazakh, Korean, Latvian, Lithuanian,
+  Malay, Norwegian Bokmål, Occitan (post 1500), Polish, Portuguese,
+  Portuguese (Brazil), Romanian, Russian, Serbian, Slovak, Slovenian,
+  Spanish, Swedish, Turkish, Ukrainian, Urdu, Urdu (Pakistan), Uyghur,
+  Uzbek, Vietnamese
+
 0.3.2 (2023-01-03)
 =====
 - Use long argument for net usershare (Issue #16)
