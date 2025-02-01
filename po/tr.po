@@ -1,166 +1,167 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the thunar-plugins.thunar-shares-plugin package.
 # 
 # Translators:
+# A. Cem Hanoğlu <ardacemhanoglu5@gmail.com>, 2025
 # Emin Tufan Çetin <etcetin@gmail.com>, 2020
 # Necdet Yücel <necdetyucel@gmail.com>, 2018
-# Sabri Ünal <libreajans@gmail.com>, 2022-2023
+# b83946de5835331df42b9ffcc43e6a33_05e65cd <73a30e0a984b2291d4915f37112ad292_814039>, 2022-2023
 # Serdar Sağlam <teknomobil@msn.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:46+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-12-26 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>, 2022-2023\n"
-"Language-Team: Turkish (http://www.transifex.com/xfce/thunar-plugins/language/tr/)\n"
+"Last-Translator: A. Cem Hanoğlu <ardacemhanoglu5@gmail.com>, 2025\n"
+"Language-Team: Turkish (http://app.transifex.com/xfce/thunar-plugins/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../libshares/libshares-util.c:166
+#: libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Lütfen ad yazın."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:174
+#: libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "Paylaşım adı çok uzun. Bazı eski istemciler erişimde sıkıntı yaşayabilir, devam etmek istiyor musunuz?"
 
-#: ../libshares/libshares-util.c:187
+#: libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Paylaşım bilgisi alınırken hata oluştu: %s"
 
-#: ../libshares/libshares-util.c:197
+#: libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "Aynı adda başka paylaşım bulunuyor"
 
-#: ../libshares/libshares-util.c:251
+#: libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "Paylaşım değiştirilemiyor:"
 
-#: ../libshares/libshares-util.c:353
+#: libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "Thunar, paylaşım için klasör izinlerin değiştirilmesine gereksiniyor. Kabul ediyor musunuz?"
 
-#: ../libshares/libshares-util.c:392
+#: libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Klasör izinleri değiştirilirken hata oluştu."
 
-#: ../libshares/shares.c:165
+#: libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "%s %s %s %d sinyali döndürdü"
 
-#: ../libshares/shares.c:174
+#: libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "%s %s %s bilinmeyen nedenden dolayı gerçekleştirilemedi"
 
-#: ../libshares/shares.c:195
+#: libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "'net usershare' %d hatası döndürdü: %s"
 
-#: ../libshares/shares.c:197
+#: libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "'net usershare' %d hatası döndürdü"
 
-#: ../libshares/shares.c:231
-#, c-format
+#: libshares/shares.c:231
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "'net usershare' çıktısı UTF-8 kodlamasına göre geçerli değil"
 
-#: ../libshares/shares.c:490 ../libshares/shares.c:702
-#, c-format
+#: libshares/shares.c:490 libshares/shares.c:702
 msgid "Failed"
 msgstr "Başarısız"
 
-#: ../libshares/shares.c:592
+#: libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr "Samba testparm işlemi %d sinyali döndürdü"
 
-#: ../libshares/shares.c:598
-#, c-format
+#: libshares/shares.c:598
 msgid "Samba's testparm failed for an unknown reason"
 msgstr "Samba testparm işlemi bilinmeyen nedenden ötürü başarısız oldu"
 
-#: ../libshares/shares.c:613
+#: libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr "Samba testparm işlemi %d hatası döndürdü: %s"
 
-#: ../libshares/shares.c:615
+#: libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr "Samba testparm işlemi %d hatası döndürdü"
 
-#: ../libshares/shares.c:784
+#: libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
 msgstr "%s dosya yolu için paylaşım kaldırılamıyor: yol paylaşımda değil"
 
-#: ../libshares/shares.c:837
-#, c-format
+#: libshares/shares.c:837
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
 msgstr "Var olan paylaşımın dosya yolu değiştirilemiyor; lütfen eski paylaşımı kaldırıp yeni paylaşım ekleyin"
 
-#: ../thunar-plugin/tsp-page.c:150
+#: thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Klasör Paylaşımı</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:160
+#: thunar-plugin/tsp-page.c:160 thunar-plugin/tsp-provider.c:170
 msgid "Share this folder"
 msgstr "Bu klasörü paylaş"
 
 #. Share name
-#: ../thunar-plugin/tsp-page.c:171
+#: thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Paylaşım Adı:"
 
 #. Share comments
-#: ../thunar-plugin/tsp-page.c:181
+#: thunar-plugin/tsp-page.c:181
 msgid "Comments:"
 msgstr "Yorum:"
 
 #. Write access
-#: ../thunar-plugin/tsp-page.c:190
+#: thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Diğerlerinin bu klasöre yazmasına izin ver"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:196
+#: thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Misafir erişimine izin ver"
 
 #. Apply button
-#: ../thunar-plugin/tsp-page.c:201
+#: thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "_Uygula"
 
-#: ../thunar-plugin/tsp-page.c:292
+#: thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Paylaşım"
 
-#: ../thunar-plugin/tsp-page.c:364
+#: thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Bu klasörün sahibi değilsiniz."
 
-#: ../thunar-plugin/tsp-page.c:372
+#: thunar-plugin/tsp-page.c:372
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
 msgstr "Sambayı kurmanız gerekebilir, lütfen kullanıcı izinlerini gözden geçirip yeniden giriş yapın.\n<b>Ayrıntılı bilgi:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+
+#: thunar-plugin/tsp-provider.c:169
+msgid "Folder _Sharing"
+msgstr "Dosya _Paylaşımı"
