@@ -1,18 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the thunar-plugins.thunar-shares-plugin package.
 # 
 # Translators:
 # Balázs Meskó <meskobalazs@mailbox.org>, 2018
+# Csani10, 2025
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009
 # Gábor P., 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Thunar Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 00:46+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-12-26 00:46+0100\n"
 "PO-Revision-Date: 2013-07-03 18:10+0000\n"
-"Last-Translator: Gábor P., 2023\n"
+"Last-Translator: Csani10, 2025\n"
 "Language-Team: Hungarian (http://app.transifex.com/xfce/thunar-plugins/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,146 +21,146 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libshares/libshares-util.c:166
+#: libshares/libshares-util.c:166
 msgid "Please, write a name."
 msgstr "Adjon meg egy nevet."
 
 #. Warn the user
-#: ../libshares/libshares-util.c:174
+#: libshares/libshares-util.c:174
 msgid ""
 "Share name too long. Some old clients may have problems to access it, "
 "continue anyway?"
 msgstr "A megosztás neve túl hosszú. Egyes régebbi klienseknek gondot okozhat az elérése, mindenképp folytatja?"
 
-#: ../libshares/libshares-util.c:187
+#: libshares/libshares-util.c:187
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Hiba történt a megosztás információinak lekérdezése közben: %s"
 
-#: ../libshares/libshares-util.c:197
+#: libshares/libshares-util.c:197
 msgid "Another share has the same name"
 msgstr "Egy másik megosztásnak ugyanez a neve"
 
-#: ../libshares/libshares-util.c:251
+#: libshares/libshares-util.c:251
 msgid "Cannot modify the share:"
 msgstr "A megosztás nem módosítható:"
 
-#: ../libshares/libshares-util.c:353
+#: libshares/libshares-util.c:353
 msgid ""
 "Thunar needs to add some permissions to your folder in order to share it. Do"
 " you agree?"
 msgstr "A megosztáshoz a Thunarnak fel kell vennie néhány jogosultságot a mappához. Beleegyezik?"
 
-#: ../libshares/libshares-util.c:392
+#: libshares/libshares-util.c:392
 msgid "Error when changing folder permissions."
 msgstr "Hiba a mappa jogosultságainak módosításakor."
 
-#: ../libshares/shares.c:165
+#: libshares/shares.c:165
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "%s %s %s a következő szignált adta vissza: %d"
 
-#: ../libshares/shares.c:174
+#: libshares/shares.c:174
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "%s %s %s ismeretlen okból sikertelen"
 
-#: ../libshares/shares.c:195
+#: libshares/shares.c:195
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "A „net usershare” a következő hibát adta vissza: %d: %s"
 
-#: ../libshares/shares.c:197
+#: libshares/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "A „net usershare” a következő hibát adta vissza: %d"
 
-#: ../libshares/shares.c:231
-#, c-format
+#: libshares/shares.c:231
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "A „net usershare” kimenete nem UTF-8 kódolású"
 
-#: ../libshares/shares.c:490 ../libshares/shares.c:702
-#, c-format
+#: libshares/shares.c:490 libshares/shares.c:702
 msgid "Failed"
 msgstr "Sikertelen"
 
-#: ../libshares/shares.c:592
+#: libshares/shares.c:592
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr "A Samba testparm parancsa a következő szignált adta vissza: %d"
 
-#: ../libshares/shares.c:598
-#, c-format
+#: libshares/shares.c:598
 msgid "Samba's testparm failed for an unknown reason"
 msgstr "A Samba testparm parancsa ismeretlen okból nem futott le"
 
-#: ../libshares/shares.c:613
+#: libshares/shares.c:613
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr "A Samba testparm parancsa a következő hibával tért vissza: %d: %s"
 
-#: ../libshares/shares.c:615
+#: libshares/shares.c:615
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr "A Samba testparm parancsa a következő hibával tért vissza: %d"
 
-#: ../libshares/shares.c:784
+#: libshares/shares.c:784
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
 msgstr "A megosztás nem vonható vissza a megadott útvonalról (%s), mert az jelenleg nem megosztott"
 
-#: ../libshares/shares.c:837
-#, c-format
+#: libshares/shares.c:837
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
 "first and add a new one"
 msgstr "A megosztás útvonala nem változtatható meg, először vonja vissza a megosztást"
 
-#: ../thunar-plugin/tsp-page.c:150
+#: thunar-plugin/tsp-page.c:150
 msgid "<b>Folder Sharing</b>"
 msgstr "<b>Mappamegosztás</b>"
 
 #. Share check button
-#: ../thunar-plugin/tsp-page.c:160
+#: thunar-plugin/tsp-page.c:160 thunar-plugin/tsp-provider.c:170
 msgid "Share this folder"
 msgstr "Mappa megosztása"
 
 #. Share name
-#: ../thunar-plugin/tsp-page.c:171
+#: thunar-plugin/tsp-page.c:171
 msgid "Share Name:"
 msgstr "Megosztás neve:"
 
 #. Share comments
-#: ../thunar-plugin/tsp-page.c:181
+#: thunar-plugin/tsp-page.c:181
 msgid "Comments:"
 msgstr "Megjegyzés:"
 
 #. Write access
-#: ../thunar-plugin/tsp-page.c:190
+#: thunar-plugin/tsp-page.c:190
 msgid "Allow others users to write in this folder"
 msgstr "Más felhasználók írhatnak a mappába"
 
 #. Guest access
-#: ../thunar-plugin/tsp-page.c:196
+#: thunar-plugin/tsp-page.c:196
 msgid "Allow Guest access"
 msgstr "Vendéghozzáférés engedélyezése"
 
 #. Apply button
-#: ../thunar-plugin/tsp-page.c:201
+#: thunar-plugin/tsp-page.c:201
 msgid "_Apply"
 msgstr "_Alkalmaz"
 
-#: ../thunar-plugin/tsp-page.c:292
+#: thunar-plugin/tsp-page.c:292
 msgid "Share"
 msgstr "Megosztás"
 
-#: ../thunar-plugin/tsp-page.c:364
+#: thunar-plugin/tsp-page.c:364
 msgid "You are not the owner of the folder."
 msgstr "Nem Ön a mappa tulajdonosa."
 
-#: ../thunar-plugin/tsp-page.c:372
+#: thunar-plugin/tsp-page.c:372
 msgid ""
 "You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
 "<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
 msgstr "Szükséges lehet a Samba telepítése, a felhasználói jogosultságok ellenőrzése (usershares csoport) és az ismételt bejelentkezésre.\n<b>További információk:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+
+#: thunar-plugin/tsp-provider.c:169
+msgid "Folder _Sharing"
+msgstr "Mappa _Megosztás"
