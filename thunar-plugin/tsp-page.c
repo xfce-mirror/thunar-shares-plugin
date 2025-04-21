@@ -495,7 +495,7 @@ tsp_page_apply_clicked (GtkButton *button,
     {
       tsp_update_default (tsp_page, share_info);
       shares_free_share_info (share_info);
-
+      thunarx_file_info_add_emblem (tsp_page->file, "emblem-shared");
       thunarx_file_info_changed (tsp_page->file);
     }
   } else {
@@ -503,7 +503,7 @@ tsp_page_apply_clicked (GtkButton *button,
     if (libshares_shares_unshare (local_file))
     {
       tsp_update_default (tsp_page, NULL);
-
+      thunarx_file_info_remove_emblem (tsp_page->file, "emblem-shared");
       thunarx_file_info_changed (tsp_page->file);
     }
   }
