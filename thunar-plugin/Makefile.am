@@ -34,4 +34,7 @@ thunar_shares_plugin_la_LDFLAGS =				\
 thunar_shares_plugin_la_LIBADD=					\
 	$(top_builddir)/libshares/libshares.la
 
+EXTRA_DIST =							\
+	meson.build
+
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

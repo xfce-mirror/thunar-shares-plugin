@@ -7,17 +7,22 @@ dnl -------------------------------------------------------
 dnl Version
 dnl -------------------------------------------------------
 XDT_VERSION_INIT([0.4.0], [git])
+m4_define([copyright_year], [2025])
 
 dnl -------------------------------------------------------
 dnl Init autoconf
 dnl -------------------------------------------------------
-AC_COPYRIGHT([Copyright (c) 2009-2010 Daniel Morales <daniel@daniel.com.uy>.])
+AC_COPYRIGHT([Copyright (c) 2009-copyright_year() The Xfce development team. All rights reserved.])
 AC_INIT([thunar-shares-plugin], [xdt_version], [https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin])
 AC_REVISION([xdt_version_build])
 AC_CONFIG_SRCDIR([thunar-plugin/thunar-shares-plugin.c])
 AC_PREREQ(2.69)
 AC_CANONICAL_TARGET()
 AC_CONFIG_MACRO_DIRS([m4])
+AC_DEFINE([VERSION_FULL], [PACKAGE_VERSION], [Alias for VERSION and PACKAGE_VERSION for meson compatibility])
+COPYRIGHT_YEAR=copyright_year()
+AC_DEFINE_UNQUOTED([COPYRIGHT_YEAR], ["$COPYRIGHT_YEAR"], [Copyright year])
+AC_SUBST([COPYRIGHT_YEAR])
 
 dnl -------------------------------------------------------
 dnl Init automake
