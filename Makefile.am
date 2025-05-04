@@ -4,10 +4,12 @@ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 SUBDIRS = libshares thunar-plugin po
 
 EXTRA_DIST =				\
-	ChangeLog			\
+	ChangeLog				\
 	README.md				\
-	AUTHORS				\
-	NEWS
+	AUTHORS					\
+	NEWS					\
+	meson.build				\
+	xfce-revision.h.in
 
 DISTCLEANFILES = 			\
 	po/POTFILES
