@@ -48,10 +48,10 @@ AC_CHECK_HEADERS([string.h sys/types.h sys/wait.h time.h sys/stat.h unistd.h])
 dnl -------------------------------------------------------
 dnl Packages checks
 dnl -------------------------------------------------------
-XDT_CHECK_PACKAGE([GTK], [gtk+-3.0], [3.22.0])
-XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.26.0])
-XDT_CHECK_PACKAGE([THUNARX], [thunarx-3], [1.0.1])
-XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.12.0])
+XDT_CHECK_PACKAGE([GTK], [gtk+-3.0], [3.24.0])
+XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.66.0])
+XDT_CHECK_PACKAGE([THUNARX], [thunarx-3], [4.18.0])
+XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.18.0])
 
 dnl -------------------------------------------------------
 dnl Languages
