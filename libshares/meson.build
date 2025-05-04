@@ -6,7 +6,7 @@ libshares_sources = [
 ]
 
 libshares = static_library(
-  'libshares',
+  'shares',
   libshares_sources,
   include_directories: [
     include_directories('..'),
