@@ -24,4 +24,7 @@ libshares_la_LDFLAGS =					\
 	$(THUNARX_LIBS)					\
 	$(PLATFORM_LDFLAGS)
 
+EXTRA_DIST =							\
+	meson.build
+
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:
