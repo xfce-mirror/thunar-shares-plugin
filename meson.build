@@ -53,6 +53,16 @@ extra_cflags_check = [
   '-Wno-error=deprecated-declarations',
 ]
 
+if cc.has_function('bind_textdomain_codeset')
+  feature_cflags += '-DHAVE_BIND_TEXTDOMAIN_CODESET=1'
+  libintl = dependency('', required: false)
+else
+  libintl = cc.find_library('intl', required: false)
+  if libintl.found() and cc.has_function('bind_textdomain_codeset', dependencies: libintl)
+    feature_cflags += '-DHAVE_BIND_TEXTDOMAIN_CODESET=1'
+  endif
+endif
+
 headers = [
   'sys/stat.h',
   'sys/types.h',
