@@ -29,17 +29,17 @@ See [NEWS](https://gitlab.xfce.org/thunar-plugins/thunar-shares-plugin/-/blob/ma
 From source code repository: 
 
     % cd thunar-shares-plugin
-    % ./autogen.sh
-    % make
-    % make install
+    % meson setup build
+    % meson compile -C build
+    % meson install -C build
 
 From release tarball:
 
-    % tar xf thunar-shares-plugin-<version>.tar.bz2
+    % tar xf thunar-shares-plugin-<version>.tar.xz
     % cd thunar-shares-plugin-<version>
-    % ./configure
-    % make
-    % make install
+    % meson setup build
+    % meson compile -C build
+    % meson install -C build
 
 For information about how to setup Samba correctly, see [Samba Setup](https://docs.xfce.org/xfce/thunar/thunar-shares-plugin#samba_setup) in the Xfce documentation.
 
