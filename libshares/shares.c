@@ -19,10 +19,6 @@
  * (C) Copyright 2008-2009 Daniel Morales <daniel@daniel.com.uy>
  */
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
-
 #ifdef HAVE_STRING_H
 #include <string.h>
 #endif
