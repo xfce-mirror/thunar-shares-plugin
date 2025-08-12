@@ -43,6 +43,10 @@ From release tarball:
 
 For information about how to setup Samba correctly, see [Samba Setup](https://docs.xfce.org/xfce/thunar/thunar-shares-plugin#samba_setup) in the Xfce documentation.
 
+### Uninstallation
+
+    % ninja uninstall -C build
+
 ### Reporting Bugs
 
 Visit the [reporting bugs](https://docs.xfce.org/thunar-plugins/thunar-shares-plugin/bugs) page to view currently open bug reports and instructions on reporting new bugs or submitting bugfixes.
