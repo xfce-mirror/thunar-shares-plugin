@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the thunar-plugins.thunar-shares-plugin package.
+# 
+# Translators:
+# Robin van der Vliet <info@robinvandervliet.com>, 2016
+# Warut Bunprasert <warut.b@disroot.org>, 2025
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunar Plugins\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-12-26 00:46+0100\n"
+"PO-Revision-Date: 2013-07-03 18:10+0000\n"
+"Last-Translator: Warut Bunprasert <warut.b@disroot.org>, 2025\n"
+"Language-Team: Esperanto (http://app.transifex.com/xfce/thunar-plugins/language/eo/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: eo\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: libshares/libshares-util.c:166
+msgid "Please, write a name."
+msgstr "Bonvolu skribi nomon."
+
+#. Warn the user
+#: libshares/libshares-util.c:174
+msgid ""
+"Share name too long. Some old clients may have problems to access it, "
+"continue anyway?"
+msgstr "Kunhavigita nomo estas tro longa. iuj malnovaj klientoj eble havas problemojn por aliri ĝin, ĉu daŭrigu?"
+
+#: libshares/libshares-util.c:187
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Eraro dum ricevado de informoj pri kunhavigo: %s"
+
+#: libshares/libshares-util.c:197
+msgid "Another share has the same name"
+msgstr "Alia kunhavigo havas la saman nomon"
+
+#: libshares/libshares-util.c:251
+msgid "Cannot modify the share:"
+msgstr "Ne povas modifi la kunhavigon:"
+
+#: libshares/libshares-util.c:353
+msgid ""
+"Thunar needs to add some permissions to your folder in order to share it. Do"
+" you agree?"
+msgstr "Thunar bezonas aldoni iujn permesojn al via dosierujo por kunhavigi ĝin. Ĉu vi konsentas?"
+
+#: libshares/libshares-util.c:392
+msgid "Error when changing folder permissions."
+msgstr "Eraro, kiam ŝanĝas dosierujajn permesojn."
+
+#: libshares/shares.c:165
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s revenis kun signalo %d"
+
+#: libshares/shares.c:174
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s malsukcesis pro nekonata kialo"
+
+#: libshares/shares.c:195
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' revenis eraro: %d: %s"
+
+#: libshares/shares.c:197
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' revenis eraro: %d"
+
+#: libshares/shares.c:231
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "La eligo de 'net usershare' ne estas en valida kodoprezento UTF-8"
+
+#: libshares/shares.c:490 libshares/shares.c:702
+msgid "Failed"
+msgstr "Malsukcesis"
+
+#: libshares/shares.c:592
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "La Testparm de Samba revenis kun signalo %d"
+
+#: libshares/shares.c:598
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "La Testparm de Samba malsukcesis pro nekonata kialo"
+
+#: libshares/shares.c:613
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "La Testparm de Samba revenis eraro: %d: %s"
+
+#: libshares/shares.c:615
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "La Testparm de Samba revenis eraro: %d"
+
+#: libshares/shares.c:784
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "Ne povas forigi la kunhavigon por dosierindiko %s: tiu dosierindiko ne estas kunhavigita"
+
+#: libshares/shares.c:837
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr "Ne povas ŝanĝi la dosierindikon de ekzistanta kunhavigo; bonvolu forigi la malnovan kunhavigon unue kaj aldoni la novan"
+
+#: thunar-plugin/tsp-page.c:150
+msgid "<b>Folder Sharing</b>"
+msgstr "<b>Dosieruja kunhavigo</b>"
+
+#. Share check button
+#: thunar-plugin/tsp-page.c:160 thunar-plugin/tsp-provider.c:170
+msgid "Share this folder"
+msgstr "Kunhavigu ĉi tiun dosierujon"
+
+#. Share name
+#: thunar-plugin/tsp-page.c:171
+msgid "Share Name:"
+msgstr "Kunhavigita nomo:"
+
+#. Share comments
+#: thunar-plugin/tsp-page.c:181
+msgid "Comments:"
+msgstr "Komentoj:"
+
+#. Write access
+#: thunar-plugin/tsp-page.c:190
+msgid "Allow others users to write in this folder"
+msgstr "Permesu al aliaj uzantoj skribi en ĉi tiu dosierujo"
+
+#. Guest access
+#: thunar-plugin/tsp-page.c:196
+msgid "Allow Guest access"
+msgstr "Permesu gasto-aliron"
+
+#. Apply button
+#: thunar-plugin/tsp-page.c:201
+msgid "_Apply"
+msgstr "_Apliki"
+
+#: thunar-plugin/tsp-page.c:292
+msgid "Share"
+msgstr "Kunhavigi"
+
+#: thunar-plugin/tsp-page.c:364
+msgid "You are not the owner of the folder."
+msgstr "Vi ne estas la posedanto de la dosierujo."
+
+#: thunar-plugin/tsp-page.c:372
+msgid ""
+"You may need to install Samba, check your user permissions (usershares group) and re-login.\n"
+"<b>More info:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+msgstr "Vi eble bezonas instali Samba, kontroli viajn uzantajn permesojn (uzanto-grupo) kaj re-ensaluti. \n<b>Pliaj informoj:</b> <u>https://docs.xfce.org/xfce/thunar/thunar-shares-plugin</u>"
+
+#: thunar-plugin/tsp-provider.c:169
+msgid "Folder _Sharing"
+msgstr "Dosieruja _kunhavigo"
