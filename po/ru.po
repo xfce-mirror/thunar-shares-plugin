@@ -164,4 +164,4 @@ msgstr "Вам может потребоваться установить Samba,
 
 #: thunar-plugin/tsp-provider.c:169
 msgid "Folder _Sharing"
-msgstr "Общий _доступ к папкам"
+msgstr "Общий _доступ"
