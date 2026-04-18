@@ -344,15 +344,7 @@ tsp_page_file_changed (ThunarxFileInfo *file,
 
   tsp_page->file = file; 
 
-  /* Load share info */
-  uri = thunarx_file_info_get_uri (tsp_page->file);
-  file_local = g_filename_from_uri (uri, NULL, NULL);
-
-  result = shares_get_share_info_for_path (file_local, &share_info, &error);
-
-  /* Free some memory */
-  g_free (uri);
-  g_free (file_local);
+  result = shares_get_share_info_for_file (tsp_page->file, &share_info, &error);
 
   /* Check folder owner */
   if (!libshares_check_owner (tsp_page->file))

@@ -32,6 +32,9 @@
 
 static void     tsp_provider_finalize            (GObject                          *object);
 
+static void     tsp_provider_info_provider_init  (ThunarxInfoProviderIface         *iface);
+static void
+tsp_provider_info_provider_file_created(ThunarxInfoProvider *provider, GHashTable *files);
 static void     tsp_provider_page_provider_init  (ThunarxPropertyPageProviderIface *iface);
 static GList   *tsp_provider_get_pages           (ThunarxPropertyPageProvider      *provider,
                                                   GList                            *files);
@@ -53,6 +56,8 @@ struct _TspProvider
 THUNARX_DEFINE_TYPE_WITH_CODE (TspProvider,
                                tsp_provider,
                                G_TYPE_OBJECT,
+                               THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_INFO_PROVIDER,
+                                                            tsp_provider_info_provider_init)
                                THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_PROPERTY_PAGE_PROVIDER,
                                                             tsp_provider_page_provider_init)
 			                         THUNARX_IMPLEMENT_INTERFACE (THUNARX_TYPE_MENU_PROVIDER,
@@ -79,6 +84,49 @@ tsp_provider_init (TspProvider *tsp_provider)
       g_clear_error (&error);
   }
 }
+
+static void
+tsp_provider_info_provider_file_created(ThunarxInfoProvider *provider, GHashTable *files)
+{
+  GHashTableIter iter;
+  gpointer       key;
+  ThunarxFileInfo *file;
+  ShareInfo   *share_info;
+  GError      *error = NULL;
+
+  g_hash_table_iter_init (&iter, files);
+  while (g_hash_table_iter_next (&iter, &key, NULL))
+    {
+      printf("tsp_provider_info_provider_file_created\n");
+    }
+
+  //printf("tsp_provider_info_provider_file_created\n");
+  return;
+  
+  GFile *gfile = thunarx_file_info_get_location (file);
+  printf("file created: %s\n", g_file_get_basename (gfile));
+
+  if (!shares_get_share_info_for_file (file, &share_info, &error))
+  {
+    g_error_free (error);
+    return;
+  }
+
+  /* file is shared */
+  if (share_info)
+  {
+    shares_free_share_info (share_info);
+    thunarx_file_info_add_emblem (file, "emblem-shared");
+  }
+}
+
+static void
+tsp_provider_info_provider_init (ThunarxInfoProviderIface *iface)
+{
+  iface->file_created = tsp_provider_info_provider_file_created;
+}
+
+
 
 static void
 tsp_provider_menu_provider_init (ThunarxMenuProviderIface *iface)
@@ -136,7 +184,6 @@ tsp_provider_get_menu (ThunarxMenuProvider *menu_provider,
   ThunarxMenuItem *item;
   ShareInfo       *share_info;
   GError          *error = NULL;
-  gchar           *uri, *file_local;
   ThunarxFileInfo *file = files->data;
   XfconfChannel   *channel;
 
@@ -161,20 +208,11 @@ tsp_provider_get_menu (ThunarxMenuProvider *menu_provider,
   if (!libshares_check_owner (file))
     return NULL;
 
-  /* Load share info */
-  uri = thunarx_file_info_get_uri (file);
-  file_local = g_filename_from_uri (uri, NULL, NULL);
-  g_free (uri);
-
-  if (!shares_get_share_info_for_path (file_local, &share_info, &error))
+  if (!shares_get_share_info_for_file (file, &share_info, &error))
   {
     g_error_free (error);
-    g_free (file_local);
     return NULL;
   }
-
-  /* Free some memory */
-  g_free (file_local);
 
   /* This folder is already shared */
   if (share_info)
