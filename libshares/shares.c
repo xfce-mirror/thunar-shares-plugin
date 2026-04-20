@@ -927,8 +927,8 @@ shares_get_path_is_shared (const char *path, gboolean *ret_is_shared, GError **e
 }
 
 /**
- * shares_get_share_info_for_path:
- * @path: A full path name ("/foo/bar/baz") in file system encoding.
+ * shares_get_share_info_for_file:
+ * @file: The file to check
  * @ret_share_info: Location to store result with the share's info - on return,
  * will be non-NULL if the path is indeed shared, or #NULL if the path is not
  * shared.  You must free the non-NULL value with shares_free_share_info().
@@ -941,15 +941,29 @@ shares_get_path_is_shared (const char *path, gboolean *ret_is_shared, GError **e
  * @error argument, and *@ret_share_info will be set to #NULL.
  **/
 gboolean
-shares_get_share_info_for_path (const char *path, ShareInfo **ret_share_info, GError **error)
+shares_get_share_info_for_file (ThunarxFileInfo *file, ShareInfo **ret_share_info, GError **error)
 {
-	ShareInfo *info;
+	ShareInfo		*info;
+	g_autofree gchar	*uri = NULL;
+	g_autofree gchar	*path = NULL;
 
-	g_assert (path != NULL);
+
 	g_assert (ret_share_info != NULL);
 	g_assert (error == NULL || *error == NULL);
 
-	if (!refresh_if_needed (error)) {
+	uri = thunarx_file_info_get_uri (file);
+	path = g_filename_from_uri (uri, NULL, NULL);
+
+	if (path == NULL)
+	{
+		// FIXME: SOmething is wrong here
+		g_set_error (error, G_FILE_ERROR, G_FILE_ERROR_FAILED, NULL);
+		*ret_share_info = NULL;
+		return FALSE;
+	}
+	if (path == NULL || !refresh_if_needed (error)) {
+
+
 		*ret_share_info = NULL;
 		return FALSE;
 	}

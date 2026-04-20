@@ -23,6 +23,7 @@
 #define SHARES_H
 
 #include <glib.h>
+#include <thunarx/thunarx.h>
 
 typedef struct {
 	char *path;
@@ -47,7 +48,7 @@ void shares_free_share_info (ShareInfo *info);
 
 gboolean shares_get_path_is_shared (const char *path, gboolean *ret_is_shared, GError **error);
 
-gboolean shares_get_share_info_for_path (const char *path, ShareInfo **ret_share_info, GError **error);
+gboolean shares_get_share_info_for_file (ThunarxFileInfo *file, ShareInfo **ret_share_info, GError **error);
 
 gboolean shares_get_share_name_exists (const char *share_name, gboolean *ret_exists, GError **error);
 
